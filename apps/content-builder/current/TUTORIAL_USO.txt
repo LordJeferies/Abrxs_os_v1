@@ -1,0 +1,49 @@
+ABRXOS CONTENT BUILDER V1 — TUTORIAL RÁPIDO
+
+1. INSTALAR
+Ejecuta INSTALAR_ABRXOS_CONTENT_BUILDER_V1.command desde Terminal.
+Se crea ABRXOS Content Builder.app en el Escritorio.
+
+2. NUEVO REQUEST
+Pon Request ID, Project ID, nombre del proyecto y source group.
+
+3. ELIGE FLUJO
+- Plan editorial fijo + transcript
+- Sólo transcripción
+- Beta → Alfa
+- Actualizar Alfa
+- Episodio completo
+- Multi-source
+- Todo el proyecto
+
+4. ELIGE TIPO Y STAGE
+Intro, vertical, horizontal, carrusel, quote, thread, note, PDF, script o full episode.
+Stage BETA o ALFA.
+
+5. PERFIL DE EDICIÓN
+- Cinematic Edit / XR_FULL
+- Dynamic Edit / MOTION_SFX
+- Clean Edit / SFX_ONLY
+La app muestra la regla XR correspondiente.
+
+6. INPUTS
+Carga o pega:
+- transcripción
+- plan editorial si existe
+- Project Config JSON
+- Brand Adapter JSON
+- ficha actual si estás actualizando/evolucionando
+- reglas especiales
+
+7. BUILD AI PACKAGE
+La app detecta el caso y selecciona automáticamente el prompt + ficha R6.
+Crea carpeta + ZIP en:
+~/ABRXOS_CONTENT_BUILDER_EXPORTS/
+
+8. CHATGPT
+Abre 01_QUE_SUBIR_A_CHATGPT.txt del package y adjunta los archivos en ese orden.
+Pide “Ejecuta el paquete y devuelve JSON + TXT listos para Geometra.”
+
+9. GEOMETRA
+Importa el JSON devuelto por la IA. El TXT es para lectura/revisión humana.
+Desde Geometra ya puede pasar a Biblioteca, Kanban, Calendario y Lienzo.

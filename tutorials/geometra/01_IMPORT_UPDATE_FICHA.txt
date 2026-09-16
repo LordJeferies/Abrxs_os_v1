@@ -1,0 +1,3 @@
+IMPORT / UPDATE FICHA
+
+Import JSON/HTML. Same projectId + canonicalId means update of the same piece. Before AI-based updates, start from the latest current ficha to avoid overwriting local improvements.

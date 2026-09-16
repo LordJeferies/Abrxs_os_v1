@@ -1,0 +1,1 @@
+{"rendererId":"joc-classic","name":"JOC Classic","version":"1.0.0","documentSchema":"abrxos.document.v3","entryTemplate":"template.html","styles":"styles.css","adapter":"adapter.js","capabilities":{"video":true,"timeline":true,"calendar":true,"kanban":true,"carousel":true,"xrInspector":true,"sfxInspector":true,"merge":true,"mobile":true},"themes":["dark","light"]}

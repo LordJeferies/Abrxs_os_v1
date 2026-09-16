@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "abrxos.content-project.r6",
+  "projectId": "REPLACE_PROJECT_ID",
+  "pieces": [
+    {
+      "id": "v01",
+      "canonicalId": "V01",
+      "projectId": "REPLACE_PROJECT_ID",
+      "type": "vertical",
+      "title": "REPLACE_TITLE",
+      "thesis": "REPLACE_THESIS",
+      "objective": "REPLACE_OBJECTIVE",
+      "source": "DEFAULT",
+      "stage": "ALFA",
+      "workflowStatus": "PENDIENTE",
+      "schedule": {
+        "date": "",
+        "time": "",
+        "platforms": [],
+        "publishedAt": null
+      },
+      "editProfile": {
+        "code": "XR_FULL",
+        "commercialName": "Cinematic Edit"
+      },
+      "sourceRanges": [
+        {
+          "id": "V01_SRC_001",
+          "order": 1,
+          "start": 0.0,
+          "end": 5.0,
+          "startTc": "00:00:00.000",
+          "endTc": "00:00:05.000",
+          "role": "HOOK",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "speaker": "",
+          "timingStatus": "verified"
+        }
+      ],
+      "parts": [
+        {
+          "partId": "V01_P01",
+          "order": 1,
+          "role": "HOOK",
+          "kind": "source",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "function": "Open the piece.",
+          "sourceRangeId": "V01_SRC_001",
+          "editStart": 0.0,
+          "editEnd": 5.0,
+          "timingStatus": "verified"
+        }
+      ],
+      "storyScripts": {
+        "source": [
+          {
+            "id": "V01_P01_STORY",
+            "partId": "V01_P01",
+            "role": "HOOK",
+            "speaker": "",
+            "text": "REPLACE_LITERAL_SOURCE",
+            "start": 0.0,
+            "end": 5.0
+          }
+        ]
+      },
+      "timeline": [
+        {
+          "id": "V01_P01_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "A-roll · Hook",
+          "start": 0.0,
+          "end": 5.0,
+          "routes": [
+            "source"
+          ],
+          "partId": "V01_P01",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "V01_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "partId": "V01_P01",
+          "start": 0.0,
+          "end": 5.0,
+          "sourceText": "REPLACE_LITERAL_SOURCE",
+          "wordCount": 10,
+          "highlightWord": null,
+          "highlightStatus": "none",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 0.0,
+              "end": 2.5,
+              "text": "REPLACE_DISPLAY_CUE",
+              "mode": "normal"
+            },
+            {
+              "start": 2.5,
+              "end": 5.0,
+              "text": "REPLACE_DISPLAY_CUE",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6"
+        }
+      ],
+      "copy": {},
+      "notes": "",
+      "qa": {
+        "status": "needs_review",
+        "critical": [],
+        "warnings": []
+      },
+      "masterRole": "vertical"
+    }
+  ]
+}

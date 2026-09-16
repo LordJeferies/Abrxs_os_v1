@@ -1,0 +1,3 @@
+CALENDAR
+
+Drag unscheduled content to a date. LISTO + date → PROGRAMADO. Remove date → back to LISTO when appropriate. Calendar must not change source/timeline.

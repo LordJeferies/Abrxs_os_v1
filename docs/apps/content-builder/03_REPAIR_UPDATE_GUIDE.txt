@@ -1,0 +1,9 @@
+CONTENT BUILDER REPAIR / UPDATE
+
+Router wrong → test select_case and PROMPTS mapping.
+Wrong target schema → inspect `_template_name` and canon_r6/fichas.
+Missing R6.1 context → resources/r6_1 + build_content_ai_package.
+Package incompatible with Geometra → compare contract_manifest feature list + library SHA-256.
+UI only → web/index.html/app server, do not change package schema.
+
+Never mutate historical R6 libraries silently. Add a canon supplement and handshake when semantics change.

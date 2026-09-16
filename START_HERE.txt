@@ -1,0 +1,59 @@
+ABRXOS ECOSYSTEM · CURRENT REPOSITORY SNAPSHOT
+Canon family: R6
+Canon revision: R6.1
+Date: 2026-09-16
+
+CURRENT EXPECTED VERSIONS
+- ABRXOS Geometra: 3.1.1 R6.1
+- ABRXOS Content Builder: 1.0.1 R6.1
+- ABRXOS X Brand Builder: 1.0.1 R6.1
+
+IMPORTANTE
+Este repo está diseñado para convertirse en la FUENTE DE DESARROLLO Y DOCUMENTACIÓN de las tres apps sin mezclar datos de usuario.
+
+Antes de subirlo a GitHub desde tu Mac, ejecuta:
+
+  zsh tools/CAPTURAR_INSTALACION_ACTUAL.command
+  zsh tools/VERIFY_ALL.command
+  zsh tools/GENERAR_MANIFEST.command
+
+CAPTURAR_INSTALACION_ACTUAL.command toma el código real que ya tienes instalado y verificado en:
+
+  ~/ABRXOS_GEOMETRA_V3
+  ~/Applications/ABRXOS/ABRXOS_CONTENT_BUILDER_V1
+  ~/Applications/ABRXOS/ABRXOS_X_BRAND_BUILDER_V1
+
+y actualiza apps/*/current/ sin copiar tus bibliotecas, proyectos, exports, backups ni logs.
+
+NO SUBIR AL REPO
+~/ABRXOS_GEOMETRA_DATA
+~/ABRXOS_CONTENT_BUILDER_DATA
+~/ABRXOS_CONTENT_BUILDER_EXPORTS
+~/ABRXOS_BRAND_BUILDER_DATA
+~/ABRXOS_BRAND_BUILDER_EXPORTS
+~/ABRXOS_GEOMETRA_PATCH_BACKUPS
+~/ABRXOS_ECOSYSTEM_HOTFIX_BACKUPS
+
+EMPIEZA POR
+README.md
+docs/system/00_ECOSYSTEM_ARCHITECTURE.txt
+docs/system/01_VERSION_MATRIX.txt
+docs/maintenance/00_SAFE_UPDATE_POLICY.txt
+tutorials/system/00_END_TO_END_WORKFLOW.txt
+
+====================================================================
+REPO TOOLING FIX 1.0.1
+====================================================================
+Si CAPTURAR_INSTALACION_ACTUAL fallaba con `env: python3: No such file or directory`, usa la versión corregida de este repo y ejecuta:
+
+  zsh tools/DEJAR_REPO_LISTO.command
+
+Causa corregida: variable especial `path` de zsh sobrescribía PATH.
+
+Una vez capturado y subido el snapshot real, una Mac nueva puede restaurar las tres apps con:
+
+  zsh install/INSTALAR_ECOSISTEMA_DESDE_CERO.command
+
+Lee también:
+  00_EJECUTA_ESTO_EN_TU_MAC.txt
+  install/README_RESTORE_FROM_GITHUB.txt

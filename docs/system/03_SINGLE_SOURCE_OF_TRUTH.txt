@@ -1,0 +1,24 @@
+SINGLE SOURCE OF TRUTH POLICY
+
+PROTECTED IDENTITIES
+canonicalId / contentId
+partId
+XR ID
+stateId
+assetId
+motionId
+sfxId
+caption group ID
+
+PROTECTED SOURCE TRUTH
+sourceRanges
+sourceAlignment
+literalText/sourceText
+speaker/source group
+truthStatus/timingStatus
+
+UI SESSION STATE IS NOT DOCUMENT STATE
+selection, zoom, scroll, open tab, focus mode, playhead and panel geometry do not create a new project version unless explicitly saved as persistent layout.
+
+RULE
+If two modules need the same fact, both point to the same canonical field/ID. Do not copy the fact into a second independent object just for UI convenience.

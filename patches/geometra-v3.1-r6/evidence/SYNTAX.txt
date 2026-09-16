@@ -1,0 +1,6 @@
+$ python3 -m py_compile payload/geometra/r6.py tools/apply_patch.py tools/revert_patch.py tools/verify_patch.py
+PASS
+$ node --check payload/shared/r6_patch.js
+$ node --check payload/app/r6_patch.js
+$ bash -n APLICAR_PATCH.command REVERTIR_PATCH.command VERIFICAR_PATCH.command
+PASS

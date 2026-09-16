@@ -1,0 +1,21 @@
+SAFE UPDATE POLICY — HOW TO AVOID BREAKING ABRXOS
+
+1. Never edit all three apps at once unless the change is explicitly a contract migration.
+2. Prefer additive changes.
+3. Preserve IDs and sourceRanges.
+4. UI-only changes stay in renderer/UI layer.
+5. New XR/SFX definition goes to catalog/extension before Kernel code.
+6. Every patch has precheck, backup, apply, post-verify and revert.
+7. Never patch user-data directories.
+8. Keep baseline + delta: R6 baseline plus R6.1 supplement is safer than mutating history.
+9. If a contract changes, update handshake + compatibility matrix + fixtures.
+10. Do not tag/release from a dirty or unverified snapshot.
+
+BRANCH MODEL
+main = last known-good release
+release/* = release candidate
+feature/* = isolated feature
+hotfix/* = minimal bug/contract correction
+
+RULE OF PROMOTION
+No UI demo is enough. A change is promoted only when import → compile → Lienzo → reimport and cross-app handshake remain valid.

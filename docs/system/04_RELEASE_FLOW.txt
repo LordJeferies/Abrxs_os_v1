@@ -1,0 +1,22 @@
+SAFE RELEASE FLOW
+
+1. Capture installed known-good snapshot.
+2. Create feature/hotfix branch.
+3. Write/reproduce a failing test.
+4. Make the smallest change possible.
+5. Run component tests.
+6. Run cross-app contract tests.
+7. Compile/export/reimport fixture.
+8. Run UI/browser regression when UI changed.
+9. Verify manifests and no user-data/secrets.
+10. Package patch/release.
+11. Apply to a sandbox install.
+12. Verify.
+13. Revert sandbox and confirm restoration.
+14. Commit and tag only after all gates pass.
+
+Recommended tags:
+ecosystem-v3.1.1-r6.1
+geometra-v3.1.1-r6.1
+content-builder-v1.0.1-r6.1
+brand-builder-v1.0.1-r6.1

@@ -1,0 +1,32 @@
+ABRXOS GEOMETRA V3
+
+INSTALAR EN MAC UNA SOLA VEZ
+--------------------------------
+zsh ~/Downloads/ABRXOS_GEOMETRA_V3/INSTALAR_ABRXOS_GEOMETRA_V3.command
+
+ABRIR DESPUÉS
+--------------------------------
+Doble clic en:
+~/Desktop/ABRXOS Geometra V3.app
+
+MODO DIRECTO / DESARROLLO
+--------------------------------
+cd ~/ABRXOS_GEOMETRA_V3
+python3 ABRXOS_GEOMETRA_V3.py
+
+DATOS PERSISTENTES
+--------------------------------
+~/ABRXOS_GEOMETRA_DATA/library_v3.json
+
+V2/V2.1
+--------------------------------
+Si existe ~/ABRXOS_GEOMETRA_DATA/library.json y todavía no existe library_v3.json, V3 lo migra una sola vez sin modificar el archivo V2.
+
+CREAR LIENZO
+--------------------------------
+Geometra > Crear Lienzo > seleccionar fichas > nombre > renderer > tema > Exportar HTML
+
+RENDERERS INCLUIDOS
+--------------------------------
+- JOC Classic
+- Shadcn Studio V1 (standalone, sin CDN)

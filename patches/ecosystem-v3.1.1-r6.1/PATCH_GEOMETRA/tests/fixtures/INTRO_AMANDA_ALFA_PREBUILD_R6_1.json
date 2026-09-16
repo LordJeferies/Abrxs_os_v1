@@ -1,0 +1,4560 @@
+{
+  "schemaVersion": "abrxos.content-project.r6",
+  "projectId": "JOC55_AMANDA",
+  "title": "JOC55 Amanda · Intro R6.1 Prebuild",
+  "pieces": [
+    {
+      "id": "intro_amanda_new_01",
+      "canonicalId": "INTRO_AMANDA_NEW_01",
+      "projectId": "JOC55_AMANDA",
+      "type": "intro",
+      "title": "Amanda · Información, pérdida, oportunidad y propósito",
+      "thesis": "La dificultad de encontrar una ruta y la decisión de compartir información se convierten en una oportunidad construida con propósito.",
+      "objective": "Construir un trailer narrativo de contraste, pérdida, agencia, oportunidad y open loops de negocio sin revelar el payoff del modelo.",
+      "source": "DEFAULT",
+      "stage": "ALFA",
+      "workflowStatus": "PENDIENTE",
+      "included": true,
+      "schedule": {
+        "date": "",
+        "time": "",
+        "platforms": [],
+        "publishedAt": null
+      },
+      "editProfile": {
+        "code": "XR_FULL",
+        "commercialName": "Cinematic Edit"
+      },
+      "sourceAlignment": [
+        {
+          "id": "P01_SHARE_INFO",
+          "speaker": "AMANDA",
+          "desiredText": "Las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda…",
+          "cueIds": [
+            739,
+            740
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "a veces las personas piensan que por compartir la información",
+          "endAnchor": "ayuda",
+          "note": "La frase empieza dentro del cue 739 y debe terminar antes de «pero es todo lo contrario» dentro del cue 740.",
+          "parentStartTc": "01:10:20.687",
+          "parentEndTc": "01:10:36.731",
+          "parentStart": 4220.687,
+          "parentEnd": 4236.731,
+          "parentCueText": "que si tú, por ejemplo, vendes un servicio o así sea algo educacional o consultoría o lo que sea, a veces las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda, pero es todo lo contrario."
+        },
+        {
+          "id": "P02_CONTRARY",
+          "speaker": "AMANDA",
+          "desiredText": "Pero es todo lo contrario.",
+          "cueIds": [
+            740
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "pero es todo lo contrario",
+          "endAnchor": "contrario",
+          "note": "Está al final del cue 740; requiere microtrim de inicio.",
+          "parentStartTc": "01:10:31.780",
+          "parentEndTc": "01:10:36.731",
+          "parentStart": 4231.78,
+          "parentEnd": 4236.731,
+          "parentCueText": "información gratuita y la persona ya no va a necesitar de tu ayuda, pero es todo lo contrario."
+        },
+        {
+          "id": "P03_MAJORITY_FREE",
+          "speaker": "AMANDA",
+          "desiredText": "La mayoría de la información que nosotros damos es completamente gratuita.",
+          "cueIds": [
+            506
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "la mayoría de la información que nosotros damos",
+          "endAnchor": "gratuita",
+          "note": "Está dentro del cue 506 después de «más bien».",
+          "parentStartTc": "00:47:07.405",
+          "parentEndTc": "00:47:14.098",
+          "parentStart": 2827.405,
+          "parentEnd": 2834.098,
+          "parentCueText": "sea, nosotros no somos para nada de guardar la información, más bien la mayoría de la información que nosotros damos es completamente gratuita."
+        },
+        {
+          "id": "P04_FATHER_IDOL",
+          "speaker": "AMANDA",
+          "desiredText": "Mi papá para mí era mi ídolo profesional.",
+          "cueIds": [
+            180
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "Mi papá para mí era mi ídolo profesional",
+          "endAnchor": "profesional",
+          "note": "Cue 180 continúa con «ejemplo de liderazgo…»; cortar después de «profesional».",
+          "parentStartTc": "00:15:58.835",
+          "parentEndTc": "00:16:07.122",
+          "parentStart": 958.835,
+          "parentEnd": 967.122,
+          "parentCueText": "Mi papá para mí era mi ídolo profesional, ejemplo de liderazgo, ejemplo de todo, de cómo tratar a los demás, como..."
+        },
+        {
+          "id": "P05_FATHER_DIES",
+          "speaker": "AMANDA",
+          "desiredText": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.",
+          "cueIds": [
+            413
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "El cue coincide con la frase solicitada.",
+          "parentStartTc": "00:37:13.918",
+          "parentEndTc": "00:37:18.900",
+          "parentStart": 2233.918,
+          "parentEnd": 2238.9,
+          "parentCueText": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece."
+        },
+        {
+          "id": "P06_HOLE",
+          "speaker": "AMANDA",
+          "desiredText": "Y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer.",
+          "cueIds": [
+            415
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "y eso me hizo entrar",
+          "endAnchor": "qué hacer",
+          "note": "El cue empieza con «Él falleció por cáncer»; el plan omite ese prefijo.",
+          "parentStartTc": "00:37:21.691",
+          "parentEndTc": "00:37:29.384",
+          "parentStart": 2241.691,
+          "parentEnd": 2249.384,
+          "parentCueText": "Él falleció por cáncer y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer."
+        },
+        {
+          "id": "P07_USA",
+          "speaker": "AMANDA",
+          "desiredText": "Y decidí básicamente irme a Estados Unidos.",
+          "cueIds": [
+            421
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "Cue completo.",
+          "parentStartTc": "00:37:54.289",
+          "parentEndTc": "00:37:56.629",
+          "parentStart": 2274.289,
+          "parentEnd": 2276.629,
+          "parentCueText": "Y decidí básicamente irme a Estados Unidos."
+        },
+        {
+          "id": "P08_REVALIDA",
+          "speaker": "AMANDA",
+          "desiredText": "Pero cuando empiezo a averiguar toda la información del tema de la reválida…",
+          "cueIds": [
+            422
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "Pero cuando empiezo a averiguar",
+          "endAnchor": "revalida",
+          "note": "El cue continúa con «era tanta información…»; el plan corta antes.",
+          "parentStartTc": "00:37:56.629",
+          "parentEndTc": "00:38:04.889",
+          "parentStart": 2276.629,
+          "parentEnd": 2284.889,
+          "parentCueText": "Pero cuando empiezo a averiguar toda la información del tema de la revalida, era tanta información en Internet y la gente te decía una cosa y otras personas te decían otras."
+        },
+        {
+          "id": "P09_NO_SHARE",
+          "speaker": "AMANDA",
+          "desiredText": "Había gente que no te quería compartir información",
+          "cueIds": [
+            423
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "Había gente que no te quería compartir información",
+          "endAnchor": "información",
+          "note": "El cue continúa «que ya lo había logrado».",
+          "parentStartTc": "00:38:04.889",
+          "parentEndTc": "00:38:08.634",
+          "parentStart": 2284.889,
+          "parentEnd": 2288.634,
+          "parentCueText": "Había gente que no te quería compartir información, que ya lo había logrado."
+        },
+        {
+          "id": "P10_FEAR_IMPOSSIBLE",
+          "speaker": "AMANDA",
+          "desiredText": "querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer",
+          "cueIds": [
+            424
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "querían infundir miedo",
+          "endAnchor": "no lo vas a poder hacer",
+          "note": "El cue comienza con «otras personas que sencillamente» y continúa hasta «me sobresaturé completamente».",
+          "parentStartTc": "00:38:08.634",
+          "parentEndTc": "00:38:18.030",
+          "parentStart": 2288.634,
+          "parentEnd": 2298.03,
+          "parentCueText": "otras personas que sencillamente querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer, que me sobresaturé completamente."
+        },
+        {
+          "id": "P11_OVERSATURATED",
+          "speaker": "AMANDA",
+          "desiredText": "me sobresaturé completamente.",
+          "correctedText": "me sobresaturé completamente.",
+          "originalPlanText": "me sobresaltaré completamente.",
+          "cueIds": [
+            424
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "me sobresaturé completamente",
+          "endAnchor": "completamente",
+          "note": "Corrección de source truth: la transcripción dice «me sobresaturé», no «me sobresaltaré».",
+          "parentStartTc": "00:38:08.634",
+          "parentEndTc": "00:38:18.030",
+          "parentStart": 2288.634,
+          "parentEnd": 2298.03,
+          "parentCueText": "otras personas que sencillamente querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer, que me sobresaturé completamente."
+        },
+        {
+          "id": "P12_DIFFICULTIES",
+          "speaker": "AMANDA",
+          "desiredText": "Las dificultades por las que pasas en la vida tienes dos opciones como todo.",
+          "cueIds": [
+            890,
+            891
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "las dificultades por las que pasas",
+          "endAnchor": "dos opciones como todo",
+          "note": "La frase empieza al final del cue 890 y termina en el cue 891.",
+          "parentStartTc": "01:24:14.425",
+          "parentEndTc": "01:24:33.395",
+          "parentStart": 5054.425,
+          "parentEnd": 5073.395,
+          "parentCueText": "Pero algo muy interesante que también mencionaste de tu conversación con alguien que estabas entrevistando, creo que Alberto Vollmer, es que las dificultades por las que pasas en la vida tienes dos opciones como todo."
+        },
+        {
+          "id": "P13_OPPORTUNITY_OR_STUCK",
+          "speaker": "AMANDA",
+          "desiredText": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado",
+          "cueIds": [
+            892,
+            893
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "O le encuentras la oportunidad",
+          "endAnchor": "te quedas estancado",
+          "note": "El final está al inicio del cue 893; cortar antes de la explicación posterior.",
+          "parentStartTc": "01:24:33.395",
+          "parentEndTc": "01:24:49.946",
+          "parentStart": 5073.395,
+          "parentEnd": 5089.946,
+          "parentCueText": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado, que los dos son válidos porque cada quien digamos interpreta las dificultades de maneras distintas, pero pienso que siempre he sido una persona que las"
+        },
+        {
+          "id": "P14_FOLLOWERS",
+          "speaker": "AMANDA",
+          "desiredText": "había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso, pero tenían el mismo sentimiento que yo tuve.",
+          "cueIds": [
+            433
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "había muchísimas personas que me seguían",
+          "endAnchor": "mismo sentimiento que yo tuve",
+          "note": "El cue comienza con «Y me empecé a dar cuenta que».",
+          "parentStartTc": "00:39:13.372",
+          "parentEndTc": "00:39:22.280",
+          "parentStart": 2353.372,
+          "parentEnd": 2362.28,
+          "parentCueText": "Y me empecé a dar cuenta que había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso pero tenían el mismo sentimiento que yo tuve."
+        },
+        {
+          "id": "P15_MARKET_OPPORTUNITY",
+          "speaker": "AMANDA",
+          "desiredText": "Entonces dije, aquí hay una oportunidad de mercado interesante.",
+          "cueIds": [
+            436
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "Cue completo.",
+          "parentStartTc": "00:39:34.995",
+          "parentEndTc": "00:39:38.676",
+          "parentStart": 2374.995,
+          "parentEnd": 2378.676,
+          "parentCueText": "Entonces dije, aquí hay una oportunidad de mercado interesante."
+        },
+        {
+          "id": "P16_MONETIZE",
+          "speaker": "AMANDA",
+          "desiredText": "No sé todavía cómo lo voy a monetizar…",
+          "cueIds": [
+            437
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "No sé todavía cómo lo voy a monetizar",
+          "endAnchor": "monetizar",
+          "note": "El cue continúa con «pero ya lo había…».",
+          "parentStartTc": "00:39:38.977",
+          "parentEndTc": "00:39:45.720",
+          "parentStart": 2378.977,
+          "parentEnd": 2385.72,
+          "parentCueText": "No sé todavía cómo lo voy a monetizar, pero ya lo había como leído a partir de mis redes sociales, básicamente."
+        },
+        {
+          "id": "P17_CAN_DO_IT",
+          "speaker": "AMANDA",
+          "desiredText": "¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?",
+          "cueIds": [
+            427
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "Cue completo.",
+          "parentStartTc": "00:38:34.562",
+          "parentEndTc": "00:38:37.754",
+          "parentStart": 2314.562,
+          "parentEnd": 2317.754,
+          "parentCueText": "¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?"
+        },
+        {
+          "id": "P18_SHARE_IT",
+          "speaker": "AMANDA",
+          "desiredText": "¿Por qué no lo empiezo a compartir?",
+          "cueIds": [
+            430
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "¿por qué no lo empiezo a compartir?",
+          "endAnchor": "compartir",
+          "note": "Está al final del cue 430.",
+          "parentStartTc": "00:38:50.474",
+          "parentEndTc": "00:38:58.840",
+          "parentStart": 2330.474,
+          "parentEnd": 2338.84,
+          "parentCueText": "A.1, A.2, A.3, paso, paso, dale, clic acá, métete en esta página, haz esto, y empecé a desglosar todo y dije, ¿por qué no lo empiezo a compartir?"
+        },
+        {
+          "id": "P19_JOC_1500",
+          "speaker": "JOC",
+          "desiredText": "¿Cómo llegaste ahora a los mil quinientos?",
+          "sourceLiteral": "Y ahora, ¿cómo llegaste ahora a los 1500?",
+          "cueIds": [
+            781
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "El plan omite «Y ahora» y escribe 1500 con palabras; source literal conserva el cue.",
+          "parentStartTc": "01:13:26.377",
+          "parentEndTc": "01:13:29.029",
+          "parentStart": 4406.377,
+          "parentEnd": 4409.029,
+          "parentCueText": "Y ahora, ¿cómo llegaste ahora a los 1500?"
+        },
+        {
+          "id": "P20_NO_CAPITAL",
+          "speaker": "AMANDA",
+          "desiredText": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.",
+          "cueIds": [
+            813
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "Cue completo.",
+          "parentStartTc": "01:16:46.609",
+          "parentEndTc": "01:16:50.670",
+          "parentStart": 4606.609,
+          "parentEnd": 4610.67,
+          "parentCueText": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado."
+        },
+        {
+          "id": "P21_PURPOSE",
+          "speaker": "AMANDA",
+          "desiredText": "Es un negocio, pero tiene un propósito.",
+          "cueIds": [
+            552
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "Cue completo.",
+          "parentStartTc": "00:51:42.888",
+          "parentEndTc": "00:51:45.219",
+          "parentStart": 3102.888,
+          "parentEnd": 3105.219,
+          "parentCueText": "Es un negocio, pero tiene un propósito."
+        },
+        {
+          "id": "P22_JOC_BUSINESS_MODEL",
+          "speaker": "JOC",
+          "desiredText": "¿Cómo funciona el modelo de negocio?",
+          "cueIds": [
+            642
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "Cue completo.",
+          "parentStartTc": "01:00:17.314",
+          "parentEndTc": "01:00:19.176",
+          "parentStart": 3617.314,
+          "parentEnd": 3619.176,
+          "parentCueText": "¿Cómo funciona el modelo de negocio?"
+        },
+        {
+          "id": "P23_WHAT_MATTERS",
+          "speaker": "AMANDA",
+          "desiredText": "nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es…",
+          "sourceLiteral": "Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.",
+          "cueIds": [
+            801
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "Y nos dimos cuenta",
+          "endAnchor": "cliente es",
+          "note": "Open loop: cortar después de «es», antes de revelar la respuesta.",
+          "parentStartTc": "01:15:35.177",
+          "parentEndTc": "01:15:43.440",
+          "parentStart": 4535.177,
+          "parentEnd": 4543.44,
+          "parentCueText": "Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz."
+        },
+        {
+          "id": "P24_WAY_OUT",
+          "speaker": "AMANDA",
+          "desiredText": "The only way out is through.",
+          "cueIds": [
+            632
+          ],
+          "status": "cue_verified",
+          "microtrim": false,
+          "note": "Usar primera ocurrencia, seguida por la frase completa de Amanda.",
+          "parentStartTc": "00:59:40.299",
+          "parentEndTc": "00:59:41.931",
+          "parentStart": 3580.299,
+          "parentEnd": 3581.931,
+          "parentCueText": "The only way out is through."
+        },
+        {
+          "id": "P25_DO_IT",
+          "speaker": "AMANDA",
+          "desiredText": "No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.",
+          "cueIds": [
+            633,
+            634
+          ],
+          "status": "cue_based",
+          "microtrim": true,
+          "startAnchor": "no hay nadie que haga las cosas por ti",
+          "endAnchor": "Tú lo tienes que hacer",
+          "note": "El cue 633 también contiene «No hay atajos, no hay nadie que estudie por ti»; el plan final pide omitir ese tramo.",
+          "parentStartTc": "00:59:41.931",
+          "parentEndTc": "00:59:48.136",
+          "parentStart": 3581.931,
+          "parentEnd": 3588.136,
+          "parentCueText": "No hay atajos, no hay nadie que estudie por ti, no hay nadie que haga las cosas por ti. Tú lo tienes que hacer."
+        }
+      ],
+      "sourceRanges": [],
+      "parts": [
+        {
+          "partId": "P01",
+          "order": 1,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda…",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P01_SHARE_INFO",
+          "editStart": 0.8,
+          "editEnd": 9.857,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P02",
+          "order": 2,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Pero es todo lo contrario.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P02_CONTRARY",
+          "editStart": 10.107,
+          "editEnd": 11.993,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P03",
+          "order": 3,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "La mayoría de la información que nosotros damos es completamente gratuita.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P03_MAJORITY_FREE",
+          "editStart": 11.993,
+          "editEnd": 16.144,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "VO01",
+          "order": 4,
+          "role": "VOICEOVER",
+          "kind": "voiceover",
+          "text": "¿Cómo pasó de buscar orientación para continuar su carrera a ayudar, junto a su equipo, a más de mil quinientos odontólogos?",
+          "speaker": "NARRADOR",
+          "function": "Narrator editorial bridge.",
+          "sourceRangeId": null,
+          "placement": {
+            "after": "P03_MAJORITY_FREE",
+            "before": "P04_FATHER_IDOL"
+          },
+          "editStart": 16.144,
+          "editEnd": 24.144,
+          "timingStatus": "editorial_planned"
+        },
+        {
+          "partId": "P04",
+          "order": 5,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Mi papá para mí era mi ídolo profesional.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P04_FATHER_IDOL",
+          "editStart": 24.144,
+          "editEnd": 27.163,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P05",
+          "order": 6,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P05_FATHER_DIES",
+          "editStart": 27.163,
+          "editEnd": 32.145,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P06",
+          "order": 7,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P06_HOLE",
+          "editStart": 33.145,
+          "editEnd": 39.938,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P07",
+          "order": 8,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Y decidí básicamente irme a Estados Unidos.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P07_USA",
+          "editStart": 39.938,
+          "editEnd": 42.278,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P08",
+          "order": 9,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Pero cuando empiezo a averiguar toda la información del tema de la reválida…",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P08_REVALIDA",
+          "editStart": 42.278,
+          "editEnd": 47.183,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P09",
+          "order": 10,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Había gente que no te quería compartir información",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P09_NO_SHARE",
+          "editStart": 47.183,
+          "editEnd": 50.202,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P10",
+          "order": 11,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P10_FEAR_IMPOSSIBLE",
+          "editStart": 50.202,
+          "editEnd": 55.863,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P11",
+          "order": 12,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "me sobresaturé completamente.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P11_OVERSATURATED",
+          "editStart": 55.863,
+          "editEnd": 57.063,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "VO02",
+          "order": 13,
+          "role": "VOICEOVER",
+          "kind": "voiceover",
+          "text": "¿Cómo terminó convirtiendo esa misma dificultad en una oportunidad que no había imaginado?",
+          "speaker": "NARRADOR",
+          "function": "Narrator editorial bridge.",
+          "sourceRangeId": null,
+          "placement": {
+            "after": "P11_OVERSATURATED",
+            "before": "P12_DIFFICULTIES"
+          },
+          "editStart": 57.663,
+          "editEnd": 63.663,
+          "timingStatus": "editorial_planned"
+        },
+        {
+          "partId": "P12",
+          "order": 14,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Las dificultades por las que pasas en la vida tienes dos opciones como todo.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P12_DIFFICULTIES",
+          "editStart": 63.663,
+          "editEnd": 68.946,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P13",
+          "order": 15,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P13_OPPORTUNITY_OR_STUCK",
+          "editStart": 68.946,
+          "editEnd": 74.229,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P14",
+          "order": 16,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso, pero tenían el mismo sentimiento que yo tuve.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P14_FOLLOWERS",
+          "editStart": 74.229,
+          "editEnd": 82.53,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P15",
+          "order": 17,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Entonces dije, aquí hay una oportunidad de mercado interesante.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P15_MARKET_OPPORTUNITY",
+          "editStart": 82.53,
+          "editEnd": 86.211,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P16",
+          "order": 18,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "No sé todavía cómo lo voy a monetizar…",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P16_MONETIZE",
+          "editStart": 86.211,
+          "editEnd": 89.23,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P17",
+          "order": 19,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P17_CAN_DO_IT",
+          "editStart": 89.23,
+          "editEnd": 92.422,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P18",
+          "order": 20,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "¿Por qué no lo empiezo a compartir?",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P18_SHARE_IT",
+          "editStart": 92.422,
+          "editEnd": 95.064,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P19",
+          "order": 21,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Y ahora, ¿cómo llegaste ahora a los 1500?",
+          "speaker": "JOC",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P19_JOC_1500",
+          "editStart": 95.064,
+          "editEnd": 97.716,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P20",
+          "order": 22,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P20_NO_CAPITAL",
+          "editStart": 97.916,
+          "editEnd": 101.977,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P21",
+          "order": 23,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Es un negocio, pero tiene un propósito.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P21_PURPOSE",
+          "editStart": 101.977,
+          "editEnd": 104.308,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P22",
+          "order": 24,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "¿Cómo funciona el modelo de negocio?",
+          "speaker": "JOC",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P22_JOC_BUSINESS_MODEL",
+          "editStart": 104.558,
+          "editEnd": 106.42,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P23",
+          "order": 25,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P23_WHAT_MATTERS",
+          "editStart": 106.42,
+          "editEnd": 113.212,
+          "timingStatus": "cue_based"
+        },
+        {
+          "partId": "P24",
+          "order": 26,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "The only way out is through.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P24_WAY_OUT",
+          "editStart": 117.212,
+          "editEnd": 118.844,
+          "timingStatus": "cue_verified"
+        },
+        {
+          "partId": "P25",
+          "order": 27,
+          "role": "SOURCE",
+          "kind": "source",
+          "text": "No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.",
+          "speaker": "AMANDA",
+          "function": "Source speech in approved editorial sequence.",
+          "sourceAlignmentId": "P25_DO_IT",
+          "editStart": 118.844,
+          "editEnd": 124.127,
+          "timingStatus": "cue_based"
+        }
+      ],
+      "storyScripts": {
+        "final": [
+          {
+            "id": "P01_STORY_FINAL",
+            "partId": "P01",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda…",
+            "start": 0.8,
+            "end": 9.857,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P02_STORY_FINAL",
+            "partId": "P02",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Pero es todo lo contrario.",
+            "start": 10.107,
+            "end": 11.993,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P03_STORY_FINAL",
+            "partId": "P03",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "La mayoría de la información que nosotros damos es completamente gratuita.",
+            "start": 11.993,
+            "end": 16.144,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "VO01_STORY_FINAL",
+            "partId": "VO01",
+            "role": "VOICEOVER",
+            "kind": "voiceover",
+            "speaker": "NARRADOR",
+            "text": "¿Cómo pasó de buscar orientación para continuar su carrera a ayudar, junto a su equipo, a más de mil quinientos odontólogos?",
+            "start": 16.144,
+            "end": 24.144,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P04_STORY_FINAL",
+            "partId": "P04",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Mi papá para mí era mi ídolo profesional.",
+            "start": 24.144,
+            "end": 27.163,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P05_STORY_FINAL",
+            "partId": "P05",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.",
+            "start": 27.163,
+            "end": 32.145,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P06_STORY_FINAL",
+            "partId": "P06",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer.",
+            "start": 33.145,
+            "end": 39.938,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P07_STORY_FINAL",
+            "partId": "P07",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Y decidí básicamente irme a Estados Unidos.",
+            "start": 39.938,
+            "end": 42.278,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P08_STORY_FINAL",
+            "partId": "P08",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Pero cuando empiezo a averiguar toda la información del tema de la reválida…",
+            "start": 42.278,
+            "end": 47.183,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P09_STORY_FINAL",
+            "partId": "P09",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Había gente que no te quería compartir información",
+            "start": 47.183,
+            "end": 50.202,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P10_STORY_FINAL",
+            "partId": "P10",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer",
+            "start": 50.202,
+            "end": 55.863,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P11_STORY_FINAL",
+            "partId": "P11",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "me sobresaturé completamente.",
+            "start": 55.863,
+            "end": 57.063,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "VO02_STORY_FINAL",
+            "partId": "VO02",
+            "role": "VOICEOVER",
+            "kind": "voiceover",
+            "speaker": "NARRADOR",
+            "text": "¿Cómo terminó convirtiendo esa misma dificultad en una oportunidad que no había imaginado?",
+            "start": 57.663,
+            "end": 63.663,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P12_STORY_FINAL",
+            "partId": "P12",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Las dificultades por las que pasas en la vida tienes dos opciones como todo.",
+            "start": 63.663,
+            "end": 68.946,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P13_STORY_FINAL",
+            "partId": "P13",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado",
+            "start": 68.946,
+            "end": 74.229,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P14_STORY_FINAL",
+            "partId": "P14",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso, pero tenían el mismo sentimiento que yo tuve.",
+            "start": 74.229,
+            "end": 82.53,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P15_STORY_FINAL",
+            "partId": "P15",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Entonces dije, aquí hay una oportunidad de mercado interesante.",
+            "start": 82.53,
+            "end": 86.211,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P16_STORY_FINAL",
+            "partId": "P16",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "No sé todavía cómo lo voy a monetizar…",
+            "start": 86.211,
+            "end": 89.23,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P17_STORY_FINAL",
+            "partId": "P17",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?",
+            "start": 89.23,
+            "end": 92.422,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P18_STORY_FINAL",
+            "partId": "P18",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "¿Por qué no lo empiezo a compartir?",
+            "start": 92.422,
+            "end": 95.064,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P19_STORY_FINAL",
+            "partId": "P19",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "JOC",
+            "text": "Y ahora, ¿cómo llegaste ahora a los 1500?",
+            "start": 95.064,
+            "end": 97.716,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P20_STORY_FINAL",
+            "partId": "P20",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.",
+            "start": 97.916,
+            "end": 101.977,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P21_STORY_FINAL",
+            "partId": "P21",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Es un negocio, pero tiene un propósito.",
+            "start": 101.977,
+            "end": 104.308,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P22_STORY_FINAL",
+            "partId": "P22",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "JOC",
+            "text": "¿Cómo funciona el modelo de negocio?",
+            "start": 104.558,
+            "end": 106.42,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P23_STORY_FINAL",
+            "partId": "P23",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.",
+            "start": 106.42,
+            "end": 113.212,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P24_STORY_FINAL",
+            "partId": "P24",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "The only way out is through.",
+            "start": 117.212,
+            "end": 118.844,
+            "routes": [
+              "final"
+            ]
+          },
+          {
+            "id": "P25_STORY_FINAL",
+            "partId": "P25",
+            "role": "SOURCE",
+            "kind": "source",
+            "speaker": "AMANDA",
+            "text": "No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.",
+            "start": 118.844,
+            "end": 124.127,
+            "routes": [
+              "final"
+            ]
+          }
+        ]
+      },
+      "timeline": [
+        {
+          "id": "P01_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P01",
+          "start": 0.8,
+          "end": 9.857,
+          "routes": [
+            "final"
+          ],
+          "partId": "P01",
+          "text": "Las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda…",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P01_SHARE_INFO",
+          "sourceCandidate": {
+            "start": 4220.687,
+            "end": 4236.731,
+            "startTc": "01:10:20.687",
+            "endTc": "01:10:36.731",
+            "cueIds": [
+              739,
+              740
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P01_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P01",
+          "routes": [
+            "final"
+          ],
+          "start": 0.8,
+          "end": 5.328,
+          "sourceText": "Las personas piensan que por compartir la información estás dando la información",
+          "wordCount": 12,
+          "highlightWord": "información",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 0.8,
+              "end": 5.328,
+              "text": "Las personas piensan que por compartir la información estás dando la información",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P01_CAP_CAP",
+          "captionIndex": 1,
+          "captionCount": 2
+        },
+        {
+          "id": "P01_CAP_G02",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P01",
+          "routes": [
+            "final"
+          ],
+          "start": 5.328,
+          "end": 9.857,
+          "sourceText": "gratuita y la persona ya no va a necesitar de tu ayuda…",
+          "wordCount": 12,
+          "highlightWord": "información",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 5.328,
+              "end": 9.857,
+              "text": "gratuita y la persona ya no va a necesitar de tu ayuda…",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P01_CAP_CAP",
+          "captionIndex": 2,
+          "captionCount": 2
+        },
+        {
+          "id": "P02_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P02",
+          "start": 10.107,
+          "end": 11.993,
+          "routes": [
+            "final"
+          ],
+          "partId": "P02",
+          "text": "Pero es todo lo contrario.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P02_CONTRARY",
+          "sourceCandidate": {
+            "start": 4231.78,
+            "end": 4236.731,
+            "startTc": "01:10:31.780",
+            "endTc": "01:10:36.731",
+            "cueIds": [
+              740
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P02_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P02",
+          "routes": [
+            "final"
+          ],
+          "start": 10.107,
+          "end": 11.993,
+          "sourceText": "Pero es todo lo contrario.",
+          "wordCount": 5,
+          "highlightWord": "contrario",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 10.107,
+              "end": 11.993,
+              "text": "Pero es todo lo contrario.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "shortSourceException": true,
+          "shortSourceReason": "Complete source part is shorter than R6 soft range; do not pad or cross partId."
+        },
+        {
+          "id": "P03_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P03",
+          "start": 11.993,
+          "end": 16.144,
+          "routes": [
+            "final"
+          ],
+          "partId": "P03",
+          "text": "La mayoría de la información que nosotros damos es completamente gratuita.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P03_MAJORITY_FREE",
+          "sourceCandidate": {
+            "start": 2827.405,
+            "end": 2834.098,
+            "startTc": "00:47:07.405",
+            "endTc": "00:47:14.098",
+            "cueIds": [
+              506
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P03_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P03",
+          "routes": [
+            "final"
+          ],
+          "start": 11.993,
+          "end": 16.144,
+          "sourceText": "La mayoría de la información que nosotros damos es completamente gratuita.",
+          "wordCount": 11,
+          "highlightWord": "completamente",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 11.993,
+              "end": 16.144,
+              "text": "La mayoría de la información que nosotros damos es completamente gratuita.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "VO01_VO",
+          "track": "vo",
+          "type": "vo",
+          "label": "NARRADOR · VO01",
+          "start": 16.144,
+          "end": 24.144,
+          "routes": [
+            "final"
+          ],
+          "partId": "VO01",
+          "text": "¿Cómo pasó de buscar orientación para continuar su carrera a ayudar, junto a su equipo, a más de mil quinientos odontólogos?",
+          "timingMode": "stretchable",
+          "timingStatus": "editorial_planned",
+          "voiceoverAssetId": "VO01_AUDIO",
+          "recordingStatus": "pending"
+        },
+        {
+          "id": "VO01_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "VO01",
+          "routes": [
+            "final"
+          ],
+          "start": 16.144,
+          "end": 20.334,
+          "sourceText": "¿Cómo pasó de buscar orientación para continuar su carrera a ayudar,",
+          "wordCount": 11,
+          "highlightWord": "orientación",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 16.144,
+              "end": 20.334,
+              "text": "¿Cómo pasó de buscar orientación para continuar su carrera a ayudar,",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "VO01_CAP_CAP",
+          "captionIndex": 1,
+          "captionCount": 2
+        },
+        {
+          "id": "VO01_CAP_G02",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "VO01",
+          "routes": [
+            "final"
+          ],
+          "start": 20.334,
+          "end": 24.144,
+          "sourceText": "junto a su equipo, a más de mil quinientos odontólogos?",
+          "wordCount": 10,
+          "highlightWord": "orientación",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 20.334,
+              "end": 24.144,
+              "text": "junto a su equipo, a más de mil quinientos odontólogos?",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "VO01_CAP_CAP",
+          "captionIndex": 2,
+          "captionCount": 2
+        },
+        {
+          "id": "P04_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P04",
+          "start": 24.144,
+          "end": 27.163,
+          "routes": [
+            "final"
+          ],
+          "partId": "P04",
+          "text": "Mi papá para mí era mi ídolo profesional.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P04_FATHER_IDOL",
+          "sourceCandidate": {
+            "start": 958.835,
+            "end": 967.122,
+            "startTc": "00:15:58.835",
+            "endTc": "00:16:07.122",
+            "cueIds": [
+              180
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P04_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P04",
+          "routes": [
+            "final"
+          ],
+          "start": 24.144,
+          "end": 27.163,
+          "sourceText": "Mi papá para mí era mi ídolo profesional.",
+          "wordCount": 8,
+          "highlightWord": "profesional",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 24.144,
+              "end": 27.163,
+              "text": "Mi papá para mí era mi ídolo profesional.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P05_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P05",
+          "start": 27.163,
+          "end": 32.145,
+          "routes": [
+            "final"
+          ],
+          "partId": "P05",
+          "text": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P05_FATHER_DIES",
+          "sourceCandidate": {
+            "start": 2233.918,
+            "end": 2238.9,
+            "startTc": "00:37:13.918",
+            "endTc": "00:37:18.900",
+            "cueIds": [
+              413
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P05_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P05",
+          "routes": [
+            "final"
+          ],
+          "start": 27.163,
+          "end": 32.145,
+          "sourceText": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.",
+          "wordCount": 14,
+          "highlightWord": "universidad",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 27.163,
+              "end": 32.145,
+              "text": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P06_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P06",
+          "start": 33.145,
+          "end": 39.938,
+          "routes": [
+            "final"
+          ],
+          "partId": "P06",
+          "text": "Y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P06_HOLE",
+          "sourceCandidate": {
+            "start": 2241.691,
+            "end": 2249.384,
+            "startTc": "00:37:21.691",
+            "endTc": "00:37:29.384",
+            "cueIds": [
+              415
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P06_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P06",
+          "routes": [
+            "final"
+          ],
+          "start": 33.145,
+          "end": 36.541,
+          "sourceText": "Y eso me hizo entrar como en un hueco",
+          "wordCount": 9,
+          "highlightWord": "entrar",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 33.145,
+              "end": 36.541,
+              "text": "Y eso me hizo entrar como en un hueco",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P06_CAP_CAP",
+          "captionIndex": 1,
+          "captionCount": 2
+        },
+        {
+          "id": "P06_CAP_G02",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P06",
+          "routes": [
+            "final"
+          ],
+          "start": 36.541,
+          "end": 39.938,
+          "sourceText": "que yo decía ahora yo no sé qué hacer.",
+          "wordCount": 9,
+          "highlightWord": "entrar",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 36.541,
+              "end": 39.938,
+              "text": "que yo decía ahora yo no sé qué hacer.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P06_CAP_CAP",
+          "captionIndex": 2,
+          "captionCount": 2
+        },
+        {
+          "id": "P07_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P07",
+          "start": 39.938,
+          "end": 42.278,
+          "routes": [
+            "final"
+          ],
+          "partId": "P07",
+          "text": "Y decidí básicamente irme a Estados Unidos.",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P07_USA",
+          "sourceCandidate": {
+            "start": 2274.289,
+            "end": 2276.629,
+            "startTc": "00:37:54.289",
+            "endTc": "00:37:56.629",
+            "cueIds": [
+              421
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P07_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P07",
+          "routes": [
+            "final"
+          ],
+          "start": 39.938,
+          "end": 42.278,
+          "sourceText": "Y decidí básicamente irme a Estados Unidos.",
+          "wordCount": 7,
+          "highlightWord": "básicamente",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 39.938,
+              "end": 42.278,
+              "text": "Y decidí básicamente irme a Estados Unidos.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P08_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P08",
+          "start": 42.278,
+          "end": 47.183,
+          "routes": [
+            "final"
+          ],
+          "partId": "P08",
+          "text": "Pero cuando empiezo a averiguar toda la información del tema de la reválida…",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P08_REVALIDA",
+          "sourceCandidate": {
+            "start": 2276.629,
+            "end": 2284.889,
+            "startTc": "00:37:56.629",
+            "endTc": "00:38:04.889",
+            "cueIds": [
+              422
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P08_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P08",
+          "routes": [
+            "final"
+          ],
+          "start": 42.278,
+          "end": 47.183,
+          "sourceText": "Pero cuando empiezo a averiguar toda la información del tema de la reválida…",
+          "wordCount": 13,
+          "highlightWord": "información",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 42.278,
+              "end": 47.183,
+              "text": "Pero cuando empiezo a averiguar toda la información del tema de la reválida…",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P09_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P09",
+          "start": 47.183,
+          "end": 50.202,
+          "routes": [
+            "final"
+          ],
+          "partId": "P09",
+          "text": "Había gente que no te quería compartir información",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P09_NO_SHARE",
+          "sourceCandidate": {
+            "start": 2284.889,
+            "end": 2288.634,
+            "startTc": "00:38:04.889",
+            "endTc": "00:38:08.634",
+            "cueIds": [
+              423
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P09_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P09",
+          "routes": [
+            "final"
+          ],
+          "start": 47.183,
+          "end": 50.202,
+          "sourceText": "Había gente que no te quería compartir información",
+          "wordCount": 8,
+          "highlightWord": "información",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 47.183,
+              "end": 50.202,
+              "text": "Había gente que no te quería compartir información",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P10_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P10",
+          "start": 50.202,
+          "end": 55.863,
+          "routes": [
+            "final"
+          ],
+          "partId": "P10",
+          "text": "querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P10_FEAR_IMPOSSIBLE",
+          "sourceCandidate": {
+            "start": 2288.634,
+            "end": 2298.03,
+            "startTc": "00:38:08.634",
+            "endTc": "00:38:18.030",
+            "cueIds": [
+              424
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P10_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P10",
+          "routes": [
+            "final"
+          ],
+          "start": 50.202,
+          "end": 55.863,
+          "sourceText": "querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer",
+          "wordCount": 15,
+          "highlightWord": "imposible",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 50.202,
+              "end": 55.863,
+              "text": "querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P11_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P11",
+          "start": 55.863,
+          "end": 57.063,
+          "routes": [
+            "final"
+          ],
+          "partId": "P11",
+          "text": "me sobresaturé completamente.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P11_OVERSATURATED",
+          "sourceCandidate": {
+            "start": 2288.634,
+            "end": 2298.03,
+            "startTc": "00:38:08.634",
+            "endTc": "00:38:18.030",
+            "cueIds": [
+              424
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P11_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P11",
+          "routes": [
+            "final"
+          ],
+          "start": 55.863,
+          "end": 57.063,
+          "sourceText": "me sobresaturé completamente.",
+          "wordCount": 3,
+          "highlightWord": "completamente",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 55.863,
+              "end": 57.063,
+              "text": "me sobresaturé completamente.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "shortSourceException": true,
+          "shortSourceReason": "Complete source part is shorter than R6 soft range; do not pad or cross partId."
+        },
+        {
+          "id": "VO02_VO",
+          "track": "vo",
+          "type": "vo",
+          "label": "NARRADOR · VO02",
+          "start": 57.663,
+          "end": 63.663,
+          "routes": [
+            "final"
+          ],
+          "partId": "VO02",
+          "text": "¿Cómo terminó convirtiendo esa misma dificultad en una oportunidad que no había imaginado?",
+          "timingMode": "stretchable",
+          "timingStatus": "editorial_planned",
+          "voiceoverAssetId": "VO02_AUDIO",
+          "recordingStatus": "pending"
+        },
+        {
+          "id": "VO02_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "VO02",
+          "routes": [
+            "final"
+          ],
+          "start": 57.663,
+          "end": 63.663,
+          "sourceText": "¿Cómo terminó convirtiendo esa misma dificultad en una oportunidad que no había imaginado?",
+          "wordCount": 13,
+          "highlightWord": "convirtiendo",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 57.663,
+              "end": 63.663,
+              "text": "¿Cómo terminó convirtiendo esa misma dificultad en una oportunidad que no había imaginado?",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P12_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P12",
+          "start": 63.663,
+          "end": 68.946,
+          "routes": [
+            "final"
+          ],
+          "partId": "P12",
+          "text": "Las dificultades por las que pasas en la vida tienes dos opciones como todo.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P12_DIFFICULTIES",
+          "sourceCandidate": {
+            "start": 5054.425,
+            "end": 5073.395,
+            "startTc": "01:24:14.425",
+            "endTc": "01:24:33.395",
+            "cueIds": [
+              890,
+              891
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P12_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P12",
+          "routes": [
+            "final"
+          ],
+          "start": 63.663,
+          "end": 68.946,
+          "sourceText": "Las dificultades por las que pasas en la vida tienes dos opciones como todo.",
+          "wordCount": 14,
+          "highlightWord": "dificultades",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "hidden",
+          "suppressedBy": "INTRO_AMANDA_XR04",
+          "displayCues": [
+            {
+              "start": 63.663,
+              "end": 68.946,
+              "text": "Las dificultades por las que pasas en la vida tienes dos opciones como todo.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P13_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P13",
+          "start": 68.946,
+          "end": 74.229,
+          "routes": [
+            "final"
+          ],
+          "partId": "P13",
+          "text": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P13_OPPORTUNITY_OR_STUCK",
+          "sourceCandidate": {
+            "start": 5073.395,
+            "end": 5089.946,
+            "startTc": "01:24:33.395",
+            "endTc": "01:24:49.946",
+            "cueIds": [
+              892,
+              893
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P13_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P13",
+          "routes": [
+            "final"
+          ],
+          "start": 68.946,
+          "end": 74.229,
+          "sourceText": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado",
+          "wordCount": 14,
+          "highlightWord": "oportunidad",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "hidden",
+          "suppressedBy": "INTRO_AMANDA_XR04",
+          "displayCues": [
+            {
+              "start": 68.946,
+              "end": 74.229,
+              "text": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P14_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P14",
+          "start": 74.229,
+          "end": 82.53,
+          "routes": [
+            "final"
+          ],
+          "partId": "P14",
+          "text": "había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso, pero tenían el mismo sentimiento que yo tuve.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P14_FOLLOWERS",
+          "sourceCandidate": {
+            "start": 2353.372,
+            "end": 2362.28,
+            "startTc": "00:39:13.372",
+            "endTc": "00:39:22.280",
+            "cueIds": [
+              433
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P14_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P14",
+          "routes": [
+            "final"
+          ],
+          "start": 74.229,
+          "end": 78.38,
+          "sourceText": "había muchísimas personas que me seguían que estaban interesadas en hacer",
+          "wordCount": 11,
+          "highlightWord": "interesadas",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 74.229,
+              "end": 78.38,
+              "text": "había muchísimas personas que me seguían que estaban interesadas en hacer",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P14_CAP_CAP",
+          "captionIndex": 1,
+          "captionCount": 2
+        },
+        {
+          "id": "P14_CAP_G02",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P14",
+          "routes": [
+            "final"
+          ],
+          "start": 78.38,
+          "end": 82.53,
+          "sourceText": "el mismo proceso, pero tenían el mismo sentimiento que yo tuve.",
+          "wordCount": 11,
+          "highlightWord": "interesadas",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 78.38,
+              "end": 82.53,
+              "text": "el mismo proceso, pero tenían el mismo sentimiento que yo tuve.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P14_CAP_CAP",
+          "captionIndex": 2,
+          "captionCount": 2
+        },
+        {
+          "id": "P15_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P15",
+          "start": 82.53,
+          "end": 86.211,
+          "routes": [
+            "final"
+          ],
+          "partId": "P15",
+          "text": "Entonces dije, aquí hay una oportunidad de mercado interesante.",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P15_MARKET_OPPORTUNITY",
+          "sourceCandidate": {
+            "start": 2374.995,
+            "end": 2378.676,
+            "startTc": "00:39:34.995",
+            "endTc": "00:39:38.676",
+            "cueIds": [
+              436
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P15_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P15",
+          "routes": [
+            "final"
+          ],
+          "start": 82.53,
+          "end": 86.211,
+          "sourceText": "Entonces dije, aquí hay una oportunidad de mercado interesante.",
+          "wordCount": 9,
+          "highlightWord": "oportunidad",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 82.53,
+              "end": 86.211,
+              "text": "Entonces dije, aquí hay una oportunidad de mercado interesante.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P16_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P16",
+          "start": 86.211,
+          "end": 89.23,
+          "routes": [
+            "final"
+          ],
+          "partId": "P16",
+          "text": "No sé todavía cómo lo voy a monetizar…",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P16_MONETIZE",
+          "sourceCandidate": {
+            "start": 2378.977,
+            "end": 2385.72,
+            "startTc": "00:39:38.977",
+            "endTc": "00:39:45.720",
+            "cueIds": [
+              437
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P16_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P16",
+          "routes": [
+            "final"
+          ],
+          "start": 86.211,
+          "end": 89.23,
+          "sourceText": "No sé todavía cómo lo voy a monetizar…",
+          "wordCount": 8,
+          "highlightWord": "monetizar",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 86.211,
+              "end": 89.23,
+              "text": "No sé todavía cómo lo voy a monetizar…",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P17_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P17",
+          "start": 89.23,
+          "end": 92.422,
+          "routes": [
+            "final"
+          ],
+          "partId": "P17",
+          "text": "¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P17_CAN_DO_IT",
+          "sourceCandidate": {
+            "start": 2314.562,
+            "end": 2317.754,
+            "startTc": "00:38:34.562",
+            "endTc": "00:38:37.754",
+            "cueIds": [
+              427
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P17_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P17",
+          "routes": [
+            "final"
+          ],
+          "start": 89.23,
+          "end": 90.826,
+          "sourceText": "¿Por qué yo me estoy diciendo que yo no",
+          "wordCount": 9,
+          "highlightWord": "diciendo",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 89.23,
+              "end": 90.826,
+              "text": "¿Por qué yo me estoy diciendo que yo no",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source",
+          "captionGroupId": "P17_CAP_CAP",
+          "captionIndex": 1,
+          "captionCount": 2
+        },
+        {
+          "id": "P17_CAP_G02",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P17",
+          "routes": [
+            "final"
+          ],
+          "start": 90.826,
+          "end": 92.422,
+          "sourceText": "puedo lograr esto si sí yo lo puedo lograr?",
+          "wordCount": 9,
+          "highlightWord": "diciendo",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 90.826,
+              "end": 92.422,
+              "text": "puedo lograr esto si sí yo lo puedo lograr?",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source",
+          "captionGroupId": "P17_CAP_CAP",
+          "captionIndex": 2,
+          "captionCount": 2
+        },
+        {
+          "id": "P18_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P18",
+          "start": 92.422,
+          "end": 95.064,
+          "routes": [
+            "final"
+          ],
+          "partId": "P18",
+          "text": "¿Por qué no lo empiezo a compartir?",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P18_SHARE_IT",
+          "sourceCandidate": {
+            "start": 2330.474,
+            "end": 2338.84,
+            "startTc": "00:38:50.474",
+            "endTc": "00:38:58.840",
+            "cueIds": [
+              430
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P18_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P18",
+          "routes": [
+            "final"
+          ],
+          "start": 92.422,
+          "end": 95.064,
+          "sourceText": "¿Por qué no lo empiezo a compartir?",
+          "wordCount": 7,
+          "highlightWord": "compartir",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 92.422,
+              "end": 95.064,
+              "text": "¿Por qué no lo empiezo a compartir?",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "P19_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "JOC · P19",
+          "start": 95.064,
+          "end": 97.716,
+          "routes": [
+            "final"
+          ],
+          "partId": "P19",
+          "text": "Y ahora, ¿cómo llegaste ahora a los 1500?",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P19_JOC_1500",
+          "sourceCandidate": {
+            "start": 4406.377,
+            "end": 4409.029,
+            "startTc": "01:13:26.377",
+            "endTc": "01:13:29.029",
+            "cueIds": [
+              781
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P19_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P19",
+          "routes": [
+            "final"
+          ],
+          "start": 95.064,
+          "end": 97.716,
+          "sourceText": "Y ahora, ¿cómo llegaste ahora a los 1500?",
+          "wordCount": 8,
+          "highlightWord": "llegaste",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 95.064,
+              "end": 97.716,
+              "text": "Y ahora, ¿cómo llegaste ahora a los 1500?",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P20_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P20",
+          "start": 97.916,
+          "end": 101.977,
+          "routes": [
+            "final"
+          ],
+          "partId": "P20",
+          "text": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P20_NO_CAPITAL",
+          "sourceCandidate": {
+            "start": 4606.609,
+            "end": 4610.67,
+            "startTc": "01:16:46.609",
+            "endTc": "01:16:50.670",
+            "cueIds": [
+              813
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P20_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P20",
+          "routes": [
+            "final"
+          ],
+          "start": 97.916,
+          "end": 101.977,
+          "sourceText": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.",
+          "wordCount": 14,
+          "highlightWord": "levantamiento",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 97.916,
+              "end": 101.977,
+              "text": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P21_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P21",
+          "start": 101.977,
+          "end": 104.308,
+          "routes": [
+            "final"
+          ],
+          "partId": "P21",
+          "text": "Es un negocio, pero tiene un propósito.",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P21_PURPOSE",
+          "sourceCandidate": {
+            "start": 3102.888,
+            "end": 3105.219,
+            "startTc": "00:51:42.888",
+            "endTc": "00:51:45.219",
+            "cueIds": [
+              552
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P21_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P21",
+          "routes": [
+            "final"
+          ],
+          "start": 101.977,
+          "end": 104.308,
+          "sourceText": "Es un negocio, pero tiene un propósito.",
+          "wordCount": 7,
+          "highlightWord": "propósito",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 101.977,
+              "end": 104.308,
+              "text": "Es un negocio, pero tiene un propósito.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P22_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "JOC · P22",
+          "start": 104.558,
+          "end": 106.42,
+          "routes": [
+            "final"
+          ],
+          "partId": "P22",
+          "text": "¿Cómo funciona el modelo de negocio?",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P22_JOC_BUSINESS_MODEL",
+          "sourceCandidate": {
+            "start": 3617.314,
+            "end": 3619.176,
+            "startTc": "01:00:17.314",
+            "endTc": "01:00:19.176",
+            "cueIds": [
+              642
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P22_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P22",
+          "routes": [
+            "final"
+          ],
+          "start": 104.558,
+          "end": 106.42,
+          "sourceText": "¿Cómo funciona el modelo de negocio?",
+          "wordCount": 6,
+          "highlightWord": "funciona",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 104.558,
+              "end": 106.42,
+              "text": "¿Cómo funciona el modelo de negocio?",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P23_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P23",
+          "start": 106.42,
+          "end": 113.212,
+          "routes": [
+            "final"
+          ],
+          "partId": "P23",
+          "text": "Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P23_WHAT_MATTERS",
+          "sourceCandidate": {
+            "start": 4535.177,
+            "end": 4543.44,
+            "startTc": "01:15:35.177",
+            "endTc": "01:15:43.440",
+            "cueIds": [
+              801
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P23_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P23",
+          "routes": [
+            "final"
+          ],
+          "start": 106.42,
+          "end": 109.816,
+          "sourceText": "Y nos dimos cuenta que realmente lo que más le importa a la persona o",
+          "wordCount": 15,
+          "highlightWord": "interactivo",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 106.42,
+              "end": 109.816,
+              "text": "Y nos dimos cuenta que realmente lo que más le importa a la persona o",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P23_CAP_CAP",
+          "captionIndex": 1,
+          "captionCount": 2
+        },
+        {
+          "id": "P23_CAP_G02",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P23",
+          "routes": [
+            "final"
+          ],
+          "start": 109.816,
+          "end": 113.212,
+          "sourceText": "a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.",
+          "wordCount": 15,
+          "highlightWord": "interactivo",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 109.816,
+              "end": 113.212,
+              "text": "a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review",
+          "captionGroupId": "P23_CAP_CAP",
+          "captionIndex": 2,
+          "captionCount": 2
+        },
+        {
+          "id": "P24_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P24",
+          "start": 117.212,
+          "end": 118.844,
+          "routes": [
+            "final"
+          ],
+          "partId": "P24",
+          "text": "The only way out is through.",
+          "timingMode": "locked_to_source",
+          "sourceAlignmentId": "P24_WAY_OUT",
+          "sourceCandidate": {
+            "start": 3580.299,
+            "end": 3581.931,
+            "startTc": "00:59:40.299",
+            "endTc": "00:59:41.931",
+            "cueIds": [
+              632
+            ],
+            "requiresMicrotrim": false
+          }
+        },
+        {
+          "id": "P24_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P24",
+          "routes": [
+            "final"
+          ],
+          "start": 117.212,
+          "end": 118.844,
+          "sourceText": "The only way out is through.",
+          "wordCount": 6,
+          "highlightWord": "through",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 117.212,
+              "end": 118.844,
+              "text": "The only way out is through.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "P25_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "AMANDA · P25",
+          "start": 118.844,
+          "end": 124.127,
+          "routes": [
+            "final"
+          ],
+          "partId": "P25",
+          "text": "No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.",
+          "timingMode": "manual_review",
+          "sourceAlignmentId": "P25_DO_IT",
+          "sourceCandidate": {
+            "start": 3581.931,
+            "end": 3588.136,
+            "startTc": "00:59:41.931",
+            "endTc": "00:59:48.136",
+            "cueIds": [
+              633,
+              634
+            ],
+            "requiresMicrotrim": true
+          }
+        },
+        {
+          "id": "P25_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "P25",
+          "routes": [
+            "final"
+          ],
+          "start": 118.844,
+          "end": 124.127,
+          "sourceText": "No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.",
+          "wordCount": 14,
+          "highlightWord": "tienes",
+          "highlightStatus": "suggested",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 118.844,
+              "end": 124.127,
+              "text": "No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "manual_review"
+        },
+        {
+          "id": "INTRO_AMANDA_XR01",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "TYPO",
+          "label": "TYPO",
+          "start": 0.8,
+          "end": 11.993,
+          "partId": "P01",
+          "function": "Fijar la contradicción del hook sin tapar el valor del rostro.",
+          "anchorText": "compartir información / todo lo contrario",
+          "captionPolicy": "HIDE_OR_MERGE_WITH_TYPO",
+          "states": [
+            {
+              "stateId": "S01",
+              "mode": "normal_phrase",
+              "start": 0.8,
+              "end": 4.4,
+              "text": "COMPARTIR INFORMACIÓN"
+            },
+            {
+              "stateId": "S02",
+              "mode": "hero_phrase",
+              "start": 4.4,
+              "end": 8.0,
+              "text": "TODO LO CONTRARIO"
+            },
+            {
+              "stateId": "S03",
+              "mode": "normal_phrase",
+              "start": 8.0,
+              "end": 11.993,
+              "text": "INFORMACIÓN GRATUITA"
+            }
+          ],
+          "assets": [],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free",
+          "qaStatus": "needs_review"
+        },
+        {
+          "id": "INTRO_AMANDA_XR02",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "OBJECTS",
+          "label": "OBJECTS",
+          "start": 24.144,
+          "end": 33.145,
+          "partId": "P04",
+          "function": "Representar legado y ausencia sin generar identidades falsas.",
+          "anchorText": "Mi papá para mí era mi ídolo profesional / mi papá fallece",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "start": 24.144,
+              "end": 27.0,
+              "assetIds": [
+                "INTRO_AMANDA_XR02_A01"
+              ],
+              "description": "Aparece credencial como ancla de carrera."
+            },
+            {
+              "stateId": "S02",
+              "start": 27.0,
+              "end": 30.0,
+              "assetIds": [
+                "INTRO_AMANDA_XR02_A01",
+                "INTRO_AMANDA_XR02_A02"
+              ],
+              "description": "Se relacionan credencial e instrumental como legado profesional."
+            },
+            {
+              "stateId": "S03",
+              "start": 30.0,
+              "end": 33.145,
+              "assetIds": [
+                "INTRO_AMANDA_XR02_A03"
+              ],
+              "description": "El consultorio vacío reemplaza el inventario y crea ausencia."
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_AMANDA_XR02_A01",
+              "localId": "A01",
+              "assetType": "object",
+              "description": "Diploma o credencial profesional neutra fotografiada sobre superficie oscura, sin inventar nombre ni institución.",
+              "contextAndDetail": "Representa la ruta profesional y el legado sin generar la identidad del padre.",
+              "whatIsVisible": "Diploma/credential física, papel real, sello o borde no legible, luz lateral.",
+              "whyItMatchesSpeech": "VO01 y la frase sobre el ídolo profesional hablan de carrera, guía e identidad profesional.",
+              "prompt": "Premium editorial still life, vertical 9:16, real off-white diploma or professional credential on dark charcoal desk, no readable institution name, no logo, soft motivated side light, 50mm lens, subtle paper texture, negative space for captions, documentary realism, no person, no invented identity, no watermark.",
+              "brollReference": "authorized diploma / dental credential still life",
+              "googleSearchQuery": "dental diploma desk editorial photo close up no logo",
+              "placementRecommendation": "foreground",
+              "placementReason": "Objeto simbólico; evita representar falsamente al padre.",
+              "start": 24.144,
+              "end": 27.0,
+              "durationSeconds": 2.856,
+              "motionIds": [
+                "INTRO_AMANDA_XR02_M01"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "🎓",
+                "📜"
+              ]
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR02_A02",
+              "localId": "A02",
+              "assetType": "object",
+              "description": "Estuche/instrumental odontológico neutro y real como símbolo del oficio y de la continuidad profesional.",
+              "contextAndDetail": "Conecta la carrera de Amanda con el legado profesional sin afirmar una pertenencia específica.",
+              "whatIsVisible": "Instrumento dental cerrado o parcialmente visible, material metálico real, mesa coherente con A01.",
+              "whyItMatchesSpeech": "Refuerza «ídolo profesional» y odontología de manera factual-neutral.",
+              "prompt": "Same locked charcoal desk and side light as A01, realistic dental instrument case or neutral dental mirror/probe arrangement, premium documentary still life, 50mm lens, accurate metal reflections, no blood, no patient, no logos, no readable text, same scale and camera, safe upper area for captions.",
+              "brollReference": "real dental instruments close up editorial",
+              "googleSearchQuery": "dental instruments still life editorial close up",
+              "placementRecommendation": "foreground",
+              "placementReason": "Segundo símbolo concreto del oficio.",
+              "start": 27.0,
+              "end": 30.0,
+              "durationSeconds": 3.0,
+              "motionIds": [
+                "INTRO_AMANDA_XR02_M02"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "🦷",
+                "🪥"
+              ]
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR02_A03",
+              "localId": "A03",
+              "assetType": "object",
+              "description": "Silla de consultorio vacía o espacio clínico vacío, sin personas, para introducir ausencia después de la pérdida.",
+              "contextAndDetail": "La ausencia aparece sin recrear al padre ni dramatizar con una persona generada.",
+              "whatIsVisible": "Silla dental vacía, consultorio ordenado, luz baja pero realista.",
+              "whyItMatchesSpeech": "Conecta la muerte del padre y el hueco emocional sin inventar recuerdos.",
+              "prompt": "Quiet empty dental operatory, one dental chair as focal point, no people, no family photo, no branding, realistic clinic materials, subtle cool ambient light and soft warm edge, 35mm documentary frame, restrained contrast, negative space, respectful tone, no horror, no dramatic fog, no watermark.",
+              "brollReference": "empty dental clinic chair documentary",
+              "googleSearchQuery": "empty dental clinic chair documentary photo",
+              "placementRecommendation": "background",
+              "placementReason": "La ausencia funciona como ambiente, no como objeto flotante.",
+              "start": 30.0,
+              "end": 33.145,
+              "durationSeconds": 3.145,
+              "motionIds": [
+                "INTRO_AMANDA_XR02_M03"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "🪑",
+                "◻️"
+              ]
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free",
+          "qaStatus": "needs_review"
+        },
+        {
+          "id": "INTRO_AMANDA_XR02_A01_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A01",
+          "start": 24.144,
+          "end": 27.0,
+          "partId": "P04",
+          "parentId": "INTRO_AMANDA_XR02",
+          "assetId": "INTRO_AMANDA_XR02_A01",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR02_A01",
+            "localId": "A01",
+            "assetType": "object",
+            "description": "Diploma o credencial profesional neutra fotografiada sobre superficie oscura, sin inventar nombre ni institución.",
+            "contextAndDetail": "Representa la ruta profesional y el legado sin generar la identidad del padre.",
+            "whatIsVisible": "Diploma/credential física, papel real, sello o borde no legible, luz lateral.",
+            "whyItMatchesSpeech": "VO01 y la frase sobre el ídolo profesional hablan de carrera, guía e identidad profesional.",
+            "prompt": "Premium editorial still life, vertical 9:16, real off-white diploma or professional credential on dark charcoal desk, no readable institution name, no logo, soft motivated side light, 50mm lens, subtle paper texture, negative space for captions, documentary realism, no person, no invented identity, no watermark.",
+            "brollReference": "authorized diploma / dental credential still life",
+            "googleSearchQuery": "dental diploma desk editorial photo close up no logo",
+            "placementRecommendation": "foreground",
+            "placementReason": "Objeto simbólico; evita representar falsamente al padre.",
+            "start": 24.144,
+            "end": 27.0,
+            "durationSeconds": 2.856,
+            "motionIds": [
+              "INTRO_AMANDA_XR02_M01"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "emojiFallback": [
+              "🎓",
+              "📜"
+            ]
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR02_A02_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A02",
+          "start": 27.0,
+          "end": 30.0,
+          "partId": "P04",
+          "parentId": "INTRO_AMANDA_XR02",
+          "assetId": "INTRO_AMANDA_XR02_A02",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR02_A02",
+            "localId": "A02",
+            "assetType": "object",
+            "description": "Estuche/instrumental odontológico neutro y real como símbolo del oficio y de la continuidad profesional.",
+            "contextAndDetail": "Conecta la carrera de Amanda con el legado profesional sin afirmar una pertenencia específica.",
+            "whatIsVisible": "Instrumento dental cerrado o parcialmente visible, material metálico real, mesa coherente con A01.",
+            "whyItMatchesSpeech": "Refuerza «ídolo profesional» y odontología de manera factual-neutral.",
+            "prompt": "Same locked charcoal desk and side light as A01, realistic dental instrument case or neutral dental mirror/probe arrangement, premium documentary still life, 50mm lens, accurate metal reflections, no blood, no patient, no logos, no readable text, same scale and camera, safe upper area for captions.",
+            "brollReference": "real dental instruments close up editorial",
+            "googleSearchQuery": "dental instruments still life editorial close up",
+            "placementRecommendation": "foreground",
+            "placementReason": "Segundo símbolo concreto del oficio.",
+            "start": 27.0,
+            "end": 30.0,
+            "durationSeconds": 3.0,
+            "motionIds": [
+              "INTRO_AMANDA_XR02_M02"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "emojiFallback": [
+              "🦷",
+              "🪥"
+            ]
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR02_A03_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A03",
+          "start": 30.0,
+          "end": 33.145,
+          "partId": "P04",
+          "parentId": "INTRO_AMANDA_XR02",
+          "assetId": "INTRO_AMANDA_XR02_A03",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR02_A03",
+            "localId": "A03",
+            "assetType": "object",
+            "description": "Silla de consultorio vacía o espacio clínico vacío, sin personas, para introducir ausencia después de la pérdida.",
+            "contextAndDetail": "La ausencia aparece sin recrear al padre ni dramatizar con una persona generada.",
+            "whatIsVisible": "Silla dental vacía, consultorio ordenado, luz baja pero realista.",
+            "whyItMatchesSpeech": "Conecta la muerte del padre y el hueco emocional sin inventar recuerdos.",
+            "prompt": "Quiet empty dental operatory, one dental chair as focal point, no people, no family photo, no branding, realistic clinic materials, subtle cool ambient light and soft warm edge, 35mm documentary frame, restrained contrast, negative space, respectful tone, no horror, no dramatic fog, no watermark.",
+            "brollReference": "empty dental clinic chair documentary",
+            "googleSearchQuery": "empty dental clinic chair documentary photo",
+            "placementRecommendation": "background",
+            "placementReason": "La ausencia funciona como ambiente, no como objeto flotante.",
+            "start": 30.0,
+            "end": 33.145,
+            "durationSeconds": 3.145,
+            "motionIds": [
+              "INTRO_AMANDA_XR02_M03"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "emojiFallback": [
+              "🪑",
+              "◻️"
+            ]
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR03",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "COMIC_INFO",
+          "label": "COMIC_INFO",
+          "start": 42.278,
+          "end": 57.063,
+          "partId": "P08",
+          "function": "Visualizar sobrecarga y contradicción de información hasta llegar a una estructura.",
+          "anchorText": "reválida / no compartir / difícil / imposible",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "view": "lower_left",
+              "start": 42.278,
+              "end": 45.235,
+              "description": "Fuente oficial/entrada inicial.",
+              "assetIds": [
+                "INTRO_AMANDA_XR03_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "view": "lower_right",
+              "start": 45.235,
+              "end": 48.192,
+              "description": "Opiniones/comunidad contradictoria.",
+              "assetIds": [
+                "INTRO_AMANDA_XR03_A01"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "view": "upper_left",
+              "start": 48.192,
+              "end": 51.149,
+              "description": "Mensajes de restricción/no compartir.",
+              "assetIds": [
+                "INTRO_AMANDA_XR03_A01"
+              ]
+            },
+            {
+              "stateId": "S04",
+              "view": "upper_right",
+              "start": 51.149,
+              "end": 54.106,
+              "description": "Miedo: difícil/imposible.",
+              "assetIds": [
+                "INTRO_AMANDA_XR03_A01"
+              ]
+            },
+            {
+              "stateId": "S05",
+              "view": "full_composition",
+              "start": 54.106,
+              "end": 57.063,
+              "description": "Reveal completo y centro de orden/checklist.",
+              "assetIds": [
+                "INTRO_AMANDA_XR03_A01"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_AMANDA_XR03_A01",
+              "localId": "A01",
+              "assetType": "image",
+              "description": "Composición maestra editorial de saturación informativa sobre proceso de reválida: cuatro zonas de fuentes contradictorias y centro que empieza a ordenar.",
+              "contextAndDetail": "No es dashboard futurista; es una mesa/sistema editorial físico-digital legible por cuadrantes.",
+              "whatIsVisible": "Zona oficial, foro/opinión, mensaje de miedo, lista/checklist; centro con pregunta/orden de pasos.",
+              "whyItMatchesSpeech": "Amanda describe demasiada información, gente que no comparte y mensajes de imposibilidad.",
+              "prompt": "Create one master editorial information composition, 9:16, dark charcoal/off-white tactile desk system, five readable visual zones with NO fake official logos: lower-left official-information placeholder, lower-right community/forum notes, upper-left contradictory advice cards, upper-right fear/restriction messages, central neutral checklist card that organizes next steps. Physical paper, phone/laptop fragments without branded UI, 35mm frontal-oblique camera, realistic shadows, muted wine/violet accents, generous subtitle safe area, no holograms, no cyber dashboards, no invented institution names, no watermark.",
+              "brollReference": "research desk conflicting information documents",
+              "googleSearchQuery": "research desk conflicting information documents notes editorial",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "La master necesita recorrido de cámara por cinco vistas.",
+              "start": 42.278,
+              "end": 57.063,
+              "durationSeconds": 14.785,
+              "motionIds": [
+                "INTRO_AMANDA_XR03_M01"
+              ],
+              "linkedSfxIds": [
+                "INTRO_AMANDA_SFX03"
+              ],
+              "status": "pending_creation"
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free",
+          "qaStatus": "needs_review"
+        },
+        {
+          "id": "INTRO_AMANDA_XR03_A01_EVENT",
+          "track": "images",
+          "type": "image",
+          "label": "A01",
+          "start": 42.278,
+          "end": 57.063,
+          "partId": "P08",
+          "parentId": "INTRO_AMANDA_XR03",
+          "assetId": "INTRO_AMANDA_XR03_A01",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR03_A01",
+            "localId": "A01",
+            "assetType": "image",
+            "description": "Composición maestra editorial de saturación informativa sobre proceso de reválida: cuatro zonas de fuentes contradictorias y centro que empieza a ordenar.",
+            "contextAndDetail": "No es dashboard futurista; es una mesa/sistema editorial físico-digital legible por cuadrantes.",
+            "whatIsVisible": "Zona oficial, foro/opinión, mensaje de miedo, lista/checklist; centro con pregunta/orden de pasos.",
+            "whyItMatchesSpeech": "Amanda describe demasiada información, gente que no comparte y mensajes de imposibilidad.",
+            "prompt": "Create one master editorial information composition, 9:16, dark charcoal/off-white tactile desk system, five readable visual zones with NO fake official logos: lower-left official-information placeholder, lower-right community/forum notes, upper-left contradictory advice cards, upper-right fear/restriction messages, central neutral checklist card that organizes next steps. Physical paper, phone/laptop fragments without branded UI, 35mm frontal-oblique camera, realistic shadows, muted wine/violet accents, generous subtitle safe area, no holograms, no cyber dashboards, no invented institution names, no watermark.",
+            "brollReference": "research desk conflicting information documents",
+            "googleSearchQuery": "research desk conflicting information documents notes editorial",
+            "placementRecommendation": "fullscreen",
+            "placementReason": "La master necesita recorrido de cámara por cinco vistas.",
+            "start": 42.278,
+            "end": 57.063,
+            "durationSeconds": 14.785,
+            "motionIds": [
+              "INTRO_AMANDA_XR03_M01"
+            ],
+            "linkedSfxIds": [
+              "INTRO_AMANDA_SFX03"
+            ],
+            "status": "pending_creation"
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR04",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "COMIC_CC",
+          "label": "COMIC_CC",
+          "start": 63.663,
+          "end": 74.229,
+          "partId": "P12",
+          "function": "Convertir la frase de dificultad y oportunidad en tres escenas legibles y coherentes.",
+          "anchorText": "dificultades / oportunidad / aprendizaje / estancado",
+          "captionPolicy": "HIDE",
+          "states": [
+            {
+              "stateId": "S01",
+              "shot": "wide",
+              "start": 63.663,
+              "end": 67.185,
+              "description": "Persona frente a una dificultad abstracta/obstáculo cotidiano, sin representar a Amanda; escena amplia que muestra dos posibles salidas.",
+              "assetIds": [
+                "INTRO_AMANDA_XR04_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "shot": "close_up",
+              "start": 67.185,
+              "end": 70.707,
+              "description": "Detalle de mano subrayando una nota con la palabra editable OPORTUNIDAD/APRENDIZAJE integrada a la composición, no burbuja.",
+              "assetIds": [
+                "INTRO_AMANDA_XR04_A02"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "shot": "medium",
+              "start": 70.707,
+              "end": 74.229,
+              "description": "Plano medio del mismo entorno: una ruta avanza mientras otra queda detenida; texto literal «TE QUEDAS ESTANCADO» integrado editorialmente.",
+              "assetIds": [
+                "INTRO_AMANDA_XR04_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_AMANDA_XR04_A01",
+              "localId": "A01",
+              "assetType": "image",
+              "shot": "wide",
+              "description": "Persona frente a una dificultad abstracta/obstáculo cotidiano, sin representar a Amanda; escena amplia que muestra dos posibles salidas.",
+              "contextAndDetail": "Tres escenas comparten personaje genérico, entorno, ropa, paleta y dirección; no pretenden ser Amanda.",
+              "whatIsVisible": "Persona frente a una dificultad abstracta/obstáculo cotidiano, sin representar a Amanda; escena amplia que muestra dos posibles salidas.",
+              "whyItMatchesSpeech": "Traduce literalmente las dos opciones frente a la dificultad.",
+              "prompt": "Editorial narrative frame, vertical 9:16, wide shot, same anonymous adult character and same restrained corridor/workspace across all three frames, premium documentary realism with subtle graphic integration, scene purpose: Persona frente a una dificultad abstracta/obstáculo cotidiano, sin representar a Amanda; escena amplia que muestra dos posibles salidas. Integrate the exact editable phrase concept «LAS DIFICULTADES TE DEJAN DOS OPCIONES» as part of the composition but not a comic speech bubble; keep anatomy realistic, hands correct, no logos, no resemblance to Amanda, muted charcoal/off-white/wine palette, safe subtitle area, no watermark.",
+              "brollReference": "conceptual documentary choice opportunity obstacle",
+              "googleSearchQuery": "person choice opportunity obstacle documentary editorial",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "COMIC_CC requiere escena completa y texto integrado.",
+              "start": 63.663,
+              "end": 67.185,
+              "durationSeconds": 3.522,
+              "motionIds": [
+                "INTRO_AMANDA_XR04_M01"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "textIntegration": "spoken_literal_integrated_no_bubbles"
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR04_A02",
+              "localId": "A02",
+              "assetType": "image",
+              "shot": "close_up",
+              "description": "Detalle de mano subrayando una nota con la palabra editable OPORTUNIDAD/APRENDIZAJE integrada a la composición, no burbuja.",
+              "contextAndDetail": "Tres escenas comparten personaje genérico, entorno, ropa, paleta y dirección; no pretenden ser Amanda.",
+              "whatIsVisible": "Detalle de mano subrayando una nota con la palabra editable OPORTUNIDAD/APRENDIZAJE integrada a la composición, no burbuja.",
+              "whyItMatchesSpeech": "Traduce literalmente las dos opciones frente a la dificultad.",
+              "prompt": "Editorial narrative frame, vertical 9:16, close up shot, same anonymous adult character and same restrained corridor/workspace across all three frames, premium documentary realism with subtle graphic integration, scene purpose: Detalle de mano subrayando una nota con la palabra editable OPORTUNIDAD/APRENDIZAJE integrada a la composición, no burbuja. Integrate the exact editable phrase concept «OPORTUNIDAD / APRENDIZAJE» as part of the composition but not a comic speech bubble; keep anatomy realistic, hands correct, no logos, no resemblance to Amanda, muted charcoal/off-white/wine palette, safe subtitle area, no watermark.",
+              "brollReference": "conceptual documentary choice opportunity obstacle",
+              "googleSearchQuery": "person choice opportunity obstacle documentary editorial",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "COMIC_CC requiere escena completa y texto integrado.",
+              "start": 67.185,
+              "end": 70.707,
+              "durationSeconds": 3.522,
+              "motionIds": [
+                "INTRO_AMANDA_XR04_M02"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "textIntegration": "spoken_literal_integrated_no_bubbles"
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR04_A03",
+              "localId": "A03",
+              "assetType": "image",
+              "shot": "medium",
+              "description": "Plano medio del mismo entorno: una ruta avanza mientras otra queda detenida; texto literal «TE QUEDAS ESTANCADO» integrado editorialmente.",
+              "contextAndDetail": "Tres escenas comparten personaje genérico, entorno, ropa, paleta y dirección; no pretenden ser Amanda.",
+              "whatIsVisible": "Plano medio del mismo entorno: una ruta avanza mientras otra queda detenida; texto literal «TE QUEDAS ESTANCADO» integrado editorialmente.",
+              "whyItMatchesSpeech": "Traduce literalmente las dos opciones frente a la dificultad.",
+              "prompt": "Editorial narrative frame, vertical 9:16, medium shot, same anonymous adult character and same restrained corridor/workspace across all three frames, premium documentary realism with subtle graphic integration, scene purpose: Plano medio del mismo entorno: una ruta avanza mientras otra queda detenida; texto literal «TE QUEDAS ESTANCADO» integrado editorialmente. Integrate the exact editable phrase concept «TE QUEDAS ESTANCADO» as part of the composition but not a comic speech bubble; keep anatomy realistic, hands correct, no logos, no resemblance to Amanda, muted charcoal/off-white/wine palette, safe subtitle area, no watermark.",
+              "brollReference": "conceptual documentary choice opportunity obstacle",
+              "googleSearchQuery": "person choice opportunity obstacle documentary editorial",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "COMIC_CC requiere escena completa y texto integrado.",
+              "start": 70.707,
+              "end": 74.229,
+              "durationSeconds": 3.522,
+              "motionIds": [
+                "INTRO_AMANDA_XR04_M03"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "textIntegration": "spoken_literal_integrated_no_bubbles"
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free",
+          "qaStatus": "needs_review"
+        },
+        {
+          "id": "INTRO_AMANDA_XR04_A01_EVENT",
+          "track": "images",
+          "type": "image",
+          "label": "A01",
+          "start": 63.663,
+          "end": 67.185,
+          "partId": "P12",
+          "parentId": "INTRO_AMANDA_XR04",
+          "assetId": "INTRO_AMANDA_XR04_A01",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR04_A01",
+            "localId": "A01",
+            "assetType": "image",
+            "shot": "wide",
+            "description": "Persona frente a una dificultad abstracta/obstáculo cotidiano, sin representar a Amanda; escena amplia que muestra dos posibles salidas.",
+            "contextAndDetail": "Tres escenas comparten personaje genérico, entorno, ropa, paleta y dirección; no pretenden ser Amanda.",
+            "whatIsVisible": "Persona frente a una dificultad abstracta/obstáculo cotidiano, sin representar a Amanda; escena amplia que muestra dos posibles salidas.",
+            "whyItMatchesSpeech": "Traduce literalmente las dos opciones frente a la dificultad.",
+            "prompt": "Editorial narrative frame, vertical 9:16, wide shot, same anonymous adult character and same restrained corridor/workspace across all three frames, premium documentary realism with subtle graphic integration, scene purpose: Persona frente a una dificultad abstracta/obstáculo cotidiano, sin representar a Amanda; escena amplia que muestra dos posibles salidas. Integrate the exact editable phrase concept «LAS DIFICULTADES TE DEJAN DOS OPCIONES» as part of the composition but not a comic speech bubble; keep anatomy realistic, hands correct, no logos, no resemblance to Amanda, muted charcoal/off-white/wine palette, safe subtitle area, no watermark.",
+            "brollReference": "conceptual documentary choice opportunity obstacle",
+            "googleSearchQuery": "person choice opportunity obstacle documentary editorial",
+            "placementRecommendation": "fullscreen",
+            "placementReason": "COMIC_CC requiere escena completa y texto integrado.",
+            "start": 63.663,
+            "end": 67.185,
+            "durationSeconds": 3.522,
+            "motionIds": [
+              "INTRO_AMANDA_XR04_M01"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "textIntegration": "spoken_literal_integrated_no_bubbles"
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR04_A02_EVENT",
+          "track": "images",
+          "type": "image",
+          "label": "A02",
+          "start": 67.185,
+          "end": 70.707,
+          "partId": "P12",
+          "parentId": "INTRO_AMANDA_XR04",
+          "assetId": "INTRO_AMANDA_XR04_A02",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR04_A02",
+            "localId": "A02",
+            "assetType": "image",
+            "shot": "close_up",
+            "description": "Detalle de mano subrayando una nota con la palabra editable OPORTUNIDAD/APRENDIZAJE integrada a la composición, no burbuja.",
+            "contextAndDetail": "Tres escenas comparten personaje genérico, entorno, ropa, paleta y dirección; no pretenden ser Amanda.",
+            "whatIsVisible": "Detalle de mano subrayando una nota con la palabra editable OPORTUNIDAD/APRENDIZAJE integrada a la composición, no burbuja.",
+            "whyItMatchesSpeech": "Traduce literalmente las dos opciones frente a la dificultad.",
+            "prompt": "Editorial narrative frame, vertical 9:16, close up shot, same anonymous adult character and same restrained corridor/workspace across all three frames, premium documentary realism with subtle graphic integration, scene purpose: Detalle de mano subrayando una nota con la palabra editable OPORTUNIDAD/APRENDIZAJE integrada a la composición, no burbuja. Integrate the exact editable phrase concept «OPORTUNIDAD / APRENDIZAJE» as part of the composition but not a comic speech bubble; keep anatomy realistic, hands correct, no logos, no resemblance to Amanda, muted charcoal/off-white/wine palette, safe subtitle area, no watermark.",
+            "brollReference": "conceptual documentary choice opportunity obstacle",
+            "googleSearchQuery": "person choice opportunity obstacle documentary editorial",
+            "placementRecommendation": "fullscreen",
+            "placementReason": "COMIC_CC requiere escena completa y texto integrado.",
+            "start": 67.185,
+            "end": 70.707,
+            "durationSeconds": 3.522,
+            "motionIds": [
+              "INTRO_AMANDA_XR04_M02"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "textIntegration": "spoken_literal_integrated_no_bubbles"
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR04_A03_EVENT",
+          "track": "images",
+          "type": "image",
+          "label": "A03",
+          "start": 70.707,
+          "end": 74.229,
+          "partId": "P12",
+          "parentId": "INTRO_AMANDA_XR04",
+          "assetId": "INTRO_AMANDA_XR04_A03",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR04_A03",
+            "localId": "A03",
+            "assetType": "image",
+            "shot": "medium",
+            "description": "Plano medio del mismo entorno: una ruta avanza mientras otra queda detenida; texto literal «TE QUEDAS ESTANCADO» integrado editorialmente.",
+            "contextAndDetail": "Tres escenas comparten personaje genérico, entorno, ropa, paleta y dirección; no pretenden ser Amanda.",
+            "whatIsVisible": "Plano medio del mismo entorno: una ruta avanza mientras otra queda detenida; texto literal «TE QUEDAS ESTANCADO» integrado editorialmente.",
+            "whyItMatchesSpeech": "Traduce literalmente las dos opciones frente a la dificultad.",
+            "prompt": "Editorial narrative frame, vertical 9:16, medium shot, same anonymous adult character and same restrained corridor/workspace across all three frames, premium documentary realism with subtle graphic integration, scene purpose: Plano medio del mismo entorno: una ruta avanza mientras otra queda detenida; texto literal «TE QUEDAS ESTANCADO» integrado editorialmente. Integrate the exact editable phrase concept «TE QUEDAS ESTANCADO» as part of the composition but not a comic speech bubble; keep anatomy realistic, hands correct, no logos, no resemblance to Amanda, muted charcoal/off-white/wine palette, safe subtitle area, no watermark.",
+            "brollReference": "conceptual documentary choice opportunity obstacle",
+            "googleSearchQuery": "person choice opportunity obstacle documentary editorial",
+            "placementRecommendation": "fullscreen",
+            "placementReason": "COMIC_CC requiere escena completa y texto integrado.",
+            "start": 70.707,
+            "end": 74.229,
+            "durationSeconds": 3.522,
+            "motionIds": [
+              "INTRO_AMANDA_XR04_M03"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "textIntegration": "spoken_literal_integrated_no_bubbles"
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR05",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "OBJECTS",
+          "label": "OBJECTS",
+          "start": 89.23,
+          "end": 97.716,
+          "partId": "P17",
+          "function": "Mostrar caos→pasos→compartir como acción concreta.",
+          "anchorText": "¿por qué no lo empiezo a compartir?",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "start": 89.23,
+              "end": 92.05,
+              "description": "Aparecen tarjetas de pasos separadas.",
+              "assetIds": [
+                "INTRO_AMANDA_XR05_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "start": 92.05,
+              "end": 94.7,
+              "description": "Se agrupan como guía/checklist.",
+              "assetIds": [
+                "INTRO_AMANDA_XR05_A01",
+                "INTRO_AMANDA_XR05_A02"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "start": 94.7,
+              "end": 97.716,
+              "description": "El objeto compartir se vuelve foco; guía queda detrás.",
+              "assetIds": [
+                "INTRO_AMANDA_XR05_A02",
+                "INTRO_AMANDA_XR05_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_AMANDA_XR05_A01",
+              "localId": "A01",
+              "assetType": "object",
+              "description": "Tarjetas físicas A, A.1, A.2, A.3 ordenándose desde un montón caótico.",
+              "contextAndDetail": "Mismo escritorio, papel, escala y luz; sólo cambia la organización de la información.",
+              "whatIsVisible": "Tarjetas físicas A, A.1, A.2, A.3 ordenándose desde un montón caótico.",
+              "whyItMatchesSpeech": "Amanda pasa de desafiar el límite a desglosar información y compartirla.",
+              "prompt": "Isolated premium editorial object on transparent/clean neutral background, vertical production asset, tactile paper/card materials, exact concept: Tarjetas físicas A, A.1, A.2, A.3 ordenándose desde un montón caótico. Same charcoal/off-white/wine family, realistic shadow, front 3/4 perspective, no brand UI, no generated readable institutional names, no watermark, designed for overlay next to speaker.",
+              "brollReference": "paper checklist cards organization share icon",
+              "googleSearchQuery": "paper checklist cards organization share icon editorial",
+              "placementRecommendation": "foreground",
+              "placementReason": "Debe superponerse junto al hablante sin reemplazar su expresión.",
+              "start": 89.23,
+              "end": 92.05,
+              "durationSeconds": 2.82,
+              "motionIds": [
+                "INTRO_AMANDA_XR05_M01"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "🗂️",
+                "📝"
+              ]
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR05_A02",
+              "localId": "A02",
+              "assetType": "object",
+              "description": "Checklist/guía consolidada con pasos legibles como bloques editables sin datos falsos.",
+              "contextAndDetail": "Mismo escritorio, papel, escala y luz; sólo cambia la organización de la información.",
+              "whatIsVisible": "Checklist/guía consolidada con pasos legibles como bloques editables sin datos falsos.",
+              "whyItMatchesSpeech": "Amanda pasa de desafiar el límite a desglosar información y compartirla.",
+              "prompt": "Isolated premium editorial object on transparent/clean neutral background, vertical production asset, tactile paper/card materials, exact concept: Checklist/guía consolidada con pasos legibles como bloques editables sin datos falsos. Same charcoal/off-white/wine family, realistic shadow, front 3/4 perspective, no brand UI, no generated readable institutional names, no watermark, designed for overlay next to speaker.",
+              "brollReference": "paper checklist cards organization share icon",
+              "googleSearchQuery": "paper checklist cards organization share icon editorial",
+              "placementRecommendation": "foreground",
+              "placementReason": "Debe superponerse junto al hablante sin reemplazar su expresión.",
+              "start": 92.05,
+              "end": 94.7,
+              "durationSeconds": 2.65,
+              "motionIds": [
+                "INTRO_AMANDA_XR05_M02"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "✅",
+                "📋"
+              ]
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR05_A03",
+              "localId": "A03",
+              "assetType": "object",
+              "description": "Símbolo de compartir/publicar como objeto limpio junto a la guía terminada.",
+              "contextAndDetail": "Mismo escritorio, papel, escala y luz; sólo cambia la organización de la información.",
+              "whatIsVisible": "Símbolo de compartir/publicar como objeto limpio junto a la guía terminada.",
+              "whyItMatchesSpeech": "Amanda pasa de desafiar el límite a desglosar información y compartirla.",
+              "prompt": "Isolated premium editorial object on transparent/clean neutral background, vertical production asset, tactile paper/card materials, exact concept: Símbolo de compartir/publicar como objeto limpio junto a la guía terminada. Same charcoal/off-white/wine family, realistic shadow, front 3/4 perspective, no brand UI, no generated readable institutional names, no watermark, designed for overlay next to speaker.",
+              "brollReference": "paper checklist cards organization share icon",
+              "googleSearchQuery": "paper checklist cards organization share icon editorial",
+              "placementRecommendation": "foreground",
+              "placementReason": "Debe superponerse junto al hablante sin reemplazar su expresión.",
+              "start": 94.7,
+              "end": 97.716,
+              "durationSeconds": 3.016,
+              "motionIds": [
+                "INTRO_AMANDA_XR05_M03"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "↗️",
+                "📤"
+              ]
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free",
+          "qaStatus": "needs_review"
+        },
+        {
+          "id": "INTRO_AMANDA_XR05_A01_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A01",
+          "start": 89.23,
+          "end": 92.05,
+          "partId": "P17",
+          "parentId": "INTRO_AMANDA_XR05",
+          "assetId": "INTRO_AMANDA_XR05_A01",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR05_A01",
+            "localId": "A01",
+            "assetType": "object",
+            "description": "Tarjetas físicas A, A.1, A.2, A.3 ordenándose desde un montón caótico.",
+            "contextAndDetail": "Mismo escritorio, papel, escala y luz; sólo cambia la organización de la información.",
+            "whatIsVisible": "Tarjetas físicas A, A.1, A.2, A.3 ordenándose desde un montón caótico.",
+            "whyItMatchesSpeech": "Amanda pasa de desafiar el límite a desglosar información y compartirla.",
+            "prompt": "Isolated premium editorial object on transparent/clean neutral background, vertical production asset, tactile paper/card materials, exact concept: Tarjetas físicas A, A.1, A.2, A.3 ordenándose desde un montón caótico. Same charcoal/off-white/wine family, realistic shadow, front 3/4 perspective, no brand UI, no generated readable institutional names, no watermark, designed for overlay next to speaker.",
+            "brollReference": "paper checklist cards organization share icon",
+            "googleSearchQuery": "paper checklist cards organization share icon editorial",
+            "placementRecommendation": "foreground",
+            "placementReason": "Debe superponerse junto al hablante sin reemplazar su expresión.",
+            "start": 89.23,
+            "end": 92.05,
+            "durationSeconds": 2.82,
+            "motionIds": [
+              "INTRO_AMANDA_XR05_M01"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "emojiFallback": [
+              "🗂️",
+              "📝"
+            ]
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR05_A02_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A02",
+          "start": 92.05,
+          "end": 94.7,
+          "partId": "P17",
+          "parentId": "INTRO_AMANDA_XR05",
+          "assetId": "INTRO_AMANDA_XR05_A02",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR05_A02",
+            "localId": "A02",
+            "assetType": "object",
+            "description": "Checklist/guía consolidada con pasos legibles como bloques editables sin datos falsos.",
+            "contextAndDetail": "Mismo escritorio, papel, escala y luz; sólo cambia la organización de la información.",
+            "whatIsVisible": "Checklist/guía consolidada con pasos legibles como bloques editables sin datos falsos.",
+            "whyItMatchesSpeech": "Amanda pasa de desafiar el límite a desglosar información y compartirla.",
+            "prompt": "Isolated premium editorial object on transparent/clean neutral background, vertical production asset, tactile paper/card materials, exact concept: Checklist/guía consolidada con pasos legibles como bloques editables sin datos falsos. Same charcoal/off-white/wine family, realistic shadow, front 3/4 perspective, no brand UI, no generated readable institutional names, no watermark, designed for overlay next to speaker.",
+            "brollReference": "paper checklist cards organization share icon",
+            "googleSearchQuery": "paper checklist cards organization share icon editorial",
+            "placementRecommendation": "foreground",
+            "placementReason": "Debe superponerse junto al hablante sin reemplazar su expresión.",
+            "start": 92.05,
+            "end": 94.7,
+            "durationSeconds": 2.65,
+            "motionIds": [
+              "INTRO_AMANDA_XR05_M02"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "emojiFallback": [
+              "✅",
+              "📋"
+            ]
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR05_A03_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A03",
+          "start": 94.7,
+          "end": 97.716,
+          "partId": "P17",
+          "parentId": "INTRO_AMANDA_XR05",
+          "assetId": "INTRO_AMANDA_XR05_A03",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR05_A03",
+            "localId": "A03",
+            "assetType": "object",
+            "description": "Símbolo de compartir/publicar como objeto limpio junto a la guía terminada.",
+            "contextAndDetail": "Mismo escritorio, papel, escala y luz; sólo cambia la organización de la información.",
+            "whatIsVisible": "Símbolo de compartir/publicar como objeto limpio junto a la guía terminada.",
+            "whyItMatchesSpeech": "Amanda pasa de desafiar el límite a desglosar información y compartirla.",
+            "prompt": "Isolated premium editorial object on transparent/clean neutral background, vertical production asset, tactile paper/card materials, exact concept: Símbolo de compartir/publicar como objeto limpio junto a la guía terminada. Same charcoal/off-white/wine family, realistic shadow, front 3/4 perspective, no brand UI, no generated readable institutional names, no watermark, designed for overlay next to speaker.",
+            "brollReference": "paper checklist cards organization share icon",
+            "googleSearchQuery": "paper checklist cards organization share icon editorial",
+            "placementRecommendation": "foreground",
+            "placementReason": "Debe superponerse junto al hablante sin reemplazar su expresión.",
+            "start": 94.7,
+            "end": 97.716,
+            "durationSeconds": 3.016,
+            "motionIds": [
+              "INTRO_AMANDA_XR05_M03"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation",
+            "emojiFallback": [
+              "↗️",
+              "📤"
+            ]
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR06",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "PHOTO_OBJECT",
+          "label": "PHOTO_OBJECT",
+          "start": 97.916,
+          "end": 109.4,
+          "partId": "P20",
+          "function": "Mostrar escala y propósito mientras se conserva abierto el mecanismo del negocio.",
+          "anchorText": "1500 / no capital / propósito / modelo de negocio",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "start": 97.916,
+              "end": 109.4,
+              "description": "Frame real de fondo con overlays 1500 y propósito entrando por beats.",
+              "assetIds": [
+                "INTRO_AMANDA_XR06_A01",
+                "INTRO_AMANDA_XR06_A02",
+                "INTRO_AMANDA_XR06_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_AMANDA_XR06_A01",
+              "localId": "A01",
+              "assetType": "image",
+              "description": "Frame real aprobado de Amanda/JOC durante el bloque final, usado como fondo; no generar identidad.",
+              "contextAndDetail": "Mantiene continuidad real y sirve de soporte a dos objetos editoriales.",
+              "whatIsVisible": "A-roll real o frame autorizado con espacio para overlays.",
+              "whyItMatchesSpeech": "El bloque habla de escala, capital, propósito y modelo de negocio; la persona real debe seguir siendo ancla.",
+              "prompt": "not_applicable — use approved real source frame from master; do not generate Amanda/JOC identity.",
+              "brollReference": "source frame from approved master",
+              "googleSearchQuery": "not_applicable source frame",
+              "placementRecommendation": "background",
+              "placementReason": "PHOTO_OBJECT requiere contexto fotográfico y debe ser factual.",
+              "start": 97.916,
+              "end": 109.4,
+              "durationSeconds": 11.484,
+              "motionIds": [
+                "INTRO_AMANDA_XR06_M01"
+              ],
+              "linkedSfxIds": [],
+              "status": "missing_source_frame"
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR06_A02",
+              "localId": "A02",
+              "assetType": "object",
+              "description": "Placa/contador editorial «1500» como número grande, editable y claramente vinculado a la pregunta de JOC.",
+              "contextAndDetail": "Dato mencionado en la conversación; no añadir cifras nuevas.",
+              "whatIsVisible": "1500 en tipografía de marca, placa simple, sin dashboard.",
+              "whyItMatchesSpeech": "JOC pregunta explícitamente cómo llegó a 1500.",
+              "prompt": "Create an isolated editorial number plate asset for overlay, exact editable number 1500, strong premium typography on transparent background, restrained wine/off-white palette, subtle depth and shadow, no dashboard, no extra metrics, no logo, no watermark.",
+              "brollReference": "typographic number plate 1500",
+              "googleSearchQuery": "editorial typography number plate counter",
+              "placementRecommendation": "foreground",
+              "placementReason": "El dato debe entrar como objeto y salir sin tapar el rostro.",
+              "start": 97.916,
+              "end": 102.0,
+              "durationSeconds": 4.084,
+              "motionIds": [
+                "INTRO_AMANDA_XR06_M02"
+              ],
+              "linkedSfxIds": [
+                "INTRO_AMANDA_SFX07"
+              ],
+              "status": "pending_creation"
+            },
+            {
+              "assetId": "INTRO_AMANDA_XR06_A03",
+              "localId": "A03",
+              "assetType": "object",
+              "description": "Placa conceptual «PROPÓSITO»/símbolo de misión, editable, sin afirmar el modelo de negocio.",
+              "contextAndDetail": "Refuerza «Es un negocio, pero tiene un propósito» y deja abierto cómo funciona el negocio.",
+              "whatIsVisible": "Palabra/placa PROPÓSITO o símbolo simple de misión, no infografía explicativa.",
+              "whyItMatchesSpeech": "La frase fuente menciona propósito explícitamente.",
+              "prompt": "Create an isolated premium editorial overlay object representing PURPOSE, editable typography or simple mission marker, transparent background, restrained charcoal/off-white/wine palette, no charity clichés, no company logo, no business-model explanation, no extra claim, subtle realistic depth and shadow, clean edges, no watermark.",
+              "brollReference": "purpose mission editorial typography overlay",
+              "googleSearchQuery": "purpose mission editorial typography overlay",
+              "placementRecommendation": "foreground",
+              "placementReason": "Segundo concepto protagonista frente al background real.",
+              "start": 102.0,
+              "end": 109.4,
+              "durationSeconds": 7.4,
+              "motionIds": [
+                "INTRO_AMANDA_XR06_M03"
+              ],
+              "linkedSfxIds": [],
+              "status": "pending_creation"
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free",
+          "qaStatus": "needs_review"
+        },
+        {
+          "id": "INTRO_AMANDA_XR06_A01_EVENT",
+          "track": "images",
+          "type": "image",
+          "label": "A01",
+          "start": 97.916,
+          "end": 109.4,
+          "partId": "P20",
+          "parentId": "INTRO_AMANDA_XR06",
+          "assetId": "INTRO_AMANDA_XR06_A01",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR06_A01",
+            "localId": "A01",
+            "assetType": "image",
+            "description": "Frame real aprobado de Amanda/JOC durante el bloque final, usado como fondo; no generar identidad.",
+            "contextAndDetail": "Mantiene continuidad real y sirve de soporte a dos objetos editoriales.",
+            "whatIsVisible": "A-roll real o frame autorizado con espacio para overlays.",
+            "whyItMatchesSpeech": "El bloque habla de escala, capital, propósito y modelo de negocio; la persona real debe seguir siendo ancla.",
+            "prompt": "not_applicable — use approved real source frame from master; do not generate Amanda/JOC identity.",
+            "brollReference": "source frame from approved master",
+            "googleSearchQuery": "not_applicable source frame",
+            "placementRecommendation": "background",
+            "placementReason": "PHOTO_OBJECT requiere contexto fotográfico y debe ser factual.",
+            "start": 97.916,
+            "end": 109.4,
+            "durationSeconds": 11.484,
+            "motionIds": [
+              "INTRO_AMANDA_XR06_M01"
+            ],
+            "linkedSfxIds": [],
+            "status": "missing_source_frame"
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR06_A02_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A02",
+          "start": 97.916,
+          "end": 102.0,
+          "partId": "P20",
+          "parentId": "INTRO_AMANDA_XR06",
+          "assetId": "INTRO_AMANDA_XR06_A02",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR06_A02",
+            "localId": "A02",
+            "assetType": "object",
+            "description": "Placa/contador editorial «1500» como número grande, editable y claramente vinculado a la pregunta de JOC.",
+            "contextAndDetail": "Dato mencionado en la conversación; no añadir cifras nuevas.",
+            "whatIsVisible": "1500 en tipografía de marca, placa simple, sin dashboard.",
+            "whyItMatchesSpeech": "JOC pregunta explícitamente cómo llegó a 1500.",
+            "prompt": "Create an isolated editorial number plate asset for overlay, exact editable number 1500, strong premium typography on transparent background, restrained wine/off-white palette, subtle depth and shadow, no dashboard, no extra metrics, no logo, no watermark.",
+            "brollReference": "typographic number plate 1500",
+            "googleSearchQuery": "editorial typography number plate counter",
+            "placementRecommendation": "foreground",
+            "placementReason": "El dato debe entrar como objeto y salir sin tapar el rostro.",
+            "start": 97.916,
+            "end": 102.0,
+            "durationSeconds": 4.084,
+            "motionIds": [
+              "INTRO_AMANDA_XR06_M02"
+            ],
+            "linkedSfxIds": [
+              "INTRO_AMANDA_SFX07"
+            ],
+            "status": "pending_creation"
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR06_A03_EVENT",
+          "track": "images",
+          "type": "object",
+          "label": "A03",
+          "start": 102.0,
+          "end": 109.4,
+          "partId": "P20",
+          "parentId": "INTRO_AMANDA_XR06",
+          "assetId": "INTRO_AMANDA_XR06_A03",
+          "asset": {
+            "assetId": "INTRO_AMANDA_XR06_A03",
+            "localId": "A03",
+            "assetType": "object",
+            "description": "Placa conceptual «PROPÓSITO»/símbolo de misión, editable, sin afirmar el modelo de negocio.",
+            "contextAndDetail": "Refuerza «Es un negocio, pero tiene un propósito» y deja abierto cómo funciona el negocio.",
+            "whatIsVisible": "Palabra/placa PROPÓSITO o símbolo simple de misión, no infografía explicativa.",
+            "whyItMatchesSpeech": "La frase fuente menciona propósito explícitamente.",
+            "prompt": "Create an isolated premium editorial overlay object representing PURPOSE, editable typography or simple mission marker, transparent background, restrained charcoal/off-white/wine palette, no charity clichés, no company logo, no business-model explanation, no extra claim, subtle realistic depth and shadow, clean edges, no watermark.",
+            "brollReference": "purpose mission editorial typography overlay",
+            "googleSearchQuery": "purpose mission editorial typography overlay",
+            "placementRecommendation": "foreground",
+            "placementReason": "Segundo concepto protagonista frente al background real.",
+            "start": 102.0,
+            "end": 109.4,
+            "durationSeconds": 7.4,
+            "motionIds": [
+              "INTRO_AMANDA_XR06_M03"
+            ],
+            "linkedSfxIds": [],
+            "status": "pending_creation"
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR01_M01",
+          "track": "motion",
+          "type": "motion",
+          "label": "reveal_mask",
+          "parentId": "INTRO_AMANDA_XR01",
+          "start": 0.8,
+          "end": 11.993,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR01_M01",
+            "type": "reveal_mask",
+            "instructions": "TYPO: frase normal → hero → resolución; tracking +8→0 y microescala 100→104; no tapar rostro/captions.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR02_M01",
+          "track": "motion",
+          "type": "motion",
+          "label": "slow_drift",
+          "parentId": "INTRO_AMANDA_XR02_A01",
+          "start": 24.144,
+          "end": 27.0,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR02_M01",
+            "type": "slow_drift",
+            "instructions": "Micro drift 100→103%; diploma sigue legible y estable.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR02_M02",
+          "track": "motion",
+          "type": "motion",
+          "label": "push_in",
+          "parentId": "INTRO_AMANDA_XR02_A02",
+          "start": 27.0,
+          "end": 30.0,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR02_M02",
+            "type": "push_in",
+            "instructions": "Push 100→106% hacia instrumento, sin reflejos falsos.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR02_M03",
+          "track": "motion",
+          "type": "motion",
+          "label": "rack_focus",
+          "parentId": "INTRO_AMANDA_XR02_A03",
+          "start": 30.0,
+          "end": 33.145,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR02_M03",
+            "type": "rack_focus",
+            "instructions": "Rack focus suave hacia silla/espacio vacío; no speed ramp.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR03_M01",
+          "track": "motion",
+          "type": "motion",
+          "label": "zoom_in_pan",
+          "parentId": "INTRO_AMANDA_XR03_A01",
+          "start": 42.278,
+          "end": 57.063,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR03_M01",
+            "type": "zoom_in_pan",
+            "instructions": "Recorrer 4 cuadrantes y terminar zoom-out/full composition; mantener orientación.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR04_M01",
+          "track": "motion",
+          "type": "motion",
+          "label": "slow_drift",
+          "parentId": "INTRO_AMANDA_XR04_A01",
+          "start": 63.663,
+          "end": 67.185,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR04_M01",
+            "type": "slow_drift",
+            "instructions": "Slow drift amplio; texto integrado estable.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR04_M02",
+          "track": "motion",
+          "type": "motion",
+          "label": "push_in",
+          "parentId": "INTRO_AMANDA_XR04_A02",
+          "start": 67.185,
+          "end": 70.707,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR04_M02",
+            "type": "push_in",
+            "instructions": "Close-up 100→105%; no cambiar identidad genérica.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR04_M03",
+          "track": "motion",
+          "type": "motion",
+          "label": "static",
+          "parentId": "INTRO_AMANDA_XR04_A03",
+          "start": 70.707,
+          "end": 74.229,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR04_M03",
+            "type": "static",
+            "instructions": "Mantener plano medio casi estático para leer remate.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR05_M01",
+          "track": "motion",
+          "type": "motion",
+          "label": "object_group",
+          "parentId": "INTRO_AMANDA_XR05_A01",
+          "start": 89.23,
+          "end": 92.05,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR05_M01",
+            "type": "object_group",
+            "instructions": "Entradas escalonadas de tarjetas A/A.1/A.2/A.3.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR05_M02",
+          "track": "motion",
+          "type": "motion",
+          "label": "reveal_mask",
+          "parentId": "INTRO_AMANDA_XR05_A02",
+          "start": 92.05,
+          "end": 94.7,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR05_M02",
+            "type": "reveal_mask",
+            "instructions": "La guía se consolida; tarjetas previas pierden contraste.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR05_M03",
+          "track": "motion",
+          "type": "motion",
+          "label": "word_pop",
+          "parentId": "INTRO_AMANDA_XR05_A03",
+          "start": 94.7,
+          "end": 97.716,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR05_M03",
+            "type": "word_pop",
+            "instructions": "Objeto compartir aparece por trigger de «compartir». No rebote gamificado.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR06_M01",
+          "track": "motion",
+          "type": "motion",
+          "label": "push_in",
+          "parentId": "INTRO_AMANDA_XR06_A01",
+          "start": 97.916,
+          "end": 109.4,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR06_M01",
+            "type": "push_in",
+            "instructions": "Frame real push 100→104%, prioridad al rostro.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR06_M02",
+          "track": "motion",
+          "type": "motion",
+          "label": "reveal_mask",
+          "parentId": "INTRO_AMANDA_XR06_A02",
+          "start": 97.916,
+          "end": 102.0,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR06_M02",
+            "type": "reveal_mask",
+            "instructions": "1500 entra y se estabiliza; no contar animadamente.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_XR06_M03",
+          "track": "motion",
+          "type": "motion",
+          "label": "opacity_fade",
+          "parentId": "INTRO_AMANDA_XR06_A03",
+          "start": 102.0,
+          "end": 109.4,
+          "motion": {
+            "motionId": "INTRO_AMANDA_XR06_M03",
+            "type": "opacity_fade",
+            "instructions": "Propósito aparece por fade/reveal, sin reemplazar el frame.",
+            "easing": "easeInOut",
+            "capcutExecution": "Use explicit keyframes; do not add automatic zoom beyond this plan."
+          },
+          "timingMode": "follow_parent"
+        },
+        {
+          "id": "INTRO_AMANDA_CINE01_OPEN",
+          "track": "broll",
+          "type": "cine",
+          "cineType": "CINE01_BLACK_HOLD",
+          "label": "CINE01_BLACK_HOLD",
+          "start": 0.0,
+          "end": 0.8,
+          "function": "Abrir con vacío y silencio antes de la primera frase.",
+          "visual": {
+            "kind": "solid_color",
+            "color": "#000000"
+          },
+          "captionPolicy": "HIDE_DURING_BLACK_HOLD",
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_AMANDA_CINE02_LOSS",
+          "track": "broll",
+          "type": "cine",
+          "cineType": "CINE01_BLACK_HOLD",
+          "label": "CINE01_BLACK_HOLD",
+          "start": 32.145,
+          "end": 33.145,
+          "function": "Dejar caer la frase de la muerte del padre y separar acto.",
+          "visual": {
+            "kind": "solid_color",
+            "color": "#000000"
+          },
+          "captionPolicy": "HIDE_DURING_BLACK_HOLD",
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_AMANDA_CINE03_BUSINESS",
+          "track": "broll",
+          "type": "cine",
+          "cineType": "CINE03_PUNCH_CUT",
+          "label": "CINE03_PUNCH_CUT",
+          "start": 104.308,
+          "end": 106.42,
+          "function": "Corte seco al silencio y entrada inmediata a pregunta de modelo de negocio.",
+          "visual": {
+            "kind": "transition",
+            "color": null
+          },
+          "captionPolicy": "AUTO",
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_AMANDA_CINE04_OPEN_LOOP",
+          "track": "broll",
+          "type": "cine",
+          "cineType": "CINE01_BLACK_HOLD",
+          "label": "CINE01_BLACK_HOLD",
+          "start": 113.212,
+          "end": 114.212,
+          "function": "Cortar antes de completar «cliente es…» y preservar open loop.",
+          "visual": {
+            "kind": "solid_color",
+            "color": "#000000"
+          },
+          "captionPolicy": "HIDE_DURING_BLACK_HOLD",
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_AMANDA_SFX01",
+          "track": "sfx",
+          "type": "sfx",
+          "definitionId": "SFX_EMPHASIS",
+          "label": "SFX_EMPHASIS",
+          "start": 10.9,
+          "end": 11.12,
+          "timingMode": "free",
+          "sfx": {
+            "name": "SFX_EMPHASIS",
+            "trigger": "«todo lo contrario»",
+            "purpose": "Dar peso al giro sin competir con voz",
+            "search": "soft emphasis hit",
+            "mix": "-18 dB",
+            "status": "pending_selection",
+            "optional": true
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_SFX02",
+          "track": "sfx",
+          "type": "sfx",
+          "definitionId": "SFX_LOW_BOOM",
+          "label": "SFX_LOW_BOOM",
+          "start": 32.145,
+          "end": 32.345,
+          "timingMode": "free",
+          "sfx": {
+            "name": "SFX_LOW_BOOM",
+            "trigger": "después de «mi papá fallece»",
+            "purpose": "Opcional; silencio tiene prioridad",
+            "search": "soft low boom cinematic no copyright",
+            "mix": "-22 dB",
+            "status": "pending_selection",
+            "optional": true
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_SFX03",
+          "track": "sfx",
+          "type": "sfx",
+          "definitionId": "SFX_TENSION",
+          "label": "SFX_TENSION",
+          "start": 50.2,
+          "end": 55.863,
+          "timingMode": "free",
+          "sfx": {
+            "name": "SFX_TENSION",
+            "trigger": "bloque «difícil / imposible»",
+            "purpose": "Sostener tensión de información contradictoria",
+            "search": "subtle tension bed editorial",
+            "mix": "-26 dB",
+            "status": "pending_selection",
+            "optional": true
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_SFX04",
+          "track": "sfx",
+          "type": "sfx",
+          "definitionId": "SFX_RISER",
+          "label": "SFX_RISER",
+          "start": 80.7,
+          "end": 82.53,
+          "timingMode": "free",
+          "sfx": {
+            "name": "SFX_RISER",
+            "trigger": "antes de «oportunidad de mercado»",
+            "purpose": "Preparar el giro sin tapar la frase",
+            "search": "short subtle riser no copyright",
+            "mix": "-24 dB",
+            "status": "pending_selection",
+            "optional": true
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_SFX07",
+          "track": "sfx",
+          "type": "sfx",
+          "definitionId": "SFX_IMPACT",
+          "label": "SFX_IMPACT",
+          "start": 95.064,
+          "end": 95.244,
+          "timingMode": "free",
+          "sfx": {
+            "name": "SFX_IMPACT",
+            "trigger": "pregunta «1500»",
+            "purpose": "Acentuar punch cut de escala",
+            "search": "soft editorial impact",
+            "mix": "-18 dB",
+            "status": "pending_selection",
+            "optional": true
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_SFX08",
+          "track": "sfx",
+          "type": "sfx",
+          "definitionId": "SFX_SUSPENSE",
+          "label": "SFX_SUSPENSE",
+          "start": 111.8,
+          "end": 113.212,
+          "timingMode": "free",
+          "sfx": {
+            "name": "SFX_SUSPENSE",
+            "trigger": "«cliente es…»",
+            "purpose": "Abrir tensión y terminar antes del black hold",
+            "search": "short suspense reverse micro riser",
+            "mix": "-24 dB",
+            "status": "pending_selection",
+            "optional": true
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_01",
+          "track": "music",
+          "type": "music",
+          "label": "MUTE",
+          "start": 0.0,
+          "end": 11.993,
+          "timingMode": "free",
+          "music": {
+            "automation": "MUTE",
+            "purpose": "No music through black/opening contradiction.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_02",
+          "track": "music",
+          "type": "music",
+          "label": "FADE_IN_PULSE",
+          "start": 11.993,
+          "end": 32.145,
+          "timingMode": "free",
+          "music": {
+            "automation": "FADE_IN_PULSE",
+            "purpose": "Pulse enters after contrast and carries VO01/father setup.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_03",
+          "track": "music",
+          "type": "music",
+          "label": "DUCK_TO_MUTE",
+          "start": 32.145,
+          "end": 39.938,
+          "timingMode": "free",
+          "music": {
+            "automation": "DUCK_TO_MUTE",
+            "purpose": "Music drops for loss/hole.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_04",
+          "track": "music",
+          "type": "music",
+          "label": "RESUME_TENSION",
+          "start": 42.278,
+          "end": 57.063,
+          "timingMode": "free",
+          "music": {
+            "automation": "RESUME_TENSION",
+            "purpose": "Resume through revalidation/info overload.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_05",
+          "track": "music",
+          "type": "music",
+          "label": "MUTE",
+          "start": 57.063,
+          "end": 63.663,
+          "timingMode": "free",
+          "music": {
+            "automation": "MUTE",
+            "purpose": "Silence bridge + VO02 planned.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_06",
+          "track": "music",
+          "type": "music",
+          "label": "RESUME_BUILD",
+          "start": 63.663,
+          "end": 104.308,
+          "timingMode": "free",
+          "music": {
+            "automation": "RESUME_BUILD",
+            "purpose": "Recover movement through opportunity/market/scale/purpose.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_07",
+          "track": "music",
+          "type": "music",
+          "label": "MUTE",
+          "start": 104.308,
+          "end": 117.212,
+          "timingMode": "free",
+          "music": {
+            "automation": "MUTE",
+            "purpose": "Hard silence through business-model open loop/title setup.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_MUSIC_08",
+          "track": "music",
+          "type": "music",
+          "label": "MINIMAL_TAIL",
+          "start": 117.212,
+          "end": 124.127,
+          "timingMode": "free",
+          "music": {
+            "automation": "MINIMAL_TAIL",
+            "purpose": "Minimal tail/room tone under final Amanda quote.",
+            "status": "pending_selection"
+          }
+        },
+        {
+          "id": "INTRO_AMANDA_TITLE_CARD",
+          "track": "images",
+          "type": "title_card",
+          "label": "JOC LÓPEZ PODCAST · AMANDA VICARI",
+          "start": 114.212,
+          "end": 124.127,
+          "partId": "T01",
+          "timingMode": "free",
+          "asset": {
+            "assetId": "INTRO_AMANDA_TITLE_CARD_A01",
+            "assetType": "graphic",
+            "description": "Title card: JOC LÓPEZ PODCAST / AMANDA VICARI; Amanda source audio continues underneath.",
+            "prompt": "not_applicable — build as editable brand typography/card in renderer/Canva/CapCut",
+            "status": "planned"
+          }
+        }
+      ],
+      "productionChecklist": {
+        "sourceAlignment": {
+          "status": "needs_review",
+          "notes": "25 source nodes located; microtrims pending where indicated"
+        },
+        "microtrim": {
+          "status": "pending"
+        },
+        "voRecording": {
+          "status": "pending"
+        },
+        "cut": {
+          "status": "pending"
+        },
+        "xr": {
+          "status": "planned"
+        },
+        "images": {
+          "status": "pending"
+        },
+        "motion": {
+          "status": "planned"
+        },
+        "cine": {
+          "status": "planned"
+        },
+        "sfx": {
+          "status": "planned"
+        },
+        "music": {
+          "status": "planned"
+        },
+        "captions": {
+          "status": "planned"
+        },
+        "cover": {
+          "status": "pending"
+        },
+        "copy": {
+          "status": "pending"
+        },
+        "qa": {
+          "status": "pending"
+        }
+      },
+      "qa": {
+        "status": "needs_review",
+        "alphaReady": false,
+        "cutterReady": false,
+        "critical": [
+          "Resolve word-level microtrims before writing final sourceRanges."
+        ],
+        "warnings": [
+          "VO01/VO02 durations are editorial_planned until recorded.",
+          "Timeline in this prebuild is a preview; recompute after source microtrim and VO measurement."
+        ],
+        "truthStatus": "source_aligned_cue_level"
+      },
+      "routePolicy": {
+        "primaryRoute": "final",
+        "meaning": "route is a complete editorial alternative, not a media type; SOURCE and VO can coexist in the same route"
+      },
+      "claims": [
+        {
+          "claimId": "CLAIM_1500",
+          "text": "más de mil quinientos odontólogos",
+          "status": "source_spoken_claim",
+          "sourceAlignmentRefs": [
+            "P19_JOC_1500"
+          ],
+          "externalVerification": "not_performed",
+          "publicationNote": "Source-supported within podcast; external verification optional according to editorial policy."
+        }
+      ]
+    }
+  ]
+}

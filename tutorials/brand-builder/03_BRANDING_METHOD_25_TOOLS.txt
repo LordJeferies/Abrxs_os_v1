@@ -1,0 +1,3 @@
+BRANDING METHOD
+
+Use the 5 Drivers / 25 Tools to reason about brand strategy. Keep this separate from operational Brand Adapter. Strategy explains why/positioning; Adapter encodes how content/production should behave.

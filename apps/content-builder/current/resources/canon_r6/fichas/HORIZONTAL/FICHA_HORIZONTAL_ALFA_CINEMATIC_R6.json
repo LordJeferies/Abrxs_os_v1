@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "abrxos.content-project.r6",
+  "projectId": "REPLACE_PROJECT_ID",
+  "pieces": [
+    {
+      "id": "h01",
+      "canonicalId": "H01",
+      "projectId": "REPLACE_PROJECT_ID",
+      "type": "horizontal",
+      "title": "REPLACE_TITLE",
+      "thesis": "REPLACE_THESIS",
+      "objective": "REPLACE_OBJECTIVE",
+      "source": "DEFAULT",
+      "stage": "ALFA",
+      "workflowStatus": "PENDIENTE",
+      "schedule": {
+        "date": "",
+        "time": "",
+        "platforms": [],
+        "publishedAt": null
+      },
+      "editProfile": {
+        "code": "XR_FULL",
+        "commercialName": "Cinematic Edit"
+      },
+      "sourceRanges": [
+        {
+          "id": "H01_SRC_001",
+          "order": 1,
+          "start": 0.0,
+          "end": 5.0,
+          "startTc": "00:00:00.000",
+          "endTc": "00:00:05.000",
+          "role": "HOOK",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "speaker": "",
+          "timingStatus": "verified"
+        }
+      ],
+      "parts": [
+        {
+          "partId": "H01_P01",
+          "order": 1,
+          "role": "HOOK",
+          "kind": "source",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "function": "Open the piece.",
+          "sourceRangeId": "H01_SRC_001",
+          "editStart": 0.0,
+          "editEnd": 5.0,
+          "timingStatus": "verified"
+        }
+      ],
+      "storyScripts": {
+        "source": [
+          {
+            "id": "H01_P01_STORY",
+            "partId": "H01_P01",
+            "role": "HOOK",
+            "speaker": "",
+            "text": "REPLACE_LITERAL_SOURCE",
+            "start": 0.0,
+            "end": 5.0
+          }
+        ]
+      },
+      "timeline": [
+        {
+          "id": "H01_P01_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "A-roll · Hook",
+          "start": 0.0,
+          "end": 5.0,
+          "routes": [
+            "source"
+          ],
+          "partId": "H01_P01",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "H01_XR01",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "COMIC_INFO",
+          "label": "COMIC_INFO",
+          "start": 20,
+          "end": 35,
+          "partId": "H01_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "view": "lower_left",
+              "start": 20.0,
+              "end": 23.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "H01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "view": "lower_right",
+              "start": 23.0,
+              "end": 26.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "H01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "view": "upper_left",
+              "start": 26.0,
+              "end": 29.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "H01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S04",
+              "view": "upper_right",
+              "start": 29.0,
+              "end": 32.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "H01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S05",
+              "view": "full_composition",
+              "start": 32.0,
+              "end": 35.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "H01_XR01_A01"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "H01_XR01_A01",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 20,
+              "end": 35,
+              "durationSeconds": 15,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation"
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "H01_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "H01_P01",
+          "start": 0.0,
+          "end": 5.0,
+          "sourceText": "REPLACE LITERAL SOURCE TEXT WITH EIGHT TO FIFTEEN WORDS",
+          "wordCount": 9,
+          "highlightWord": "REPLACE",
+          "highlightStatus": "literal",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 0.0,
+              "end": 2.5,
+              "text": "REPLACE LITERAL SOURCE TEXT",
+              "mode": "normal"
+            },
+            {
+              "start": 2.5,
+              "end": 5.0,
+              "text": "WITH EIGHT TO FIFTEEN WORDS",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        }
+      ],
+      "copy": {},
+      "notes": "",
+      "qa": {
+        "status": "needs_review",
+        "critical": [],
+        "warnings": []
+      },
+      "masterRole": "horizontal"
+    }
+  ]
+}

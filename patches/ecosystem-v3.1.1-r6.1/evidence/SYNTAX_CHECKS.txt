@@ -1,0 +1,6 @@
+=== PYTHON COMPILE ===
+PASS
+=== JS SYNTAX ===
+PASS
+=== COMMAND SYNTAX (bash parser; target shell is zsh on macOS) ===
+PASS

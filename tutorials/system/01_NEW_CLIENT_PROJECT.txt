@@ -1,0 +1,7 @@
+NEW CLIENT / BRAND
+
+A. Brand Builder: raw context + form + references → AI package → Brand Strategy + Brand Adapter.
+B. Reimport/store approved Brand Adapter.
+C. Content Builder: use that Brand Adapter on every content package.
+D. Geometra: import generated fichas under stable projectId/contentId.
+E. Never commit client Brand Adapters or transcripts into this source repository unless intentionally anonymized as fixtures.

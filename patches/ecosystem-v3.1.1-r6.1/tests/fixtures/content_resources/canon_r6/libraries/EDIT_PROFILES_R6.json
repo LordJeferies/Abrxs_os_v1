@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "abrxos.edit-profiles.r6",
+  "profiles": {
+    "XR_FULL": {
+      "commercialName": "Cinematic Edit",
+      "allowsXR": true,
+      "allowsMotion": true,
+      "allowsSfx": true,
+      "allowsCine": true,
+      "allowsMusicAutomation": true,
+      "captionMode": "full"
+    },
+    "MOTION_SFX": {
+      "commercialName": "Dynamic Edit",
+      "allowsXR": false,
+      "allowsMotion": true,
+      "allowsSfx": true,
+      "allowsCine": true,
+      "allowsMusicAutomation": true,
+      "captionMode": "full"
+    },
+    "SFX_ONLY": {
+      "commercialName": "Clean Edit",
+      "allowsXR": false,
+      "allowsMotion": "minimal_or_none",
+      "allowsSfx": true,
+      "allowsCine": true,
+      "allowsMusicAutomation": true,
+      "captionMode": "full"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+BRAND BUILDER MODULES
+
+app.py
+local server/API and browser UI integration.
+
+brand_engine.py
+BrandStore, completion, AI-package construction, ecosystem contract.
+
+web/index.html
+frontend.
+
+resources/branding_method_registry.json
+5 Drivers / 25 Tools registry.
+
+resources/brand_adapter_template.json
+operational Brand Adapter template.
+
+references
+stored under external data directory by the app, not in this repo snapshot unless they are generic shipped resources.

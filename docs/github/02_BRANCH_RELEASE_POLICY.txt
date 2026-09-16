@@ -1,0 +1,19 @@
+GIT BRANCH / RELEASE POLICY
+
+main               last verified ecosystem release
+develop            optional integration branch
+feature/<name>      isolated feature
+hotfix/<name>       minimal reversible fix
+release/<version>   frozen release candidate
+
+Suggested process:
+git checkout -b hotfix/timeline-selection
+→ failing test
+→ patch
+→ VERIFY_ALL
+→ manifest
+→ PR/review
+→ merge main
+→ tag component + ecosystem
+
+Do not commit directly to main while experimenting with Geometra UI/runtime.

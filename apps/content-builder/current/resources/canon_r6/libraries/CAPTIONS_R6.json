@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "abrxos.caption-policy.r6",
+  "timelineUnit": "caption_group",
+  "normalTargetWords": [
+    8,
+    15
+  ],
+  "softRangeWords": [
+    6,
+    17
+  ],
+  "heroWord": {
+    "minWords": 1,
+    "maxWords": 1,
+    "requiresEditorialReason": true
+  },
+  "rules": [
+    "Never cross partId boundaries.",
+    "Cut by semantic sentence/clause before word count.",
+    "highlightWord is optional and normally literal inside sourceText.",
+    "displayCues may subdivide the group without creating extra timeline blocks.",
+    "COMIC_CC keeps groups but hides them during the XR interval."
+  ],
+  "groupShape": {
+    "id": "V01_CAP_G01",
+    "track": "captions",
+    "type": "caption_group",
+    "partId": "V01_P01",
+    "start": 0.0,
+    "end": 4.0,
+    "sourceText": "REPLACE_LITERAL_SPOKEN_TEXT",
+    "wordCount": 10,
+    "highlightWord": "REPLACE_OR_NULL",
+    "highlightStatus": "literal|editorial|none",
+    "displayMode": "normal_with_highlight",
+    "visibility": "visible",
+    "suppressedBy": null,
+    "displayCues": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "REPLACE",
+        "mode": "normal"
+      },
+      {
+        "start": 2.0,
+        "end": 3.0,
+        "text": "REPLACE_STRONG_WORD",
+        "mode": "hero_word"
+      },
+      {
+        "start": 3.0,
+        "end": 4.0,
+        "text": "REPLACE",
+        "mode": "normal"
+      }
+    ],
+    "captionSchema": "abrxos.caption.v2",
+    "captionPolicyVersion": "R6"
+  },
+  "geometraCompatibility": {
+    "captionSchema": "abrxos.caption.v2",
+    "captionPolicyVersion": "R6",
+    "reason": "Current Geometra V2 preserves events with captionSchema abrxx.caption.v2; R6 grouping lives in policy fields."
+  }
+}

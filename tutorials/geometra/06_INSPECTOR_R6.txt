@@ -1,0 +1,3 @@
+R6 INSPECTOR
+
+Inspect XR states/assets/prompts, CINE, SFX, Caption Groups, sourceAlignment and VO placement. Editing visual projection must update canonical object IDs, not DOM-only state.

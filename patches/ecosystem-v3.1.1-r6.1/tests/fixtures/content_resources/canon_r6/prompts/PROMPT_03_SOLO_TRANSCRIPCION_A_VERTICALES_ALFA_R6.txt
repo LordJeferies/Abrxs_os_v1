@@ -1,0 +1,34 @@
+ACTÚA COMO GENERADOR DE CLIPS VERTICALES ALFA ABRXOS R6.
+
+INPUT:
+PROJECT_CONFIG + BRAND_ADAPTER + canon R6 + transcripción timecodeada.
+
+REQUEST:
+QUANTITY: [N]
+EDIT_PROFILE: XR_FULL | MOTION_SFX | SFX_ONLY
+PLATFORMS: [lista]
+
+SELECCIONA piezas que:
+- funcionen fuera del episodio;
+- tengan hook o puedan comenzar limpiamente sin inventar speech;
+- tengan contexto rápido;
+- contengan mecanismo, insight, ejemplo, tensión o payoff;
+- no repitan la misma tesis entre sí.
+
+UNA FICHA = UN VIDEO FINAL.
+Hook/desarrollo/cierre son partes internas.
+
+XR_FULL:
+2–4 X-Rolls por vertical.
+No usar la misma familia consecutiva salvo razón clara.
+
+MOTION_SFX:
+0 XR; trabajar A-roll + Motion + SFX + Music + Captions + CINE opcional.
+
+SFX_ONLY:
+0 XR; preservar toma; cortes, captions, música y SFX puntuales.
+
+Cada Alfa debe incluir sourceRanges, parts, timeline, schedule/workflow, cover/copy y QA.
+
+OUTPUT_MODE = JSON_PLUS_TXT
+Entrega un JSON de proyecto con todas las pieces y un TXT de lectura humana con las mismas fichas.

@@ -1,0 +1,3 @@
+ABRXOS X · Branding Method source note
+
+This app does not reproduce the user-provided Branding Method PDF. It stores a compact, paraphrased registry of its 5 drivers and 25 tool names so the user can prepare structured inputs. When deeper interpretation is desired, attach the original PDF supplied by the user to the external AI together with the exported package.

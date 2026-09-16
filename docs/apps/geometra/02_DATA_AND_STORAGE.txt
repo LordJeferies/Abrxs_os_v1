@@ -1,0 +1,18 @@
+GEOMETRA DATA / STORAGE
+
+CODE: ~/ABRXOS_GEOMETRA_V3
+DATA: ~/ABRXOS_GEOMETRA_DATA
+PATCH BACKUPS: ~/ABRXOS_GEOMETRA_PATCH_BACKUPS
+ECOSYSTEM HOTFIX BACKUPS: ~/ABRXOS_ECOSYSTEM_HOTFIX_BACKUPS
+
+Repository snapshot copies CODE only.
+User library/projects are never committed by capture tools.
+
+Core document facts:
+canonicalId = stable content identity
+stage = BETA/ALFA/OMEGA
+workflowStatus = PENDIENTE/REVISADO/HACIENDO/LISTO/PROGRAMADO/PUBLICADO
+sourceRanges = Cutter/master truth
+timeline = edit-time production plan
+schedule = calendar state
+productionChecklist = detailed production state

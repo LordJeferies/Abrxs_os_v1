@@ -1,0 +1,34 @@
+GEOMETRA MODULE MAP
+
+geometra/core.py / importer-normalizer layer
+  external formats → canonical document.
+
+geometra/library.py
+  persistent project library and piece merge.
+
+geometra/compiler.py
+  selected pieces + renderer + theme → standalone Lienzo.
+
+geometra/server.py
+  local API/browser application.
+
+geometra/r6.py
+  R6/R6.1 validator, production checklist, readiness gates.
+
+r6/
+  shared R6 libraries + schema + R6.1 contract.
+
+shared/lienzo_core.js
+  common editor/runtime behavior.
+
+shared/r6_patch.js
+  R6/R6.1 Lienzo capabilities and inspectors.
+
+app/
+  Geometra browser UI; app/r6_patch.js/css add R6 capabilities.
+
+renderers/
+  JOC Classic / Shadcn Studio / future packs. Presentation layer only.
+
+.abrxos_patches / .abrxos_hotfixes
+  installation provenance/registry; not user project data.

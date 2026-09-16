@@ -1,0 +1,5 @@
+Whole project
+
+Generate a project collection consistently, but preserve stable IDs and per-piece readiness independently.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

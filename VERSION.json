@@ -1,0 +1,13 @@
+{
+  "product": "ABRXOS Ecosystem Repository",
+  "version": "3.1.1-r6.1",
+  "date": "2026-09-16",
+  "components": {
+    "geometra": "3.1.1",
+    "contentBuilder": "1.0.1",
+    "brandBuilder": "1.0.1"
+  },
+  "canonFamily": "R6",
+  "canonRevision": "R6.1",
+  "hotfix": "ABRXOS_ECOSYSTEM_V3_1_1_R6_1"
+}

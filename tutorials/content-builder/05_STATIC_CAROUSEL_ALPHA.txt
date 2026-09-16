@@ -1,0 +1,5 @@
+Source → Carousel/Static Alfa
+
+Use staticProduction/slides; never fake a video timeline.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

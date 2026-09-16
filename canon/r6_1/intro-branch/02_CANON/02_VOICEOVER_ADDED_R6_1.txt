@@ -1,0 +1,38 @@
+ABRXOS R6.1 · VO_ADDED
+
+VOICEOVER DEL NARRADOR ES EDITORIAL, NO SOURCE SPEECH.
+
+No debe tener:
+sourceRange del master
+cueId ficticio
+speaker Amanda/JOC
+verified master timestamp inventado
+
+Debe tener:
+id
+kind: VO_ADDED
+speaker: NARRADOR
+text
+placement.after
+placement.before
+durationTargetSeconds
+timingStatus: editorial_planned hasta grabación
+voiceoverAssetId
+recordingStatus
+audioFile
+measuredDuration
+start/end edit-relative
+caption policy
+music ducking
+visual treatment/XR/CINE si aplica
+
+REGLA DE PLACEMENT
+En este intro:
+VO01 va después de P03_MAJORITY_FREE y antes de P04_FATHER_IDOL.
+VO02 va después de P11_OVERSATURATED y antes de P12_DIFFICULTIES.
+
+Cuando se graba:
+1. medir archivo;
+2. sustituir duration planned por duration measured;
+3. recalcular timeline posterior;
+4. captions del VO usan timing del VO, no del master.

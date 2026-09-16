@@ -1,0 +1,25 @@
+CONTENT BUILDER CASE ROUTER
+
+01 Plan fijo + transcript → Alfa
+02 Solo transcript → Intro Alfa
+03 Solo transcript → Vertical Alfa
+04 Solo transcript → Horizontal Alfa
+05 Transcript/fuente → Static/Carousel Alfa
+06 Transcript → Betas para selección
+07 Beta seleccionada → Alfa
+08 Actualizar Alfa existente
+09 Dynamic Edit / MOTION_SFX
+10 Clean Edit / SFX_ONLY
+11 Full episode Alfa
+12 Multi-source
+13 Plan sin timing → Alfa needs_review
+14 Todo el proyecto
+
+R6.1 adds to these cases:
+sourceAlignment first
+microtrim tasks
+VO_ADDED without fake sourceRange
+route semantics
+short caption exceptions
+Projection contract
+contract_manifest ecosystem handshake

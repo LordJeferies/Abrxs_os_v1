@@ -1,0 +1,174 @@
+ABRXOS — LÓGICA DE SFX, MOTIONS Y COACH R5
+
+## 1. REGLA DE UBICACIÓN
+
+Todo recurso debe ubicarse en la jerarquía:
+
+`contentId / partId / subpartId / beatId / recurso`
+
+Un recurso puede pertenecer a XR, XR00 o directamente al master. No hay listas
+huérfanas.
+
+## 2. MOTION: INSTRUCCIÓN OPERATIVA
+
+Motion no es prompt y no genera una imagen. Es la instrucción para animar un
+asset ya creado o para aplicar un reencuadre en el editor.
+
+Campos mínimos:
+
+- `motionId` descriptivo (`push_in_01`, `pan_left_02`, `static_01`);
+- asset y estado de destino;
+- objetivo narrativo;
+- estado inicial y final;
+- propiedad: posición, escala, rotación, opacidad, blur o foco;
+- keyframes relativos y valores;
+- easing;
+- duración e IN/OUT;
+- elemento que se mueve y elementos bloqueados;
+- relación con palabra, beat, música o SFX;
+- safe areas;
+- instrucciones equivalentes para CapCut;
+- criterio de aprobación.
+
+Tipos útiles: `static`, `push_in`, `pull_out`, `pan_left`, `pan_right`,
+`tilt_up`, `tilt_down`, `parallax_2plane`, `parallax_3plane`, `rack_focus`,
+`reveal_mask`, `opacity_fade`, `orbit_limited`, `object_group`, `word_pop`.
+
+Ejemplo:
+
+```text
+M03 push_in
+Asset: XR07/S01/A01
+Duración: 4.0 s | 0.0–4.0 s
+Escala: 100% → 118% → 132% en 0.0/2.0/4.0 s
+Punto focal: objeto situado en tercio derecho
+Easing: ease-in-out
+Bloquear: rostro, subtítulos y fondo
+Sincronía: alcanzar 132% en la palabra “resultado”
+CapCut: keyframes de escala y posición; no aplicar zoom automático adicional
+```
+
+## 3. SFX: EVENTO SONORO POR BEAT
+
+Un SFX puede aparecer en XR, XR00 o sin XR. Debe reforzar una acción, cambio,
+revelación o énfasis; nunca rellenar silencios sin intención.
+
+Campos mínimos:
+
+- `sfxId`, `beatId`, XR/XR00 asociado;
+- palabra, gesto, corte o cambio que lo dispara;
+- IN exacto, duración, fade y punto máximo;
+- tipo: hit, impact, whoosh, riser, click, tick, glitch, ambience, accent;
+- intención narrativa;
+- volumen relativo y ducking;
+- frecuencia/tono y densidad;
+- consulta para buscarlo;
+- licencia y fuente;
+- alternativa;
+- instrucciones de mezcla y CapCut.
+
+Presets: hit suave 80–220 ms para énfasis; whoosh 250–700 ms para transición;
+riser 0.5–2 s para anticipación; click/tick 40–120 ms para interfaz; ambience
+continuo sólo si sostiene el lugar. Ajustar siempre al audio real.
+
+## 4. COACH EDITORIAL
+
+El coach no es una frase decorativa. Es la explicación accionable de por qué
+una decisión funciona y cómo comprobarla.
+
+Cada parte debe tener:
+
+- pregunta del coach;
+- criterio que debe cumplirse;
+- respuesta de referencia o ejemplo;
+- decisión tomada;
+- riesgo si se ignora;
+- acción concreta para el editor;
+- prueba de aprobación.
+
+Capas de coach:
+
+1. Editorial: qué idea debe entenderse y qué emoción se busca.
+2. Retención: qué cambia la atención y en qué segundo.
+3. Visual: por qué se elige XR/encuadre/color.
+4. Técnico: cómo ejecutarlo en CapCut/Apple y qué limitación existe.
+5. QA: qué debe verse, oírse y leerse para aprobar.
+
+Ejemplo:
+
+```text
+Pregunta: ¿La imagen demuestra la frase o sólo la decora?
+Criterio: el espectador identifica la relación en menos de 2 s.
+Decisión: XR01, A03 muestra el campo vacío de siguiente acción.
+Riesgo: una foto genérica de oficina no prueba el problema.
+Acción: mantener el campo visible y reservar el tercio inferior.
+QA: reproducir sin audio y comprobar que el detalle se entiende.
+```
+
+## 5. REGLAS DE CALIDAD
+
+- Un motion no rescata una imagen que no comunica.
+- Un SFX no sustituye una transición mal planteada.
+- El coach debe referirse a un beat y a un resultado verificable.
+- Si no hay razón narrativa, usar `not_applicable`.
+- Toda recomendación queda trazada y puede aceptarse, editarse o rechazarse.
+
+## 6. CÓMO ELEGIR UN MOTION
+
+La elección parte del tipo de información, no de la moda visual:
+
+| Necesidad | Motion recomendado | No utilizar |
+|---|---|---|
+| acercar un detalle | push_in suave | zoom brusco sin ancla |
+| recorrer un mapa | pan/zoom por keyframes | desplazamiento que pierde orientación |
+| separar capas | parallax 2/3 planos | profundidad artificial sin motivo |
+| revelar texto o imagen | reveal_mask | entrada que tapa la palabra |
+| cambiar atención | rack_focus o microescala | movimiento continuo durante toda la frase |
+| mantener una placa | static | animación sólo para llenar el beat |
+
+La instrucción debe poder traducirse a controles visibles del editor. Si el
+editor no puede saber qué propiedad modificar, el motion no está terminado.
+
+## 7. CÓMO ELEGIR UN SFX
+
+Primero identificar el evento: aparición, golpe conceptual, transición,
+confirmación, tensión o ambiente. Después elegir un sonido que lo apoye sin
+competir con la voz.
+
+```text
+Beat: P03/SP03.01/B03.01.01
+Evento: aparece la palabra “resultado”
+SFX: impact suave, 160 ms
+Entrada: 00:15:43.240
+Nivel: -14 dB bajo la voz
+Ducking música: -4 dB durante 300 ms
+Objetivo: dar peso al remate sin hacerlo agresivo
+```
+
+Si el SFX sólo está allí porque “el video necesita más efectos”, se marca
+`not_applicable`. La ausencia de sonido puede ser una decisión premium.
+
+## 8. COACH COMO SISTEMA DE APRENDIZAJE
+
+El coach debe responder cinco preguntas en lenguaje comprensible:
+
+1. ¿Qué debe comprender el espectador?
+2. ¿Qué verá u oirá que lo ayude?
+3. ¿Por qué se eligió este XR, encuadre o SFX?
+4. ¿Cómo se ejecuta en el editor?
+5. ¿Cómo se comprueba que funciona?
+
+Ejemplo de coach técnico para XR09:
+
+```text
+La frase se divide después de “no se mide” porque allí termina una unidad
+sintáctica. P01 y P02 duran 3.4 s y 3.7 s. Hacer aparecer las palabras siguiendo
+la transcripción, reservar el tercio inferior para subtítulos y detener la
+animación 220 ms antes del cambio de placa para que el remate se lea completo.
+```
+
+## 9. REFERENCIAS Y DECISIONES
+
+Una referencia visual explica qué se toma de ella: encuadre, textura, luz,
+tipografía, densidad o interacción. No significa copiar una marca completa.
+El coach debe separar inspiración, requisito obligatorio y variación permitida.

@@ -1,0 +1,44 @@
+ABRXOS · MÓDULOS Y RESPONSABILIDADES
+
+M01 SOURCE INGEST
+Lee transcript/master metadata/HTML/JSON.
+No decide creatividad.
+
+M02 EDITORIAL PLAN PARSER
+Convierte lenguaje humano en nodos SOURCE_SPEECH / VO_ADDED / EDIT_DIRECTION / TITLE_CARD / OPEN_LOOP.
+
+M03 SOURCE ALIGNER
+Busca source speech, genera parent cues y microtrim tasks.
+
+M04 CANONICAL NORMALIZER
+Convierte inputs compatibles en documento canónico V3 sin borrar campos R6.
+
+M05 LIBRARY / VERSIONING
+Acumula proyectos y piezas por IDs estables.
+
+M06 CATALOG REGISTRY
+XR / SFX / Motion / CINE / Captions / Music / Edit Profiles.
+
+M07 ALFA COMPLETENESS VALIDATOR
+Comprueba que XR tenga states/assets/prompts, SFX trigger, Motion y tiempos; no sólo nombres.
+
+M08 RENDERER REGISTRY
+JOC Classic / Shadcn Studio / futuros. Cambia UI, no dominio.
+
+M09 LIENZO COMPILER
+Genera HTML standalone con app-data.
+
+M10 LIENZO RUNTIME
+Selección, inspector, timeline, history, calendar, kanban, carousel, export, merge.
+
+M11 PRODUCTION STATE
+workflowStatus + productionChecklist + assetStatus.
+
+M12 CUTTER BRIDGE
+Valida y exporta sourceRanges; nunca reinterpreta decisiones visuales.
+
+M13 QA / REGRESSION
+Tests de import, roundtrip, source truth, timeline, renderer, Cutter, responsive.
+
+M14 FUTURE PLAYER / VIDEOFLOW
+Reproducción/proxy/Virtual Cut. Debe leer el mismo documento, no crear otra lógica editorial.

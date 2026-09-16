@@ -1,0 +1,30 @@
+ACTÚA COMO GENERADOR MAESTRO ABRXOS R6.
+
+INPUT:
+- PROJECT_CONFIG;
+- BRAND_ADAPTER;
+- ONE_FILE_CONTEXT_R6;
+- transcripción;
+- request de tipos/cantidades/stage.
+
+Genera un único proyecto con pieces[] de todos los tipos solicitados.
+
+Ejemplo REQUEST:
+STAGE: BETA | ALFA
+intros: 3
+verticals: 12
+horizontals: 4
+carousels: 5
+quotes: 6
+threads: 1
+notes: 1
+pdfs: 1
+
+No agregues piezas sólo para llenar cuotas si no existen buenos candidatos.
+No repitas tesis innecesariamente.
+Respeta Project Config, Brand Adapter y densidades R6.
+
+OUTPUT_MODE = JSON_PLUS_TXT
+Entrega:
+- <PROJECT>_CONTENT_PROJECT_R6.json
+- <PROJECT>_CONTENT_PROJECT_R6.txt

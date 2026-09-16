@@ -1,0 +1,24 @@
+ABRXOS CURRENT VERSION MATRIX
+
+Component                Installed expected     Canon family    Canon revision
+Geometra                  3.1.1                  R6              R6.1
+Content Builder           1.0.1                  R6              R6.1
+Brand Builder             1.0.1                  R6              R6.1
+Baseline Geometra patch   3.1.0 R6               R6              R6
+Ecosystem hotfix          3.1.1-r6.1             R6              R6.1
+
+HANDSHAKE
+Content Builder and Geometra must carry byte-identical hashes for:
+XR_FAMILIES_R6.json
+EDIT_PROFILES_R6.json
+CINE_LIBRARY_R6.json
+SFX_LIBRARY_R6.json
+MOTION_LIBRARY_R6.json
+MUSIC_LIBRARY_R6.json
+CAPTIONS_R6.json
+
+Brand Builder output must declare:
+schemaVersion = abrxos.brand-adapter.r6
+adapterVersion = R6.1
+
+DO NOT silently advance one app to R6.2 while the others remain R6.1. Add a compatibility contract and tests first.

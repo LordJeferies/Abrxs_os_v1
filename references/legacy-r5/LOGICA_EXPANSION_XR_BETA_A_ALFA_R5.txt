@@ -1,0 +1,161 @@
+ABRXOS — LÓGICA DE EXPANSIÓN DE UN XR DE BETA A ALFA R5
+
+## 1. QUÉ RECIBE LA IA
+
+La Beta puede decir:
+
+```text
+Parte: desarrollo
+Subparte: el progreso diario
+Beat: 00:15:12–00:15:18
+XR sequence: XR07 → XR02 → XR05
+XR07: representar acumulación; 3 estados posibles
+```
+
+Eso es una intención, no un plan visual terminado.
+
+## 2. REGLA DE IDENTIDAD Y ORDEN
+
+La IA debe desarrollar XR07, luego XR02 y luego XR05. El ID no se renumera.
+El número del XR es identidad de catálogo; la posición en `xrSequence` es el
+orden narrativo. No se agrega, elimina, divide, fusiona ni reordena un XR sin
+registrarlo en `xrChangeRequests` con motivo y aprobación requerida.
+
+## 3. PLANTILLA DE EXPANSIÓN
+
+Para cada XR entregar:
+
+### A. Cabecera
+
+- xrId, posición, partId, subpartId, beatId;
+- función narrativa de 25–50 palabras;
+- frase ancla de 8–18 palabras;
+- IN/OUT verificados y duración;
+- transición de entrada/salida de 15–35 palabras.
+
+### B. Estados internos
+
+Para cada S01, S02, S03…:
+
+- duración y orden;
+- descripción visual de 35–70 palabras;
+- sujeto, acción, contexto, primer plano, plano medio y fondo;
+- composición y punto focal;
+- cámara, lente, perspectiva y profundidad;
+- iluminación, paleta, materiales y textura;
+- continuidad con estado anterior/siguiente de 25–50 palabras;
+- elementos fijos y variaciones permitidas;
+- zona segura para subtítulos.
+
+### B.1 Desarrollo asset por asset
+
+La cantidad indicada en Beta se respeta exactamente. Un XR de 3 imágenes exige
+`A01`, `A02` y `A03`; uno de 4 exige `A01–A04`; uno de 7 exige `A01–A07`.
+Cada asset debe tener por separado descripción de 35–70 palabras, función,
+frase acompañante, sujeto, acción, contexto, composición, prompt de imagen,
+fuente o B-Roll, continuidad y motion (`static` si no se mueve).
+
+Si es collage, mosaico, split-screen, comparación, capas, captura o gráfico,
+declarar tipo, celdas, distribución, proporciones, márgenes, fondo, orden de
+lectura, z-index y entradas/salidas. Si utiliza emojis, listar cada emoji, su
+significado, posición, tamaño, estilo, entrada, salida y movimiento. No escribir
+“agregar emojis” o “hacer un collage” como instrucción genérica.
+
+### C. Prompt de imagen
+
+90–180 palabras. Debe describir la escena completa, no sólo decir
+“cinematográfico”. Incluir objetivo, cita, sujeto, acción, entorno, planos,
+composición, lente, luz, paleta, textura, continuidad, formato, espacio para
+texto y prompt negativo. No generar texto dentro de la imagen salvo solicitud.
+
+### D. Instrucción de motion
+
+50–120 palabras. Es una instrucción operativa para el editor, no un prompt de
+generación IA. Incluir motionId, tipo, estado inicial/final, keyframes,
+posición, escala, rotación, opacidad, zoom/pan/parallax, easing, foco, duración,
+sincronía con palabra/beat/SFX, elementos inmóviles e instrucciones CapCut.
+
+### E. B-Roll asociado
+
+- brollId y estado;
+- propósito de 15–35 palabras;
+- descripción buscable de 20–45 palabras;
+- búsqueda Google de 8–20 palabras;
+- búsqueda stock de 8–20 palabras;
+- orientación, plano, emoción, color y contexto;
+- fuente, licencia, crédito y alternativa.
+
+B-Roll no es un XR. Si XR07 tiene cuatro estados visuales, puede tener cuatro
+referencias BR, una por estado, no referencias inventadas adicionales.
+
+### F. Audio y SFX
+
+Indicar voz, música, ducking y silencios. Para cada SFX, incluso si el XR es
+XR00: sfxId, beatId, palabra/gesto disparador, IN, duración, tipo, intención,
+volumen, fade, búsqueda, licencia y colocación CapCut.
+
+## 4. CASO XR00
+
+XR00 significa que continúa el master sin imagen añadida. Puede incluir
+subtítulos, cambio de crop, música, SFX o B-Roll puntual. Debe documentarse
+igual dentro de la subparte y el beat.
+
+## 5. VALIDACIÓN DEL XR ALFA
+
+- coincide con el texto y rango de Beta;
+- mantiene posición e ID;
+- tiene todos sus estados;
+- cada estado tiene prompt de imagen e instrucción de motion;
+- B-Roll tiene búsqueda y licencia;
+- SFX está ubicado en un beat;
+- no contiene claims inventados;
+- cumple límites de palabras;
+- queda `ready`, `needs_review` o `blocked`.
+
+Si no existe información suficiente, no rellenar con creatividad silenciosa:
+marcar el campo y explicar la confirmación necesaria.
+
+## 6. EJEMPLO COMPLETO DE EXPANSIÓN
+
+Beta entrega:
+
+```text
+Parte: desarrollo
+Beat: 00:15:12–00:15:21
+XR: XR07
+Idea: tareas que se acumulan
+Cantidad estimada: 3 objetos y 3 estados
+```
+
+Alfa debe devolver una cadena ejecutable:
+
+```text
+XR07 / P02 / SP02.03
+
+S01 · 00:15:12–00:15:15
+A01 documento pendiente: sobre de papel con una etiqueta legible.
+A02 reloj: objeto secundario que representa tiempo transcurrido.
+A03 notificación: pequeño elemento luminoso, todavía no dominante.
+Composición: hablante en tercio izquierdo; objetos en profundidad a la derecha.
+Estado: los tres assets aparecen separados para introducir el problema.
+
+S02 · 00:15:15–00:15:18
+A01 y A02 se acercan y forman un grupo; A03 permanece separado.
+La relación visual expresa acumulación, no decoración.
+
+S03 · 00:15:18–00:15:21
+A03 se destaca como siguiente acción; A01 y A02 pierden contraste.
+La frase de cierre activa el remate y deja espacio para el subtítulo.
+```
+
+Para cada A01, A02 y A03 se adjuntan descripción, prompt, fuente/B-Roll y
+motion. Si se decide que el XR necesita cuatro objetos, ese cambio no se oculta:
+se registra como solicitud, con el motivo y la aprobación pendiente.
+
+## 7. CONTROL DE EXTENSIÓN
+
+Los límites de palabras garantizan una explicación mínima, pero no deben forzar
+relleno. Un prompt de imagen puede necesitar 120 palabras para una fotografía
+simple y 180 para una escena con continuidad compleja. Un motion puede ser corto
+si el elemento es estático, pero debe declarar explícitamente `static` y la
+razón. La validación comprueba presencia y claridad, no sólo longitud.

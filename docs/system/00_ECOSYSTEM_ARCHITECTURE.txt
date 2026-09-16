@@ -1,0 +1,31 @@
+ABRXOS ECOSYSTEM ARCHITECTURE · R6.1
+
+Brand Builder
+  INPUT: raw brand context, guided form, Branding Method, references, previous Brand Adapter.
+  OUTPUT: AI package + strategy contract + Brand Adapter R6/R6.1 handoff.
+        ↓
+Content Builder
+  INPUT: Brand Adapter + project config + transcript/plan/current ficha.
+  OUTPUT: AI package instructing creation/update of Beta/Alfa ficha with R6/R6.1 rules.
+        ↓
+External AI
+  OUTPUT: JSON/TXT ficha compatible with ABRXOS content contract.
+        ↓
+Geometra
+  IMPORT → normalize → library → validate → renderer compile.
+        ↓
+Lienzo
+  Inspector + Timeline + Kanban + Calendar + Carousel + Production Checklist.
+        ↓
+Cutter
+  consumes the stable cut boundary: canonicalId/type/source/sourceRanges.
+
+BOUNDARIES
+- Brand Builder does not invent video timeline.
+- Content Builder does not own project persistence.
+- Geometra does not need to generate creatively.
+- Renderer does not redefine domain semantics.
+- Cutter does not need to understand XR/SFX/Calendar.
+
+SINGLE SOURCE OF TRUTH
+Canonical data is carried by stable IDs and source fields. UI is projection, never a second store.

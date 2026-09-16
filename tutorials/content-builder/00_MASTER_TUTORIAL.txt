@@ -1,0 +1,3 @@
+CONTENT BUILDER MASTER
+
+Select the correct case, provide Brand Adapter + Project Config + source material. Build the package, run it in an external AI, receive JSON/TXT, validate IDs/timestamps, then import into Geometra. R6.1 requires source alignment before pretending sourceRanges are final.

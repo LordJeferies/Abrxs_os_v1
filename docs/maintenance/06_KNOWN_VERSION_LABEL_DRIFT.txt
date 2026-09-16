@@ -1,0 +1,15 @@
+KNOWN VERSION LABEL DRIFT — BUILDERS
+
+The ecosystem hotfix updates the release VERSION.json and engine constants to 1.0.1 R6.1, but the original local server files still contain their baseline UI constant:
+
+Brand Builder app.py   APP_VERSION = 1.0.0
+Content Builder app.py APP_VERSION = 1.0.0
+
+This does not change package contracts because brand_engine.py/content_engine.py and VERSION.json carry the R6.1 release state. The current installed snapshot is intentionally preserved exactly.
+
+Recommended cleanup in the next normal Builder release (not an emergency hotfix):
+- centralize app/engine/release version in one VERSION.json loader;
+- remove duplicated hard-coded APP_VERSION constants;
+- add a test asserting UI-reported version == VERSION.json == engine release version.
+
+Do not patch this cosmetic drift directly in the production install just to make labels match; fix it in Git, test, then release normally.

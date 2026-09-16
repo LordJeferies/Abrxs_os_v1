@@ -1,0 +1,11 @@
+GEOMETRA REPAIR / UPDATE GUIDE
+
+UI bug only → patch renderer/app/shared runtime.
+R6 inspector bug → patch r6_patch.js/css, not Kernel.
+Validator bug → geometra/r6.py + fixture + test.
+Import bug → importer/normalizer, with roundtrip test.
+Kanban/calendar bug → app controller + /api/update_piece; stage/source/timeline must remain unchanged.
+Cutter boundary bug → sourceRanges/source group contract; treat as high risk.
+
+Never replace ~/ABRXOS_GEOMETRA_DATA during code repair.
+Every release must verify old legacy JOC/Amanda sourceRanges remain unchanged.

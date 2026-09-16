@@ -1,0 +1,19 @@
+ABRXOS R6.1 · SOURCE ALIGNMENT
+
+Antes de crear sourceRanges finales, alinea cada parte SOURCE_SPEECH contra la transcripción/master.
+
+Por nodo:
+- id/partId estable
+- desiredText literal
+- cueIds o referencia de evidencia
+- status/timingStatus: verified | cue_verified | cue_based | word_aligned | estimated | unresolved
+- parentStart/parentEnd y TC cuando estén disponibles
+- parentCueText
+- microtrim: true/false
+- startAnchor/endAnchor cuando microtrim=true
+- note/confidence
+
+REGLA
+No inventes IN/OUT dentro de un cue. Si la frase vive dentro de un cue, conserva el parent cue y microtrim=true hasta resolver el corte fino.
+
+Después del sourceAlignment, crea sourceRanges finales sólo para los rangos ya resueltos. sourceRanges sigue siendo la verdad del Cutter.

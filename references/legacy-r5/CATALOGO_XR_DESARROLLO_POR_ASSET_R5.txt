@@ -1,0 +1,170 @@
+ABRXOS — CATÁLOGO DE XR: DESARROLLO POR PARTE Y ASSET R5
+
+Este catálogo sirve para elegir una gramática visual antes de escribir prompts.
+Cada familia resuelve una necesidad distinta: observar, transformar, explicar,
+actuar, enfatizar o crear atmósfera. La familia se elige por la frase y por el
+papel de la imagen en la narración, no porque un efecto sea popular. Una ficha
+Beta puede proponer una familia; la Alfa debe justificar sus estados y assets.
+
+REGLA GENERAL
+
+La cantidad de imágenes no se decide por una cuota fija. Se decide por la
+lógica interna de cada familia XR, la duración disponible y la frase fuente.
+Beta propone la familia, la cantidad y el orden; Alfa confirma o solicita un
+cambio justificado. Cada asset se desarrolla individualmente como `A01…An`.
+
+Cada asset debe tener: función, descripción de 35–70 palabras, relación con la
+frase, composición, prompt de imagen de 90–180 palabras, B-Roll o fuente,
+continuidad, formato y motion como instrucción separada. Si la familia trabaja
+con un master único, no inventar imágenes independientes.
+
+## XR00 — DIRECCIÓN DEL A-ROLL / REENCUADRE
+
+Función: mejorar la lectura de la persona o reservar espacio para texto. No
+exige imágenes generadas.
+
+Parte interna:
+- A01: encuadre original/ancla; registrar plano, gesto, luz, vestuario y zona
+  segura.
+- A02: recorte o cobertura alternativa para enfatizar la frase.
+- A03: variante expresiva opcional sólo si aporta sentido.
+
+No crear A02/A03 si el recorte original resuelve el beat. Si es un recorte,
+procede de los píxeles del master. Si es cobertura sintética, marcarla como
+generada y pendiente de revisión. Motion: push-in, reencuadre o desplazamiento.
+
+## XR01 — OBSERVACIÓN REFERENCIAL EN CLOSE-UP
+
+Preset habitual: 3 imágenes o clips; referencia → profundización → detalle.
+
+- A01: muestra el elemento con contexto suficiente.
+- A02: acerca la mirada a un detalle relacionado.
+- A03: revela el detalle decisivo que completa la frase.
+
+Conservar objeto, materiales, luz y tratamiento. Con hablante, generar fondos
+sin persona y dejar espacio para su recorte. No usar tres imágenes si una o dos
+resuelven la observación; justificar la reducción.
+
+## XR02 — TRANSFORMACIÓN PROGRESIVA CON TEXTO INTEGRADO
+
+Lógica base: 4 clean plates y 3 composiciones finales con texto. Son 4 estados
+narrativos, pero 7 salidas visuales si se exportan placas separadas.
+
+- A01/S01: escena inicial limpia.
+- A02/S02: primer cambio + tramo literal 1.
+- A03/S03: segundo cambio + tramos 1 y 2 acumulados.
+- A04/S04: resultado + tramos 1, 2 y 3 acumulados.
+- T02, T03, T04: composiciones finales editables con texto.
+
+La frase se divide en tres unidades reales, sin parafrasear. Mantener cámara,
+geometría, materiales y espacio para texto. El movimiento es instrucción
+separada; no sustituye la transformación visual.
+
+## XR03 — GOLPE TIPOGRÁFICO EDITORIAL
+
+Preset: 2 o 3 estados tipográficos según la cantidad de unidades de sentido.
+
+- A01: concepto o palabra dominante.
+- A02: negación, contraste o giro.
+- A03: remate o tesis final, sólo si existe una tercera unidad real.
+
+Cada estado debe incluir texto editable, fuente, tamaño, jerarquía, color,
+márgenes y fondo. No inventar un tercer estado para completar una cuota. Motion
+es aparición por máscara, opacidad, espaciado o microescala.
+
+## XR04 — MAPA INFOGRÁFICO ESPACIAL EN Z
+
+Es una imagen maestra, no cuatro imágenes independientes.
+
+- A01/master: composición completa con las cuatro estaciones.
+- Z01: origen o necesidad, arriba izquierda.
+- Z02: relación o restricción, arriba derecha.
+- Z03: proceso o consecuencia, abajo izquierda.
+- Z04: resultado o decisión, abajo derecha.
+
+Z01–Z04 son zonas/encuadres derivados del master. Mantener grid, conexiones,
+escala, tipografía, unidades y nombres. Motion: pan/zoom por keyframes que
+recorre la Z. Si se generan placas separadas, todas deben derivarse del mismo
+master.
+
+## XR05 — MICROACCIÓN CINEMATOGRÁFICA
+
+Preset: 3 planos que cuentan una acción causal.
+
+- A01: contexto y preparación; dónde, quién y qué va a ocurrir.
+- A02: gesto o acción decisiva en detalle.
+- A03: consecuencia; qué queda después.
+
+Conservar actor, objetos, manos, espacio, dirección y luz. Tres assets no
+significan tres cámaras obligatorias: pueden ser material grabado, imágenes o
+clips, pero se debe declarar el modo. Motion no inventa una acción que las
+imágenes no puedan sostener.
+
+## XR06 — INFORMACIÓN, DATOS Y SISTEMAS
+
+La cantidad depende de la operación explicada. Preset de interfaz: 3 estados.
+
+- A01: entrada y contexto del sistema.
+- A02: procesamiento, relación, clasificación o comparación.
+- A03: salida, decisión o siguiente acción.
+
+En comparaciones pueden requerirse 2 o más paneles; en un sistema complejo,
+4–7 estados si cada uno muestra una operación distinta. Cada dato debe indicar
+si es real o ilustrativo. Conservar nombres, unidades, nodos y conexiones.
+
+## XR07 — OBJETOS NARRATIVOS EN PRIMER PLANO
+
+No se generan necesariamente tres escenas completas. Se producen objetos
+aislados y vistas de composición.
+
+- A01…An: cada objeto separado (documento, icono, objeto 3D, símbolo o emoji)
+  con alpha/recorte, escala, anclaje, sombra y material.
+- S01: aparición junto al hablante.
+- S02: relación, agrupación, separación o acumulación.
+- S03: remate con el objeto importante destacado.
+
+Si hay 5 objetos, listar A01–A05. Si hay emojis, cada uno tiene significado,
+posición, tamaño, estilo, entrada, salida y movimiento. No escribir “agregar
+emojis” o “poner objetos” sin inventario.
+
+## XR08 — PAISAJE O ARQUITECTURA DRAMÁTICA
+
+Preset: 3 imágenes atmosféricas.
+
+- A01: sensación inicial.
+- A02: intensificación mediante escala, densidad, luz o distancia.
+- A03: remate, apertura o tensión final.
+
+Mantener familia estética, paleta, atmósfera, geometrías y dirección de luz.
+No alternar lugares sin vínculo. Con hablante, dejar zona estable para su
+recorte; con voz en off, usar encuadre completo. Motion: zoom, pan, parallax o
+reveal sutil como instrucción de edición.
+
+## XR09 — FRASE TIPOGRÁFICA EN DOS PLACAS
+
+Función: hacer que una frase clave domine visualmente el momento mediante dos
+placas tipográficas grandes. Crear exactamente dos assets, A01/P01 y A02/P02,
+de 3–4 segundos cada uno.
+
+- A01/P01 contiene la primera parte semántica y sintáctica de la frase.
+- A02/P02 contiene la consecuencia, giro o remate y completa A01.
+- Dividir por sentido, nunca por mitad matemática de palabras.
+- Cada placa se entrega como PNG transparente para overlay; sin video, se usa
+  como pantalla completa sobre fondo de marca.
+- La imagen de referencia tipográfica determina familia, peso, proporción,
+  tracking, mayúsculas, color, contorno, sombra y jerarquía.
+- La instrucción de motion hace aparecer cada palabra según los timecodes de la
+  transcripción. No es un prompt de generación.
+
+No usar XR09 si el corte deja una palabra dependiente, una frase antinatural o
+un significado incompleto. En ese caso usar XR03 o XR00.
+
+## VALIDACIÓN
+
+- La cantidad de assets coincide con la lógica de la familia y la Beta.
+- Cada A01…An tiene descripción y prompt cuando es generable.
+- Cada composición especial explica geometría y orden.
+- Cada asset tiene B-Roll/fuente o `not_applicable` justificado.
+- Cada estado tiene motion o `static` explícito.
+- Ningún asset se inventa para completar una cuota.
+- Las variantes vertical/horizontal no crean beats nuevos.

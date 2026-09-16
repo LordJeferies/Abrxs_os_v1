@@ -1,0 +1,5 @@
+Transcript → Betas
+
+Generate candidate content potentials without pretending production details are final.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

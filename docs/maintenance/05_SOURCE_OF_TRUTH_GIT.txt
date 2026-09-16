@@ -1,0 +1,40 @@
+GIT AS SOURCE OF TRUTH — RECOMMENDED FROM NOW ON
+
+BOOTSTRAP (NOW)
+The existing apps were created before this consolidated repo. Therefore the first Git snapshot should be captured from the verified installed apps using:
+
+  zsh tools/CAPTURAR_INSTALACION_ACTUAL.command
+
+After that first verified commit/tag, reverse the direction:
+
+  Git branch/source
+       ↓
+  tests / release package
+       ↓
+  installer or reversible patch
+       ↓
+  installed apps
+
+NOT:
+
+  installed app edited manually
+       ↓
+  copy random changes back into Git
+
+Installed apps should become DEPLOYMENT TARGETS, not the primary development workspace.
+
+WHEN TO USE CAPTURE AFTER BOOTSTRAP
+- disaster recovery;
+- verify an installed release exactly matches a Git tag;
+- intentionally import a verified emergency patch that was applied before its repo commit.
+
+NORMAL WORKFLOW
+1. Git main/tag = known good.
+2. feature/hotfix branch.
+3. tests.
+4. release artefact.
+5. apply to Mac.
+6. compare installed vs repo.
+7. tag.
+
+This is the single most important operational change to avoid drift between the Mac installation and GitHub.

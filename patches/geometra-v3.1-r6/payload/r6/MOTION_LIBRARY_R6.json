@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "abrxos.motion-library.r6",
+  "definition": "Motion describes how an already-existing visual changes over time.",
+  "presets": {
+    "STATIC": {
+      "phase": "body",
+      "params": {}
+    },
+    "ZOOM_IN": {
+      "phase": "body",
+      "params": {
+        "scaleStart": 1.0,
+        "scaleEndSuggested": [
+          1.05,
+          1.18
+        ],
+        "easing": "ease-in-out"
+      }
+    },
+    "ZOOM_OUT": {
+      "phase": "body",
+      "params": {
+        "scaleStartSuggested": [
+          1.05,
+          1.18
+        ],
+        "scaleEnd": 1.0,
+        "easing": "ease-in-out"
+      }
+    },
+    "PAN_LEFT": {
+      "phase": "body",
+      "params": {
+        "axis": "x",
+        "direction": "left"
+      }
+    },
+    "PAN_RIGHT": {
+      "phase": "body",
+      "params": {
+        "axis": "x",
+        "direction": "right"
+      }
+    },
+    "PAN_UP": {
+      "phase": "body",
+      "params": {
+        "axis": "y",
+        "direction": "up"
+      }
+    },
+    "PAN_DOWN": {
+      "phase": "body",
+      "params": {
+        "axis": "y",
+        "direction": "down"
+      }
+    },
+    "ZOOM_IN_PAN": {
+      "phase": "body",
+      "params": {
+        "scale": "increase",
+        "position": "move",
+        "easing": "ease-in-out"
+      }
+    },
+    "ZOOM_OUT_PAN": {
+      "phase": "body",
+      "params": {
+        "scale": "decrease",
+        "position": "move",
+        "easing": "ease-in-out"
+      }
+    },
+    "SLOW_DRIFT": {
+      "phase": "body",
+      "params": {
+        "scaleStart": 1.0,
+        "scaleEndSuggested": [
+          1.03,
+          1.08
+        ],
+        "positionShiftPercentSuggested": [
+          1,
+          3
+        ],
+        "easing": "ease-in-out"
+      },
+      "use": "Cinematic reflective A-roll/photo motion."
+    },
+    "FADE_IN": {
+      "phase": "in",
+      "params": {
+        "opacityStart": 0,
+        "opacityEnd": 100
+      }
+    },
+    "FADE_OUT": {
+      "phase": "out",
+      "params": {
+        "opacityStart": 100,
+        "opacityEnd": 0
+      }
+    },
+    "SLIDE_IN_LEFT": {
+      "phase": "in",
+      "params": {
+        "from": "left",
+        "to": "rest",
+        "opacityOptional": true
+      }
+    },
+    "SLIDE_IN_RIGHT": {
+      "phase": "in",
+      "params": {
+        "from": "right",
+        "to": "rest",
+        "opacityOptional": true
+      }
+    },
+    "SLIDE_OUT_LEFT": {
+      "phase": "out",
+      "params": {
+        "from": "rest",
+        "to": "left"
+      }
+    },
+    "SLIDE_OUT_RIGHT": {
+      "phase": "out",
+      "params": {
+        "from": "rest",
+        "to": "right"
+      }
+    },
+    "BLUR_IN": {
+      "phase": "in",
+      "params": {
+        "blurStartPxSuggested": [
+          12,
+          24
+        ],
+        "blurEndPx": 0,
+        "opacityOptional": true
+      }
+    },
+    "BLUR_OUT": {
+      "phase": "out",
+      "params": {
+        "blurStartPx": 0,
+        "blurEndPxSuggested": [
+          12,
+          24
+        ]
+      }
+    },
+    "CUT_IN": {
+      "phase": "in",
+      "params": {
+        "duration": 0
+      }
+    },
+    "CUT_OUT": {
+      "phase": "out",
+      "params": {
+        "duration": 0
+      }
+    }
+  },
+  "eventRequiredFields": [
+    "motionId",
+    "preset",
+    "targetId",
+    "start",
+    "end",
+    "instructions"
+  ],
+  "notes": [
+    "Motion is separate from image prompt.",
+    "Linked SFX is optional and should be justified by the beat."
+  ]
+}

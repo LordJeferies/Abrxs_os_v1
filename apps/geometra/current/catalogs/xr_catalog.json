@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "abrxos.xr-catalog.v1",
+  "version": "R5",
+  "items": [
+    {"id":"XR00","name":"A-roll / Reframe","kind":"aroll_direction","defaultAssets":0,"description":"Reencuadre del A-roll sin exigir imagen generada."},
+    {"id":"XR01","name":"Close-up Observation","kind":"image_sequence","defaultAssets":3,"description":"Contexto → profundización → detalle decisivo."},
+    {"id":"XR02","name":"Progressive Transformation","kind":"image_sequence","defaultAssets":4,"description":"Transformación progresiva con texto editable."},
+    {"id":"XR03","name":"Editorial Typography","kind":"typography","defaultAssets":2,"description":"Golpe tipográfico de 2–3 estados."},
+    {"id":"XR04","name":"Spatial Z Map","kind":"single_master_zones","defaultAssets":1,"description":"Master único con recorrido por zonas."},
+    {"id":"XR05","name":"Microaction","kind":"causal_sequence","defaultAssets":3,"description":"Preparación → gesto → consecuencia."},
+    {"id":"XR06","name":"Information / Systems","kind":"system_sequence","defaultAssets":3,"description":"Entrada → operación → salida."},
+    {"id":"XR07","name":"Narrative Objects","kind":"object_layers","defaultAssets":3,"description":"Objetos A01…An con estados de relación."},
+    {"id":"XR08","name":"Atmospheric Architecture","kind":"image_sequence","defaultAssets":3,"description":"Sensación → intensificación → remate."},
+    {"id":"XR09","name":"Two Typography Plates","kind":"typography_plates","defaultAssets":2,"description":"Dos placas semánticas de 3–4 s."}
+  ]
+}

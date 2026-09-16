@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "abrxos.content-project.r6",
+  "projectId": "REPLACE_PROJECT_ID",
+  "pieces": [
+    {
+      "id": "full_episode",
+      "canonicalId": "FULL_EPISODE",
+      "projectId": "REPLACE_PROJECT_ID",
+      "type": "full_episode",
+      "title": "REPLACE_TITLE",
+      "thesis": "REPLACE_THESIS",
+      "objective": "REPLACE_OBJECTIVE",
+      "source": "DEFAULT",
+      "stage": "ALFA",
+      "workflowStatus": "PENDIENTE",
+      "schedule": {
+        "date": "",
+        "time": "",
+        "platforms": [],
+        "publishedAt": null
+      },
+      "editProfile": {
+        "code": "XR_FULL",
+        "commercialName": "Cinematic Edit"
+      },
+      "sourceRanges": [
+        {
+          "id": "FULL_EPISODE_SRC_001",
+          "order": 1,
+          "start": 0.0,
+          "end": 5.0,
+          "startTc": "00:00:00.000",
+          "endTc": "00:00:05.000",
+          "role": "HOOK",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "speaker": "",
+          "timingStatus": "verified"
+        }
+      ],
+      "parts": [
+        {
+          "partId": "FULL_EPISODE_P01",
+          "order": 1,
+          "role": "HOOK",
+          "kind": "source",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "function": "Open the piece.",
+          "sourceRangeId": "FULL_EPISODE_SRC_001",
+          "editStart": 0.0,
+          "editEnd": 5.0,
+          "timingStatus": "verified"
+        }
+      ],
+      "storyScripts": {
+        "source": [
+          {
+            "id": "FULL_EPISODE_P01_STORY",
+            "partId": "FULL_EPISODE_P01",
+            "role": "HOOK",
+            "speaker": "",
+            "text": "REPLACE_LITERAL_SOURCE",
+            "start": 0.0,
+            "end": 5.0
+          }
+        ]
+      },
+      "timeline": [
+        {
+          "id": "FULL_EPISODE_P01_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "A-roll · Hook",
+          "start": 0.0,
+          "end": 5.0,
+          "routes": [
+            "source"
+          ],
+          "partId": "FULL_EPISODE_P01",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "FULL_EPISODE_XR01",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "PHOTO_OBJECT",
+          "label": "PHOTO_OBJECT",
+          "start": 120,
+          "end": 130,
+          "partId": "FULL_EPISODE_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "start": 120,
+              "end": 130,
+              "assetIds": [
+                "FULL_EPISODE_XR01_A01",
+                "FULL_EPISODE_XR01_A02",
+                "FULL_EPISODE_XR01_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "FULL_EPISODE_XR01_A01",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "background",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 120,
+              "end": 130,
+              "durationSeconds": 10,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation"
+            },
+            {
+              "assetId": "FULL_EPISODE_XR01_A02",
+              "assetType": "object",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "foreground",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 120,
+              "end": 130,
+              "durationSeconds": 10,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "REPLACE_EMOJI_A",
+                "REPLACE_EMOJI_B"
+              ]
+            },
+            {
+              "assetId": "FULL_EPISODE_XR01_A03",
+              "assetType": "object",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "foreground",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 120,
+              "end": 130,
+              "durationSeconds": 10,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "REPLACE_EMOJI_A",
+                "REPLACE_EMOJI_B"
+              ]
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "FULL_EPISODE_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "FULL_EPISODE_P01",
+          "start": 0.0,
+          "end": 5.0,
+          "sourceText": "REPLACE LITERAL SOURCE TEXT WITH EIGHT TO FIFTEEN WORDS",
+          "wordCount": 9,
+          "highlightWord": "REPLACE",
+          "highlightStatus": "literal",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 0.0,
+              "end": 2.5,
+              "text": "REPLACE LITERAL SOURCE TEXT",
+              "mode": "normal"
+            },
+            {
+              "start": 2.5,
+              "end": 5.0,
+              "text": "WITH EIGHT TO FIFTEEN WORDS",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        }
+      ],
+      "copy": {},
+      "notes": "",
+      "qa": {
+        "status": "needs_review",
+        "critical": [],
+        "warnings": []
+      },
+      "masterRole": "horizontal",
+      "cutterEnabled": false
+    }
+  ]
+}

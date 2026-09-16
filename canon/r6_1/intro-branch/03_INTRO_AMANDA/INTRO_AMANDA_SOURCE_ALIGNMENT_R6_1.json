@@ -1,0 +1,496 @@
+{
+  "schemaVersion": "abrxos.source-alignment.r6.1",
+  "projectId": "JOC55_AMANDA",
+  "contentId": "INTRO_AMANDA_NEW_01",
+  "sourceFile": "Copia de dr-joc(3).txt",
+  "sourcePolicy": "Cue boundaries are evidence. Word-level microtrim boundaries are never interpolated or invented.",
+  "sourceRangesReady": false,
+  "items": [
+    {
+      "id": "P01_SHARE_INFO",
+      "speaker": "AMANDA",
+      "desiredText": "Las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda…",
+      "cueIds": [
+        739,
+        740
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "a veces las personas piensan que por compartir la información",
+      "endAnchor": "ayuda",
+      "note": "La frase empieza dentro del cue 739 y debe terminar antes de «pero es todo lo contrario» dentro del cue 740.",
+      "parentStartTc": "01:10:20.687",
+      "parentEndTc": "01:10:36.731",
+      "parentStart": 4220.687,
+      "parentEnd": 4236.731,
+      "parentCueText": "que si tú, por ejemplo, vendes un servicio o así sea algo educacional o consultoría o lo que sea, a veces las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda, pero es todo lo contrario."
+    },
+    {
+      "id": "P02_CONTRARY",
+      "speaker": "AMANDA",
+      "desiredText": "Pero es todo lo contrario.",
+      "cueIds": [
+        740
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "pero es todo lo contrario",
+      "endAnchor": "contrario",
+      "note": "Está al final del cue 740; requiere microtrim de inicio.",
+      "parentStartTc": "01:10:31.780",
+      "parentEndTc": "01:10:36.731",
+      "parentStart": 4231.78,
+      "parentEnd": 4236.731,
+      "parentCueText": "información gratuita y la persona ya no va a necesitar de tu ayuda, pero es todo lo contrario."
+    },
+    {
+      "id": "P03_MAJORITY_FREE",
+      "speaker": "AMANDA",
+      "desiredText": "La mayoría de la información que nosotros damos es completamente gratuita.",
+      "cueIds": [
+        506
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "la mayoría de la información que nosotros damos",
+      "endAnchor": "gratuita",
+      "note": "Está dentro del cue 506 después de «más bien».",
+      "parentStartTc": "00:47:07.405",
+      "parentEndTc": "00:47:14.098",
+      "parentStart": 2827.405,
+      "parentEnd": 2834.098,
+      "parentCueText": "sea, nosotros no somos para nada de guardar la información, más bien la mayoría de la información que nosotros damos es completamente gratuita."
+    },
+    {
+      "id": "P04_FATHER_IDOL",
+      "speaker": "AMANDA",
+      "desiredText": "Mi papá para mí era mi ídolo profesional.",
+      "cueIds": [
+        180
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "Mi papá para mí era mi ídolo profesional",
+      "endAnchor": "profesional",
+      "note": "Cue 180 continúa con «ejemplo de liderazgo…»; cortar después de «profesional».",
+      "parentStartTc": "00:15:58.835",
+      "parentEndTc": "00:16:07.122",
+      "parentStart": 958.835,
+      "parentEnd": 967.122,
+      "parentCueText": "Mi papá para mí era mi ídolo profesional, ejemplo de liderazgo, ejemplo de todo, de cómo tratar a los demás, como..."
+    },
+    {
+      "id": "P05_FATHER_DIES",
+      "speaker": "AMANDA",
+      "desiredText": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.",
+      "cueIds": [
+        413
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "El cue coincide con la frase solicitada.",
+      "parentStartTc": "00:37:13.918",
+      "parentEndTc": "00:37:18.900",
+      "parentStart": 2233.918,
+      "parentEnd": 2238.9,
+      "parentCueText": "Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece."
+    },
+    {
+      "id": "P06_HOLE",
+      "speaker": "AMANDA",
+      "desiredText": "Y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer.",
+      "cueIds": [
+        415
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "y eso me hizo entrar",
+      "endAnchor": "qué hacer",
+      "note": "El cue empieza con «Él falleció por cáncer»; el plan omite ese prefijo.",
+      "parentStartTc": "00:37:21.691",
+      "parentEndTc": "00:37:29.384",
+      "parentStart": 2241.691,
+      "parentEnd": 2249.384,
+      "parentCueText": "Él falleció por cáncer y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer."
+    },
+    {
+      "id": "P07_USA",
+      "speaker": "AMANDA",
+      "desiredText": "Y decidí básicamente irme a Estados Unidos.",
+      "cueIds": [
+        421
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "Cue completo.",
+      "parentStartTc": "00:37:54.289",
+      "parentEndTc": "00:37:56.629",
+      "parentStart": 2274.289,
+      "parentEnd": 2276.629,
+      "parentCueText": "Y decidí básicamente irme a Estados Unidos."
+    },
+    {
+      "id": "P08_REVALIDA",
+      "speaker": "AMANDA",
+      "desiredText": "Pero cuando empiezo a averiguar toda la información del tema de la reválida…",
+      "cueIds": [
+        422
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "Pero cuando empiezo a averiguar",
+      "endAnchor": "revalida",
+      "note": "El cue continúa con «era tanta información…»; el plan corta antes.",
+      "parentStartTc": "00:37:56.629",
+      "parentEndTc": "00:38:04.889",
+      "parentStart": 2276.629,
+      "parentEnd": 2284.889,
+      "parentCueText": "Pero cuando empiezo a averiguar toda la información del tema de la revalida, era tanta información en Internet y la gente te decía una cosa y otras personas te decían otras."
+    },
+    {
+      "id": "P09_NO_SHARE",
+      "speaker": "AMANDA",
+      "desiredText": "Había gente que no te quería compartir información",
+      "cueIds": [
+        423
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "Había gente que no te quería compartir información",
+      "endAnchor": "información",
+      "note": "El cue continúa «que ya lo había logrado».",
+      "parentStartTc": "00:38:04.889",
+      "parentEndTc": "00:38:08.634",
+      "parentStart": 2284.889,
+      "parentEnd": 2288.634,
+      "parentCueText": "Había gente que no te quería compartir información, que ya lo había logrado."
+    },
+    {
+      "id": "P10_FEAR_IMPOSSIBLE",
+      "speaker": "AMANDA",
+      "desiredText": "querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer",
+      "cueIds": [
+        424
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "querían infundir miedo",
+      "endAnchor": "no lo vas a poder hacer",
+      "note": "El cue comienza con «otras personas que sencillamente» y continúa hasta «me sobresaturé completamente».",
+      "parentStartTc": "00:38:08.634",
+      "parentEndTc": "00:38:18.030",
+      "parentStart": 2288.634,
+      "parentEnd": 2298.03,
+      "parentCueText": "otras personas que sencillamente querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer, que me sobresaturé completamente."
+    },
+    {
+      "id": "P11_OVERSATURATED",
+      "speaker": "AMANDA",
+      "desiredText": "me sobresaturé completamente.",
+      "correctedText": "me sobresaturé completamente.",
+      "originalPlanText": "me sobresaltaré completamente.",
+      "cueIds": [
+        424
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "me sobresaturé completamente",
+      "endAnchor": "completamente",
+      "note": "Corrección de source truth: la transcripción dice «me sobresaturé», no «me sobresaltaré».",
+      "parentStartTc": "00:38:08.634",
+      "parentEndTc": "00:38:18.030",
+      "parentStart": 2288.634,
+      "parentEnd": 2298.03,
+      "parentCueText": "otras personas que sencillamente querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer, que me sobresaturé completamente."
+    },
+    {
+      "id": "P12_DIFFICULTIES",
+      "speaker": "AMANDA",
+      "desiredText": "Las dificultades por las que pasas en la vida tienes dos opciones como todo.",
+      "cueIds": [
+        890,
+        891
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "las dificultades por las que pasas",
+      "endAnchor": "dos opciones como todo",
+      "note": "La frase empieza al final del cue 890 y termina en el cue 891.",
+      "parentStartTc": "01:24:14.425",
+      "parentEndTc": "01:24:33.395",
+      "parentStart": 5054.425,
+      "parentEnd": 5073.395,
+      "parentCueText": "Pero algo muy interesante que también mencionaste de tu conversación con alguien que estabas entrevistando, creo que Alberto Vollmer, es que las dificultades por las que pasas en la vida tienes dos opciones como todo."
+    },
+    {
+      "id": "P13_OPPORTUNITY_OR_STUCK",
+      "speaker": "AMANDA",
+      "desiredText": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado",
+      "cueIds": [
+        892,
+        893
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "O le encuentras la oportunidad",
+      "endAnchor": "te quedas estancado",
+      "note": "El final está al inicio del cue 893; cortar antes de la explicación posterior.",
+      "parentStartTc": "01:24:33.395",
+      "parentEndTc": "01:24:49.946",
+      "parentStart": 5073.395,
+      "parentEnd": 5089.946,
+      "parentCueText": "O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado, que los dos son válidos porque cada quien digamos interpreta las dificultades de maneras distintas, pero pienso que siempre he sido una persona que las"
+    },
+    {
+      "id": "P14_FOLLOWERS",
+      "speaker": "AMANDA",
+      "desiredText": "había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso, pero tenían el mismo sentimiento que yo tuve.",
+      "cueIds": [
+        433
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "había muchísimas personas que me seguían",
+      "endAnchor": "mismo sentimiento que yo tuve",
+      "note": "El cue comienza con «Y me empecé a dar cuenta que».",
+      "parentStartTc": "00:39:13.372",
+      "parentEndTc": "00:39:22.280",
+      "parentStart": 2353.372,
+      "parentEnd": 2362.28,
+      "parentCueText": "Y me empecé a dar cuenta que había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso pero tenían el mismo sentimiento que yo tuve."
+    },
+    {
+      "id": "P15_MARKET_OPPORTUNITY",
+      "speaker": "AMANDA",
+      "desiredText": "Entonces dije, aquí hay una oportunidad de mercado interesante.",
+      "cueIds": [
+        436
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "Cue completo.",
+      "parentStartTc": "00:39:34.995",
+      "parentEndTc": "00:39:38.676",
+      "parentStart": 2374.995,
+      "parentEnd": 2378.676,
+      "parentCueText": "Entonces dije, aquí hay una oportunidad de mercado interesante."
+    },
+    {
+      "id": "P16_MONETIZE",
+      "speaker": "AMANDA",
+      "desiredText": "No sé todavía cómo lo voy a monetizar…",
+      "cueIds": [
+        437
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "No sé todavía cómo lo voy a monetizar",
+      "endAnchor": "monetizar",
+      "note": "El cue continúa con «pero ya lo había…».",
+      "parentStartTc": "00:39:38.977",
+      "parentEndTc": "00:39:45.720",
+      "parentStart": 2378.977,
+      "parentEnd": 2385.72,
+      "parentCueText": "No sé todavía cómo lo voy a monetizar, pero ya lo había como leído a partir de mis redes sociales, básicamente."
+    },
+    {
+      "id": "P17_CAN_DO_IT",
+      "speaker": "AMANDA",
+      "desiredText": "¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?",
+      "cueIds": [
+        427
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "Cue completo.",
+      "parentStartTc": "00:38:34.562",
+      "parentEndTc": "00:38:37.754",
+      "parentStart": 2314.562,
+      "parentEnd": 2317.754,
+      "parentCueText": "¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?"
+    },
+    {
+      "id": "P18_SHARE_IT",
+      "speaker": "AMANDA",
+      "desiredText": "¿Por qué no lo empiezo a compartir?",
+      "cueIds": [
+        430
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "¿por qué no lo empiezo a compartir?",
+      "endAnchor": "compartir",
+      "note": "Está al final del cue 430.",
+      "parentStartTc": "00:38:50.474",
+      "parentEndTc": "00:38:58.840",
+      "parentStart": 2330.474,
+      "parentEnd": 2338.84,
+      "parentCueText": "A.1, A.2, A.3, paso, paso, dale, clic acá, métete en esta página, haz esto, y empecé a desglosar todo y dije, ¿por qué no lo empiezo a compartir?"
+    },
+    {
+      "id": "P19_JOC_1500",
+      "speaker": "JOC",
+      "desiredText": "¿Cómo llegaste ahora a los mil quinientos?",
+      "sourceLiteral": "Y ahora, ¿cómo llegaste ahora a los 1500?",
+      "cueIds": [
+        781
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "El plan omite «Y ahora» y escribe 1500 con palabras; source literal conserva el cue.",
+      "parentStartTc": "01:13:26.377",
+      "parentEndTc": "01:13:29.029",
+      "parentStart": 4406.377,
+      "parentEnd": 4409.029,
+      "parentCueText": "Y ahora, ¿cómo llegaste ahora a los 1500?"
+    },
+    {
+      "id": "P20_NO_CAPITAL",
+      "speaker": "AMANDA",
+      "desiredText": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.",
+      "cueIds": [
+        813
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "Cue completo.",
+      "parentStartTc": "01:16:46.609",
+      "parentEndTc": "01:16:50.670",
+      "parentStart": 4606.609,
+      "parentEnd": 4610.67,
+      "parentCueText": "Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado."
+    },
+    {
+      "id": "P21_PURPOSE",
+      "speaker": "AMANDA",
+      "desiredText": "Es un negocio, pero tiene un propósito.",
+      "cueIds": [
+        552
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "Cue completo.",
+      "parentStartTc": "00:51:42.888",
+      "parentEndTc": "00:51:45.219",
+      "parentStart": 3102.888,
+      "parentEnd": 3105.219,
+      "parentCueText": "Es un negocio, pero tiene un propósito."
+    },
+    {
+      "id": "P22_JOC_BUSINESS_MODEL",
+      "speaker": "JOC",
+      "desiredText": "¿Cómo funciona el modelo de negocio?",
+      "cueIds": [
+        642
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "Cue completo.",
+      "parentStartTc": "01:00:17.314",
+      "parentEndTc": "01:00:19.176",
+      "parentStart": 3617.314,
+      "parentEnd": 3619.176,
+      "parentCueText": "¿Cómo funciona el modelo de negocio?"
+    },
+    {
+      "id": "P23_WHAT_MATTERS",
+      "speaker": "AMANDA",
+      "desiredText": "nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es…",
+      "sourceLiteral": "Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.",
+      "cueIds": [
+        801
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "Y nos dimos cuenta",
+      "endAnchor": "cliente es",
+      "note": "Open loop: cortar después de «es», antes de revelar la respuesta.",
+      "parentStartTc": "01:15:35.177",
+      "parentEndTc": "01:15:43.440",
+      "parentStart": 4535.177,
+      "parentEnd": 4543.44,
+      "parentCueText": "Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz."
+    },
+    {
+      "id": "P24_WAY_OUT",
+      "speaker": "AMANDA",
+      "desiredText": "The only way out is through.",
+      "cueIds": [
+        632
+      ],
+      "status": "cue_verified",
+      "microtrim": false,
+      "note": "Usar primera ocurrencia, seguida por la frase completa de Amanda.",
+      "parentStartTc": "00:59:40.299",
+      "parentEndTc": "00:59:41.931",
+      "parentStart": 3580.299,
+      "parentEnd": 3581.931,
+      "parentCueText": "The only way out is through."
+    },
+    {
+      "id": "P25_DO_IT",
+      "speaker": "AMANDA",
+      "desiredText": "No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.",
+      "cueIds": [
+        633,
+        634
+      ],
+      "status": "cue_based",
+      "microtrim": true,
+      "startAnchor": "no hay nadie que haga las cosas por ti",
+      "endAnchor": "Tú lo tienes que hacer",
+      "note": "El cue 633 también contiene «No hay atajos, no hay nadie que estudie por ti»; el plan final pide omitir ese tramo.",
+      "parentStartTc": "00:59:41.931",
+      "parentEndTc": "00:59:48.136",
+      "parentStart": 3581.931,
+      "parentEnd": 3588.136,
+      "parentCueText": "No hay atajos, no hay nadie que estudie por ti, no hay nadie que haga las cosas por ti. Tú lo tienes que hacer."
+    }
+  ],
+  "voiceovers": [
+    {
+      "id": "VO01",
+      "kind": "VO_ADDED",
+      "speaker": "NARRADOR",
+      "text": "¿Cómo pasó de buscar orientación para continuar su carrera a ayudar, junto a su equipo, a más de mil quinientos odontólogos?",
+      "sourceRange": null,
+      "placement": {
+        "after": "P03_MAJORITY_FREE",
+        "before": "P04_FATHER_IDOL"
+      },
+      "durationTargetSeconds": [
+        7.0,
+        9.0
+      ],
+      "timingStatus": "editorial_planned",
+      "finalTimingRule": "measure recorded VO asset; no master timestamp"
+    },
+    {
+      "id": "VO02",
+      "kind": "VO_ADDED",
+      "speaker": "NARRADOR",
+      "text": "¿Cómo terminó convirtiendo esa misma dificultad en una oportunidad que no había imaginado?",
+      "sourceRange": null,
+      "placement": {
+        "after": "P11_OVERSATURATED",
+        "before": "P12_DIFFICULTIES"
+      },
+      "durationTargetSeconds": [
+        5.0,
+        7.0
+      ],
+      "timingStatus": "editorial_planned",
+      "finalTimingRule": "measure recorded VO asset; no master timestamp"
+    }
+  ],
+  "qa": {
+    "cutterReady": false,
+    "reason": "Requested phrases start/end inside subtitle cues. Resolve every microtrim before final sourceRanges.",
+    "critical": [
+      "Resolve every microtrim=true item with word alignment/audio review."
+    ],
+    "sourceCorrections": [
+      "P11 source says «me sobresaturé completamente», not «me sobresaltaré completamente»."
+    ]
+  }
+}

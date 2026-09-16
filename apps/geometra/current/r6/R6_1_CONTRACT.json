@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "abrxos.r6.1-contract.v1",
+  "canonFamily": "R6",
+  "canonRevision": "R6.1",
+  "features": [
+    "sourceAlignment",
+    "microtrim",
+    "voAdded",
+    "routeSemanticsR61",
+    "captionGroupsR6",
+    "shortSourceException",
+    "projectionReady"
+  ],
+  "readinessAxes": ["alphaReady", "cutterReady", "projectionReady"],
+  "timeline": {"aroll":"T1","xr":"T2","images":"T3","motion":"T4","broll":"T5","vo":"T6","sfx":"T7","music":"T8","captions":"T9"},
+  "sourceTruth": "sourceRanges remains Cutter truth; sourceAlignment can precede final microtrim resolution"
+}

@@ -1,0 +1,3 @@
+FREE TEXT → BRAND PACKAGE
+
+Paste raw context → save brand → optionally complete form/method → Build AI Package → upload files in listed order → request BRAND_STRATEGY_R6 + BRAND_ADAPTER_R6 → review → store approved adapter.

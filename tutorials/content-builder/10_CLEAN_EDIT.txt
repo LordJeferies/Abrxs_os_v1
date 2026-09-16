@@ -1,0 +1,5 @@
+Clean Edit
+
+SFX_ONLY profile: minimal visual interventions, no XR unless explicit exception.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

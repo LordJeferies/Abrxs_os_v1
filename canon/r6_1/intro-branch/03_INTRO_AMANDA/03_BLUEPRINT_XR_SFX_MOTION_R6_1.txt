@@ -1,0 +1,62 @@
+ABRXOS R6.1 · BLUEPRINT DE PRODUCCIÓN · INTRO AMANDA
+
+Este documento prueba el canon con el intro real. Es una propuesta editorial de producción; los timestamps source se toman de 01_TIMESTAMP_MAP y los límites word-level pendientes deben resolverse antes del Cutter.
+
+XR01 TYPO
+Ancla: P01/P02/P03.
+Idea: información compartida → TODO LO CONTRARIO → gratuita.
+States: normal / hero / normal.
+Motion: mask reveal + micro-scale.
+SFX: emphasis soft opcional en «todo lo contrario».
+
+XR02 OBJECTS
+Ancla: VO01 + P04/P05.
+Idea: ruta profesional/legado sin inventar imagen del padre.
+A01 diploma/credential física.
+A02 instrumental/objeto odontológico real/neutral.
+A03 silla o consultorio vacío como ausencia.
+Prompts: no personas generadas identificables; preferir source/stock autorizado.
+
+XR03 COMIC_INFO
+Ancla: P08–P11.
+Idea: saturación de información sobre reválida.
+Master única con 4 zonas + centro; fuentes contradictorias y checklist central.
+No interfaces futuristas ni claims falsos.
+Motion: recorrido 5 vistas.
+
+XR04 COMIC_CC
+Ancla: P12–P13.
+Idea: dificultad → oportunidad/aprendizaje → estancado.
+A01 wide, A02 close-up, A03 medium.
+Texto hablado integrado; no burbujas.
+Captions hidden/suppressedBy durante XR.
+
+XR05 OBJECTS
+Ancla: P17–P18.
+Idea: convertir información caótica en pasos y luego compartir.
+A01 tarjetas A/A.1/A.2/A.3.
+A02 guía/checklist organizada.
+A03 acción compartir/publicar.
+Motion: aparición → agrupación → remate.
+
+XR06 PHOTO_OBJECT
+Ancla: P19–P23.
+Idea: escala + negocio + propósito + open loop.
+A01 background: frame real aprobado de Amanda/JOC.
+A02 object: contador/tipografía 1500 basada en source.
+A03 object: PROPÓSITO/negocio, editable y no factual adicional.
+Motion: push-in sutil + aparición por beats.
+
+CINE
+Opening black hold.
+Father death hold.
+Silence after overload if needed.
+Punch cuts in final montage.
+Final black open loop.
+
+VO
+VO01 después de P03, antes de P04.
+VO02 después de P11, antes de P12.
+
+MUSIC/SFX
+Ver 02_CANON/08_SFX_MOTION_CINE_MUSIC_INTRO_AMANDA.txt.

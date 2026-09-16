@@ -1,0 +1,27 @@
+ABRXOS · ACTUALIZACIÓN GENERAL DEL SISTEMA A PARTIR DE R6/R6.1
+
+ANTES
+Una ficha rica podía decir XR/SFX pero la frontera entre plan natural, source alignment y timeline final no estaba completamente formalizada.
+
+AHORA
+1. PLAN EDITORIAL NATURAL es parseable como nodos tipados.
+2. SOURCE SPEECH se alinea antes de crear sourceRanges finales.
+3. VO_ADDED tiene placement y duración propia.
+4. CINE vive en tracks existentes y no cuenta como XR.
+5. XR usa familias semánticas R6 y assets internos explícitos.
+6. Motion/SFX/Music son objetos temporales separados.
+7. Captions pasan a Caption Groups semánticos R6.
+8. productionChecklist y workflowStatus separan avance real de madurez Beta/Alfa/Omega.
+9. Lienzo necesita inspectors especializados por tipo de evento.
+10. Cutter permanece desacoplado: sourceRanges siguen siendo su contrato base.
+
+CÓMO SE ADAPTA SIN ROMPER
+- R6/R6.1 añade campos; V3 preserva campos desconocidos.
+- renderer/runtime se actualiza para proyectarlos.
+- legacy R5 sigue siendo válido.
+- policyVersion permite convivencia de captions legacy/R6.
+- sourceAlignment es previo a sourceRanges, no reemplaza Cutter.
+- custom/fallback evita que un XR nuevo rompa el Lienzo.
+
+RESULTADO
+Geometra deja de ser «un HTML que muestra fichas» y se consolida como compilador/gestor del documento canónico. El Lienzo pasa a ser un editor de decisiones de producción: permite ver, copiar, modificar y calendarizar cada recurso sin convertirse en el motor de media.

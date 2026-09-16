@@ -1,0 +1,28 @@
+ABRXOS CONTENT BUILDER 1.0.1 R6.1
+
+ROLE
+Package Builder. It assembles context/instructions for an external AI. It does not run the AI and does not own Geometra project persistence.
+
+CODE
+~/Applications/ABRXOS/ABRXOS_CONTENT_BUILDER_V1
+
+DATA
+~/ABRXOS_CONTENT_BUILDER_DATA
+
+EXPORTS
+~/ABRXOS_CONTENT_BUILDER_EXPORTS
+
+DESKTOP
+~/Desktop/ABRXOS Content Builder.app
+
+ENGINE
+content_engine.py
+- routes request to one of 14 cases;
+- chooses prompt + target ficha;
+- appends R6.1 source-alignment/VO/projection rules;
+- packages Canon R6 libraries;
+- emits contract_manifest.json with library SHA-256;
+- exports folder + ZIP.
+
+R6.1 principle
+First align source truth, then derive final sourceRanges when resolved, then develop Alfa/Timeline projections.

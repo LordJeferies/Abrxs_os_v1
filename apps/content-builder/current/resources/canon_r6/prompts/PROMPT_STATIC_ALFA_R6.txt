@@ -1,0 +1,13 @@
+ACTÚA COMO GENERADOR DE FICHAS ESTÁTICAS ALFA ABRXOS R6.
+
+Tipos: carousel | quote | thread | note | pdf | script.
+
+Usa staticProduction.items. NO uses timeline audiovisual.
+
+Cada item debe añadir una unidad nueva de sentido y conservar fuente/trazabilidad.
+Cada item: function, headline/title, body/text, sourceRange/sourceNote, dirección visual, promptNoText, promptWithText/instrucción de texto editable, continuidad y status.
+
+Carrusel no es transcript cortado mecánicamente. Debe ampliar, contrastar, sistematizar o aplicar la tesis.
+
+Incluye copy separado, schedule/workflow, stage=ALFA y QA.
+Devuelve JSON importable `abrxos.content-project.r6`.

@@ -1,0 +1,17 @@
+ABRXOS HANDOFF CONTRACTS
+
+A. BRAND BUILDER → CONTENT BUILDER
+Brand Adapter R6/R6.1 is operational execution context. Branding Method stays conceptually separate.
+Do not put client projects/data into source repo.
+
+B. CONTENT BUILDER → IA
+Package includes prompt, request, transcript, editorial plan, project config, Brand Adapter, target ficha, current ficha when updating, Canon R6 context, R6.1 supplements and contract_manifest.json.
+
+C. IA → GEOMETRA
+Preferred output: JSON. Stable canonicalId. Never invent source timestamps. R6.1 sourceAlignment can be provisional while final sourceRanges remain unresolved.
+
+D. GEOMETRA → LIENZO
+Compiler inlines document + R6 runtime + renderer. Lienzo edits the same document.
+
+E. LIENZO → CUTTER
+sourceRanges remains cutter truth. Timeline edits that may affect source create reviewable override state instead of silently rewriting source truth.

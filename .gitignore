@@ -1,0 +1,38 @@
+# Python / Node caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.DS_Store
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+/tmp/
+.cache/
+
+# Local ABRXOS user data / exports / backups
+ABRXOS_GEOMETRA_DATA/
+ABRXOS_CONTENT_BUILDER_DATA/
+ABRXOS_CONTENT_BUILDER_EXPORTS/
+ABRXOS_BRAND_BUILDER_DATA/
+ABRXOS_BRAND_BUILDER_EXPORTS/
+ABRXOS_GEOMETRA_PATCH_BACKUPS/
+ABRXOS_ECOSYSTEM_HOTFIX_BACKUPS/
+
+# Generated local snapshot evidence
+LOCAL_CAPTURE_REPORT.json
+LOCAL_VERIFY_REPORT.json
+
+# Secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Local repo QA environment
+.venv/
+LAUNCH_*.command

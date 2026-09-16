@@ -1,0 +1,3 @@
+GEOMETRA MASTER
+
+Import fichas → Library → validate → Kanban/Calendar → Create Lienzo → edit/inspect → export/reimport → Cutter. Geometra is not the AI and not the Cutter.

@@ -1,0 +1,3 @@
+SAFE REPAIR
+
+Classify bug layer first. UI bug → renderer/runtime. Validator bug → r6.py. Import bug → importer. Cutter bug → source boundary. Never patch data directories.

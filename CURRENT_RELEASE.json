@@ -1,0 +1,26 @@
+{
+  "ecosystem": "ABRXOS",
+  "release": "3.1.1-r6.1",
+  "date": "2026-09-16",
+  "apps": {
+    "geometra": {
+      "version": "3.1.1",
+      "installedCode": "~/ABRXOS_GEOMETRA_V3",
+      "desktopApp": "~/Desktop/ABRXOS Geometra V3.app"
+    },
+    "contentBuilder": {
+      "version": "1.0.1",
+      "installedCode": "~/Applications/ABRXOS/ABRXOS_CONTENT_BUILDER_V1",
+      "desktopApp": "~/Desktop/ABRXOS Content Builder.app"
+    },
+    "brandBuilder": {
+      "version": "1.0.1",
+      "installedCode": "~/Applications/ABRXOS/ABRXOS_X_BRAND_BUILDER_V1",
+      "desktopApp": "~/Desktop/ABRXOS X Brand Builder.app"
+    }
+  },
+  "canonFamily": "R6",
+  "canonRevision": "R6.1",
+  "baselinePatch": "ABRXOS_GEOMETRA_V3_1_R6",
+  "hotfix": "ABRXOS_ECOSYSTEM_V3_1_1_R6_1"
+}

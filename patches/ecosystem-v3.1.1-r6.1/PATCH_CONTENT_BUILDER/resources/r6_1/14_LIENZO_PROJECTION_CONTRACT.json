@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "abrxos.lienzo-projection.r6.1",
+  "readinessAxis": "projectionReady",
+  "meaning": "Alpha describe completitud editorial; Cutter Ready describe sourceRanges; Projection Ready comprueba que los recursos temporales manipulables tienen eventos visibles en el Lienzo.",
+  "tracks": {
+    "aroll": "T1",
+    "xr": "T2",
+    "images": "T3",
+    "motion": "T4",
+    "broll": "T5",
+    "vo": "T6",
+    "sfx": "T7",
+    "music": "T8",
+    "captions": "T9"
+  },
+  "rules": [
+    "XR assets con start/end y manipulación temporal deben proyectarse en T3 por assetId/parentId.",
+    "motionIds referenciados por XR deben tener evento T4.",
+    "sfxIds referenciados por XR deben tener evento T7.",
+    "VO_ADDED debe tener evento T6.",
+    "CINE permanece en T5; no crear T10.",
+    "Caption Groups permanecen en T9 aunque visibility=hidden por suppressedBy."
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "schemaVersion": "abrxos.content-project.r6",
+  "projectId": "REPLACE_PROJECT_ID",
+  "pieces": [
+    {
+      "id": "intro_01",
+      "canonicalId": "INTRO_01",
+      "projectId": "REPLACE_PROJECT_ID",
+      "type": "intro",
+      "title": "REPLACE_TITLE",
+      "thesis": "REPLACE_THESIS",
+      "objective": "REPLACE_OBJECTIVE",
+      "source": "DEFAULT",
+      "stage": "ALFA",
+      "workflowStatus": "PENDIENTE",
+      "schedule": {
+        "date": "",
+        "time": "",
+        "platforms": [],
+        "publishedAt": null
+      },
+      "editProfile": {
+        "code": "XR_FULL",
+        "commercialName": "Cinematic Edit"
+      },
+      "sourceRanges": [
+        {
+          "id": "INTRO_01_SRC_001",
+          "order": 1,
+          "start": 0.0,
+          "end": 5.0,
+          "startTc": "00:00:00.000",
+          "endTc": "00:00:05.000",
+          "role": "HOOK",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "speaker": "",
+          "timingStatus": "verified"
+        }
+      ],
+      "parts": [
+        {
+          "partId": "INTRO_01_P01",
+          "order": 1,
+          "role": "HOOK",
+          "kind": "source",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "function": "Open the piece.",
+          "sourceRangeId": "INTRO_01_SRC_001",
+          "editStart": 0.0,
+          "editEnd": 5.0,
+          "timingStatus": "verified"
+        }
+      ],
+      "storyScripts": {
+        "source": [
+          {
+            "id": "INTRO_01_P01_STORY",
+            "partId": "INTRO_01_P01",
+            "role": "HOOK",
+            "speaker": "",
+            "text": "REPLACE_LITERAL_SOURCE",
+            "start": 0.0,
+            "end": 5.0
+          }
+        ]
+      },
+      "timeline": [
+        {
+          "id": "INTRO_01_P01_AROLL",
+          "track": "aroll",
+          "type": "aroll",
+          "label": "A-roll · Hook",
+          "start": 0.0,
+          "end": 5.0,
+          "routes": [
+            "source"
+          ],
+          "partId": "INTRO_01_P01",
+          "text": "REPLACE_LITERAL_SOURCE",
+          "timingMode": "locked_to_source"
+        },
+        {
+          "id": "INTRO_01_XR01",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "COMIC_INFO",
+          "label": "COMIC_INFO",
+          "start": 5,
+          "end": 20,
+          "partId": "INTRO_01_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "view": "lower_left",
+              "start": 5.0,
+              "end": 8.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "INTRO_01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "view": "lower_right",
+              "start": 8.0,
+              "end": 11.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "INTRO_01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "view": "upper_left",
+              "start": 11.0,
+              "end": 14.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "INTRO_01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S04",
+              "view": "upper_right",
+              "start": 14.0,
+              "end": 17.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "INTRO_01_XR01_A01"
+              ]
+            },
+            {
+              "stateId": "S05",
+              "view": "full_composition",
+              "start": 17.0,
+              "end": 20.0,
+              "description": "REPLACE_STATE_INFO",
+              "assetIds": [
+                "INTRO_01_XR01_A01"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_01_XR01_A01",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 5,
+              "end": 20,
+              "durationSeconds": 15,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation"
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_01_XR02",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "PHOTOS",
+          "label": "PHOTOS",
+          "start": 20,
+          "end": 29,
+          "partId": "INTRO_01_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "shot": "close_up",
+              "start": 20.0,
+              "end": 23.0,
+              "assetIds": [
+                "INTRO_01_XR02_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "shot": "wide",
+              "start": 23.0,
+              "end": 26.0,
+              "assetIds": [
+                "INTRO_01_XR02_A02"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "shot": "close_up",
+              "start": 26.0,
+              "end": 29.0,
+              "assetIds": [
+                "INTRO_01_XR02_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_01_XR02_A01",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 20.0,
+              "end": 23.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "shot": "close_up"
+            },
+            {
+              "assetId": "INTRO_01_XR02_A02",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 23.0,
+              "end": 26.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "shot": "wide"
+            },
+            {
+              "assetId": "INTRO_01_XR02_A03",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 26.0,
+              "end": 29.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "shot": "close_up"
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_01_XR03",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "TYPO",
+          "label": "TYPO",
+          "start": 29,
+          "end": 38,
+          "partId": "INTRO_01_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "mode": "normal_phrase",
+              "start": 29.0,
+              "end": 32.0,
+              "text": "REPLACE_TYPO_TEXT"
+            },
+            {
+              "stateId": "S02",
+              "mode": "hero_phrase",
+              "start": 32.0,
+              "end": 35.0,
+              "text": "REPLACE_TYPO_TEXT"
+            },
+            {
+              "stateId": "S03",
+              "mode": "normal_phrase",
+              "start": 35.0,
+              "end": 38.0,
+              "text": "REPLACE_TYPO_TEXT"
+            }
+          ],
+          "assets": [],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_01_XR04",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "OBJECTS",
+          "label": "OBJECTS",
+          "start": 38,
+          "end": 47,
+          "partId": "INTRO_01_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "start": 38.0,
+              "end": 41.0,
+              "assetIds": [
+                "INTRO_01_XR04_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "start": 41.0,
+              "end": 44.0,
+              "assetIds": [
+                "INTRO_01_XR04_A02"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "start": 44.0,
+              "end": 47.0,
+              "assetIds": [
+                "INTRO_01_XR04_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_01_XR04_A01",
+              "assetType": "object",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "foreground",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 38.0,
+              "end": 41.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "REPLACE_EMOJI_A",
+                "REPLACE_EMOJI_B"
+              ]
+            },
+            {
+              "assetId": "INTRO_01_XR04_A02",
+              "assetType": "object",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "background",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 41.0,
+              "end": 44.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "REPLACE_EMOJI_A",
+                "REPLACE_EMOJI_B"
+              ]
+            },
+            {
+              "assetId": "INTRO_01_XR04_A03",
+              "assetType": "object",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "foreground",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 44.0,
+              "end": 47.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "REPLACE_EMOJI_A",
+                "REPLACE_EMOJI_B"
+              ]
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_01_XR05",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "COMIC_CC",
+          "label": "COMIC_CC",
+          "start": 47,
+          "end": 56,
+          "partId": "INTRO_01_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "HIDE",
+          "states": [
+            {
+              "stateId": "S01",
+              "shot": "wide",
+              "start": 47.0,
+              "end": 50.0,
+              "description": "REPLACE_SPOKEN_TEXT_SCENE",
+              "assetIds": [
+                "INTRO_01_XR05_A01"
+              ]
+            },
+            {
+              "stateId": "S02",
+              "shot": "close_up",
+              "start": 50.0,
+              "end": 53.0,
+              "description": "REPLACE_SPOKEN_TEXT_SCENE",
+              "assetIds": [
+                "INTRO_01_XR05_A02"
+              ]
+            },
+            {
+              "stateId": "S03",
+              "shot": "medium",
+              "start": 53.0,
+              "end": 56.0,
+              "description": "REPLACE_SPOKEN_TEXT_SCENE",
+              "assetIds": [
+                "INTRO_01_XR05_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_01_XR05_A01",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 47.0,
+              "end": 50.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "shot": "wide",
+              "textIntegration": "spoken_literal_integrated_no_bubbles"
+            },
+            {
+              "assetId": "INTRO_01_XR05_A02",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 50.0,
+              "end": 53.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "shot": "close_up",
+              "textIntegration": "spoken_literal_integrated_no_bubbles"
+            },
+            {
+              "assetId": "INTRO_01_XR05_A03",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "fullscreen",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 53.0,
+              "end": 56.0,
+              "durationSeconds": 3.0,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "shot": "medium",
+              "textIntegration": "spoken_literal_integrated_no_bubbles"
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_01_XR06",
+          "track": "xr",
+          "type": "xr",
+          "xrFamily": "PHOTO_OBJECT",
+          "label": "PHOTO_OBJECT",
+          "start": 56,
+          "end": 66,
+          "partId": "INTRO_01_P01",
+          "function": "REPLACE_NARRATIVE_FUNCTION",
+          "anchorText": "REPLACE_SOURCE_ANCHOR",
+          "captionPolicy": "AUTO",
+          "states": [
+            {
+              "stateId": "S01",
+              "start": 56,
+              "end": 66,
+              "assetIds": [
+                "INTRO_01_XR06_A01",
+                "INTRO_01_XR06_A02",
+                "INTRO_01_XR06_A03"
+              ]
+            }
+          ],
+          "assets": [
+            {
+              "assetId": "INTRO_01_XR06_A01",
+              "assetType": "image",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "background",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 56,
+              "end": 66,
+              "durationSeconds": 10,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation"
+            },
+            {
+              "assetId": "INTRO_01_XR06_A02",
+              "assetType": "object",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "foreground",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 56,
+              "end": 66,
+              "durationSeconds": 10,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "REPLACE_EMOJI_A",
+                "REPLACE_EMOJI_B"
+              ]
+            },
+            {
+              "assetId": "INTRO_01_XR06_A03",
+              "assetType": "object",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "contextAndDetail": "REPLACE_CONTEXT_AND_DETAIL",
+              "whatIsVisible": "REPLACE_WHAT_IS_VISIBLE",
+              "whyItMatchesSpeech": "REPLACE_WHY_IT_MATCHES_SPEECH",
+              "prompt": "REPLACE_AUTONOMOUS_IMAGE_PROMPT",
+              "brollReference": "REPLACE_GOOGLE_OR_STOCK_REFERENCE",
+              "googleSearchQuery": "REPLACE_SEARCH_QUERY",
+              "placementRecommendation": "foreground",
+              "placementReason": "REPLACE_PLACEMENT_REASON",
+              "start": 56,
+              "end": 66,
+              "durationSeconds": 10,
+              "motionIds": [],
+              "linkedSfxIds": [],
+              "status": "pending_creation",
+              "emojiFallback": [
+                "REPLACE_EMOJI_A",
+                "REPLACE_EMOJI_B"
+              ]
+            }
+          ],
+          "motionIds": [],
+          "sfxIds": [],
+          "timingMode": "free"
+        },
+        {
+          "id": "INTRO_01_CAP_G01",
+          "track": "captions",
+          "type": "caption_group",
+          "captionSchema": "abrxos.caption.v2",
+          "captionPolicyVersion": "R6",
+          "partId": "INTRO_01_P01",
+          "start": 0.0,
+          "end": 5.0,
+          "sourceText": "REPLACE LITERAL SOURCE TEXT WITH EIGHT TO FIFTEEN WORDS",
+          "wordCount": 9,
+          "highlightWord": "REPLACE",
+          "highlightStatus": "literal",
+          "displayMode": "normal_with_highlight",
+          "visibility": "visible",
+          "suppressedBy": null,
+          "displayCues": [
+            {
+              "start": 0.0,
+              "end": 2.5,
+              "text": "REPLACE LITERAL SOURCE TEXT",
+              "mode": "normal"
+            },
+            {
+              "start": 2.5,
+              "end": 5.0,
+              "text": "WITH EIGHT TO FIFTEEN WORDS",
+              "mode": "normal"
+            }
+          ],
+          "timingMode": "locked_to_source"
+        }
+      ],
+      "copy": {},
+      "notes": "",
+      "qa": {
+        "status": "needs_review",
+        "critical": [],
+        "warnings": []
+      },
+      "masterRole": "both",
+      "voiceoverAllowed": true
+    }
+  ]
+}

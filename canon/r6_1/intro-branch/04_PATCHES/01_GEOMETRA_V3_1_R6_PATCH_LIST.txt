@@ -1,0 +1,33 @@
+ABRXOS · PATCH LIST GEOMETRA V3.1 PARA R6/R6.1
+
+P0
+1. Caption policy switch:
+   captionPolicyVersion=R6 → no microsegmentar 3–5; render Caption Group + displayCues.
+2. CINE inspector:
+   track=broll + type=cine → cineType/function/visual/motion/sfx/music/silence/captionPolicy.
+3. Kanban Geometra drag/drop:
+   POST /api/update_piece workflowStatus.
+4. Source Alignment inspector:
+   parent cue / microtrim / anchors / timing status.
+5. VO inspector:
+   VO_ADDED / placement / audio status / measured duration.
+
+P1
+6. XR family registry R6 especializado.
+7. Asset inspector R6 completo.
+8. editProfile display.
+9. productionChecklist UI.
+10. QA blockers panel.
+
+P2
+11. Microtrim review workspace / source waveform.
+12. Catalog Studio XR/SFX/Motion/CINE.
+13. Calendar Planner Pro.
+14. Cutter Control para resolver cutOverrides/microtrims.
+
+SIN CAMBIO
+Cutter base no necesita comprender XR/SFX/CINE para cortar.
+Renderer no redefine schema.
+sourceRanges sigue protegido.
+15. Caption validator: shortSourceException válido cuando la parte completa tiene <6 palabras; nunca fusionar dos parts sólo para cumplir conteo.
+16. Route semantics: route es alternativa editorial completa; no confundir SOURCE vs VO con route.

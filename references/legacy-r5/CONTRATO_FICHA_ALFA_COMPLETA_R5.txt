@@ -1,0 +1,237 @@
+ABRXOS — CONTRATO DE FICHA ALFA COMPLETA R5
+
+La ficha Alfa no reemplaza la Beta: la conserva, la cita y la convierte en un
+plan ejecutable. Todo campo debe indicar si proviene de la fuente, de la Beta,
+de una decisión editorial o de una propuesta de IA.
+
+Este contrato está pensado para tres lectores distintos: la persona que decide
+si una pieza merece producirse, la persona que la edita y el sistema que valida
+rangos, assets y entregables. Por eso combina lenguaje comprensible con IDs y
+campos exactos. Una explicación bonita que no permite ejecutar una acción no
+cumple el contrato.
+
+## ESTRUCTURA JERÁRQUICA OBLIGATORIA
+
+```text
+CONTENIDO
+  └── PARTE (hook, desarrollo, giro, cierre, CTA)
+       └── SUBPARTE (una idea o frase completa)
+            └── BEAT (momento concreto con IN/OUT)
+                 ├── XR / XR00
+                 ├── B-Roll
+                 ├── Motion
+                 ├── Texto/subtítulo
+                 ├── Música
+                 └── SFX
+```
+
+Cada recomendación debe indicar `contentId`, `partId`, `subpartId`, `beatId`,
+`sourceRange` y el recurso al que se refiere. `XR00` significa que continúa el
+master sin X-Roll visual; aun así puede tener subtítulos, música, SFX o un
+B-Roll puntual.
+
+## A.1 PARTES, SUBPARTES Y BEATS
+
+Para cada parte: `partId`, función, objetivo, IN/OUT, duración, subpartes y
+transición. Para cada subparte: `subpartId`, título corto, texto literal, texto
+de edición, `beatId`, timecode, idea, disparador, XR o XR00 y recursos.
+
+## A. INFORMACIÓN HEREDADA DE BETA (NO SE PIERDE)
+
+- `contentId` y versión;
+- tipo de contenido: clip vertical, clip horizontal, intro, carrusel u otro;
+- título provisional;
+- objetivo y promesa;
+- hook elegido y alternativas;
+- copy corto;
+- pregunta del director;
+- respuesta de referencia;
+- lógica editorial;
+- secuencia de XR aprobada, conservando IDs y orden aunque sean no secuenciales;
+- claims pendientes y riesgos;
+- fuente y rangos candidatos;
+- notas y correcciones del revisor.
+
+## B. INFORMACIÓN EDITORIAL QUE ALFA DEBE FIJAR
+
+- audiencia primaria y secundaria;
+- plataforma, país/idioma y tono;
+- coach o criterio de dirección;
+- disparador de cada parte;
+- partes definitivas: hook, desarrollo, giro, cierre y CTA;
+- rangos finales por master vertical y horizontal;
+- prioridad, duración objetivo y motivo de publicación;
+- decisión sobre claims: confirmado, requiere fuente o eliminado.
+
+## C. FUENTE Y TRAZABILIDAD
+
+- archivo exacto y `sourceGroupId`;
+- master utilizado;
+- timecode IN/OUT verificado;
+- palabra inicial y final;
+- texto literal sin corregir;
+- texto normalizado para subtítulo;
+- confianza de transcripción;
+- desfase del master (`syncOffsetMs`);
+- referencia a la pregunta o fragmento que justifica cada decisión.
+
+## D. DESARROLLO EJECUTABLE DE CADA XR
+
+Para cada XR de la secuencia Beta, sin agregar ni reordenar silenciosamente:
+
+- `xrId`, posición narrativa y función;
+- frase ancla y evento que lo dispara;
+- IN/OUT y duración;
+- tipo: imagen, video, captura, gráfico o material grabado;
+- estados internos `S01`, `S02`, `S03`…;
+- cantidad exacta de imágenes/videos necesarios;
+- inventario separado de cada asset interno (`A01`, `A02`, `A03`…);
+- descripción de lo que aparece en cada estado;
+- relación visual y semántica entre estados;
+- tipo de composición: secuencia, collage, mosaico, split-screen, comparación,
+  capas, emojis, captura, gráfico o texto sobre imagen/video;
+- si es XR09: exactamente dos placas tipográficas, división semántica y
+  referencia de tipografía;
+- transición de entrada y salida;
+- elementos que deben permanecer constantes.
+
+El XR debe aparecer dentro de su parte, subparte y beat, nunca como una lista
+aislada. Ejemplo: `P02 / SP02.03 / B02.03.01 / XR07 / S01`.
+
+Si un XR requiere 3 imágenes, Alfa debe desarrollar `A01`, `A02` y `A03` por
+separado, cada una con descripción, función, prompt, fuente/B-Roll y relación
+con las demás. Lo mismo aplica si requiere 4 o 7 imágenes. En un collage debe
+explicar celdas, distribución, orden de lectura, márgenes, fondo, z-index y
+entradas. En una composición con emojis debe listar cada emoji, significado,
+posición, tamaño, estilo, entrada, salida y movimiento. Las capas de foto,
+video, captura, gráfico y texto se describen individualmente.
+
+## E. PROMPT DE CADA IMAGEN XR
+
+Cada estado debe tener un prompt independiente que describa:
+
+- objetivo narrativo y frase acompañante;
+- sujeto, acción y contexto;
+- primer plano, plano medio y fondo;
+- composición, punto focal y espacio negativo;
+- cámara, lente, perspectiva y profundidad;
+- iluminación, paleta, materiales y textura;
+- continuidad con estados anteriores y posteriores;
+- formato, resolución y zona segura para texto;
+- elementos permitidos y prohibidos;
+- prompt negativo;
+- indicación explícita de no generar texto dentro de la imagen salvo solicitud.
+- encuadre concreto y motivo narrativo;
+- profundidad, punto focal, líneas guía, espacio negativo y adaptación vertical/
+  horizontal;
+- criterios anti-slop para anatomía, manos, reflejos, sombras, proporciones,
+  continuidad, legibilidad y artefactos prohibidos;
+- acabado premium fotográfico o de render: materiales, iluminación, bordes,
+  oclusión, antialiasing y resolución.
+
+## F. MOTION DE CADA ESTADO
+
+- `motionId` y tipo: estático, zoom, pan, tilt, parallax, rack focus, etc.;
+- posición, escala, rotación y opacidad inicial/final;
+- keyframes con tiempo relativo;
+- easing;
+- duración y sincronía con palabra, beat o SFX;
+- elemento enfocado y elementos inmóviles;
+- transición con el siguiente estado;
+- instrucciones equivalentes para CapCut.
+
+## G. B-ROLL
+
+B-Roll es una referencia visual asociada a un estado XR, no un XR adicional.
+Para cada uno:
+
+- `brollId` y estado asociado;
+- función narrativa;
+- descripción breve de la imagen buscada;
+- consulta para Google Images;
+- consulta para bancos de stock;
+- filtros de búsqueda: orientación, plano, edad, contexto, color y emoción;
+- fuentes preferidas;
+- URL, autor, licencia y crédito cuando se haya elegido un recurso;
+- alternativa si no se encuentra material adecuado.
+
+El `searchQuery` debe estar junto a la descripción y al motivo narrativo. No
+puede existir un B-Roll sin parte, subparte, beat o estado XR asociado.
+
+## H. SFX Y DISEÑO SONORO POR BEAT
+
+Los SFX pueden aparecer dentro de un XR, en `XR00` o directamente sobre el
+master. Para cada evento: `sfxId`, `beatId`, punto IN, palabra/gesto que lo
+dispara, tipo, intención, volumen relativo, ducking, duración, fade, búsqueda,
+licencia, alternativa e instrucción para CapCut.
+
+Ejemplo: `P02 / SP02.03 / B02.03.01 / XR00 / SFX04`: hit suave en “cada día”,
+180 ms, -12 dB, buscar “soft motivational impact no copyright”.
+
+## I. COPY Y VARIANTES POR RED
+
+La Alfa debe entregar copy separado, no una frase genérica:
+
+- título en pantalla;
+- copy corto;
+- caption para Instagram/Reels;
+- descripción para TikTok;
+- título y descripción para YouTube Shorts;
+- texto para LinkedIn si aplica;
+- CTA;
+- hashtags sólo si están justificados;
+- advertencias legales o de claims.
+
+## J. AUDIO, MÚSICA Y SUBTÍTULOS
+
+- voz fuente y palabras exactas;
+- música: función, entrada, salida y nivel relativo;
+- referencia a los `sfxId` definidos por beat;
+- ducking de música bajo la voz;
+- silencios intencionales;
+- subtítulos palabra por palabra con IN/OUT;
+- estilo, posición, saltos de línea y palabras enfatizadas;
+- safe areas distintas para vertical y horizontal.
+
+## K. PORTADA Y ASSETS
+
+- título de portada;
+- jerarquía visual y composición;
+- imagen o frame requerido;
+- prompt de portada si corresponde;
+- logo, colores y tipografía;
+- lista de assets, nombre, formato, resolución, licencia y carpeta.
+
+## L. INSTRUCCIONES PARA CAPCUT
+
+- orden de pistas;
+- rango del master;
+- posición de cada XR/B-Roll;
+- motion y keyframes;
+- subtítulos y estilos;
+- audio y SFX;
+- transiciones;
+- nombre de cada archivo exportado;
+- estructura de carpetas de entrega.
+
+## M. VALIDACIÓN Y QA
+
+- rangos válidos y sincronizados;
+- secuencia XR idéntica a Beta;
+- cada XR desarrollado;
+- cada estado con prompt de imagen e instrucción de motion;
+- cada B-Roll con búsqueda y licencia;
+- cada SFX ubicado en un beat, incluso en XR00;
+- ninguna recomendación huérfana fuera de una parte o subparte;
+- copy diferenciado por red;
+- subtítulos dentro de duración;
+- claims verificados o marcados;
+- continuidad visual aprobada;
+- resolución, proporción y nombres correctos;
+- advertencias y bloqueos explícitos;
+- aprobación humana requerida antes de exportar.
+
+ESTADOS PERMITIDOS: `ready`, `needs_review`, `blocked`.
+
+REGLA DE ORO: si falta información, la Alfa no la inventa; la marca y explica
+qué dato debe confirmar el usuario.

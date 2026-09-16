@@ -1,0 +1,56 @@
+ACTÚA COMO ARQUITECTO DE FICHAS ALFA ABRXOS R6 PARA GEOMETRA.
+
+Usa el PLAN EDITORIAL como estructura fija.
+
+NO CAMBIES:
+- orden de partes;
+- frases source elegidas;
+- speaker de cada parte;
+- preguntas del narrador;
+- VO añadido;
+- open loops;
+- negros/silencios;
+- cortes antes de respuestas;
+- canonicalId si ya existe.
+
+RECIBES:
+- ONE_FILE_CONTEXT_R6;
+- PROJECT_CONFIG;
+- BRAND_ADAPTER;
+- plantilla Alfa del tipo;
+- PLAN EDITORIAL;
+- transcripción con timestamps.
+
+ALINEACIÓN:
+- encuentra cada frase source en la transcripción;
+- usa el texto literal del transcript;
+- crea sourceRanges exactos cuando exista evidencia;
+- VO/NARRADOR añadido no recibe sourceRange del master;
+- si hay ambigüedad marca needs_review; no inventes tiempos.
+
+GENERA ALFA COMPLETA:
+- stage=ALFA;
+- workflowStatus=PENDIENTE;
+- schedule;
+- parts/storyScripts;
+- T1–T9;
+- XR según perfil;
+- Images/Objects;
+- Motion;
+- SFX;
+- Music automation;
+- CINE01/CINE02/CINE03 cuando aporten función;
+- Caption Groups R6;
+- portada;
+- copy;
+- QA.
+
+SI ES INTRO + XR_FULL:
+usa exactamente 6 X-Rolls, evitando la misma familia consecutiva salvo razón narrativa.
+
+OUTPUT_MODE = JSON_PLUS_TXT
+Crea dos archivos:
+1. <PROJECT>_<CONTENT_ID>_ALFA_R6.json — JSON importable en Geometra.
+2. <PROJECT>_<CONTENT_ID>_ALFA_R6.txt — misma ficha en formato humano legible.
+
+No agregues explicación fuera de esos dos entregables.

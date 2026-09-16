@@ -1,0 +1,41 @@
+ABRXOS X · BRAND BUILDER V1 — TUTORIAL RÁPIDO
+
+1. INSTALAR
+Ejecuta INSTALAR_ABRXOS_X_BRAND_BUILDER_V1.command desde Terminal.
+Se crea ABRXOS X Brand Builder.app en el Escritorio.
+
+2. CREAR MARCA
+Pulsa “Nueva marca”. Completa Brand ID y nombre.
+
+3. ENTRADA LIBRE
+En Raw Context pega cualquier descripción, notas, entrevistas o contexto sin necesidad de ordenarlo.
+La app preserva este texto literalmente.
+
+4. BRANDING METHOD
+Usa primero “Resumen 5 Drivers”.
+- Brand Ego
+- Brand Gang
+- Brand Essence
+- Brand Identity
+- Brand Experience
+Si necesitas profundidad, pulsa “Ver las 25 tools”. No es obligatorio completar las 25.
+
+5. BRAND ADAPTER
+Rellena el formulario operativo: voz, visual, narrativa, XR, Motion, CINE, SFX, Music, Captions, Covers y assets.
+También puedes editar/importar el JSON completo.
+
+6. REFERENCES
+Adjunta PDFs, imágenes o documentos relevantes. Para análisis profundo del Branding Method, adjunta también tu PDF original al chat externo.
+
+7. BUILD AI PACKAGE
+Pulsa “Construir AI Package”. Se crea carpeta + ZIP en:
+~/ABRXOS_BRAND_BUILDER_EXPORTS/
+
+8. CHATGPT
+Abre 01_QUE_SUBIR_A_CHATGPT.txt dentro del package y sigue ese orden.
+La IA debe devolverte:
+- BRAND_STRATEGY_R6.json + TXT
+- BRAND_ADAPTER_R6.json + TXT
+
+9. REIMPORTAR
+Importa el Brand Adapter JSON desde la pestaña Brand Adapter para revisarlo/editarlo o úsalo directamente en Content Builder.

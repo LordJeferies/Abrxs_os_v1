@@ -1,0 +1,5 @@
+Transcript → Intro Alfa
+
+Find source truth, VO placement, routes, sourceAlignment/microtrims, then build R6 intro including XR/CINE/SFX/Music/Caption Groups.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

@@ -1,0 +1,42 @@
+ABRXOS GEOMETRA 3.1.1 R6.1 — APP CANON
+
+ROLE
+Canonical project library + validator + compiler + Lienzo factory.
+
+INSTALLED CODE
+~/ABRXOS_GEOMETRA_V3
+
+DATA
+~/ABRXOS_GEOMETRA_DATA
+
+DESKTOP LAUNCHER
+~/Desktop/ABRXOS Geometra V3.app
+
+CURRENT LAYERS
+Kernel V3
+Renderer packs
+R6 baseline patch V3.1
+R6.1 ecosystem hotfix V3.1.1
+R6 validator/libraries
+R6 Lienzo inspector/runtime
+
+WHAT IT MUST DO
+- import/normalize content documents;
+- preserve IDs/source truth;
+- library merge;
+- validate Alpha/Cutter/Projection independently;
+- Kanban workflowStatus;
+- Calendar schedule;
+- compile standalone Lienzos;
+- allow Lienzo editing/merge/export;
+- keep Cutter boundary stable.
+
+WHAT IT MUST NOT DO
+- generate creative content automatically;
+- store GitHub credentials in public HTML;
+- convert old XR IDs destructively;
+- let renderer define domain semantics;
+- silently rewrite sourceRanges from timeline drag.
+
+FULL CURRENT SOURCE
+After running `tools/CAPTURAR_INSTALACION_ACTUAL.command`, this repo contains the exact installed source under apps/geometra/current/.

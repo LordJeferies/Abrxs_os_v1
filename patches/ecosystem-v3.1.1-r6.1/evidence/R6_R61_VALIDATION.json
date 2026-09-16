@@ -1,0 +1,121 @@
+{
+  "FICHA_INTRO_ALFA_CINEMATIC_R6.json": {
+    "critical": [],
+    "warnings": [],
+    "alphaReady": true,
+    "cutterReady": true,
+    "projectionReady": false,
+    "projectionMissing": [
+      "INTRO_01_XR01/INTRO_01_XR01_A01: falta proyección T3 image",
+      "INTRO_01_XR02/INTRO_01_XR02_A01: falta proyección T3 image",
+      "INTRO_01_XR02/INTRO_01_XR02_A02: falta proyección T3 image",
+      "INTRO_01_XR02/INTRO_01_XR02_A03: falta proyección T3 image",
+      "INTRO_01_XR04/INTRO_01_XR04_A01: falta proyección T3 image",
+      "INTRO_01_XR04/INTRO_01_XR04_A02: falta proyección T3 image",
+      "INTRO_01_XR04/INTRO_01_XR04_A03: falta proyección T3 image",
+      "INTRO_01_XR05/INTRO_01_XR05_A01: falta proyección T3 image",
+      "INTRO_01_XR05/INTRO_01_XR05_A02: falta proyección T3 image",
+      "INTRO_01_XR05/INTRO_01_XR05_A03: falta proyección T3 image",
+      "INTRO_01_XR06/INTRO_01_XR06_A01: falta proyección T3 image",
+      "INTRO_01_XR06/INTRO_01_XR06_A02: falta proyección T3 image",
+      "INTRO_01_XR06/INTRO_01_XR06_A03: falta proyección T3 image"
+    ],
+    "sourceAlignment": {
+      "count": 0,
+      "locatedCount": 0,
+      "microtrimRequiredCount": 0,
+      "unresolvedCount": 0
+    },
+    "voiceovers": {
+      "count": 0,
+      "placementReady": true
+    },
+    "missing": []
+  },
+  "FICHA_VERTICAL_ALFA_CINEMATIC_R6.json": {
+    "critical": [],
+    "warnings": [],
+    "alphaReady": true,
+    "cutterReady": true,
+    "projectionReady": false,
+    "projectionMissing": [
+      "V01_XR01/V01_XR01_A01: falta proyección T3 image",
+      "V01_XR01/V01_XR01_A02: falta proyección T3 image",
+      "V01_XR01/V01_XR01_A03: falta proyección T3 image",
+      "V01_XR02/V01_XR02_A01: falta proyección T3 image",
+      "V01_XR02/V01_XR02_A02: falta proyección T3 image",
+      "V01_XR02/V01_XR02_A03: falta proyección T3 image"
+    ],
+    "sourceAlignment": {
+      "count": 0,
+      "locatedCount": 0,
+      "microtrimRequiredCount": 0,
+      "unresolvedCount": 0
+    },
+    "voiceovers": {
+      "count": 0,
+      "placementReady": true
+    },
+    "missing": []
+  },
+  "FICHA_CAROUSEL_ALFA_R6.json": {
+    "critical": [],
+    "warnings": [],
+    "alphaReady": true,
+    "cutterReady": false,
+    "projectionReady": true,
+    "projectionMissing": [],
+    "sourceAlignment": {
+      "count": 0,
+      "locatedCount": 0,
+      "microtrimRequiredCount": 0,
+      "unresolvedCount": 0
+    },
+    "voiceovers": {
+      "count": 0,
+      "placementReady": true
+    },
+    "missing": []
+  },
+  "INTRO_AMANDA_ALFA_PREBUILD_R6_1.json": {
+    "critical": [],
+    "warnings": [],
+    "alphaReady": false,
+    "cutterReady": false,
+    "projectionReady": true,
+    "projectionMissing": [],
+    "sourceAlignment": {
+      "count": 25,
+      "locatedCount": 25,
+      "microtrimRequiredCount": 16,
+      "unresolvedCount": 0
+    },
+    "voiceovers": {
+      "count": 2,
+      "placementReady": true
+    },
+    "missing": [
+      "INTRO_AMANDA_CINE01_OPEN: musicAutomation",
+      "INTRO_AMANDA_CINE01_OPEN: silence",
+      "INTRO_AMANDA_CINE02_LOSS: musicAutomation",
+      "INTRO_AMANDA_CINE02_LOSS: silence",
+      "INTRO_AMANDA_CINE03_BUSINESS: musicAutomation",
+      "INTRO_AMANDA_CINE03_BUSINESS: silence",
+      "INTRO_AMANDA_CINE04_OPEN_LOOP: musicAutomation",
+      "INTRO_AMANDA_CINE04_OPEN_LOOP: silence",
+      "INTRO_AMANDA_SFX01: SFX libraryId",
+      "INTRO_AMANDA_SFX01: SFX variant",
+      "INTRO_AMANDA_SFX02: SFX libraryId",
+      "INTRO_AMANDA_SFX02: SFX variant",
+      "INTRO_AMANDA_SFX03: SFX libraryId",
+      "INTRO_AMANDA_SFX03: SFX variant",
+      "INTRO_AMANDA_SFX04: SFX libraryId",
+      "INTRO_AMANDA_SFX04: SFX variant",
+      "INTRO_AMANDA_SFX07: SFX libraryId",
+      "INTRO_AMANDA_SFX07: SFX variant",
+      "INTRO_AMANDA_SFX08: SFX libraryId",
+      "INTRO_AMANDA_SFX08: SFX variant",
+      "sourceRanges faltante"
+    ]
+  }
+}

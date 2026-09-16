@@ -1,0 +1,2 @@
+r6_patch_path = Path(root) / 'shared' / 'r6_patch.js'
+r6_patch = r6_patch_path.read_text(encoding='utf-8') if r6_patch_path.exists() else ''

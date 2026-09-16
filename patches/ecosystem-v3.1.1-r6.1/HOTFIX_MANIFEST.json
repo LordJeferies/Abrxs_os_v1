@@ -1,0 +1,49 @@
+{
+  "hotfixId": "ABRXOS_ECOSYSTEM_V3_1_1_R6_1",
+  "version": "3.1.1-r6.1",
+  "date": "2026-09-16",
+  "canonFamily": "R6",
+  "canonRevision": "R6.1",
+  "dataMigration": false,
+  "appReplacement": false,
+  "targets": {
+    "geometra": {
+      "required": true,
+      "requires": "3.1.x + ABRXOS_GEOMETRA_V3_1_R6 registry",
+      "resultVersion": "3.1.1"
+    },
+    "contentBuilder": {
+      "required": false,
+      "requires": "1.0.x",
+      "resultVersion": "1.0.1"
+    },
+    "brandBuilder": {
+      "required": false,
+      "requires": "1.0.x",
+      "resultVersion": "1.0.1"
+    }
+  },
+  "features": [
+    "sourceAlignment",
+    "microtrim",
+    "voAdded",
+    "routeSemanticsR61",
+    "captionGroupsR6",
+    "shortSourceException",
+    "projectionReady",
+    "ecosystemContractHandshake",
+    "cleanReleaseManifest"
+  ],
+  "protectedDataDirs": [
+    "~/ABRXOS_GEOMETRA_DATA",
+    "~/ABRXOS_CONTENT_BUILDER_DATA",
+    "~/ABRXOS_CONTENT_BUILDER_EXPORTS",
+    "~/ABRXOS_BRAND_BUILDER_DATA",
+    "~/ABRXOS_BRAND_BUILDER_EXPORTS"
+  ],
+  "atomicPostVerifyRollback": true,
+  "selfContainedTests": true,
+  "crossAppLibraryHashVerification": true,
+  "brandAdapterContractVerification": true,
+  "projectionReadyIndependent": true
+}

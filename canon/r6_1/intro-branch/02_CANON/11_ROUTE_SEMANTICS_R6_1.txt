@@ -1,0 +1,27 @@
+ABRXOS R6.1 · ROUTE SEMANTICS
+
+ROUTE NO SIGNIFICA «TIPO DE AUDIO».
+Una route es una ALTERNATIVA EDITORIAL COMPLETA.
+
+Incorrecto:
+source speech → routes:[source]
+VO → routes:[voA]
+si la intención es que ambos aparezcan juntos en el mismo montaje.
+Eso haría que un renderer que filtra por route muestre uno u otro.
+
+Correcto para este intro:
+route final contiene SOURCE + VO + XR + recursos que forman el montaje aprobado.
+
+Ejemplo:
+P03 Amanda source routes:[final]
+VO01 Narrador routes:[final]
+P04 Amanda source routes:[final]
+
+Si además se desea variante sin VO:
+- crear route source_only con tiempos recalculados;
+- source events pueden pertenecer a [final, source_only] sólo si sus edit times son compatibles;
+- si los tiempos cambian al retirar VO, usar routeTimings separados o eventos derivados, no dejar huecos silenciosos por accidente.
+
+Regla:
+kind/sourceRole describe SOURCE_SPEECH vs VO_ADDED.
+route describe una versión completa del montaje.

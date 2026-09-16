@@ -1,0 +1,5 @@
+Transcript → Vertical Alfa
+
+Select a coherent short-form thesis; preserve literal source; develop XR/assets/prompts/timeline.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

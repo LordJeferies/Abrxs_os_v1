@@ -1,0 +1,86 @@
+ABRXOS — LÓGICA DE TIMELINE, DRAG & DROP Y AJUSTE DE TIEMPOS R5
+
+## 1. PRINCIPIO
+
+El visor es un editor de planificación. Permite mover y ajustar elementos sin
+destruir la fuente. La transcripción original permanece intacta; los cambios
+se guardan como `editorialRange`, `override` y evento de historial.
+
+## 2. ELEMENTOS ARRASTRABLES
+
+- partes, subpartes y beats;
+- rangos del master;
+- XR/XR00;
+- estados A01…An/S01…Sn;
+- B-Roll, texto, subtítulos, música y SFX;
+- markers de coach, overlays y placas XR09.
+
+Cada elemento muestra color, ID, etiqueta corta, IN/OUT y estado. Los assets
+pendientes son ghost cards; los cargados son sólidos.
+
+## 3. OPERACIONES
+
+- drag horizontal: mover IN/OUT manteniendo duración;
+- trim izquierdo/derecho: acortar o alargar;
+- alt-drag: duplicar como variante;
+- drag entre pistas compatibles: cambiar capa sin cambiar identidad;
+- split: dividir beat o recurso creando IDs derivados;
+- ripple: desplazar elementos posteriores;
+- overwrite: ocupar el rango seleccionado y advertir solapamientos;
+- snap: ajustar a palabra, silencio, frame, beat o borde de otro recurso;
+- zoom y ajuste frame-by-frame.
+
+## 4. PRECISIÓN DE TRANSCRIPCIÓN
+
+`Snap to word` hace que IN/OUT caigan en límites de palabras. Si se corta una
+palabra, mostrar advertencia y proponer el límite más cercano. El timecode
+fuente no se modifica; se guarda un rango editorial:
+
+```json
+{
+  "sourceRange": {"startMs": 1512400, "endMs": 1518200},
+  "editorialRange": {"startMs": 1512600, "endMs": 1518000},
+  "adjustmentReason": "eliminar respiración antes del hook"
+}
+```
+
+## 5. PROPAGACIÓN
+
+Al mover o redimensionar una parte: recalcular beats, comprobar palabras y
+subtítulos, desplazar XR/B-Roll/estados/motions/SFX vinculados, preservar
+duraciones relativas salvo `stretch`, recalcular keyframes y exportación, y
+marcar QA `needs_review` si una dependencia se rompe.
+
+Al mover sólo un asset visual no se mueve el audio ni la fuente; se crea un
+override de capa. Al usar ripple, se desplazan todos los elementos hijos.
+
+## 6. DEPENDENCIAS
+
+Cada recurso declara `timingMode`: `locked_to_source`, `follow_parent`, `free`,
+`stretchable` o `manual_review`.
+
+- locked_to_source: sólo se mueve dentro de su fuente;
+- follow_parent: sigue a parte/subparte/beat;
+- free: cambia sin desplazar otros elementos;
+- stretchable: adapta keyframes y texto;
+- manual_review: exige confirmación antes de exportar.
+
+## 7. ACTUALIZACIÓN DE ALFA
+
+Guardar valor Alfa original, nuevo valor editorial, usuario, fecha, motivo,
+elementos afectados, diff y estado QA. Los prompts de imagen no cambian por
+mover un asset; motions, subtítulos, SFX, B-Roll y exportación se recalculan
+cuando corresponda.
+
+## 8. SEGURIDAD
+
+Undo/redo, autosave, confirmación para ripple masivo, advertencia de
+solapamiento y ningún cambio silencioso en la fuente. Exportar sólo con QA
+crítico resuelto.
+
+## 9. DRAG & DROP DE ASSETS
+
+Arrastrar una imagen/video al ghost card valida formato, resolución, orientación
+y licencia. Si es válido, crea el vínculo y lo copia a la carpeta de la ficha.
+Si no coincide, queda como candidato con motivo. El reemplazo conserva el asset
+anterior en el historial.

@@ -1,0 +1,18 @@
+HOW TO MAINTAIN THIS REPO
+
+Before modifying anything:
+- capture known-good installed snapshot;
+- tag it;
+- create feature/hotfix branch.
+
+After modification:
+- tests;
+- cross-app handshake;
+- compile/reimport;
+- sandbox patch/apply/revert where relevant;
+- update VERSION/CHANGELOG/docs;
+- regenerate manifests;
+- review git diff;
+- commit/tag.
+
+Do not use the installed app directory as an untracked scratchpad. Develop in Git; install/promote only verified releases.

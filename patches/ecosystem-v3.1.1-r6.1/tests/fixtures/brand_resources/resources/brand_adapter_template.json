@@ -1,0 +1,299 @@
+{
+  "schemaVersion": "abrxos.brand-adapter.r6",
+  "brandId": "BRAND_ID",
+  "brandName": "BRAND NAME",
+  "clientName": "CLIENT / CREATOR NAME",
+  "adapterVersion": "R6.1",
+  "language": "es",
+  "market": "",
+  "description": "",
+  "identity": {
+    "brandEssence": "",
+    "positioning": "",
+    "audiencePrimary": [],
+    "audienceSecondary": [],
+    "coreTopics": [],
+    "sensitiveTopics": [],
+    "brandPromisesAllowed": [],
+    "claimsRequireEvidence": true
+  },
+  "voice": {
+    "tone": [],
+    "personality": [],
+    "register": "",
+    "energy": "",
+    "cadence": "",
+    "sentenceStyle": "",
+    "humor": "",
+    "emotionalRange": [],
+    "preferredVocabulary": [],
+    "avoidVocabulary": [],
+    "forbiddenPhrases": [],
+    "do": [],
+    "dont": [],
+    "speakerRules": {
+      "preserveLiteralSource": true,
+      "narratorAllowed": true,
+      "narratorStyle": "",
+      "voiceoverOnlyWhen": []
+    }
+  },
+  "narrative": {
+    "storytellingStyle": [],
+    "preferredHookTypes": [],
+    "openLoopStyle": "",
+    "payoffStyle": "",
+    "ctaStyle": "",
+    "preferredEmotionalArcs": [],
+    "introRules": [],
+    "clipRules": [],
+    "longFormRules": [],
+    "doNotRevealEarly": [],
+    "editorialDo": [],
+    "editorialDont": []
+  },
+  "visual": {
+    "visualLanguage": [],
+    "realism": "",
+    "artDirection": "",
+    "palette": {
+      "primary": [],
+      "secondary": [],
+      "accent": [],
+      "neutral": [],
+      "background": [],
+      "forbidden": []
+    },
+    "typography": {
+      "headlineFamilies": [],
+      "bodyFamilies": [],
+      "weights": [],
+      "casePolicy": "",
+      "tracking": "",
+      "textEffects": [],
+      "forbidden": []
+    },
+    "lighting": {
+      "preferred": [],
+      "contrast": "",
+      "temperature": "",
+      "avoid": []
+    },
+    "camera": {
+      "preferredLenses": [],
+      "preferredFraming": [],
+      "preferredAngles": [],
+      "depthOfField": "",
+      "movementCharacter": "",
+      "avoid": []
+    },
+    "materialsAndTexture": [],
+    "peopleRepresentation": [],
+    "objectStyle": [],
+    "backgroundStyle": [],
+    "safeAreas": {
+      "vertical": "",
+      "horizontal": "",
+      "captions": "",
+      "logos": ""
+    },
+    "continuityLocks": [],
+    "negativeConstraints": [],
+    "referenceImages": [
+      {
+        "referenceId": "REF_01",
+        "fileOrDescription": "",
+        "useOnlyFor": [],
+        "doNotCopy": []
+      }
+    ]
+  },
+  "editProfiles": {
+    "default": {
+      "code": "XR_FULL",
+      "commercialName": "Cinematic Edit"
+    },
+    "allowed": [
+      {"code": "XR_FULL", "commercialName": "Cinematic Edit"},
+      {"code": "MOTION_SFX", "commercialName": "Dynamic Edit"},
+      {"code": "SFX_ONLY", "commercialName": "Clean Edit"}
+    ],
+    "notes": []
+  },
+  "xr": {
+    "enabled": true,
+    "preferredFamilies": [],
+    "avoidFamilies": [],
+    "diversityRule": "prefer different families before repeating, unless narrative function clearly favors repetition",
+    "noSameFamilyConsecutive": true,
+    "comicInfo": {
+      "style": "",
+      "textPolicy": "editorial_complementary",
+      "compositionRules": [],
+      "centerImportance": "",
+      "avoid": []
+    },
+    "comicCc": {
+      "style": "integrated_text_no_bubbles",
+      "textPolicy": "spoken_literal_or_verified_normalized",
+      "shotOrder": ["wide", "close_up", "medium"],
+      "captionPolicy": "hide_t9_while_active",
+      "avoid": []
+    },
+    "typo": {
+      "backgroundStyle": "",
+      "heroWordStyle": "",
+      "normalTextStyle": "",
+      "avoid": []
+    },
+    "photos": {
+      "shotOrder": ["close_up", "wide", "close_up"],
+      "photoStyle": "",
+      "avoid": []
+    },
+    "objects": {
+      "objectRenderingStyle": "",
+      "placementLogic": "system_recommends_foreground_or_background_with_reason",
+      "emojiFallbackAllowed": true,
+      "emojiStyle": "",
+      "avoid": []
+    },
+    "photoObject": {
+      "backgroundPhotoStyle": "",
+      "foregroundObjectStyle": "",
+      "avoid": []
+    }
+  },
+  "motion": {
+    "preferred": [],
+    "avoid": [],
+    "zoomRangeTypical": "",
+    "panCharacter": "",
+    "easingDefault": "ease_in_out",
+    "entryPreferences": [],
+    "exitPreferences": [],
+    "cinematicMotions": [],
+    "rule": "motion animates or presents an existing visual; it does not replace visual reasoning"
+  },
+  "cine": {
+    "enabled": true,
+    "allowed": ["CINE01_BLACK_HOLD", "CINE02_FREEZE_HOLD", "CINE03_PUNCH_CUT"],
+    "preferred": [],
+    "avoid": [],
+    "blackHold": {
+      "defaultSeconds": 1.0,
+      "recommendedMin": 0.5,
+      "recommendedMax": 1.5
+    },
+    "useCriteria": [],
+    "sfxOptional": true
+  },
+  "sfx": {
+    "libraryPolicy": "small_reusable_library",
+    "preferredFamilies": [
+      "CLICK", "KEYBOARD", "WHOOSH", "CAMERA", "GOOD", "WRONG",
+      "LOW_BOOM", "EMPHASIS", "SUSPENSE", "TENSION", "RISER", "IMPACT", "CLICK_DEEP"
+    ],
+    "avoidFamilies": [],
+    "intensity": "",
+    "repeatPolicy": "repetition of a known sound is preferred to adding unnecessary new sound families",
+    "voicePriority": true,
+    "notes": []
+  },
+  "music": {
+    "preferredStyles": [],
+    "preferredInstruments": [],
+    "energy": "",
+    "emotionalUse": [],
+    "avoidStyles": [],
+    "duckingCharacter": "",
+    "silencePolicy": "",
+    "automationPreferences": ["BASE", "SWELL", "DUCK", "MUTE", "RESUME", "FADE"],
+    "notes": []
+  },
+  "captions": {
+    "enabled": true,
+    "groupTargetWordsMin": 8,
+    "groupTargetWordsMax": 15,
+    "softMin": 6,
+    "softMax": 17,
+    "groupBySemanticInformation": true,
+    "neverCrossPartId": true,
+    "case": "sentence",
+    "fontFamilies": [],
+    "weight": "",
+    "colors": [],
+    "position": "",
+    "safeArea": "",
+    "linePolicy": "",
+    "highlightStyle": "",
+    "highlightWordOptional": true,
+    "heroWordAllowed": true,
+    "heroWordStyle": "",
+    "comicCcVisibility": "hidden",
+    "avoid": []
+  },
+  "covers": {
+    "preferredTypes": [],
+    "headlineLength": "",
+    "subjectPlacement": "",
+    "textZone": "",
+    "visualHierarchy": "",
+    "logoPolicy": "",
+    "avoid": []
+  },
+  "staticContent": {
+    "carousel": {
+      "defaultRatio": "4:5",
+      "safeAreaPercent": 8,
+      "style": "",
+      "progressionPatterns": [],
+      "avoid": []
+    },
+    "quote": {"style": "", "avoid": []},
+    "thread": {"style": "", "avoid": []},
+    "note": {"style": "", "avoid": []},
+    "pdf": {"style": "", "avoid": []}
+  },
+  "platforms": {
+    "instagram": {"enabled": true, "copyStyle": "", "ctaStyle": "", "notes": []},
+    "tiktok": {"enabled": true, "copyStyle": "", "ctaStyle": "", "notes": []},
+    "youtube": {"enabled": true, "titleStyle": "", "descriptionStyle": "", "notes": []},
+    "linkedin": {"enabled": false, "copyStyle": "", "ctaStyle": "", "notes": []}
+  },
+  "claimsAndLegal": {
+    "claimsRequireSource": true,
+    "numbersRequireVerification": true,
+    "regulatedTopics": [],
+    "disclaimers": [],
+    "forbiddenClaims": [],
+    "licenseRules": []
+  },
+  "assetPolicy": {
+    "aiGeneratedAllowed": true,
+    "stockAllowed": true,
+    "clientAssetsPriority": true,
+    "logosOfficialOnly": true,
+    "watermarksForbidden": true,
+    "fakeLocalPathsForbidden": true,
+    "notes": []
+  },
+  "qa": {
+    "mustPreserveSourceTruth": true,
+    "mustRespectBrand": true,
+    "mustRespectSafeAreas": true,
+    "mustAvoidVisualSlop": true,
+    "mustKeepTextReadableOnMobile": true,
+    "reviewChecklist": []
+  },
+  "allowedProjectOverrides": [
+    "editProfile",
+    "platforms",
+    "xrDensity",
+    "musicIntensity",
+    "captionPosition",
+    "coverStyle",
+    "temporaryCampaignPalette"
+  ],
+  "notes": []
+}

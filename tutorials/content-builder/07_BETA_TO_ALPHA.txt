@@ -1,0 +1,5 @@
+Beta → Alfa
+
+Keep canonicalId; add source truth, timeline, XR internals, audio/captions/checklist and readiness.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

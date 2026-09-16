@@ -1,0 +1,14 @@
+ABRXOS R6.1 · VO ADDED / ROUTES / CAPTIONS
+
+VOICEOVER ADDED
+- No tiene sourceRange del podcast.
+- Parte: kind=voiceover, role=VOICEOVER, sourceRangeId=null.
+- placement.after / placement.before fijan su lugar editorial.
+- timeline T6 usa timingStatus=editorial_planned hasta medir el audio real.
+- recordingStatus y voiceoverAssetId deben ser explícitos.
+
+ROUTES
+Una route representa una alternativa editorial completa, no un media type. SOURCE + VO + XR + CINE + SFX pueden coexistir en route=final. No uses primaryRoute='vo'/'xr'/'sfx'.
+
+CAPTION GROUPS
+R6 usa caption groups con displayCues. Soft range 6–17; si la part completa es más corta, shortSourceException=true + shortSourceReason. Nunca mezcles partId sólo para llegar a seis palabras.

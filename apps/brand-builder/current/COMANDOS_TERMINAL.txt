@@ -1,0 +1,26 @@
+ABRXOS X · BRAND BUILDER V1
+
+INSTALACIÓN RECOMENDADA
+1. Descomprime ABRXOS_X_BRAND_BUILDER_V1.zip.
+2. Abre Terminal.
+3. Arrastra el archivo INSTALAR_ABRXOS_X_BRAND_BUILDER_V1.command a Terminal y pulsa Enter.
+
+O, si la carpeta está en Descargas con ese nombre:
+
+zsh "$HOME/Downloads/ABRXOS_X_BRAND_BUILDER_V1/INSTALAR_ABRXOS_X_BRAND_BUILDER_V1.command"
+
+EJECUTAR SIN INSTALAR
+cd "$HOME/Downloads/ABRXOS_X_BRAND_BUILDER_V1"
+python3 app.py
+
+ABRIR HTML SOLO
+open "$HOME/Downloads/ABRXOS_X_BRAND_BUILDER_V1/ABRXOS_X_BRAND_BUILDER_V1.html"
+
+LOG
+open "$HOME/Library/Logs/abrxos_x_brand_builder_v1.log"
+
+DATOS
+open "$HOME/ABRXOS_BRAND_BUILDER_DATA"
+
+EXPORTS
+open "$HOME/ABRXOS_BRAND_BUILDER_EXPORTS"

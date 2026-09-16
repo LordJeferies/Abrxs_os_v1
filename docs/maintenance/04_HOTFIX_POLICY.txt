@@ -1,0 +1,23 @@
+HOTFIX POLICY
+
+A hotfix must be smaller than a normal release and reversible.
+Required files:
+README
+CHANGELOG
+manifest
+apply
+verify
+revert
+fixtures/tests
+evidence
+
+Apply must:
+precheck compatible versions
+stop stale processes when necessary
+backup only touched code files
+apply payload
+update version/registry
+verify
+rollback automatically if verify fails
+
+Revert must never roll back user data.

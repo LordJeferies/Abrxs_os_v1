@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "abrxos.sfx-library.r6",
+  "rule": "Reuse a small recognizable library. Repetition is preferable to inventing a new sound for every event.",
+  "families": {
+    "SFX_CLICK": {
+      "use": "Small appearance/UI/object emphasis",
+      "variants": [
+        "soft",
+        "medium",
+        "deep"
+      ]
+    },
+    "SFX_KEYBOARD": {
+      "use": "Typing/data/textual action",
+      "variants": [
+        "soft",
+        "mechanical"
+      ]
+    },
+    "SFX_WHOOSH": {
+      "use": "Movement/slide/cut accent",
+      "variants": [
+        "soft",
+        "medium",
+        "short"
+      ]
+    },
+    "SFX_CAMERA": {
+      "use": "Photo/shutter/reveal",
+      "variants": [
+        "soft",
+        "classic"
+      ]
+    },
+    "SFX_GOOD": {
+      "use": "Positive confirmation",
+      "variants": [
+        "soft",
+        "clean"
+      ]
+    },
+    "SFX_WRONG": {
+      "use": "Error/negation/contradiction",
+      "variants": [
+        "soft",
+        "dry"
+      ]
+    },
+    "SFX_LOW_BOOM": {
+      "use": "Emotional weight / CINE beat",
+      "variants": [
+        "soft",
+        "deep"
+      ]
+    },
+    "SFX_EMPHASIS": {
+      "use": "Short emphasis on word/object/beat",
+      "variants": [
+        "soft",
+        "medium",
+        "deep"
+      ]
+    },
+    "SFX_SUSPENSE": {
+      "use": "Anticipation/open loop",
+      "variants": [
+        "soft",
+        "bed"
+      ]
+    },
+    "SFX_TENSION": {
+      "use": "Sustained tension",
+      "variants": [
+        "soft",
+        "medium"
+      ]
+    },
+    "SFX_RISER": {
+      "use": "Build toward turn/reveal",
+      "variants": [
+        "short",
+        "medium"
+      ]
+    },
+    "SFX_IMPACT": {
+      "use": "Punch cut / strong reveal",
+      "variants": [
+        "soft",
+        "medium",
+        "deep"
+      ]
+    },
+    "SFX_CLICK_DEEP": {
+      "use": "Dry low click for punch transitions",
+      "variants": [
+        "default"
+      ]
+    }
+  },
+  "eventRequiredFields": [
+    "id",
+    "libraryId",
+    "variant",
+    "trigger",
+    "purpose",
+    "start",
+    "end",
+    "mix",
+    "status"
+  ],
+  "status": [
+    "pending_selection",
+    "selected",
+    "placed",
+    "approved"
+  ]
+}

@@ -1,0 +1,1 @@
+.replace('</body>', '<script data-abrxos-r6="v3.1-r6">' + r6_patch.replace('</script>', '<\\/script>') + '</script></body>', 1)

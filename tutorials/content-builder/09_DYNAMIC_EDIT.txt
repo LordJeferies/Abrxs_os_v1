@@ -1,0 +1,5 @@
+Dynamic Edit
+
+MOTION_SFX profile: no forced XR; emphasize motion/sfx/edit rhythm according to canon.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

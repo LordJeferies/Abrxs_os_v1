@@ -1,0 +1,3 @@
+REFERENCES
+
+Attach only relevant approved sources. Record filename/hash/provenance. Do not commit client references to this code repo; they live under user data/reference storage.

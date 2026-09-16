@@ -1,0 +1,19 @@
+HOW TO UPDATE CANON
+
+Canon change types:
+CLARIFICATION: documentation only; same IDs/semantics.
+ADDITIVE: new optional field/definition; old documents remain valid.
+REPLACEMENT: old behavior deprecated but migratable.
+BREAKING: meaning/ID/source contract changes.
+
+For additive R6.x:
+1. keep R6 baseline immutable;
+2. add `canon/r6_x/` supplement;
+3. update contract manifest feature list;
+4. add fixtures;
+5. update Content Builder package context;
+6. update Geometra validator/projection only if necessary;
+7. preserve Brand Adapter compatibility or bump explicitly;
+8. tag release.
+
+Do not edit historical R6 files in-place once released unless fixing packaging corruption; document any such correction.

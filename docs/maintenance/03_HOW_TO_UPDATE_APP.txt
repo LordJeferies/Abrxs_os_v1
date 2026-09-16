@@ -1,0 +1,16 @@
+HOW TO UPDATE ONE APP
+
+1. `tools/CAPTURAR_INSTALACION_ACTUAL.command`
+2. branch from known-good main.
+3. add failing test in that app.
+4. change only that app/current source.
+5. run `tools/VERIFY_ALL.command`.
+6. if contract changed, update docs/system/01_VERSION_MATRIX.txt and cross-app tests.
+7. regenerate manifests.
+8. package/apply in sandbox.
+9. verify rollback.
+10. commit/tag.
+
+If Content Builder changes package schema, Geometra compatibility must be tested before release.
+If Brand Adapter schema changes, Content Builder must be tested before release.
+If Geometra renderer changes only appearance, Builders should not need changes.

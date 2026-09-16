@@ -1,0 +1,20 @@
+CONTENT AI PACKAGE R6.1
+
+Expected files include:
+02_PROMPT_FINAL.txt
+03_REQUEST.json
+04_TRANSCRIPCION.txt
+05_PLAN_EDITORIAL.txt
+06_PROJECT_CONFIG.json
+07_BRAND_ADAPTER.json
+08_FICHA_TARGET.json
+09_CANON_CONTEXT.txt
+10_CURRENT_FICHA.json when applicable
+11_SPECIAL_RULES.txt
+12_R6_1_SOURCE_ALIGNMENT.txt
+13_R6_1_VO_ROUTE_CAPTIONS.txt
+14_LIENZO_PROJECTION_CONTRACT.json
+contract_manifest.json
+CANON_LIBRARIES/*.json
+
+The package instructs the external AI to return JSON/TXT ready for Geometra. It must never fabricate timestamps to make a ficha look complete.

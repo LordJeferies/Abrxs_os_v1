@@ -1,0 +1,34 @@
+INSTRUCCIÓN PARA CONTINUAR ESTA RAMA CANÓNICA ABRXOS
+
+Estamos definiendo el canon R6/R6.1 que alimenta IA → Geometra → Lienzo → Cutter. No construyas UI ni código salvo que se pida explícitamente.
+
+BASELINE
+- R6 actual: familias XR semánticas, SFX/Motion/CINE/Music libraries, Caption Groups, Edit Profiles.
+- R6.1 añade sourceAlignment/microtrim, VO_ADDED placement y projection contract.
+- Geometra V3 conserva campos R6 pero requiere patch V3.1 para UI especializada.
+
+MÉTODO OBLIGATORIO PARA CADA DECISIÓN
+1. mostrar baseline vigente;
+2. citar problema del caso Amanda u otro fixture real;
+3. clasificar cambio;
+4. proponer definición;
+5. definir JSON fields;
+6. definir proyección Lienzo;
+7. definir efecto Cutter;
+8. definir migración legacy;
+9. definir test/QA;
+10. actualizar ejemplo Amanda.
+
+PRIMER OBJETIVO
+Auditar y cerrar, uno por uno:
+XR families R6 → SFX → Motion → CINE → Music → Caption Groups → Asset states → Production checklist.
+
+NO HACER
+- inventar timestamps;
+- mapear XR00–XR09 a R6 sólo por número;
+- crear XR nuevos antes de cerrar los existentes;
+- confundir definición de catálogo con instancia timeline;
+- dar prompts genéricos.
+
+CASO DE PRUEBA
+Usa INTRO_AMANDA_SOURCE_ALIGNMENT_R6_1.json y 03_BLUEPRINT_XR_SFX_MOTION_R6_1.txt como fixture de validación.

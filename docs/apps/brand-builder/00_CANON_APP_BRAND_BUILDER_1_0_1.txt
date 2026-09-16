@@ -1,0 +1,19 @@
+ABRXOS X BRAND BUILDER 1.0.1 R6.1
+
+ROLE
+Package Builder for brand strategy + operational Brand Adapter.
+
+CODE
+~/Applications/ABRXOS/ABRXOS_X_BRAND_BUILDER_V1
+DATA
+~/ABRXOS_BRAND_BUILDER_DATA
+EXPORTS
+~/ABRXOS_BRAND_BUILDER_EXPORTS
+DESKTOP
+~/Desktop/ABRXOS X Brand Builder.app
+
+SEPARATION
+Branding Method = strategy / identity reasoning.
+Brand Adapter = operational execution contract consumed by Content Builder/production.
+
+R6.1 hotfix adds ecosystem handshake metadata. It does not alter the 5 Drivers/25 Tools methodology.

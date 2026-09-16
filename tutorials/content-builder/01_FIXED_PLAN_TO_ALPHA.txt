@@ -1,0 +1,5 @@
+Plan fijo + transcript → Alfa
+
+Use when edit plan already exists. R6.1 maps every source phrase first, then builds final production objects.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

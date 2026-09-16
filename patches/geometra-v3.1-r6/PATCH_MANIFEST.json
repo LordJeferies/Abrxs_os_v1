@@ -1,0 +1,88 @@
+{
+  "patchId": "ABRXOS_GEOMETRA_V3_1_R6",
+  "patchVersion": "3.1.0-r6.1",
+  "targetVersionPrefix": "3.",
+  "copy": [
+    {
+      "source": "payload/geometra/r6.py",
+      "target": "geometra/r6.py"
+    },
+    {
+      "source": "payload/r6",
+      "target": "r6"
+    },
+    {
+      "source": "payload/shared/r6_patch.js",
+      "target": "shared/r6_patch.js"
+    },
+    {
+      "source": "payload/app/r6_patch.js",
+      "target": "app/r6_patch.js"
+    },
+    {
+      "source": "payload/app/r6_patch.css",
+      "target": "app/r6_patch.css"
+    }
+  ],
+  "hooks": [
+    {
+      "target": "geometra/server.py",
+      "operation": "insert_after",
+      "anchor": "from .compiler import compile_lienzo",
+      "marker": "R6_SERVER_IMPORTS",
+      "contentFile": "hooks/server_imports.txt",
+      "indentFromAnchor": true
+    },
+    {
+      "target": "geometra/server.py",
+      "operation": "insert_before",
+      "anchor": "mapping={'/':'app/index.html','/app.js':'app/app.js','/styles.css':'app/styles.css'}",
+      "marker": "R6_SERVER_STATIC",
+      "contentFile": "hooks/server_static_routes.txt",
+      "indentFromAnchor": true
+    },
+    {
+      "target": "geometra/server.py",
+      "operation": "insert_before",
+      "anchor": "if path=='/api/compile':",
+      "marker": "R6_SERVER_VALIDATE_API",
+      "contentFile": "hooks/server_api_validate.txt",
+      "indentFromAnchor": true
+    },
+    {
+      "target": "geometra/compiler.py",
+      "operation": "insert_after",
+      "anchor": "shared = (Path(root) / 'shared' / 'lienzo_core.js').read_text(encoding='utf-8')",
+      "marker": "R6_COMPILER_LOAD",
+      "contentFile": "hooks/compiler_load.txt",
+      "indentFromAnchor": true
+    },
+    {
+      "target": "geometra/compiler.py",
+      "operation": "insert_before",
+      "anchor": ".replace('__ABRXOS_TITLE__', str(doc['canvas']['title'])))",
+      "marker": "R6_COMPILER_INLINE",
+      "contentFile": "hooks/compiler_inline.txt",
+      "indentFromAnchor": true
+    },
+    {
+      "target": "app/index.html",
+      "operation": "insert_before",
+      "anchor": "</head>",
+      "marker": "R6_APP_CSS",
+      "content": "<link rel=\"stylesheet\" href=\"/r6_patch.css\">"
+    },
+    {
+      "target": "app/index.html",
+      "operation": "insert_after",
+      "anchor": "<script src=\"/app.js\"></script>",
+      "marker": "R6_APP_JS",
+      "content": "<script src=\"/r6_patch.js\"></script>"
+    }
+  ],
+  "versionUpdate": {
+    "version": "3.1.0",
+    "patch": "ABRXOS_GEOMETRA_V3_1_R6",
+    "r6": true
+  }
+}

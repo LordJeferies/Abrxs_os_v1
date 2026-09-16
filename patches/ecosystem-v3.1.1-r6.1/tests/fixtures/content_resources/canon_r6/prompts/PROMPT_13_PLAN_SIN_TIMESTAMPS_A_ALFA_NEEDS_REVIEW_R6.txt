@@ -1,0 +1,24 @@
+ACTÚA COMO ARQUITECTO ABRXOS R6.
+
+Tengo un plan editorial claro pero la transcripción NO tiene timestamps suficientes.
+
+NO inventes tiempos.
+
+Construye la ficha Alfa estructural completa:
+- parts;
+- texto source literal cuando pueda identificarse;
+- storyScripts;
+- XR/assets/prompts;
+- Motion/CINE/SFX/Music/Captions como planificación;
+- workflow/schedule;
+- QA.
+
+Pero:
+- sourceRanges no verificables quedan unresolved/needs_review;
+- timingVerified=false;
+- Cutter readiness=false;
+- timeline timing que dependa de duración hablada debe marcar editorial_planned.
+
+El objetivo es que la ficha pueda revisarse visualmente y después alinearse sin rehacer su arquitectura.
+
+OUTPUT_MODE = JSON_PLUS_TXT.

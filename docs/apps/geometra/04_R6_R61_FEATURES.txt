@@ -1,0 +1,23 @@
+GEOMETRA R6 / R6.1 FEATURES
+
+R6
+- functional Geometra Kanban
+- Edit Profiles
+- R6 XR families
+- CINE T5
+- SFX R6
+- Caption Groups R6
+- Production Checklist
+- Alpha Ready / Cutter Ready
+
+R6.1
+- sourceAlignment
+- microtrim
+- VO Added placement
+- route semantics
+- shortSourceException
+- Projection Ready
+- ecosystem contract handshake
+
+LEGACY
+XR00–XR09 remain valid and are not destructively rewritten.

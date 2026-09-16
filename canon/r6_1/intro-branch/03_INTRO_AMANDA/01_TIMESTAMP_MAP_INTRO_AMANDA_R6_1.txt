@@ -1,0 +1,195 @@
+ABRXOS R6.1 — SOURCE ALIGNMENT · INTRO AMANDA
+
+REGLA: los tiempos son de cues de la transcripción. Si una frase empieza/termina dentro del cue, el parent range es comprobado pero el corte palabra-a-palabra está pendiente. NO interpolar.
+
+P01_SHARE_INFO
+  AMANDA · CUE + MICROTRIM
+  PARENT: 01:10:20.687 → 01:10:36.731 · cues 739,740
+  PLAN: Las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda…
+  SOURCE CUE: que si tú, por ejemplo, vendes un servicio o así sea algo educacional o consultoría o lo que sea, a veces las personas piensan que por compartir la información estás dando la información gratuita y la persona ya no va a necesitar de tu ayuda, pero es todo lo contrario.
+  NOTE: La frase empieza dentro del cue 739 y debe terminar antes de «pero es todo lo contrario» dentro del cue 740.
+
+P02_CONTRARY
+  AMANDA · CUE + MICROTRIM
+  PARENT: 01:10:31.780 → 01:10:36.731 · cues 740
+  PLAN: Pero es todo lo contrario.
+  SOURCE CUE: información gratuita y la persona ya no va a necesitar de tu ayuda, pero es todo lo contrario.
+  NOTE: Está al final del cue 740; requiere microtrim de inicio.
+
+P03_MAJORITY_FREE
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:47:07.405 → 00:47:14.098 · cues 506
+  PLAN: La mayoría de la información que nosotros damos es completamente gratuita.
+  SOURCE CUE: sea, nosotros no somos para nada de guardar la información, más bien la mayoría de la información que nosotros damos es completamente gratuita.
+  NOTE: Está dentro del cue 506 después de «más bien».
+
+P04_FATHER_IDOL
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:15:58.835 → 00:16:07.122 · cues 180
+  PLAN: Mi papá para mí era mi ídolo profesional.
+  SOURCE CUE: Mi papá para mí era mi ídolo profesional, ejemplo de liderazgo, ejemplo de todo, de cómo tratar a los demás, como...
+  NOTE: Cue 180 continúa con «ejemplo de liderazgo…»; cortar después de «profesional».
+
+P05_FATHER_DIES
+  AMANDA · CUE VERIFIED
+  PARENT: 00:37:13.918 → 00:37:18.900 · cues 413
+  PLAN: Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.
+  SOURCE CUE: Y justamente un mes antes de yo graduarme de la universidad, mi papá fallece.
+  NOTE: El cue coincide con la frase solicitada.
+
+P06_HOLE
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:37:21.691 → 00:37:29.384 · cues 415
+  PLAN: Y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer.
+  SOURCE CUE: Él falleció por cáncer y eso me hizo entrar como en un hueco que yo decía ahora yo no sé qué hacer.
+  NOTE: El cue empieza con «Él falleció por cáncer»; el plan omite ese prefijo.
+
+P07_USA
+  AMANDA · CUE VERIFIED
+  PARENT: 00:37:54.289 → 00:37:56.629 · cues 421
+  PLAN: Y decidí básicamente irme a Estados Unidos.
+  SOURCE CUE: Y decidí básicamente irme a Estados Unidos.
+  NOTE: Cue completo.
+
+P08_REVALIDA
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:37:56.629 → 00:38:04.889 · cues 422
+  PLAN: Pero cuando empiezo a averiguar toda la información del tema de la reválida…
+  SOURCE CUE: Pero cuando empiezo a averiguar toda la información del tema de la revalida, era tanta información en Internet y la gente te decía una cosa y otras personas te decían otras.
+  NOTE: El cue continúa con «era tanta información…»; el plan corta antes.
+
+P09_NO_SHARE
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:38:04.889 → 00:38:08.634 · cues 423
+  PLAN: Había gente que no te quería compartir información
+  SOURCE CUE: Había gente que no te quería compartir información, que ya lo había logrado.
+  NOTE: El cue continúa «que ya lo había logrado».
+
+P10_FEAR_IMPOSSIBLE
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:38:08.634 → 00:38:18.030 · cues 424
+  PLAN: querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer
+  SOURCE CUE: otras personas que sencillamente querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer, que me sobresaturé completamente.
+  NOTE: El cue comienza con «otras personas que sencillamente» y continúa hasta «me sobresaturé completamente».
+
+P11_OVERSATURATED
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:38:08.634 → 00:38:18.030 · cues 424
+  PLAN: me sobresaturé completamente.
+  SOURCE CUE: otras personas que sencillamente querían infundir miedo, decir es súper difícil, es imposible, no lo vas a poder hacer, que me sobresaturé completamente.
+  NOTE: Corrección de source truth: la transcripción dice «me sobresaturé», no «me sobresaltaré».
+
+P12_DIFFICULTIES
+  AMANDA · CUE + MICROTRIM
+  PARENT: 01:24:14.425 → 01:24:33.395 · cues 890,891
+  PLAN: Las dificultades por las que pasas en la vida tienes dos opciones como todo.
+  SOURCE CUE: Pero algo muy interesante que también mencionaste de tu conversación con alguien que estabas entrevistando, creo que Alberto Vollmer, es que las dificultades por las que pasas en la vida tienes dos opciones como todo.
+  NOTE: La frase empieza al final del cue 890 y termina en el cue 891.
+
+P13_OPPORTUNITY_OR_STUCK
+  AMANDA · CUE + MICROTRIM
+  PARENT: 01:24:33.395 → 01:24:49.946 · cues 892,893
+  PLAN: O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado
+  SOURCE CUE: O le encuentras la oportunidad y le encuentras el aprendizaje o... te quedas estancado, que los dos son válidos porque cada quien digamos interpreta las dificultades de maneras distintas, pero pienso que siempre he sido una persona que las
+  NOTE: El final está al inicio del cue 893; cortar antes de la explicación posterior.
+
+P14_FOLLOWERS
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:39:13.372 → 00:39:22.280 · cues 433
+  PLAN: había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso, pero tenían el mismo sentimiento que yo tuve.
+  SOURCE CUE: Y me empecé a dar cuenta que había muchísimas personas que me seguían que estaban interesadas en hacer el mismo proceso pero tenían el mismo sentimiento que yo tuve.
+  NOTE: El cue comienza con «Y me empecé a dar cuenta que».
+
+P15_MARKET_OPPORTUNITY
+  AMANDA · CUE VERIFIED
+  PARENT: 00:39:34.995 → 00:39:38.676 · cues 436
+  PLAN: Entonces dije, aquí hay una oportunidad de mercado interesante.
+  SOURCE CUE: Entonces dije, aquí hay una oportunidad de mercado interesante.
+  NOTE: Cue completo.
+
+P16_MONETIZE
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:39:38.977 → 00:39:45.720 · cues 437
+  PLAN: No sé todavía cómo lo voy a monetizar…
+  SOURCE CUE: No sé todavía cómo lo voy a monetizar, pero ya lo había como leído a partir de mis redes sociales, básicamente.
+  NOTE: El cue continúa con «pero ya lo había…».
+
+P17_CAN_DO_IT
+  AMANDA · CUE VERIFIED
+  PARENT: 00:38:34.562 → 00:38:37.754 · cues 427
+  PLAN: ¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?
+  SOURCE CUE: ¿Por qué yo me estoy diciendo que yo no puedo lograr esto si sí yo lo puedo lograr?
+  NOTE: Cue completo.
+
+P18_SHARE_IT
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:38:50.474 → 00:38:58.840 · cues 430
+  PLAN: ¿Por qué no lo empiezo a compartir?
+  SOURCE CUE: A.1, A.2, A.3, paso, paso, dale, clic acá, métete en esta página, haz esto, y empecé a desglosar todo y dije, ¿por qué no lo empiezo a compartir?
+  NOTE: Está al final del cue 430.
+
+P19_JOC_1500
+  JOC · CUE VERIFIED
+  PARENT: 01:13:26.377 → 01:13:29.029 · cues 781
+  PLAN: ¿Cómo llegaste ahora a los mil quinientos?
+  SOURCE CUE: Y ahora, ¿cómo llegaste ahora a los 1500?
+  NOTE: El plan omite «Y ahora» y escribe 1500 con palabras; source literal conserva el cue.
+
+P20_NO_CAPITAL
+  AMANDA · CUE VERIFIED
+  PARENT: 01:16:46.609 → 01:16:50.670 · cues 813
+  PLAN: Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.
+  SOURCE CUE: Nunca hemos tenido levantamiento de capital y hasta el momento no lo hemos necesitado.
+  NOTE: Cue completo.
+
+P21_PURPOSE
+  AMANDA · CUE VERIFIED
+  PARENT: 00:51:42.888 → 00:51:45.219 · cues 552
+  PLAN: Es un negocio, pero tiene un propósito.
+  SOURCE CUE: Es un negocio, pero tiene un propósito.
+  NOTE: Cue completo.
+
+P22_JOC_BUSINESS_MODEL
+  JOC · CUE VERIFIED
+  PARENT: 01:00:17.314 → 01:00:19.176 · cues 642
+  PLAN: ¿Cómo funciona el modelo de negocio?
+  SOURCE CUE: ¿Cómo funciona el modelo de negocio?
+  NOTE: Cue completo.
+
+P23_WHAT_MATTERS
+  AMANDA · CUE + MICROTRIM
+  PARENT: 01:15:35.177 → 01:15:43.440 · cues 801
+  PLAN: nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es…
+  SOURCE CUE: Y nos dimos cuenta que realmente lo que más le importa a la persona o a nuestro cliente es contenido de calidad, que sea interactivo y que obtengas el paz.
+  NOTE: Open loop: cortar después de «es», antes de revelar la respuesta.
+
+P24_WAY_OUT
+  AMANDA · CUE VERIFIED
+  PARENT: 00:59:40.299 → 00:59:41.931 · cues 632
+  PLAN: The only way out is through.
+  SOURCE CUE: The only way out is through.
+  NOTE: Usar primera ocurrencia, seguida por la frase completa de Amanda.
+
+P25_DO_IT
+  AMANDA · CUE + MICROTRIM
+  PARENT: 00:59:41.931 → 00:59:48.136 · cues 633,634
+  PLAN: No hay nadie que haga las cosas por ti. Tú lo tienes que hacer.
+  SOURCE CUE: No hay atajos, no hay nadie que estudie por ti, no hay nadie que haga las cosas por ti. Tú lo tienes que hacer.
+  NOTE: El cue 633 también contiene «No hay atajos, no hay nadie que estudie por ti»; el plan final pide omitir ese tramo.
+
+VOICEOVERS
+VO01 · NARRADOR
+  ¿Cómo pasó de buscar orientación para continuar su carrera a ayudar, junto a su equipo, a más de mil quinientos odontólogos?
+  PLACE: after P03_MAJORITY_FREE / before P04_FATHER_IDOL
+  sourceRange: null
+  duration target: 7.0–9.0 s · editorial_planned
+
+VO02 · NARRADOR
+  ¿Cómo terminó convirtiendo esa misma dificultad en una oportunidad que no había imaginado?
+  PLACE: after P11_OVERSATURATED / before P12_DIFFICULTIES
+  sourceRange: null
+  duration target: 5.0–7.0 s · editorial_planned
+
+QA
+- sourceRanges final no debe generarse hasta resolver microtrims.
+- VO usa tiempo editorial medido/planificado, nunca timestamp de master inventado.

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "abrxos.content-project.r6",
+  "projectId": "REPLACE_PROJECT_ID",
+  "pieces": [
+    {
+      "id": "pdf01",
+      "canonicalId": "PDF01",
+      "projectId": "REPLACE_PROJECT_ID",
+      "type": "pdf",
+      "title": "REPLACE_TITLE",
+      "thesis": "REPLACE_THESIS",
+      "objective": "REPLACE_OBJECTIVE",
+      "source": "DEFAULT",
+      "stage": "ALFA",
+      "workflowStatus": "PENDIENTE",
+      "schedule": {
+        "date": "",
+        "time": "",
+        "platforms": [],
+        "publishedAt": null
+      },
+      "editProfile": {
+        "code": "XR_FULL",
+        "commercialName": "Cinematic Edit"
+      },
+      "sourceRanges": [],
+      "parts": [],
+      "storyScripts": {},
+      "timeline": [],
+      "copy": {},
+      "notes": "",
+      "qa": {
+        "status": "needs_review",
+        "critical": [],
+        "warnings": []
+      },
+      "staticProduction": {
+        "mode": "storyboard",
+        "itemLabel": "Page",
+        "itemLabelPlural": "Pages",
+        "items": [
+          {
+            "itemId": "PDF01_PAGE_01",
+            "index": 1,
+            "function": "REPLACE_FUNCTION",
+            "headline": "REPLACE_HEADLINE",
+            "body": "REPLACE_BODY",
+            "text": "REPLACE_HEADLINE\n\nREPLACE_BODY",
+            "sourceRange": null,
+            "sourceNote": "REPLACE_SOURCE_NOTE",
+            "visual": {
+              "composition": "REPLACE_COMPOSITION",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "promptNoText": "REPLACE_PROMPT",
+              "promptWithText": "REPLACE_PROMPT_OR_EDITABLE_TEXT_INSTRUCTION",
+              "status": "pending_creation",
+              "continuity": "REPLACE_CONTINUITY"
+            }
+          },
+          {
+            "itemId": "PDF01_PAGE_02",
+            "index": 2,
+            "function": "REPLACE_FUNCTION",
+            "headline": "REPLACE_HEADLINE",
+            "body": "REPLACE_BODY",
+            "text": "REPLACE_HEADLINE\n\nREPLACE_BODY",
+            "sourceRange": null,
+            "sourceNote": "REPLACE_SOURCE_NOTE",
+            "visual": {
+              "composition": "REPLACE_COMPOSITION",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "promptNoText": "REPLACE_PROMPT",
+              "promptWithText": "REPLACE_PROMPT_OR_EDITABLE_TEXT_INSTRUCTION",
+              "status": "pending_creation",
+              "continuity": "REPLACE_CONTINUITY"
+            }
+          },
+          {
+            "itemId": "PDF01_PAGE_03",
+            "index": 3,
+            "function": "REPLACE_FUNCTION",
+            "headline": "REPLACE_HEADLINE",
+            "body": "REPLACE_BODY",
+            "text": "REPLACE_HEADLINE\n\nREPLACE_BODY",
+            "sourceRange": null,
+            "sourceNote": "REPLACE_SOURCE_NOTE",
+            "visual": {
+              "composition": "REPLACE_COMPOSITION",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "promptNoText": "REPLACE_PROMPT",
+              "promptWithText": "REPLACE_PROMPT_OR_EDITABLE_TEXT_INSTRUCTION",
+              "status": "pending_creation",
+              "continuity": "REPLACE_CONTINUITY"
+            }
+          },
+          {
+            "itemId": "PDF01_PAGE_04",
+            "index": 4,
+            "function": "REPLACE_FUNCTION",
+            "headline": "REPLACE_HEADLINE",
+            "body": "REPLACE_BODY",
+            "text": "REPLACE_HEADLINE\n\nREPLACE_BODY",
+            "sourceRange": null,
+            "sourceNote": "REPLACE_SOURCE_NOTE",
+            "visual": {
+              "composition": "REPLACE_COMPOSITION",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "promptNoText": "REPLACE_PROMPT",
+              "promptWithText": "REPLACE_PROMPT_OR_EDITABLE_TEXT_INSTRUCTION",
+              "status": "pending_creation",
+              "continuity": "REPLACE_CONTINUITY"
+            }
+          },
+          {
+            "itemId": "PDF01_PAGE_05",
+            "index": 5,
+            "function": "REPLACE_FUNCTION",
+            "headline": "REPLACE_HEADLINE",
+            "body": "REPLACE_BODY",
+            "text": "REPLACE_HEADLINE\n\nREPLACE_BODY",
+            "sourceRange": null,
+            "sourceNote": "REPLACE_SOURCE_NOTE",
+            "visual": {
+              "composition": "REPLACE_COMPOSITION",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "promptNoText": "REPLACE_PROMPT",
+              "promptWithText": "REPLACE_PROMPT_OR_EDITABLE_TEXT_INSTRUCTION",
+              "status": "pending_creation",
+              "continuity": "REPLACE_CONTINUITY"
+            }
+          },
+          {
+            "itemId": "PDF01_PAGE_06",
+            "index": 6,
+            "function": "REPLACE_FUNCTION",
+            "headline": "REPLACE_HEADLINE",
+            "body": "REPLACE_BODY",
+            "text": "REPLACE_HEADLINE\n\nREPLACE_BODY",
+            "sourceRange": null,
+            "sourceNote": "REPLACE_SOURCE_NOTE",
+            "visual": {
+              "composition": "REPLACE_COMPOSITION",
+              "description": "REPLACE_VISUAL_DESCRIPTION",
+              "promptNoText": "REPLACE_PROMPT",
+              "promptWithText": "REPLACE_PROMPT_OR_EDITABLE_TEXT_INSTRUCTION",
+              "status": "pending_creation",
+              "continuity": "REPLACE_CONTINUITY"
+            }
+          }
+        ],
+        "copy": {
+          "text": "REPLACE_COPY",
+          "cta": "",
+          "hashtags": []
+        },
+        "designSystem": {}
+      }
+    }
+  ]
+}

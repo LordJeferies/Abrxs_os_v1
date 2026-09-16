@@ -1,0 +1,198 @@
+ABRXOS — REGLAS COMPLETAS DE SECUENCIA INTERNA DE CADA XR R5
+
+Este archivo no es un catálogo de efectos. Es una guía de razonamiento visual:
+define cómo una idea pasa de un estado al siguiente y qué debe comprobar la
+persona que produce la pieza. Los nombres de los estados son una estructura de
+trabajo; la duración y la cantidad final dependen de la frase, el audio y el
+formato.
+
+## 1. REGLA UNIVERSAL DE DESARROLLO
+
+Cada XR se desarrolla como una cadena de estados. Un estado no es una imagen
+aislada: recibe elementos del estado anterior, modifica sólo las variables
+narrativas permitidas y entrega una condición comprensible al siguiente.
+
+Para cada `Sxx` o `Axx` la Alfa debe registrar:
+
+1. Frase o palabra que activa el estado.
+2. Función narrativa.
+3. Asset de entrada y relación con el anterior.
+4. Qué aparece exactamente.
+5. Qué cambia en este estado y por qué.
+6. Qué permanece bloqueado.
+7. Composición y orden de lectura.
+8. Prompt de imagen si se genera un asset.
+9. B-Roll/fuente y consulta de búsqueda.
+10. Instrucción de motion separada.
+11. Duración, IN/OUT y transición.
+12. Condición que permite pasar al siguiente estado.
+
+No se permite saltar de un estado a otro sin explicar la transformación.
+
+## 2. XR00 — REENCUADRE DEL A-ROLL
+
+Secuencia: `S01 original → S02 énfasis → S03 opcional remate`.
+
+- S01 establece plano, rostro, gesto, vestuario, luz y espacio disponible.
+- S02 cambia sólo escala, crop, cobertura real o posición del encuadre para
+  dirigir la atención a la frase.
+- S03 sólo existe si una segunda variación aporta una lectura distinta.
+- No generar una nueva perspectiva a partir de un simple recorte.
+- Mantener identidad, momento, dirección de mirada, luz y continuidad labial.
+- Salir del XR cuando la frase deja de necesitar énfasis.
+
+## 3. XR01 — OBSERVACIÓN CLOSE-UP
+
+Secuencia: `A01 contexto → A02 profundización → A03 detalle decisivo`.
+
+- A01 presenta el objeto o referencia con contexto suficiente para reconocerlo.
+- A02 acerca la mirada a una parte relacionada; conserva señales de A01.
+- A03 revela el detalle que resuelve la frase; no repite A02 con un zoom vacío.
+- Mantener material, identidad, iluminación y tratamiento fotográfico.
+- Si los objetos son diferentes, declarar el vínculo conceptual.
+- Pasar de estado sólo cuando el espectador pueda nombrar qué se descubrió.
+
+## 4. XR02 — TRANSFORMACIÓN CON TEXTO
+
+Secuencia: `S01 limpio → S02 cambio 1 + texto 1 → S03 cambio 2 + texto 1/2 →
+S04 resultado + texto 1/2/3`.
+
+- S01 fija cámara, geometría, materiales y zonas de texto.
+- S02 introduce una sola transformación y el primer tramo literal.
+- S03 conserva lo anterior, agrega el segundo cambio y acumula el segundo tramo.
+- S04 muestra la consecuencia y los tres tramos coexistiendo con lectura clara.
+- Dividir el discurso por sentido, nunca por número idéntico de palabras.
+- No borrar texto previo ni cambiar de escena sin transición justificada.
+- La salida requiere 4 clean plates y 3 composiciones finales si se exportan
+  por separado; son 4 estados, no 7 beats.
+
+## 5. XR03 — GOLPE TIPOGRÁFICO
+
+Secuencia: `T01 concepto → T02 contraste → T03 remate opcional`.
+
+- T01 presenta una unidad verbal dominante.
+- T02 introduce negación, tensión o contraste sin perder la lectura de T01.
+- T03 sólo se crea cuando existe una tercera unidad semántica real.
+- Mantener familia tipográfica, grid, márgenes y jerarquía.
+- Cambiar escala, color o fondo sólo cuando exprese el giro verbal.
+- El estado termina después de que la palabra decisiva pueda leerse completa.
+
+## 6. XR04 — MAPA INFOGRÁFICO EN Z
+
+Secuencia espacial fija: `Z01 origen → Z02 relación → Z03 proceso → Z04 resultado`.
+
+- Crear una imagen maestra única con las cuatro zonas.
+- Z01 define origen y orientación del recorrido.
+- Z02 recibe una conexión clara desde Z01.
+- Z03 explica consecuencia/proceso sin romper la diagonal.
+- Z04 cierra con resultado o decisión trazable a las zonas anteriores.
+- Mantener grid, escala, nombres, unidades, conectores y tipografía.
+- Las miniaturas son recortes del mismo master; no generar cuatro mapas
+  incompatibles.
+- El visor sólo avanza cuando la estación actual fue comprendida.
+
+## 7. XR05 — MICROACCIÓN
+
+Secuencia causal: `A01 preparación → A02 gesto → A03 consecuencia`.
+
+- A01 define actor, espacio, objeto y dirección de la acción.
+- A02 modifica físicamente algo establecido en A01.
+- A03 muestra el resultado sin regresar al estado inicial arbitrariamente.
+- Mantener manos, objetos, ropa, luz, dirección y escala plausibles.
+- Un cambio de plano debe corresponder a un cambio de información, no ser
+  decoración.
+- La transición se completa cuando puede explicarse “qué ocurrió” sin voz extra.
+
+## 8. XR06 — DATOS, SISTEMAS E INFORMACIÓN
+
+Secuencia: `A01 entrada → A02 operación → A03 salida`.
+
+- A01 muestra datos o elementos iniciales y su contexto.
+- A02 visualiza la operación: relación, clasificación, comparación o proceso.
+- A03 presenta un resultado trazable, no una conclusión inventada.
+- En sistemas complejos se agregan A04…An sólo por operaciones adicionales
+  documentadas.
+- Mantener nombres, unidades, nodos, valores y procedencia.
+- Marcar datos ficticios como ilustrativos.
+- Pasar al siguiente estado cuando la operación pueda seguirse visualmente.
+
+## 9. XR07 — OBJETOS NARRATIVOS Y EMOJIS
+
+Secuencia: `S01 aparición → S02 relación → S03 remate`.
+
+- Primero inventariar cada objeto como `A01…An` y producirlo una sola vez.
+- S01 introduce los objetos con escala, profundidad y anclaje.
+- S02 agrupa, conecta, separa o acumula los mismos objetos para explicar la idea.
+- S03 destaca el resultado y retira sólo lo que el guion indique.
+- Para cada emoji registrar significado, posición, tamaño, estilo y movimiento.
+- Mantener material, borde, sombra, perspectiva y familia visual.
+- No regenerar el mismo objeto con diferencias de identidad entre estados.
+
+## 10. XR08 — PAISAJE/ARQUITECTURA EMOCIONAL
+
+Secuencia: `A01 sensación inicial → A02 intensificación → A03 remate`.
+
+- A01 establece forma dominante, atmósfera y emoción inicial.
+- A02 intensifica mediante distancia, escala, densidad, luz o apertura.
+- A03 resuelve o sostiene la tensión según la frase, sin imponer un final feliz.
+- Mantener familia estética, paleta, atmósfera, geometría y dirección de luz.
+- Lugares diferentes deben conectarse por forma, material o dirección visual.
+- El espectador debe sentir una progresión, no ver tres fotos bonitas aisladas.
+
+## 11. XR09 — FRASE TIPOGRÁFICA EN DOS PLACAS
+
+Secuencia fija: `P01/A01 primera parte → P02/A02 giro o remate`.
+
+- Crear exactamente dos placas de 3–4 segundos.
+- Dividir por sintaxis y sentido; ninguna palabra debe quedar aislada o
+  depender de la placa siguiente para entenderse.
+- Usar imagen de referencia para la tipografía y registrar familia, peso,
+  tracking, color, contorno, sombra y jerarquía.
+- Exportar PNG transparente para overlay; sin video, ocupar el encuadre completo.
+- Animar cada palabra según la cadencia de la transcripción.
+- El motion es una instrucción operativa con IN/OUT por palabra, no un prompt.
+
+## 12. REGLAS DE TRANSICIÓN Y MOTION
+
+El motion nunca define la lógica del XR: ejecuta una transición ya justificada.
+Cada instrucción debe indicar elemento, estado inicial/final, keyframes,
+posición, escala, easing, duración y sincronía. Si un estado no se mueve,
+registrar `motionType=static`.
+
+## 13. QA DE SECUENCIA
+
+- cantidad de assets igual a la lógica de la familia;
+- cada estado recibe y entrega una condición clara;
+- continuidad visual y semántica comprobada;
+- prompts individuales completos;
+- B-Roll vinculado al estado correcto;
+- motion como instrucción, no prompt;
+- SFX ubicado en beat/XR00/XR;
+- texto y claims trazables;
+- ningún estado añadido para rellenar una cuota.
+
+## 13. ENCUADRE Y CALIDAD VISUAL ANTI-SLOP
+
+Cada asset declara un encuadre elegido por su función: plano general, entero,
+americano/medio, primer plano, detalle/macro, cenital, picado, contrapicado,
+lateral, POV, over-the-shoulder o split-screen. Debe explicar por qué ese
+encuadre comunica mejor la frase.
+
+También registra orientación, relación de aspecto, margen de recorte, punto
+focal, líneas guía, profundidad de campo, distancia de cámara y espacio
+negativo para texto o recorte del hablante.
+
+Si es fotografía, indicar cámara/lente plausibles, perspectiva, apertura
+aproximada, enfoque y luz motivada. Mantener anatomía, manos, reflejos, sombras,
+proporciones, materiales y continuidad de objetos. Prohibir piel plástica, ojos
+deformados, dedos extra, texto ilegible, logos inventados, fondos imposibles,
+objetos duplicados y composición genérica.
+
+Si es render, gráfico o interfaz, indicar geometría, materiales, iluminación,
+sombras, reflejos, antialiasing, resolución, grid y jerarquía. Un acabado
+premium exige bordes limpios, profundidad real, oclusión moderada, iluminación
+coherente y ausencia de artefactos.
+
+Antes de aprobar: explicar qué hace reconocible la escena, qué detalle demuestra
+la idea, qué conserva continuidad, por qué se eligió el encuadre y qué error
+visual se debe evitar. Si no puede responderse, marcar `needs_review`.

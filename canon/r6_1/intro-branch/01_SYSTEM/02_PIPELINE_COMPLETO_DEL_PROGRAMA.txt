@@ -1,0 +1,82 @@
+ABRXOS · PIPELINE COMPLETO DEL PROGRAMA
+
+1. INPUT
+- plan editorial natural;
+- transcript SRT/TXT;
+- ficha Beta/Alfa JSON;
+- HTML Story Editor/Lienzo;
+- Project Config;
+- Brand Adapter;
+- catálogos XR/SFX/Motion/CINE/Captions.
+
+2. PLAN PARSER
+Clasifica cada nodo natural:
+SOURCE_SPEECH
+VO_ADDED
+EDIT_DIRECTION
+TITLE_CARD
+OPEN_LOOP
+
+3. SOURCE ALIGNMENT
+Sólo SOURCE_SPEECH se busca en transcript/master.
+Salida:
+- parent cue range;
+- source literal;
+- cueIds;
+- start/end si el cue entero coincide;
+- microtrim anchors si la frase está dentro del cue;
+- timingStatus;
+- source corrections.
+
+4. SOURCE QA
+No pasar a sourceRanges finales mientras existan microtrims críticos sin resolver.
+Opciones:
+- word timestamps;
+- audio alignment;
+- MLX/ASR local;
+- revisión humana.
+
+5. ALFA BUILDER
+Combina plan + source map + canon + brand:
+- parts;
+- storyScripts/routes;
+- T1 A-roll;
+- T6 VO;
+- 6 XR si profile XR_FULL y la función lo justifica;
+- T3 images/objects;
+- T4 motion;
+- T5 b-roll/CINE;
+- T7 SFX;
+- T8 music automation;
+- T9 Caption Groups;
+- cover/copy;
+- productionChecklist;
+- QA.
+
+6. GEOMETRA IMPORTER
+HTML app-data/seed/editorialData o JSON → normalize_project → abrxos.document.v3.
+R6 puede entrar como abrxos.content-project.r6 porque pieces[] es compatible y V3 conserva campos adicionales.
+
+7. LIBRARY
+projectId + canonicalId = identidad de actualización.
+Mismo canonicalId reemplaza/actualiza la misma ficha, no crea contenido nuevo.
+
+8. COMPILER
+Proyecto + selección de fichas + renderer → Lienzo standalone.
+Se embebe app-data + catalog snapshot + runtime + renderer.
+
+9. LIENZO
+El runtime proyecta el documento:
+video → Story + Inspector + Timeline.
+carousel → Carousel Workspace.
+calendar → schedule.
+kanban → workflowStatus.
+
+10. EDICIÓN
+Click selecciona; drag real mueve después de threshold. Edición modifica state.project, no DOM como verdad.
+
+11. EXPORT / REIMPORT
+Exportar HTML vuelve a escribir app-data actualizado. Puede reimportarse a Geometra por IDs estables.
+
+12. CUTTER
+Consume sourceRanges finales. No debe cortar a partir de XR/CINE/SFX/timeline editorial salvo un futuro Cut Override aprobado.

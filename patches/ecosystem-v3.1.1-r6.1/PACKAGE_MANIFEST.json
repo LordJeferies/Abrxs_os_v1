@@ -1,0 +1,547 @@
+{
+  "fileCountExcludingManifest": 108,
+  "files": [
+    {
+      "path": "APLICAR_HOTFIX.command",
+      "bytes": 797,
+      "sha256": "dcfc58fb4af9597356074934229427af3dc3e9128de0b7040c89656e0aaee1d6"
+    },
+    {
+      "path": "CHANGELOG_V3_1_1_R6_1.md",
+      "bytes": 1713,
+      "sha256": "75c327a6148c0fe315951bf38987cf9f234cb102ab287163c4b95c37eb719025"
+    },
+    {
+      "path": "COMANDOS_TERMINAL.txt",
+      "bytes": 441,
+      "sha256": "02695cf76ff10f863feae855222217481ee7ffc4e33480d45b7b461d6a0cd2b4"
+    },
+    {
+      "path": "HOTFIX_MANIFEST.json",
+      "bytes": 1226,
+      "sha256": "ff3d6ace3beb87a1fc6a81d6cb3138fe67228f3b467756a9ed336574e5cb60bc"
+    },
+    {
+      "path": "PATCH_BRAND_BUILDER/VERSION_BASE.json",
+      "bytes": 134,
+      "sha256": "d01319623f1ac3fd728d21e889005828d2253e458d682c1ac9560991d8131a8c"
+    },
+    {
+      "path": "PATCH_BRAND_BUILDER/brand_engine.py",
+      "bytes": 11071,
+      "sha256": "536cf1f10645fc337d0f3e42f4a5bf569fae51bfd8a11fb2a1e4825f7823a643"
+    },
+    {
+      "path": "PATCH_CONTENT_BUILDER/VERSION_BASE.json",
+      "bytes": 134,
+      "sha256": "4d89ce6cb154dc8a36ac7f82a4767f1465433a474d0ea33c1834d666d074a4e4"
+    },
+    {
+      "path": "PATCH_CONTENT_BUILDER/content_engine.py",
+      "bytes": 13971,
+      "sha256": "b62a3e8c0c967d134b8f68cde891ec61d6e1bcb5bf4f6fc67298198a3a4c6b9e"
+    },
+    {
+      "path": "PATCH_CONTENT_BUILDER/resources/r6_1/12_R6_1_SOURCE_ALIGNMENT.txt",
+      "bytes": 771,
+      "sha256": "d8485daa1647daac82fa0d7093c3a29f2416d64ff13acbb1e9aa1eb670e05e47"
+    },
+    {
+      "path": "PATCH_CONTENT_BUILDER/resources/r6_1/13_R6_1_VO_ROUTE_CAPTIONS.txt",
+      "bytes": 753,
+      "sha256": "c2c251513d841d24ababe24e490ecf5fad317550e2b1ab8d597d795dadb27799"
+    },
+    {
+      "path": "PATCH_CONTENT_BUILDER/resources/r6_1/14_LIENZO_PROJECTION_CONTRACT.json",
+      "bytes": 876,
+      "sha256": "a4753607fab10012b082671a63167f0d86e77adf2d151ea89b25ae3e97caad6c"
+    },
+    {
+      "path": "PATCH_GEOMETRA/app/r6_patch.css",
+      "bytes": 1888,
+      "sha256": "d9eabe27e696ce853c9ac39d41dde5d978bc9814e3a6b67e6be0a34ddca4bf4c"
+    },
+    {
+      "path": "PATCH_GEOMETRA/app/r6_patch.js",
+      "bytes": 6578,
+      "sha256": "67e0cefa61c0d46f97e5d134f5f750e48522aca49ac2772c29d1733d6f148b4a"
+    },
+    {
+      "path": "PATCH_GEOMETRA/geometra/r6.py",
+      "bytes": 25966,
+      "sha256": "f51495b73796cf33477fef3bde81bd9c853d46d6387d961b682cfb48eb0327bf"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/ABRXOS_CONTENT_PROJECT_R6.schema.json",
+      "bytes": 4017,
+      "sha256": "ea7704f5c6afa48957e214a0516a878855e3135c84507dfe377dff3e52b5ee28"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/CAPTIONS_R6.json",
+      "bytes": 1707,
+      "sha256": "f558d56b58834aea5addd993717cd59de9dee03b0719a43a6373719607e40ca6"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/CINE_LIBRARY_R6.json",
+      "bytes": 2187,
+      "sha256": "41e525440c596a9631b2fae63244db881fce5eda5874adccbe1da10a0bc0119e"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/EDIT_PROFILES_R6.json",
+      "bytes": 784,
+      "sha256": "6cfa350cdc6a6d4d913f853f79fe1c54cdf8e721301377e773e9bc7392cf8653"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/MOTION_LIBRARY_R6.json",
+      "bytes": 3414,
+      "sha256": "f392526d221a15e900cdf71a54f4c741d89f35826343f6fcfbd33cf67254f8c0"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/MUSIC_LIBRARY_R6.json",
+      "bytes": 806,
+      "sha256": "5b926d06c69fd7c2e689cbc5e9ac4807f351bfc7cf1a0b84788004e89c854244"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/R6_1_CONTRACT.json",
+      "bytes": 583,
+      "sha256": "64fe10169e76ebc3c1bd6cc389498ed57ce4e5aeed07c320a3d88bc9a20679f5"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/SFX_LIBRARY_R6.json",
+      "bytes": 2184,
+      "sha256": "459257f52a269c4703def796d97e1806c3994380d2b95314102949779bf3424c"
+    },
+    {
+      "path": "PATCH_GEOMETRA/r6/XR_FAMILIES_R6.json",
+      "bytes": 5621,
+      "sha256": "684f06b7ab3d2887ac9eb1265a32fe49f88a296b4918f65cb958c150ac0899a3"
+    },
+    {
+      "path": "PATCH_GEOMETRA/shared/r6_patch.js",
+      "bytes": 15438,
+      "sha256": "da1c96640bc8a5d8ba3a775c910c29d35460b531a8c1a2471aa4a9229ae4df17"
+    },
+    {
+      "path": "PATCH_GEOMETRA/tests/fixtures/FICHA_CAROUSEL_ALFA_R6.json",
+      "bytes": 4772,
+      "sha256": "d2e90eb1358459907966bcbb7a36cfa4ebac1a62308a8356fa2fa83ce6ed257a"
+    },
+    {
+      "path": "PATCH_GEOMETRA/tests/fixtures/FICHA_INTRO_ALFA_CINEMATIC_R6.json",
+      "bytes": 23197,
+      "sha256": "df79a387052e7ade4f3b5c96890de1e45467483a04dd1d4567a8ea13794cc578"
+    },
+    {
+      "path": "PATCH_GEOMETRA/tests/fixtures/FICHA_VERTICAL_ALFA_CINEMATIC_R6.json",
+      "bytes": 12515,
+      "sha256": "ab409bb9e2635036511fd5c86c0c61807a2e8d275b8481c3b5f70a099f2c84a2"
+    },
+    {
+      "path": "PATCH_GEOMETRA/tests/fixtures/INTRO_AMANDA_ALFA_PREBUILD_R6_1.json",
+      "bytes": 175864,
+      "sha256": "58db8d200f92d92e7126be903ae5097fa6d84431c52d5eacb73363dd94cf1eac"
+    },
+    {
+      "path": "README_HOTFIX.txt",
+      "bytes": 4346,
+      "sha256": "76676598080fd9b00ab735725d000f29edfc45770702f7aefbf96767bb71d05e"
+    },
+    {
+      "path": "REVERTIR_HOTFIX.command",
+      "bytes": 487,
+      "sha256": "6196b68cfccdefce59e53a4924d9ddfeb8857cb243a708e2d2d0a840a45d618b"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "bytes": 6667,
+      "sha256": "440b1a0e6a0df79eb3e703dfab8e2f5ff130f195a2529f35be963db2ef27d8a6"
+    },
+    {
+      "path": "VERIFICAR_HOTFIX.command",
+      "bytes": 139,
+      "sha256": "b71c5bf0c9b046862edde51638fe34e9a9c946ef141555d00e4e64d9448a6fe1"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-16-ecosystem-hotfix-r6-1.md",
+      "bytes": 4892,
+      "sha256": "06731ecfa21e609cf82a9b2831f4bb71f9f0a471d4ecd23ddc3a1ac3414917d5"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-16-ecosystem-hotfix-r6-1-design.md",
+      "bytes": 2485,
+      "sha256": "427381a739a806f7c01f7fe71d4fb89f427171eec9bf7fe08d14b2a30e86a827"
+    },
+    {
+      "path": "evidence/BUILDERS_BASELINE_REGRESSION.txt",
+      "bytes": 282,
+      "sha256": "ebe4769a098228d21ec9908a3dafb149e06ea774233579b9bfe7c0e28ee7ab62"
+    },
+    {
+      "path": "evidence/PYTEST_NON_UI.txt",
+      "bytes": 100,
+      "sha256": "dcb70edefac74458ec4d754cff01caa5bf83031b47d2f810fc60dc3e1b53fd03"
+    },
+    {
+      "path": "evidence/PYTEST_UI.txt",
+      "bytes": 98,
+      "sha256": "2cd599857581c394be2851bc475648e12476e7e3ad73daa7ee11b34f2bf90d02"
+    },
+    {
+      "path": "evidence/R6_R61_VALIDATION.json",
+      "bytes": 3893,
+      "sha256": "791aa3e82fff0fe7e2eb8e6cc1791b736c02748759756f12a48fdba881ae2511"
+    },
+    {
+      "path": "evidence/SANDBOX_INSTALL_VERIFY_REVERT.json",
+      "bytes": 909,
+      "sha256": "e2ca91c1a337b4c1ae18dfb722aa29a2ca860275f5f6f16d72d390ee92697f61"
+    },
+    {
+      "path": "evidence/SYNTAX_CHECKS.txt",
+      "bytes": 123,
+      "sha256": "4be23b5f03114d976f213bfbcb71cdfdbc99e427f0b7025eeab849f425dbd8f3"
+    },
+    {
+      "path": "tests/fixtures/brand_resources/resources/BRANDING_METHOD_SOURCE_NOTE.txt",
+      "bytes": 367,
+      "sha256": "9a22ec06e396fdd205e97bab2d47dbc2e708fe9b6b88ba82d7334ab640223fa2"
+    },
+    {
+      "path": "tests/fixtures/brand_resources/resources/brand_adapter_template.json",
+      "bytes": 7629,
+      "sha256": "ddc22770e300780f59f1239bb4c4c7d0430de3d5b1b14a573cc4a09069c4591d"
+    },
+    {
+      "path": "tests/fixtures/brand_resources/resources/branding_method_registry.json",
+      "bytes": 12342,
+      "sha256": "72eaa38c953c996bd49dd609d691dad136c142f6504c2adcb8e196452c5e08d8"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/ABRXOS_CONTENT_PROJECT_R6.schema.json",
+      "bytes": 4017,
+      "sha256": "ea7704f5c6afa48957e214a0516a878855e3135c84507dfe377dff3e52b5ee28"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/ONE_FILE_CONTEXT_R6.txt",
+      "bytes": 24365,
+      "sha256": "4bba4fae5ac08a81e58fbe980fc0b07b0a494555493c98c86857cc681c4f099f"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/VISUAL_ASSET_R6.contract.json",
+      "bytes": 597,
+      "sha256": "f86db9cb0cfc1bbd9c91dc2543f1cad21d754e0bb44fd0b13aa4f6628420e2f6"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/ABRXOS_TODAS_LAS_FICHAS_R6.json",
+      "bytes": 135379,
+      "sha256": "2a09df7a25c9f8bd30127cf9c085a50a0c84a6bb3d498dcb7f3e09b20098ad7c"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/CAROUSEL/FICHA_CAROUSEL_ALFA_R6.json",
+      "bytes": 4772,
+      "sha256": "d2e90eb1358459907966bcbb7a36cfa4ebac1a62308a8356fa2fa83ce6ed257a"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/CAROUSEL/FICHA_CAROUSEL_BETA_R6.json",
+      "bytes": 3822,
+      "sha256": "70d5dbd5795f1b41e02754a81333c6c29115255c4b62cfb6ffbd46ed5b43c092"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/FULL_EPISODE/FICHA_FULL_EPISODE_ALFA_CINEMATIC_R6.json",
+      "bytes": 7060,
+      "sha256": "a8d29c50a72a4f794a3e5166eeb0fce92fc9398270d62f3cfd386d91131dc807"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/FULL_EPISODE/FICHA_FULL_EPISODE_ALFA_R6.json",
+      "bytes": 3330,
+      "sha256": "2178cf876949d3b9f32b022a7663b96267386c41f455935b40be57a0c2e7b8a2"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/FULL_EPISODE/FICHA_FULL_EPISODE_BETA_R6.json",
+      "bytes": 1706,
+      "sha256": "aad6aceb3b7ab46be092661f47e67fa5ddb39beff4482f1ee37ba5d31f5f061d"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/HORIZONTAL/FICHA_HORIZONTAL_ALFA_CINEMATIC_R6.json",
+      "bytes": 6042,
+      "sha256": "9b0602e6dbf2174f4aeb2026839d294ef513cf1a9223deef78fa98180a025968"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/HORIZONTAL/FICHA_HORIZONTAL_ALFA_R6.json",
+      "bytes": 3199,
+      "sha256": "8d8338066a1b3696bd6c1f055c290565ac403465652f83dca3b5f368ece144f7"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/HORIZONTAL/FICHA_HORIZONTAL_BETA_R6.json",
+      "bytes": 1620,
+      "sha256": "04ba456871d1cd41e397ae64dcd30ba866cc0f9fb553e1124bfe84c2af86a582"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/INTRO/FICHA_INTRO_ALFA_CINEMATIC_R6.json",
+      "bytes": 23197,
+      "sha256": "df79a387052e7ade4f3b5c96890de1e45467483a04dd1d4567a8ea13794cc578"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/INTRO/FICHA_INTRO_ALFA_R6.json",
+      "bytes": 3275,
+      "sha256": "7c87f512f5b4c98c64c187382bf6d1162b80f6125f3f9766dc66babacfb74ea2"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/INTRO/FICHA_INTRO_BETA_R6.json",
+      "bytes": 1671,
+      "sha256": "95759e0feb761cf257a386270b45082d40dadd4f469deac3aff2afdf453bbbf3"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/NOTE/FICHA_NOTE_ALFA_R6.json",
+      "bytes": 4782,
+      "sha256": "451eb3a4621171478142eee119f32506106017419cd03c9ceb07f2a830f943b7"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/NOTE/FICHA_NOTE_BETA_R6.json",
+      "bytes": 3832,
+      "sha256": "0062d5e3708bfc341b80ab8a3c9ff9dcab8484f3c87734f5c367519dc43875bd"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/PDF/FICHA_PDF_ALFA_R6.json",
+      "bytes": 5493,
+      "sha256": "b022b8239bcffa46ae499177f21ce4779b95cd548453cbaaefbedc2731bd8c5a"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/PDF/FICHA_PDF_BETA_R6.json",
+      "bytes": 4353,
+      "sha256": "05a385e5a996cbfe1f9bcbe2adeb0a5aefaacf4ad9605bc75be08a462b0ffb76"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/QUOTE/FICHA_QUOTE_ALFA_R6.json",
+      "bytes": 2615,
+      "sha256": "6f88814c24d73b7a2c36b12796fb9b2f6dea56fd28a0bd8b5f7c90766151cd0b"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/QUOTE/FICHA_QUOTE_BETA_R6.json",
+      "bytes": 2235,
+      "sha256": "b8c4e23d530f56050ef44d6c8e707f63616a41a919c528c6e077118ff58e8194"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/SCRIPT/FICHA_SCRIPT_ALFA_R6.json",
+      "bytes": 4791,
+      "sha256": "408ce92efab083adb27b8ad066ca793d64f21ad538dc8c189e5f4ccd3450f25d"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/SCRIPT/FICHA_SCRIPT_BETA_R6.json",
+      "bytes": 3841,
+      "sha256": "c9b58ef645702f791eeb97cb3bceb9be7e93da6b19f794119755b5c643b03d10"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/THREAD/FICHA_THREAD_ALFA_R6.json",
+      "bytes": 5488,
+      "sha256": "df370348bff49920d9b2343998b7fedbb78f824bec8f941182422fb29abafa67"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/THREAD/FICHA_THREAD_BETA_R6.json",
+      "bytes": 4348,
+      "sha256": "22b5eef1ffc7ddf877a1359510457e6af34c39e088d53253c7eeacb93f651b1a"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/VERTICAL/FICHA_VERTICAL_ALFA_CINEMATIC_R6.json",
+      "bytes": 12515,
+      "sha256": "ab409bb9e2635036511fd5c86c0c61807a2e8d275b8481c3b5f70a099f2c84a2"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/VERTICAL/FICHA_VERTICAL_ALFA_R6.json",
+      "bytes": 3195,
+      "sha256": "d96daf7fee69fe3add8ba84471a6ce298f35668e7733b5e77616dbe7220c19ff"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/fichas/VERTICAL/FICHA_VERTICAL_BETA_R6.json",
+      "bytes": 1616,
+      "sha256": "ff6141da5d7491266ce4731ac7cc6d1995d32819ab8aa8f29a972ff29f7705a7"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/libraries/CAPTIONS_R6.json",
+      "bytes": 1707,
+      "sha256": "f558d56b58834aea5addd993717cd59de9dee03b0719a43a6373719607e40ca6"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/libraries/CINE_LIBRARY_R6.json",
+      "bytes": 2187,
+      "sha256": "41e525440c596a9631b2fae63244db881fce5eda5874adccbe1da10a0bc0119e"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/libraries/EDIT_PROFILES_R6.json",
+      "bytes": 784,
+      "sha256": "6cfa350cdc6a6d4d913f853f79fe1c54cdf8e721301377e773e9bc7392cf8653"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/libraries/MOTION_LIBRARY_R6.json",
+      "bytes": 3414,
+      "sha256": "f392526d221a15e900cdf71a54f4c741d89f35826343f6fcfbd33cf67254f8c0"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/libraries/MUSIC_LIBRARY_R6.json",
+      "bytes": 806,
+      "sha256": "5b926d06c69fd7c2e689cbc5e9ac4807f351bfc7cf1a0b84788004e89c854244"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/libraries/SFX_LIBRARY_R6.json",
+      "bytes": 2184,
+      "sha256": "459257f52a269c4703def796d97e1806c3994380d2b95314102949779bf3424c"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/libraries/XR_FAMILIES_R6.json",
+      "bytes": 5621,
+      "sha256": "684f06b7ab3d2887ac9eb1265a32fe49f88a296b4918f65cb958c150ac0899a3"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_00_SELECTOR_DE_CASO_R6.txt",
+      "bytes": 1226,
+      "sha256": "04415b896ace3b813418c57c5c518a2b61a0bc4cb3168251ba89acae411e44ae"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_01_PLAN_FIJO_MAS_TRANSCRIPCION_A_ALFA_R6.txt",
+      "bytes": 1397,
+      "sha256": "f00c2ef133615983a53f7a627efc950fc7a3b68061a075c53e762da79741f21e"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_02_SOLO_TRANSCRIPCION_A_INTRO_ALFA_R6.txt",
+      "bytes": 1302,
+      "sha256": "84eab3223e185b6f057ef5e037b87d85b5669135ab8226f46fd52b8a8efa630f"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_03_SOLO_TRANSCRIPCION_A_VERTICALES_ALFA_R6.txt",
+      "bytes": 1023,
+      "sha256": "ea98f252809141aaead2db22d42eb18c5a8dd9155288edb423572ead1ac9c127"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_04_SOLO_TRANSCRIPCION_A_HORIZONTAL_ALFA_R6.txt",
+      "bytes": 873,
+      "sha256": "d773c3da31bcbe0652616d604410508cee9c9f91b91e7d7f0a72f40f10ccd13f"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_05_TRANSCRIPCION_A_CARRUSEL_ALFA_R6.txt",
+      "bytes": 801,
+      "sha256": "efef7590617f2c4428d87a9b289a03ca8b444a1b753e7247866d2cb6235568da"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_06_TRANSCRIPCION_A_BETAS_PARA_SELECCION_R6.txt",
+      "bytes": 790,
+      "sha256": "15f97faccf71b94872773f6a4d70707fde9135dd6a98c8ee629e4c0624c995a1"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_07_BETA_SELECCIONADA_A_ALFA_R6.txt",
+      "bytes": 685,
+      "sha256": "ea081198fa04579922980c9e64a8246aa5a08695b0d84becfaf0acfb197deba8"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_08_ACTUALIZAR_ALFA_EXISTENTE_R6.txt",
+      "bytes": 653,
+      "sha256": "fdb8d8ee990eb5bc8e8527447484b1ab87510b624e9c42758a7e6f89d1164882"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_09_VIDEO_DYNAMIC_EDIT_SIN_XR_R6.txt",
+      "bytes": 592,
+      "sha256": "97f85444818500f23c710353d2cd99d6d42a9da9192c613d72bb70455e9ed03c"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_10_VIDEO_CLEAN_EDIT_SFX_ONLY_R6.txt",
+      "bytes": 468,
+      "sha256": "8b82717b34d685a86177781f5cfc4351bef18150a444f8664820dea3e355239d"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_11_EPISODIO_COMPLETO_ALFA_R6.txt",
+      "bytes": 621,
+      "sha256": "fcd74327da770b69dcbc62da05b8bd532e3d386bf149a01a9b7af499fd544138"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_12_MULTI_SOURCE_CH_AS_WB_R6.txt",
+      "bytes": 569,
+      "sha256": "027685a8fc3514bc355972107c9f110d9f7af9fdf9df6d6ea51e6437cbeb2b32"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_13_PLAN_SIN_TIMESTAMPS_A_ALFA_NEEDS_REVIEW_R6.txt",
+      "bytes": 707,
+      "sha256": "8ec4b39b8c31cc507fbcd0e6ecf8e2eb706507a621415ef7447202f7e1440155"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_14_GENERAR_TODO_EL_PROYECTO_R6.txt",
+      "bytes": 638,
+      "sha256": "bc0374117a2e6110edb967fe1ef0b28061736aaa1a0fb738ab27194a529c729f"
+    },
+    {
+      "path": "tests/fixtures/content_resources/canon_r6/prompts/PROMPT_STATIC_ALFA_R6.txt",
+      "bytes": 658,
+      "sha256": "5816ee60ef3749759490a13e3445d9a4303af09786f5a7b06a3afbcd41ecd58d"
+    },
+    {
+      "path": "tests/test_brand_builder_r6_1.py",
+      "bytes": 1744,
+      "sha256": "3c7201e7e2dad7d5d4a81447f7e75c9c1977a17f3b410c87377e4faefdcb4a7e"
+    },
+    {
+      "path": "tests/test_content_builder_r6_1.py",
+      "bytes": 2838,
+      "sha256": "77c0633f7554467876ca1459c7ffae08556a3d222008fe7ebd41ba6fb98b8e49"
+    },
+    {
+      "path": "tests/test_cross_app_contract.py",
+      "bytes": 3113,
+      "sha256": "809ce074eb77d128d44cef41035f3ea39c242ac28a08d0cb97c833f1157f7e76"
+    },
+    {
+      "path": "tests/test_ecosystem_patcher.py",
+      "bytes": 8475,
+      "sha256": "ffa283e5f46bf359e1168e80626efe1ac6a3c1b5d6daad6e90e7c71f63839608"
+    },
+    {
+      "path": "tests/test_geometra_app_r6_1_ui.py",
+      "bytes": 1805,
+      "sha256": "d171bf5c9befc032075df7bf340e796e9eaf799955aee4ba20bd88a2fa92e24c"
+    },
+    {
+      "path": "tests/test_geometra_r6_1.py",
+      "bytes": 3631,
+      "sha256": "af134eb90f16fffafccfac03a1840a45036840e37e7c70803f40375dc609e23c"
+    },
+    {
+      "path": "tests/test_lienzo_r6_1_ui.py",
+      "bytes": 3588,
+      "sha256": "20841b096bd9a0e5723e0f5ef616d4c165aa4f58e0c20fd7ae81627d80f58e43"
+    },
+    {
+      "path": "tests/test_release_package.py",
+      "bytes": 1761,
+      "sha256": "e51a58b51f980d9099bef00d9072ef7c5fc78e0f5f038dde6126045e9f65091f"
+    },
+    {
+      "path": "tools/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/apply_hotfix.py",
+      "bytes": 7399,
+      "sha256": "c4e806131737e158a99a92df0f8c7c0be3652f4d4ec226a6676a503002bbb2dc"
+    },
+    {
+      "path": "tools/install_hotfix.py",
+      "bytes": 1507,
+      "sha256": "10a37ce8da142eb594856e3a75848e1ba924cf661dd0e7d59da1fd3a5a4a4ad9"
+    },
+    {
+      "path": "tools/release_manifest.py",
+      "bytes": 2115,
+      "sha256": "7503778ef77fa23631331133261b5f073d39b7015136e0e45710244250088ff6"
+    },
+    {
+      "path": "tools/revert_hotfix.py",
+      "bytes": 1392,
+      "sha256": "771199a28d855462b3ff268d1b7fbdfdb7f0cd9caad5e03281f91bc6b627dbb1"
+    },
+    {
+      "path": "tools/verify_hotfix.py",
+      "bytes": 8675,
+      "sha256": "4487fc258694de3abaf2fe0d1a67223a9267541844c150584972b62e68db0bb9"
+    }
+  ],
+  "package": "ABRXOS_HOTFIX_ECOSYSTEM_V3_1_1_R6_1",
+  "version": "3.1.1-r6.1"
+}

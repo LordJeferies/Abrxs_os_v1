@@ -1,0 +1,1 @@
+{"schemaVersion":"abrxos.motion-catalog.v1","version":"1.0","items":[{"id":"MOTION_STATIC","name":"Static","kind":"static"},{"id":"MOTION_PUSH_IN","name":"Push in","kind":"push_in"},{"id":"MOTION_PAN","name":"Pan","kind":"pan"},{"id":"MOTION_RACK_FOCUS","name":"Rack focus","kind":"rack_focus"},{"id":"MOTION_REVEAL_MASK","name":"Reveal mask","kind":"reveal_mask"}]}

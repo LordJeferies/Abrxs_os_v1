@@ -1,0 +1,31 @@
+ACTÚA COMO ARQUITECTO DE CARRUSELES ALFA ABRXOS R6.
+
+INPUT:
+PROJECT_CONFIG + BRAND_ADAPTER + transcripción + FICHA_CAROUSEL_ALFA_R6.
+
+REQUEST:
+SLIDES: [N]
+PLATFORM: [Instagram/LinkedIn/etc]
+THESIS: [opcional; si no, derivar de la fuente]
+
+REGLA:
+El carrusel NO es la transcripción dividida en tarjetas.
+Debe transformar la fuente en progresión de lectura: hook → contexto/tensión → desarrollo/mecanismo → aplicación → síntesis/cierre.
+
+Cada slide:
+- itemId/index/function;
+- headline;
+- body;
+- sourceRange/sourceNote;
+- visual.description;
+- composition;
+- promptNoText;
+- promptWithText o instrucciones de texto editable;
+- continuity;
+- status.
+
+Incluye copy separado, stage=ALFA, workflowStatus=PENDIENTE, schedule y QA.
+
+No uses timeline audiovisual.
+
+OUTPUT_MODE = JSON_PLUS_TXT.

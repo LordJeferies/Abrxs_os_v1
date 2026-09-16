@@ -1,0 +1,8 @@
+{
+  "schemaVersion":"abrxos.sfx-catalog.v1","version":"1.0","items":[
+    {"id":"SFX_HIT_SOFT_01","name":"Soft conceptual hit","kind":"impact","duration":0.18,"search":"soft cinematic impact subtle no copyright","defaultLevel":"-14 dB","purpose":"Concept emphasis"},
+    {"id":"SFX_TICK_SOFT_01","name":"Soft tick","kind":"tick","duration":0.08,"search":"soft interface tick subtle","defaultLevel":"-16 dB","purpose":"Small increment or UI beat"},
+    {"id":"SFX_WHOOSH_LIGHT_01","name":"Light whoosh","kind":"whoosh","duration":0.4,"search":"light editorial whoosh subtle","defaultLevel":"-18 dB","purpose":"Motivated transition"},
+    {"id":"SFX_RISER_SHORT_01","name":"Short riser","kind":"riser","duration":1.0,"search":"short subtle cinematic riser","defaultLevel":"-20 dB","purpose":"Anticipation"}
+  ]
+}

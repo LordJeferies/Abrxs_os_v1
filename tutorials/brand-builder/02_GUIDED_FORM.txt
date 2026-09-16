@@ -1,0 +1,3 @@
+GUIDED FORM
+
+Use when information is structured but incomplete. Fill confirmed facts; leave unknown values blank/NEEDS_REVIEW. Do not invent palette, fonts, audience or claims just to reach 100% completion.

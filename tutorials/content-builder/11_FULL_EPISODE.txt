@@ -1,0 +1,5 @@
+Full episode Alfa
+
+Planning/reference content; Cutter may intentionally exclude full episode from production outputs.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

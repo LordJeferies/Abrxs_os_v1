@@ -1,0 +1,7 @@
+if path == '/api/r6_validate':
+    project_id = str(data.get('projectId') or self.server.library.data.get('currentProjectId') or '')
+    project = self.server.library.get(project_id) if project_id else self.server.library.current()
+    if not project:
+        raise KeyError('project not found')
+    report = validate_r6_project(project, _R6_LIBRARIES)
+    self.json({'ok': True, 'validation': report}); return

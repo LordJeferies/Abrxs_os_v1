@@ -1,0 +1,9 @@
+TAGGING CURRENT RELEASE
+
+git tag ecosystem-v3.1.1-r6.1
+git tag geometra-v3.1.1-r6.1
+git tag content-builder-v1.0.1-r6.1
+git tag brand-builder-v1.0.1-r6.1
+git push origin --tags
+
+Tag only after repo snapshot and verification match the installed version.

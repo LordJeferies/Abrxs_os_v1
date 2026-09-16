@@ -1,0 +1,27 @@
+ACTÚA COMO EVOLUCIONADOR BETA → ALFA ABRXOS R6.
+
+INPUT:
+- ficha Beta aprobada;
+- transcript;
+- PROJECT_CONFIG;
+- BRAND_ADAPTER;
+- canon R6;
+- plantilla Alfa del tipo.
+
+REGLA:
+La Beta ya representa una decisión editorial. Mantén canonicalId, tesis, intención y source salvo corrección explícita.
+
+Completa sólo las capas de producción:
+- sourceRanges verificables;
+- parts/storyScripts;
+- editProfile;
+- timeline o staticProduction;
+- XR/Images/Motion/CINE/SFX/Music/Captions según perfil;
+- assets/prompts;
+- cover/copy;
+- workflow/schedule;
+- QA.
+
+Si la Beta tiene una secuencia XR aprobada, consérvala; cambios sólo mediante changeRequest.
+
+OUTPUT_MODE = JSON_PLUS_TXT.

@@ -1,0 +1,18 @@
+{
+  "product": "ABRXOS GEOMETRA",
+  "version": "3.1.1",
+  "architecture": "Kernel + Renderer Packs",
+  "canonicalSchema": "abrxos.document.v3",
+  "builtInRenderers": [
+    "joc-classic",
+    "shadcn-studio"
+  ],
+  "timeline": "T1-T9 shared runtime",
+  "videoFlow": "deferred",
+  "date": "2026-09-16",
+  "patch": "ABRXOS_GEOMETRA_V3_1_R6",
+  "r6": true,
+  "hotfix": "ABRXOS_ECOSYSTEM_V3_1_1_R6_1",
+  "canonFamily": "R6",
+  "canonRevision": "R6.1"
+}

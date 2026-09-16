@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abrxos.local/schema/content-project-r6.json",
+  "title": "ABRXOS Content Project R6",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "projectId",
+    "pieces"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "abrxos.content-project.r6"
+    },
+    "projectId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "object"
+    },
+    "pieces": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/piece"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "sourceRange": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "timingStatus": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "schedule": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string"
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "publishedAt": {}
+      },
+      "additionalProperties": true
+    },
+    "timelineEvent": {
+      "type": "object",
+      "required": [
+        "id",
+        "track",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "track": {
+          "enum": [
+            "story",
+            "aroll",
+            "xr",
+            "images",
+            "motion",
+            "broll",
+            "vo",
+            "sfx",
+            "music",
+            "captions"
+          ]
+        },
+        "type": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "partId": {
+          "type": "string"
+        },
+        "parentId": {
+          "type": "string"
+        },
+        "timingMode": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "piece": {
+      "type": "object",
+      "required": [
+        "id",
+        "canonicalId",
+        "type",
+        "title",
+        "stage",
+        "workflowStatus",
+        "schedule"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "canonicalId": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "intro",
+            "vertical",
+            "horizontal",
+            "full_episode",
+            "carousel",
+            "quote",
+            "thread",
+            "note",
+            "pdf",
+            "script"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "stage": {
+          "enum": [
+            "BETA",
+            "ALFA",
+            "OMEGA"
+          ]
+        },
+        "workflowStatus": {
+          "enum": [
+            "PENDIENTE",
+            "REVISADO",
+            "HACIENDO",
+            "LISTO",
+            "PROGRAMADO",
+            "PUBLICADO"
+          ]
+        },
+        "schedule": {
+          "$ref": "#/$defs/schedule"
+        },
+        "sourceRanges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceRange"
+          }
+        },
+        "timeline": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/timelineEvent"
+          }
+        },
+        "staticProduction": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

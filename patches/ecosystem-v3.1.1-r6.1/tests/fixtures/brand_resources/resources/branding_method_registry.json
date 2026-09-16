@@ -1,0 +1,475 @@
+{
+  "schemaVersion": "abrxos.branding-method-registry.v1",
+  "methodName": "The Branding Method",
+  "modeDefault": "summary_5_drivers",
+  "sourceHandling": "paraphrased_registry_attach_original_pdf_for_deep_analysis",
+  "drivers": [
+    {
+      "id": "ego",
+      "number": 1,
+      "name": "THE BRAND EGO",
+      "focus": "Consumer analysis",
+      "summaryFields": [
+        [
+          "buyerClient",
+          "Who buys or makes the purchase decision?"
+        ],
+        [
+          "consumerUser",
+          "Who actually uses or receives the product/service?"
+        ],
+        [
+          "idealAudience",
+          "Who is the ideal audience?"
+        ],
+        [
+          "lostOpportunity",
+          "Who showed interest but did not convert?"
+        ],
+        [
+          "externalContext",
+          "What does the audience see, hear, do and publicly express?"
+        ],
+        [
+          "internalContext",
+          "What do they privately think, want or fear?"
+        ],
+        [
+          "desiredSelfImage",
+          "How do they want to see themselves through the brand?"
+        ],
+        [
+          "painFear",
+          "What pain, fear or risk should the brand reduce?"
+        ],
+        [
+          "gain",
+          "What rational or social gain do they seek?"
+        ],
+        [
+          "emotionalMeaning",
+          "What emotional meaning can the brand own?"
+        ],
+        [
+          "proofNeeds",
+          "What proof is needed to trust?"
+        ]
+      ],
+      "tools": [
+        {
+          "id": "dog_matrix",
+          "name": "The Dog Matrix",
+          "prompt": "Separate purchaser, user, ideal audience and lost opportunity."
+        },
+        {
+          "id": "feel_map",
+          "name": "The Feel Map",
+          "prompt": "Map public/external behavior and private/internal motivations."
+        },
+        {
+          "id": "desire_canvas",
+          "name": "Brand Desire Canvas",
+          "prompt": "Map desired self-image, friend/enemy comparison and social meaning."
+        },
+        {
+          "id": "attitudinal_journey",
+          "name": "Attitudinal Journey",
+          "prompt": "Map attitudes to novelty/trust and the proof, feeling and experience each profile needs."
+        },
+        {
+          "id": "brand_ego",
+          "name": "The Brand Ego",
+          "prompt": "Synthesize pains, gains, self-interest and deeper emotional meaning."
+        }
+      ]
+    },
+    {
+      "id": "gang",
+      "number": 2,
+      "name": "THE BRAND GANG",
+      "focus": "Competitive strength",
+      "summaryFields": [
+        [
+          "hygienicAttributes",
+          "What is simply expected in the category?"
+        ],
+        [
+          "differentiators",
+          "What does the market value beyond the minimum?"
+        ],
+        [
+          "singularAdvantages",
+          "What can this brand uniquely own?"
+        ],
+        [
+          "territory",
+          "What conceptual territory should the brand occupy?"
+        ],
+        [
+          "directCompetitors",
+          "Direct competitors"
+        ],
+        [
+          "historicalCompetitors",
+          "Long-standing category references"
+        ],
+        [
+          "starCompetitors",
+          "Current leaders or references"
+        ],
+        [
+          "revolutionaryCompetitors",
+          "Indirect players changing habits or rules"
+        ],
+        [
+          "categoryOpportunity",
+          "What open opportunity exists?"
+        ],
+        [
+          "outsideInspiration",
+          "Which brands outside the category reveal useful patterns?"
+        ]
+      ],
+      "tools": [
+        {
+          "id": "max_pyramid",
+          "name": "The Max Pyramid",
+          "prompt": "Separate category minimums, valued differentiators and singular strengths."
+        },
+        {
+          "id": "brand_territory",
+          "name": "The Brand Territory",
+          "prompt": "Map the competitive territory from functional/rational to emotional/meaning-led."
+        },
+        {
+          "id": "abc_roll_axis",
+          "name": "ABC Roll Axis",
+          "prompt": "Map consumer role and brand role on aspirational/democratic and facilitator/inspirational axes."
+        },
+        {
+          "id": "revolution_matrix",
+          "name": "Revolution Matrix",
+          "prompt": "Map historic, current-star and rule-changing competitors."
+        },
+        {
+          "id": "five_friends",
+          "name": "The 5 Friends",
+          "prompt": "Collect cross-category references and extract transferable innovation patterns."
+        }
+      ]
+    },
+    {
+      "id": "essence",
+      "number": 3,
+      "name": "THE BRAND ESSENCE",
+      "focus": "Brand platform and DNA",
+      "summaryFields": [
+        [
+          "territory",
+          "Brand territory"
+        ],
+        [
+          "coreValue",
+          "Core value / simplest value idea"
+        ],
+        [
+          "positioning",
+          "Positioning"
+        ],
+        [
+          "purpose",
+          "Purpose"
+        ],
+        [
+          "values",
+          "Activated brand values"
+        ],
+        [
+          "personality",
+          "Personality"
+        ],
+        [
+          "evangelizes",
+          "What does the brand evangelize?"
+        ],
+        [
+          "defends",
+          "What does it defend?"
+        ],
+        [
+          "motivates",
+          "What positive change does it motivate?"
+        ],
+        [
+          "elevates",
+          "What broader change does it elevate?"
+        ],
+        [
+          "contributes",
+          "What does it uniquely contribute?"
+        ],
+        [
+          "reasonToBelieve",
+          "Evidence/reason to believe"
+        ],
+        [
+          "usp",
+          "Unique selling proposition"
+        ]
+      ],
+      "tools": [
+        {
+          "id": "five_whats",
+          "name": "Los 5 Qués del Branding",
+          "prompt": "Clarify what the brand evangelizes, defends, motivates, elevates and contributes."
+        },
+        {
+          "id": "core_value",
+          "name": "The Core Value",
+          "prompt": "Reduce the value proposition to a simple, memorable core idea."
+        },
+        {
+          "id": "positioning_model",
+          "name": "Brand Positioning Model",
+          "prompt": "Define what the brand is, how it delivers and why it matters."
+        },
+        {
+          "id": "purpose_check",
+          "name": "Purpose Check",
+          "prompt": "Test whether purpose is genuine, coherent and activated through actions."
+        },
+        {
+          "id": "brand_values",
+          "name": "Brand Values",
+          "prompt": "Define values as active behaviors rather than isolated adjectives."
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "number": 4,
+      "name": "THE BRAND IDENTITY",
+      "focus": "Brand assets and identities",
+      "summaryFields": [
+        [
+          "symbolicIdentity",
+          "Symbols, ideals, associations and rituals"
+        ],
+        [
+          "attitudinalIdentity",
+          "Behavior and personality"
+        ],
+        [
+          "verbalIdentity",
+          "Tone and language system"
+        ],
+        [
+          "visualIdentity",
+          "Visual system"
+        ],
+        [
+          "sensoryIdentity",
+          "Sound, touch, aroma/taste where relevant"
+        ],
+        [
+          "archetype",
+          "Archetype/personality"
+        ],
+        [
+          "toneOfVoice",
+          "Tone of voice"
+        ],
+        [
+          "voiceLand",
+          "Verbal territory"
+        ],
+        [
+          "voicePath",
+          "Verbal rules"
+        ],
+        [
+          "keywords",
+          "Key words"
+        ],
+        [
+          "forbiddenWords",
+          "Forbidden/avoid words"
+        ],
+        [
+          "verbalDevices",
+          "Distinctive verbal devices"
+        ],
+        [
+          "logoSymbol",
+          "Logo/symbol references"
+        ],
+        [
+          "typography",
+          "Typography"
+        ],
+        [
+          "color",
+          "Color"
+        ],
+        [
+          "photography",
+          "Photography"
+        ],
+        [
+          "illustration",
+          "Illustration"
+        ],
+        [
+          "iconsEmojiStickers",
+          "Icons/emojis/stickers"
+        ],
+        [
+          "layout",
+          "Layout"
+        ],
+        [
+          "motion",
+          "Motion"
+        ],
+        [
+          "sonicIdentity",
+          "Sonic identity"
+        ],
+        [
+          "textureTouch",
+          "Texture/touch"
+        ]
+      ],
+      "tools": [
+        {
+          "id": "brand_symbol",
+          "name": "The Brand Symbol",
+          "prompt": "Define ideals, associations, symbols and repeatable rituals."
+        },
+        {
+          "id": "charisma_archetypes",
+          "name": "Brand Charisma Archetypes",
+          "prompt": "Choose and justify the personality/archetype that best expresses the brand."
+        },
+        {
+          "id": "tone_voice_path",
+          "name": "Tone of Voice Path",
+          "prompt": "Define tone, voice territory, style rules, differential resources and key/forbidden words."
+        },
+        {
+          "id": "full_brand_board",
+          "name": "Full Brand Board",
+          "prompt": "Define a coherent visual world: symbol, type, color, photo, illustration, layout, motion and related assets."
+        },
+        {
+          "id": "sense_square",
+          "name": "The Sense Square",
+          "prompt": "Define distinctive sensory cues, especially sonic and tactile/visual qualities."
+        }
+      ],
+      "subtools": [
+        {
+          "id": "naming",
+          "name": "Naming",
+          "prompt": "Naming exploration and validation notes."
+        },
+        {
+          "id": "tagline_slogan",
+          "name": "Tagline / Slogan",
+          "prompt": "Separate enduring brand line from campaign-level line."
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "number": 5,
+      "name": "THE BRAND EXPERIENCE",
+      "focus": "Activation and experience",
+      "summaryFields": [
+        [
+          "problem",
+          "What problem is solved?"
+        ],
+        [
+          "bestOption",
+          "Why is this brand the best option?"
+        ],
+        [
+          "cta",
+          "What action should be easy to take?"
+        ],
+        [
+          "internalNarrative",
+          "Internal narrative"
+        ],
+        [
+          "externalNarrative",
+          "External narrative"
+        ],
+        [
+          "sagas",
+          "3–4 strategic content territories/sagas"
+        ],
+        [
+          "proofPoints",
+          "Proof points supporting narratives"
+        ],
+        [
+          "actions",
+          "Storydoing/actions"
+        ],
+        [
+          "ritualIn",
+          "Rituals before/in entry"
+        ],
+        [
+          "ritualDuring",
+          "Rituals during experience"
+        ],
+        [
+          "ritualOut",
+          "Rituals after experience"
+        ],
+        [
+          "goldenMoments",
+          "Critical journey moments"
+        ],
+        [
+          "loyaltyRecommendation",
+          "Loyalty/recommendation ideas"
+        ],
+        [
+          "burnMoments",
+          "Memorable, distinctive experience moments"
+        ]
+      ],
+      "tools": [
+        {
+          "id": "why_we",
+          "name": "Why We?",
+          "prompt": "Clarify problem, best-option reason and call to action."
+        },
+        {
+          "id": "brand_narratives",
+          "name": "Brand Narratives",
+          "prompt": "Define internal/external narratives, sagas, proof points and actions."
+        },
+        {
+          "id": "brand_rituals",
+          "name": "Brand Rituals",
+          "prompt": "Define repeatable IN/DURING/OUT rituals, direct or ambient."
+        },
+        {
+          "id": "golden_moments",
+          "name": "The 10 Golden Moments",
+          "prompt": "Map critical journey moments from awareness through recommendation."
+        },
+        {
+          "id": "burn_pyramid",
+          "name": "The Burn Pyramid",
+          "prompt": "Identify experiences that move from basic competence toward memorable, representative and shareable impact."
+        }
+      ]
+    }
+  ]
+}

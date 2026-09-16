@@ -1,0 +1,9 @@
+BRAND BUILDER REPAIR / UPDATE
+
+Storage/list/reference problem → BrandStore.
+Package/export problem → build_brand_ai_package.
+Method structure problem → branding_method_registry.json + tests.
+Brand Adapter field problem → template + contract migration.
+UI only → web/index.html.
+
+Do not allow a content/timeline concern to leak into Brand Builder. Its responsibility ends at brand strategy + operational adapter/handoff.

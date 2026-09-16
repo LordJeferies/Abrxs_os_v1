@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "abrxos.cine-library.r6",
+  "storage": {
+    "track": "broll",
+    "type": "cine",
+    "usesExistingTracks": true
+  },
+  "beats": {
+    "CINE01_BLACK_HOLD": {
+      "commercialLabel": "Black Hold",
+      "purpose": "Pause through visual emptiness; add emotional weight or act break.",
+      "defaultHoldSeconds": 1.0,
+      "recommendedHoldRangeSeconds": [
+        0.5,
+        1.5
+      ],
+      "visual": {
+        "kind": "solid_color",
+        "color": "#000000"
+      },
+      "motionInSuggested": "FADE_OUT",
+      "motionOutSuggested": "FADE_IN_OR_CUT",
+      "sfxSuggested": [
+        "SFX_LOW_BOOM",
+        "SFX_EMPHASIS"
+      ],
+      "sfxRequired": false,
+      "musicDirectionSuggested": "DUCK_TO_MUTE_HOLD_RESUME",
+      "silenceSuggested": true,
+      "captionPolicy": "HIDE_DURING_BLACK_HOLD"
+    },
+    "CINE02_FREEZE_HOLD": {
+      "commercialLabel": "Freeze Hold",
+      "purpose": "Pause on a frame after a reveal, confession, loss, fact or key beat.",
+      "defaultHoldSeconds": 1.0,
+      "recommendedHoldRangeSeconds": [
+        0.8,
+        1.5
+      ],
+      "visual": {
+        "kind": "freeze_frame",
+        "desaturationOptionalPercent": [
+          0,
+          25
+        ]
+      },
+      "motionBodySuggested": "SLOW_DRIFT_OR_STATIC",
+      "motionOutSuggested": "CUT",
+      "sfxSuggested": [
+        "SFX_LOW_BOOM",
+        "SFX_EMPHASIS"
+      ],
+      "sfxRequired": false,
+      "musicDirectionSuggested": "DUCK",
+      "captionPolicy": "AUTO"
+    },
+    "CINE03_PUNCH_CUT": {
+      "commercialLabel": "Punch Cut",
+      "purpose": "Advance with impact after a reveal, contrast, plot twist or strong statement.",
+      "transition": "HARD_CUT",
+      "targetHoldRangeSeconds": [
+        1.5,
+        4.0
+      ],
+      "targetOptions": [
+        "new_aroll_framing",
+        "broll",
+        "photo",
+        "xr",
+        "close_up"
+      ],
+      "sfxSuggested": [
+        "SFX_IMPACT",
+        "SFX_CLICK_DEEP",
+        "SFX_WHOOSH"
+      ],
+      "sfxRequired": false,
+      "musicDirectionSuggested": "SHORT_DUCK_OPTIONAL",
+      "captionPolicy": "AUTO"
+    }
+  },
+  "rule": "CINE beats do not count toward XR density."
+}

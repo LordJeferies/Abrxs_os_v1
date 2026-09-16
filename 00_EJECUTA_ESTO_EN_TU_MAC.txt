@@ -1,0 +1,53 @@
+ABRXOS · TERMINAR REPO ACTUAL EN LA MAC FUENTE
+
+TU SISTEMA YA ESTÁ ACTUALIZADO. ESTE PASO NO REINSTALA LAS APPS.
+Sólo captura las instalaciones actuales dentro del repo y verifica que quede restaurable.
+
+1. Abre Terminal.
+2. Entra al repo corregido:
+
+cd "$HOME/Downloads/ABRXOS_ECOSYSTEM_V3_1_1_R6_1_GITHUB_REPO_FIXED"
+
+3. Ejecuta UN SOLO COMANDO:
+
+zsh tools/DEJAR_REPO_LISTO.command
+
+Debe capturar:
+~/ABRXOS_GEOMETRA_V3
+~/Applications/ABRXOS/ABRXOS_CONTENT_BUILDER_V1
+~/Applications/ABRXOS/ABRXOS_X_BRAND_BUILDER_V1
+
+y llenar:
+apps/geometra/current
+apps/content-builder/current
+apps/brand-builder/current
+
+4. Si termina correctamente:
+
+zsh tools/PREPARAR_REPO_GITHUB.command
+
+git status
+
+5. Commit:
+
+git commit -m "ABRXOS ecosystem 3.1.1 R6.1 reproducible snapshot"
+
+6. Crear repo privado con GitHub CLI:
+
+gh repo create ABRXOS-ecosystem-r6 --private --source=. --remote=origin --push
+
+7. Tag:
+
+git tag ecosystem-v3.1.1-r6.1
+git push origin --tags
+
+RESTAURAR EN UNA MAC NUEVA
+Después de clonar ese repo ya completo:
+
+zsh install/INSTALAR_ECOSISTEMA_DESDE_CERO.command
+
+PREREQUISITO EXTERNO
+Python 3. El instalador detecta PATH, Homebrew, /usr/local, /usr/bin y Python.framework.
+
+IMPORTANTE
+El repo reproduce las apps. Tus datos/clientes/proyectos están fuera del repo y requieren backup separado.

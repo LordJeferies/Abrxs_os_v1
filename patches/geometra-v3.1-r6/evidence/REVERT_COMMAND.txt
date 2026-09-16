@@ -1,0 +1,11 @@
+ABRXOS · REVERTIR PATCH V3.1 R6
+================================
+Target:  /tmp/abrxos_v3_r6_patch_candidate
+Backups: /tmp/abrxos_v3_r6_patch_backups
+{
+  "status": "reverted",
+  "patchId": "ABRXOS_GEOMETRA_V3_1_R6",
+  "backupId": "ABRXOS_GEOMETRA_V3_1_R6_20260916-173906-716196",
+  "target": "/tmp/abrxos_v3_r6_patch_candidate"
+}
+Patch revertido. Tus datos en ABRXOS_GEOMETRA_DATA no fueron tocados.

@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "abrxos.xr-library.r6",
+  "families": {
+    "COMIC_INFO": {
+      "label": "Comic Info",
+      "assetCount": 1,
+      "durationRangeSeconds": [
+        12,
+        20
+      ],
+      "purpose": "Explicar información complementaria mediante una composición editorial única recorrida por cámara.",
+      "captionPolicy": "AUTO",
+      "assetRules": {
+        "masterImageCount": 1,
+        "integratedText": "editorial_info_not_literal_by_default"
+      },
+      "states": [
+        {
+          "order": 1,
+          "view": "lower_left",
+          "function": "Primera unidad de información"
+        },
+        {
+          "order": 2,
+          "view": "lower_right",
+          "function": "Segunda unidad de información"
+        },
+        {
+          "order": 3,
+          "view": "upper_left",
+          "function": "Tercera unidad de información"
+        },
+        {
+          "order": 4,
+          "view": "upper_right",
+          "function": "Cuarta unidad de información"
+        },
+        {
+          "order": 5,
+          "view": "full_composition",
+          "function": "Revelar el conjunto y el elemento central/principal"
+        }
+      ],
+      "motionPattern": [
+        "ZOOM_IN_PAN",
+        "PAN",
+        "PAN",
+        "PAN",
+        "ZOOM_OUT_PAN"
+      ],
+      "qa": [
+        "one_master_image",
+        "five_view_states",
+        "final_state_reveals_full_composition"
+      ]
+    },
+    "COMIC_CC": {
+      "label": "Comic CC",
+      "assetCount": 3,
+      "perAssetDurationSeconds": [
+        2,
+        4
+      ],
+      "purpose": "Mostrar el texto hablado integrado editorialmente dentro de tres escenas; no usar burbujas de comic.",
+      "captionPolicy": "HIDE",
+      "textSource": "spoken_literal",
+      "shots": [
+        {
+          "asset": "A01",
+          "shot": "wide"
+        },
+        {
+          "asset": "A02",
+          "shot": "close_up"
+        },
+        {
+          "asset": "A03",
+          "shot": "medium"
+        }
+      ],
+      "textIntegration": "Text must be integrated into the scene composition, not speech bubbles.",
+      "qa": [
+        "three_distinct_images",
+        "spoken_text_matches_interval",
+        "captions_suppressed_not_deleted"
+      ]
+    },
+    "TYPO": {
+      "label": "Typo / Letras",
+      "assetCount": 0,
+      "durationRangeSeconds": [
+        6,
+        12
+      ],
+      "purpose": "Convertir un beat verbal en tres estados tipográficos sobre fondo plano/simple.",
+      "captionPolicy": "HIDE_OR_MERGE_WITH_TYPO",
+      "states": [
+        {
+          "order": 1,
+          "mode": "normal_phrase",
+          "function": "Frase inicial normal"
+        },
+        {
+          "order": 2,
+          "mode": "hero_phrase",
+          "function": "Palabra o frase fuerte de 1 a 5 palabras, pantalla completa"
+        },
+        {
+          "order": 3,
+          "mode": "normal_phrase",
+          "function": "Resto o resolución de la frase"
+        }
+      ],
+      "background": "flat_brand_or_dark",
+      "qa": [
+        "exactly_three_typo_states",
+        "hero_phrase_max_5_words"
+      ]
+    },
+    "PHOTOS": {
+      "label": "Fotos",
+      "assetCount": 3,
+      "durationRangeSeconds": [
+        6,
+        12
+      ],
+      "purpose": "Contextualizar mediante tres fotografías distintas.",
+      "captionPolicy": "VISIBLE_OR_AUTO",
+      "shots": [
+        {
+          "asset": "A01",
+          "shot": "close_up"
+        },
+        {
+          "asset": "A02",
+          "shot": "wide"
+        },
+        {
+          "asset": "A03",
+          "shot": "close_up"
+        }
+      ],
+      "qa": [
+        "three_distinct_photos",
+        "shot_order_close_wide_close"
+      ]
+    },
+    "OBJECTS": {
+      "label": "Objetos",
+      "assetCount": 3,
+      "durationRangeSeconds": [
+        6,
+        12
+      ],
+      "purpose": "Representar conceptos con tres objetos visuales superpuestos o integrados.",
+      "captionPolicy": "VISIBLE_OR_AUTO",
+      "assetRules": {
+        "emojiFallbackCountPerObject": 2,
+        "placementRecommendationRequired": true,
+        "placementOptions": [
+          "foreground",
+          "background"
+        ]
+      },
+      "qa": [
+        "three_objects",
+        "two_emoji_fallbacks_each",
+        "placement_reason_each"
+      ]
+    },
+    "PHOTO_OBJECT": {
+      "label": "Foto + Objeto",
+      "assetCount": 3,
+      "durationRangeSeconds": [
+        8,
+        12
+      ],
+      "purpose": "Usar una fotografía contextual de fondo más dos objetos relevantes delante.",
+      "captionPolicy": "VISIBLE_OR_AUTO",
+      "composition": {
+        "A01": "background_photo",
+        "A02": "foreground_object",
+        "A03": "foreground_object"
+      },
+      "qa": [
+        "one_background_photo",
+        "two_objects",
+        "placement_reason"
+      ]
+    },
+    "NO_XR": {
+      "label": "No X-Roll / A-Roll",
+      "assetCount": 0,
+      "purpose": "Mantener A-roll como visual principal; puede llevar Motion, SFX, Music, CINE y Captions.",
+      "captionPolicy": "VISIBLE",
+      "qa": [
+        "no_xr_assets_required"
+      ]
+    }
+  },
+  "selectionRules": {
+    "avoidSameFamilyConsecutive": true,
+    "preferDiversityBeforeRepeat": true,
+    "narrativeFitOverridesDiversity": true
+  },
+  "density": {
+    "intro": {
+      "XR_FULL": {
+        "exact": 6
+      }
+    },
+    "vertical": {
+      "XR_FULL": {
+        "min": 2,
+        "max": 4
+      }
+    },
+    "horizontal": {
+      "XR_FULL": {
+        "approxPerSeconds": 120
+      }
+    },
+    "full_episode": {
+      "XR_FULL": {
+        "approxPerSeconds": 300
+      }
+    }
+  }
+}

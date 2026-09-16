@@ -1,0 +1,5 @@
+Plan without timing
+
+Return needs_review; sourceAlignment unresolved/estimated; do not fabricate Cutter-ready ranges.
+
+Always inspect contract_manifest.json and keep Canon R6 baseline + R6.1 supplements together.

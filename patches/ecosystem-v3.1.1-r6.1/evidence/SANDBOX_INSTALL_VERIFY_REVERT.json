@@ -1,0 +1,38 @@
+{
+  "beforeRevert": {
+    "sentinel": "UNCHANGED",
+    "versions": {
+      "geometra": "3.1.1",
+      "contentBuilder": "1.0.1",
+      "brandBuilder": "1.0.1"
+    },
+    "verify": {
+      "ok": true,
+      "hotfixId": "ABRXOS_ECOSYSTEM_V3_1_1_R6_1",
+      "errors": [],
+      "warnings": [],
+      "checks": [
+        "geometra_r61_validator=PASS",
+        "contentBuilder_canon_handshake=PASS",
+        "content_geometra_library_hashes=PASS",
+        "brandBuilder_canon_handshake=PASS",
+        "brand_adapter_contract=PASS"
+      ],
+      "components": {
+        "geometra": "PASS",
+        "contentBuilder": "PASS",
+        "brandBuilder": "PASS"
+      }
+    },
+    "installStatus": "applied_and_verified"
+  },
+  "afterRevert": {
+    "versions": {
+      "geometra": "3.1.0",
+      "contentBuilder": "1.0.0",
+      "brandBuilder": "1.0.0"
+    },
+    "sentinel": "UNCHANGED",
+    "status": "reverted"
+  }
+}

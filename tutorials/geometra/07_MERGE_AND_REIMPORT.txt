@@ -1,0 +1,3 @@
+MERGE / REIMPORT
+
+Lienzo supports LOCAL/REMOTE/BASE merge. Geometra Library merge is simpler by piece ID. Keep stable IDs and review conflicts before replacing a current ficha.

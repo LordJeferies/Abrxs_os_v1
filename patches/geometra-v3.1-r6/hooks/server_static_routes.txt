@@ -1,0 +1,6 @@
+if path == '/r6_patch.js':
+    file = self.server.root / 'app' / 'r6_patch.js'
+    self._send(200, file.read_bytes(), 'application/javascript; charset=utf-8'); return
+if path == '/r6_patch.css':
+    file = self.server.root / 'app' / 'r6_patch.css'
+    self._send(200, file.read_bytes(), 'text/css; charset=utf-8'); return

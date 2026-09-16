@@ -1,0 +1,22 @@
+REPAIR DECISION TREE
+
+Symptom: app does not open
+→ inspect launcher/log/process/port; do not touch data.
+
+Symptom: Builder package wrong
+→ test engine/router/resources; compare contract_manifest and canon hashes.
+
+Symptom: Geometra imports wrong data
+→ importer/normalizer/schema issue. Reproduce with fixture before patch.
+
+Symptom: Lienzo displays wrong info but JSON is correct
+→ renderer/runtime/inspector issue; do not change importer.
+
+Symptom: Timeline moves source cuts unexpectedly
+→ controller/domain boundary issue; protect sourceRanges and test overrides.
+
+Symptom: Cutter output wrong
+→ inspect sourceRanges/source group/orientation mapping first; UI changes are secondary.
+
+Symptom: old docs work but new R6.1 fails
+→ validator/feature handshake or supplement integration issue, not a reason to migrate old content destructively.

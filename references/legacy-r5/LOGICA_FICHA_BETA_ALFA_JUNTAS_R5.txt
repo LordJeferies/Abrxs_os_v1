@@ -1,0 +1,139 @@
+ABRXOS — LÓGICA COMPLETA DE FICHA BETA Y FICHA ALFA R5
+
+## 1. PRINCIPIO
+
+Beta responde: “¿Qué contenido potencial existe y por qué vale la pena
+producirlo?”. Alfa responde: “¿Cómo se produce, edita, revisa y exporta sin
+tener que adivinar nada?”. La Alfa conserva la Beta y agrega capas ejecutables.
+
+Jerarquía obligatoria:
+
+CONTENIDO > PARTE > SUBPARTE > BEAT > XR/XR00 + B-Roll + Motion + Texto + Audio + SFX
+
+Cada registro debe llevar `contentId`, `partId`, `subpartId`, `beatId` y
+`sourceRange` cuando corresponda.
+
+## 2. FICHA BETA — DESCUBRIMIENTO Y DECISIÓN
+
+La Beta es una hipótesis editorial revisable. No contiene prompts finales ni
+instrucciones definitivas de edición.
+
+Campos obligatorios:
+
+- Identidad: contentId, tipo, episodio, formato posible y prioridad.
+- Título provisional de 5–8 palabras.
+- Objetivo de 20–40 palabras.
+- Audiencia y pilar temático.
+- Hook de 8–18 palabras y alternativas.
+- Copy corto de 12–25 palabras.
+- Pregunta del director.
+- Respuesta de referencia de 35–90 palabras.
+- Lógica editorial de 25–60 palabras.
+- Coach y disparador propuesto.
+- Partes tentativas: hook, desarrollo, giro, cierre y CTA.
+- Fuente, texto literal, rangos candidatos y confianza.
+- Secuencia de XR posibles en orden narrativo, aunque los IDs sean no
+  consecutivos: XR07 → XR02 → XR05.
+- Para cada XR: función, frase ancla, número estimado de estados y referencia
+  visual breve; no prompt final.
+- Claims pendientes, riesgos y datos faltantes.
+- Estado: `candidate`, `strong_candidate`, `discard` o `needs_review`.
+
+La Beta sólo se envía a Alfa cuando el usuario la selecciona individualmente o
+mediante “seleccionar todas”.
+
+## 3. FICHA ALFA — PLAN EJECUTABLE
+
+La Alfa debe conservar literalmente la identidad, objetivo, tipo, título, hook,
+copy corto, pregunta, respuesta de referencia, lógica, coach, disparadores,
+partes, rangos candidatos, secuencia XR y claims de Beta. Puede corregirlos
+únicamente registrando la fuente, el motivo y el cambio.
+
+Debe agregar:
+
+- Título final de 5–8 palabras y copy por red social.
+- Audiencia, plataforma, país, tono, CTA y duración objetivo.
+- Timecodes verificados por master vertical/horizontal.
+- Palabra inicial/final, texto literal y texto normalizado.
+- Partes y subpartes definitivas con beats e IN/OUT.
+- Desarrollo ejecutable de cada XR en el orden recibido.
+- Estados S01, S02… con cantidad exacta de imágenes/videos.
+- Inventario separado A01…An para cada imagen, video, captura, gráfico, emoji o
+  capa de cada estado; collage y composiciones especiales explicados.
+- Prompt de imagen de 90–180 palabras por estado.
+- Instrucción de motion de 50–120 palabras por estado; no es un prompt de IA.
+- B-Roll, propósito, búsqueda Google, búsqueda stock, filtros, licencia y
+  alternativa.
+- Música, voz, niveles, ducking, silencios y SFX por beat.
+- Subtítulos palabra por palabra y safe areas.
+- Portada, prompt, assets, nombres y carpetas.
+- Instrucciones de pistas y keyframes para CapCut.
+- Validación, QA, riesgos, bloqueos y aprobación humana.
+
+## 4. ESTADOS Y TRAZABILIDAD
+
+Beta: `draft`, `needs_review`, `selected_for_ai`, `rejected`.
+Alfa: `ready`, `needs_review`, `blocked`.
+
+La IA nunca inventa un dato faltante. Usa `needs_review` o `blocked` y explica
+qué debe confirmar el usuario. La secuencia de XR sólo cambia mediante
+`xrChangeRequests` con evidencia y aprobación.
+
+## 5. REGLAS DE LONGITUD
+
+El importador cuenta palabras separadas por espacios, ignorando IDs, URLs,
+timecodes y código. Si un campo no aplica, escribe `not_applicable` y una razón.
+Nunca deja un campo crítico vacío.
+
+Los límites completos están en `CONTRATO_FICHA_ALFA_COMPLETA_R5.txt` y deben
+formar parte del JSON Schema.
+
+## 6. EJEMPLO DE LECTURA COMPLETA
+
+Supongamos que una transcripción contiene esta idea: la invitada explica que
+los resultados no aparecen por una acción aislada, sino por repetir una pequeña
+acción durante mucho tiempo.
+
+La Beta no debería saltar directamente a una imagen final. Debe registrar:
+
+```text
+contentId: clip_004
+tipo: vertical_clip
+título: El uno por ciento diario
+objetivo: mostrar que la constancia produce un cambio acumulativo.
+fuente: 00:14:52–00:15:48
+hook: “El cambio empieza antes de que puedas verlo.”
+partes: hook → explicación → remate
+xrSequence: XR07 → XR01 → XR09
+```
+
+La Alfa conserva esa decisión y la desarrolla:
+
+```text
+P01 Hook / SP01.01 / B01.01.01
+00:14:52.200–00:14:58.800
+XR07: tres objetos que representan acciones acumuladas.
+
+P02 Desarrollo / SP02.01 / B02.01.01
+00:15:00.000–00:15:12.000
+XR01: contexto → detalle → revelación.
+
+P03 Remate / SP03.01 / B03.01.01
+00:15:40.200–00:15:47.900
+XR09: dos placas tipográficas de 3–4 segundos.
+```
+
+La persona que edita puede abrir cada beat, reproducirlo, ver la frase exacta,
+seleccionar el XR y encontrar allí sus assets, B-Roll, instrucciones de motion,
+SFX y criterio de aprobación.
+
+## 7. QUÉ SIGNIFICA “COMPLETA”
+
+Una ficha completa no es la que tiene más texto, sino la que elimina decisiones
+ambiguas. “Usar una imagen impactante” no permite trabajar; “plano detalle de
+la naranja, lente macro, tercio derecho libre para el hablante y luz lateral
+coherente con A01” sí permite producir y revisar.
+
+Beta optimiza la velocidad de selección. Alfa optimiza la precisión de
+ejecución. Si ambas tienen la misma extensión y el mismo nivel de detalle, el
+flujo pierde su ventaja: Beta se vuelve lenta y Alfa sigue incompleta.

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "abrxos.music-library.r6",
+  "definition": "Music instructions describe emotional function and volume automation after a track is selected.",
+  "automationTypes": [
+    "BASE",
+    "SWELL",
+    "DUCK",
+    "MUTE",
+    "RESUME",
+    "FADE_IN",
+    "FADE_OUT"
+  ],
+  "eventShape": {
+    "id": "MUSIC_01",
+    "track": "music",
+    "type": "music",
+    "start": 0.0,
+    "end": 10.0,
+    "function": "REPLACE",
+    "selectionBrief": "REPLACE",
+    "automation": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "mode": "BASE",
+        "levelDb": -20,
+        "why": "REPLACE"
+      }
+    ]
+  },
+  "rules": [
+    "Describe when and why music rises/falls.",
+    "CINE01 may use duck→mute→resume.",
+    "Do not invent an exact song unless the user selects/provides it."
+  ]
+}

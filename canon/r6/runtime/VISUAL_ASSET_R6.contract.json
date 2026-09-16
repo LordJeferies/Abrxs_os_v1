@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "abrxos.visual-asset.r6",
+  "requiredFields": [
+    "assetId",
+    "assetType",
+    "description",
+    "contextAndDetail",
+    "whatIsVisible",
+    "whyItMatchesSpeech",
+    "prompt",
+    "brollReference",
+    "googleSearchQuery",
+    "placementRecommendation",
+    "placementReason",
+    "start",
+    "end",
+    "durationSeconds",
+    "status"
+  ],
+  "placementOptions": [
+    "foreground",
+    "background",
+    "fullscreen"
+  ],
+  "objectExtraFields": [
+    "emojiFallback"
+  ],
+  "status": [
+    "pending_creation",
+    "created",
+    "approved",
+    "needs_review"
+  ]
+}

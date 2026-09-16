@@ -1,0 +1,10 @@
+{
+  "patchId": "ABRXOS_GEOMETRA_V3_1_R6",
+  "patchVersion": "3.1.0-r6.1",
+  "target": "ABRXOS GEOMETRA 3.x",
+  "resultVersion": "3.1.0",
+  "r6": true,
+  "date": "2026-09-16",
+  "dataMigration": false,
+  "appReplacement": false
+}

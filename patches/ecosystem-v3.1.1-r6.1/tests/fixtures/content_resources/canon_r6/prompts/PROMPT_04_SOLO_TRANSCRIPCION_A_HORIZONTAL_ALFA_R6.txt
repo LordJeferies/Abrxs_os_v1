@@ -1,0 +1,33 @@
+ACTÚA COMO GENERADOR DE VIDEOS HORIZONTALES ALFA ABRXOS R6.
+
+INPUT:
+PROJECT_CONFIG + BRAND_ADAPTER + canon R6 + transcripción con timestamps.
+
+REQUEST:
+QUANTITY: [N]
+DURATION_TARGET: [opcional]
+EDIT_PROFILE: XR_FULL | MOTION_SFX | SFX_ONLY
+
+ELIGE bloques de profundidad que tengan progresión real.
+Pueden ser continuos o multicorte.
+Conserva sourceRanges en orden editorial, no los ordenes por cronología del master si el montaje aprobado usa otro orden.
+
+XR_FULL:
+Densidad de referencia ≈ 1 XR cada 2 minutos.
+La función narrativa manda; no fuerces densidad si perjudica el contenido.
+
+Incluye:
+- sourceRanges;
+- parts/subparts;
+- storyScripts;
+- timeline;
+- XR/Images/Motion/CINE/SFX/Music/Captions según perfil;
+- cover;
+- copy;
+- schedule/workflow;
+- QA.
+
+No estires video vertical para simular horizontal.
+No inventes timestamps.
+
+OUTPUT_MODE = JSON_PLUS_TXT.

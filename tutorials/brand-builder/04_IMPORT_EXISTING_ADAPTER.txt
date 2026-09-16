@@ -1,0 +1,3 @@
+IMPORT / UPDATE EXISTING BRAND ADAPTER
+
+Treat same brand ID as same brand. Preserve confirmed fields and unknown extension fields. Ask AI for complete updated adapter, not a destructive partial rewrite.

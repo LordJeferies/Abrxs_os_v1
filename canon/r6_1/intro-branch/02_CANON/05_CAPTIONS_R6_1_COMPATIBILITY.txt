@@ -1,0 +1,43 @@
+ABRXOS R6.1 · CAPTIONS Y COMPATIBILIDAD
+
+POLÍTICA R6
+T9 muestra Caption Groups, no microcajas por 3–5 palabras.
+Target 8–15 palabras.
+Soft 6–17.
+HERO_WORD excepcional.
+displayCues internos pueden mostrar 2–3 etapas sin multiplicar bloques T9.
+
+CAMPOS
+captionSchema: abrxos.caption.v2
+captionPolicyVersion: R6
+partId
+routes
+start/end
+sourceText
+wordCount
+highlightWord
+displayMode
+visibility
+suppressedBy
+displayCues[]
+
+COMIC_CC
+No borrar captions. visibility=hidden + suppressedBy=XR_ID.
+
+PATCH GEOMETRA
+Si captionPolicyVersion=R6:
+- NO ejecutar normalización legacy 3–5;
+- mantener un block T9 por Caption Group;
+- inspector abre displayCues;
+- hidden se dibuja atenuado.
+
+LEGACY
+Piezas antiguas sin R6 pueden conservar su política anterior. No migrar destructivamente.
+
+R6.1 CLARIFICATION · FUENTE COMPLETA < 6 PALABRAS
+Si TODO el texto de la part tiene menos de 6 palabras, NO rellenar, NO mezclar con otra part y NO inventar texto para llegar al rango.
+Se permite un Caption Group corto con:
+shortSourceException=true
+shortSourceReason="complete source part under soft range"
+
+El validador R6.1 debe aceptar esta excepción sin warning si sourceText coincide con la totalidad de la part.

@@ -1,0 +1,3 @@
+VALIDATION
+
+Read Alpha Ready, Cutter Ready and Projection Ready independently. Cutter Ready only answers source cuts. Projection Ready answers whether Lienzo has independent resources/events to manipulate.

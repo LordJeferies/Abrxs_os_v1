@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "abrxos.app-package-manifest.v1",
+  "app": "brand-builder",
+  "version": "1.0.1",
+  "canonFamily": "R6",
+  "canonRevision": "R6.1",
+  "generatedAt": "2026-09-16T20:11:00.280645+00:00",
+  "files": [
+    {
+      "path": "ABRXOS_X_BRAND_BUILDER_V1.html",
+      "bytes": 53131,
+      "sha256": "6290218ee7345bc32decf728bc7c222763e6bba52a8c73094d211d0f9ecfa000"
+    },
+    {
+      "path": "COMANDOS_TERMINAL.txt",
+      "bytes": 696,
+      "sha256": "30e70feb31499317aa189e981c47c6b3ccc950d2d98311e5a72628707675864a"
+    },
+    {
+      "path": "INSTALAR_ABRXOS_X_BRAND_BUILDER_V1.command",
+      "bytes": 1525,
+      "sha256": "c6ca1eff67424b7b7706295627f804d6da64d373bccf28e6403b00d92c0523bb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 992,
+      "sha256": "bb13bee8508c91c8fdb5e7f15527482af386e92ad14bde44ac65e67c019e8a62"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "bytes": 1122,
+      "sha256": "98de099fb631c4d7e1e56076ad2a517f43bced29325bbf9071cca43a23bf8b71"
+    },
+    {
+      "path": "TUTORIAL_USO.txt",
+      "bytes": 1402,
+      "sha256": "79f5b2bb6c2f2ec825c4e31a62d8da2597180041e06e3a5bd8082c5aa07849bc"
+    },
+    {
+      "path": "VERSION.json",
+      "bytes": 253,
+      "sha256": "5422e58d7d1f90112e6f941ce48e36be6fcbb97b50cf83df0fe32fb9f3e284b0"
+    },
+    {
+      "path": "app.py",
+      "bytes": 6873,
+      "sha256": "30ffa1aade667ca63688994749364c3b6f5b46b3dc8e341702111f3d5df588bd"
+    },
+    {
+      "path": "brand_engine.py",
+      "bytes": 11071,
+      "sha256": "536cf1f10645fc337d0f3e42f4a5bf569fae51bfd8a11fb2a1e4825f7823a643"
+    },
+    {
+      "path": "docs/DESIGN_SPEC.md",
+      "bytes": 11291,
+      "sha256": "83458a33609f856a458823ea45b2386198acfa7dfb190ecdf73caa914c33825b"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "bytes": 3975,
+      "sha256": "f4169bf4174e019880007e8f303fe3e0aec793d6f28504be39daa39872f7e8b9"
+    },
+    {
+      "path": "resources/BRANDING_METHOD_SOURCE_NOTE.txt",
+      "bytes": 367,
+      "sha256": "9a22ec06e396fdd205e97bab2d47dbc2e708fe9b6b88ba82d7334ab640223fa2"
+    },
+    {
+      "path": "resources/brand_adapter_template.json",
+      "bytes": 7629,
+      "sha256": "ddc22770e300780f59f1239bb4c4c7d0430de3d5b1b14a573cc4a09069c4591d"
+    },
+    {
+      "path": "resources/branding_method_registry.json",
+      "bytes": 12342,
+      "sha256": "72eaa38c953c996bd49dd609d691dad136c142f6504c2adcb8e196452c5e08d8"
+    },
+    {
+      "path": "tests/test_brand_engine.py",
+      "bytes": 3529,
+      "sha256": "4ffb41855bf369da19bd19000ffbf3537905d805d88f9e048a1e6c1512cda7a1"
+    },
+    {
+      "path": "tests/test_brand_html.py",
+      "bytes": 699,
+      "sha256": "d674aed91bf7f013defc4065ba0c52229cbc7ede687de1b4cd40804d5a79012f"
+    },
+    {
+      "path": "tests/test_brand_resources.py",
+      "bytes": 721,
+      "sha256": "12bf15a7eca272dbb44c0a3b474a7ce556edcb7a2afbd90f4a60db6cca84f0b6"
+    },
+    {
+      "path": "tests/test_brand_server.py",
+      "bytes": 1930,
+      "sha256": "69b7ec7aa18412872ae7876b88a2b22c147cd721d41429507e013118f46016e4"
+    },
+    {
+      "path": "tests/test_installer.py",
+      "bytes": 675,
+      "sha256": "754584833b4ace0ba96cfb8c9cf29b7afadb16945c28e2fb6611d92e127f1780"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 53131,
+      "sha256": "6290218ee7345bc32decf728bc7c222763e6bba52a8c73094d211d0f9ecfa000"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+BRAND BUILDER R6.1 OUTPUT CONTRACT
+
+Package separates:
+- raw brand context
+- guided brand form
+- Branding Method input
+- Brand Adapter template/draft
+- source references
+- method registry
+- final AI prompt
+
+Expected AI outputs:
+BRAND_STRATEGY_R6.json + TXT
+BRAND_ADAPTER_R6.json + TXT
+
+Brand Adapter handshake:
+schemaVersion = abrxos.brand-adapter.r6
+adapterVersion = R6.1
+canonFamily = R6
+canonRevision = R6.1

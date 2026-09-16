@@ -1,0 +1,15 @@
+PRIVATE VS PUBLIC
+
+Recommended now: PRIVATE.
+Reasons:
+- architecture still evolving;
+- examples/canon may later include client-sensitive context;
+- no formal open-source license decision has been made for the complete ecosystem;
+- some shipped references may have separate provenance.
+
+Before public release:
+- choose explicit licenses per original/open-source dependency;
+- remove client/proprietary examples;
+- run secrets scan;
+- separate generic canon from private methodology if needed;
+- document third-party attributions.

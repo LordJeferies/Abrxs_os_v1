@@ -1,0 +1,18 @@
+import copy as _abrxos_r6_copy
+from .r6 import validate_r6_project, load_r6_libraries
+_R6_LIBRARIES = load_r6_libraries(Path(__file__).resolve().parents[1] / "r6")
+_ABRXOS_IMPORT_TEXT_V3 = import_text
+_ABRXOS_COMPILE_LIENZO_V3 = compile_lienzo
+
+def _r6_annotate_project(project):
+    doc = _abrxos_r6_copy.deepcopy(project)
+    report = validate_r6_project(doc, _R6_LIBRARIES)
+    doc["r6Validation"] = report
+    doc["r6Version"] = "R6" if report.get("r6Detected") else "LEGACY_COMPAT"
+    return doc
+
+def import_text(name, text):
+    return _r6_annotate_project(_ABRXOS_IMPORT_TEXT_V3(name, text))
+
+def compile_lienzo(project, *args, **kwargs):
+    return _ABRXOS_COMPILE_LIENZO_V3(_r6_annotate_project(project), *args, **kwargs)

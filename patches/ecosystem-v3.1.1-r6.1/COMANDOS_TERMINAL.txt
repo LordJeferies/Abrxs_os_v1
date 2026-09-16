@@ -1,0 +1,16 @@
+ABRXOS ECOSYSTEM HOTFIX V3.1.1 · R6.1
+
+APLICAR
+zsh "/RUTA/ABRXOS_HOTFIX_ECOSYSTEM_V3_1_1_R6_1/APLICAR_HOTFIX.command"
+
+VERIFICAR
+zsh "/RUTA/ABRXOS_HOTFIX_ECOSYSTEM_V3_1_1_R6_1/VERIFICAR_HOTFIX.command"
+
+REVERTIR
+zsh "/RUTA/ABRXOS_HOTFIX_ECOSYSTEM_V3_1_1_R6_1/REVERTIR_HOTFIX.command"
+
+TRUCO MAC
+Escribe `zsh ` con espacio, arrastra el .command a Terminal y pulsa Enter.
+
+REQUISITO
+Geometra V3.1 R6 debe estar aplicado antes de este hotfix.

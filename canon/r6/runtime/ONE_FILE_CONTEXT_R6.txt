@@ -1,0 +1,907 @@
+ABRXOS R6 · ONE FILE CONTEXT · IA → GEOMETRA
+
+
+================================================================================
+FILE: 00_MASTER_CANON_R6.md
+================================================================================
+# ABRXOS MASTER CANON R6
+
+## 1. Una ficha = una pieza final
+
+Hook, desarrollo, rehook, cierre y demás partes pertenecen a una sola ficha cuando forman un solo video final.
+
+## 2. Dos relojes separados
+
+- `sourceRanges[].start/end`: tiempo absoluto del MASTER; lo usa Cutter.
+- `timeline[].start/end`: tiempo relativo dentro de la pieza montada; lo usa el Lienzo.
+
+Mover XR, imagen, Motion, SFX, CINE o Caption no autoriza a cambiar `sourceRanges`.
+
+## 3. Tracks T1–T9
+
+```text
+T9 CAPTIONS
+T8 MUSIC
+T7 SFX
+T6 VO
+T5 B-ROLL / CINE
+T4 MOTION
+T3 IMAGES / OBJECTS
+T2 XR
+T1 A-ROLL
+```
+
+`story/parts` es una capa narrativa de lectura/inspección y puede mostrarse como una fila adicional en el Lienzo, pero no sustituye T1–T9.
+
+## 4. Familias XR R6
+
+- `COMIC_INFO`
+- `COMIC_CC`
+- `TYPO`
+- `PHOTOS`
+- `OBJECTS`
+- `PHOTO_OBJECT`
+- `NO_XR`
+
+Los XR son conceptos visuales. Images, Motion y SFX permanecen como objetos independientes en sus tracks.
+
+## 5. CINE Beats
+
+No se crea T10. Los CINE beats se representan sobre las pistas actuales:
+
+- T5: evento `type: cine`;
+- T4: Motion de entrada/salida/hold;
+- T7: SFX opcional;
+- T8: automatización musical/silencio;
+- T9: caption visible/oculto según el beat.
+
+Canon inicial:
+
+- `CINE01_BLACK_HOLD`
+- `CINE02_FREEZE_HOLD`
+- `CINE03_PUNCH_CUT`
+
+## 6. Perfiles de edición
+
+- `XR_FULL` · **Cinematic Edit**
+- `MOTION_SFX` · **Dynamic Edit**
+- `SFX_ONLY` · **Clean Edit**
+
+El perfil limita/autoriza recursos; no obliga a usar efectos si el beat no los necesita.
+
+## 7. Densidad XR cuando el perfil es XR_FULL
+
+- Intro: 6 XR.
+- Clip vertical: 2–4 XR.
+- Clip horizontal: aproximadamente 1 XR cada 2 minutos.
+- Episodio completo: aproximadamente 1 XR cada 5 minutos.
+
+En horizontal/podcast la densidad es guía, no una cuota que deba empeorar la narración.
+
+## 8. Diversidad XR
+
+Prioridad:
+
+1. función narrativa;
+2. adecuación visual;
+3. diversidad;
+4. repetición.
+
+Regla fuerte: evitar dos XR de la misma familia consecutivos. Preferir recorrer familias diferentes antes de repetir, excepto cuando repetir sea claramente la mejor traducción visual del beat.
+
+## 9. Captions
+
+El timeline T9 muestra **Caption Groups semánticos**, no palabras sueltas ni cientos de microcajas.
+
+- objetivo normal: 8–15 palabras por group;
+- soft range: 6–17 palabras;
+- un `HERO_WORD` puede tener una sola palabra cuando existe justificación editorial;
+- nunca mezclar `partId` diferentes;
+- cada group puede tener `highlightWord` opcional;
+- dentro del group pueden existir `displayCues` internos sin multiplicar bloques en el timeline.
+
+## 10. COMIC_CC y captions
+
+`COMIC_CC` integra el texto hablado dentro de las imágenes. Durante ese intervalo:
+
+- T9 se conserva estructuralmente;
+- `visibility: hidden`;
+- `suppressedBy: <XR_ID>`;
+- el lector/Story superior continúa mostrando el discurso completo.
+
+## 11. Estado editorial y operativo
+
+Madurez:
+
+- BETA
+- ALFA
+- OMEGA
+
+Workflow:
+
+- PENDIENTE
+- REVISADO
+- HACIENDO
+- LISTO
+- PROGRAMADO
+- PUBLICADO
+
+No son la misma cosa.
+
+## 12. Alfa completa
+
+Una Alfa no significa “mucho texto”. Significa que otra persona puede producir la pieza sin tener que adivinar decisiones críticas.
+
+================================================================================
+FILE: 01_VIDEO_ALPHA_REQUIREMENTS_R6.md
+================================================================================
+# VIDEO ALFA · REQUIREMENTS R6
+
+Una ficha Alfa de video debe contener, cuando aplique:
+
+## Identidad
+- `canonicalId`
+- `type`
+- `title`
+- `thesis`
+- `objective`
+- `source`
+- `stage: ALFA`
+- `workflowStatus`
+- `schedule`
+- `editProfile`
+
+## Corte
+- `sourceRanges` verificables y en orden editorial.
+- `parts` con role/function/text/sourceRangeId.
+- `storyScripts` por route si existen rutas diferentes.
+
+## Timeline
+- Story/parts.
+- A-roll.
+- VO.
+- XR.
+- Images/Objects.
+- Motion.
+- B-roll/CINE.
+- SFX.
+- Music.
+- Caption Groups.
+
+No todas las pistas requieren contenido si no aplica.
+
+## XR
+Por cada XR:
+- familia/subtipo;
+- función;
+- anchor text;
+- start/end;
+- states;
+- assets;
+- placement recomendado;
+- Motion IDs;
+- SFX IDs opcionales;
+- caption policy;
+- continuidad;
+- QA.
+
+## Images / Objects
+Cada asset visual debe describir:
+- qué se ve;
+- contexto/detalle;
+- por qué corresponde al discurso;
+- prompt;
+- B-roll reference / búsqueda Google;
+- placement recomendado y razón;
+- duración;
+- Motion relacionado;
+- SFX relacionado si aplica;
+- estado de producción.
+
+## CINE
+Cada CINE beat debe declarar:
+- tipo;
+- función editorial;
+- intervalo;
+- visual;
+- Motion;
+- SFX opcional;
+- music automation;
+- silence si aplica;
+- caption policy.
+
+## QA
+La ficha debe declarar de forma visible qué está verificado y qué necesita revisión.
+
+================================================================================
+FILE: 02_STATIC_ALPHA_REQUIREMENTS_R6.md
+================================================================================
+# ESTÁTICOS ALFA · REQUIREMENTS R6
+
+Aplicable a:
+- carousel
+- quote
+- thread
+- note
+- pdf
+- script
+
+Usan `staticProduction.items`; no usan timeline audiovisual como vista principal.
+
+Cada item debe tener:
+- `itemId`
+- `index`
+- `function`
+- headline/title
+- body/text
+- sourceRange/sourceNote
+- dirección visual
+- descripción
+- prompt sin texto
+- prompt con texto o instrucciones para capa editable
+- continuidad
+- status
+
+El copy de publicación es un asset separado.
+
+================================================================================
+FILE: 03_TIMING_TRUTH_R6.md
+================================================================================
+# TIMING / SOURCE TRUTH R6
+
+## Tipos de evidencia temporal
+
+- `verified`: rango confirmado en transcript/audio.
+- `word_aligned`: resuelto con word timestamps.
+- `cue_based`: basado en cues de transcript, requiere revisión fina.
+- `editorial_planned`: tiempo relativo planificado en montaje.
+- `estimated`: estimado explícito, nunca presentar como source exacto.
+- `unresolved`: pendiente.
+
+## Regla
+
+Una Alfa puede existir con `needs_review`, pero no debe declararse Cutter-ready si los sourceRanges no son verificables.
+
+## Intro con VO
+
+El VO añadido no recibe sourceRange del master.
+Debe usar una duración medida o marcada como estimada/editorial_planned.
+
+================================================================================
+FILE: 04_XR_CANON_R6.md
+================================================================================
+# XR CANON R6
+
+## COMIC_INFO
+
+**Assets:** 1 imagen maestra.  
+**Duración total:** 12–20 s.  
+**Texto:** información editorial/complementaria por defecto.  
+**Caption policy:** AUTO.
+
+La composición debe poder leerse en cinco vistas:
+
+1. inferior izquierda;
+2. inferior derecha;
+3. superior izquierda;
+4. superior derecha;
+5. zoom out / composición completa, revelando también el elemento central más importante.
+
+No son cinco imágenes. Es una imagen rica recorrida mediante Motion.
+
+## COMIC_CC
+
+**Assets:** 3 imágenes.  
+**Duración:** 2–4 s por imagen.  
+**Encuadres:**
+
+1. A01 = plano amplio;
+2. A02 = close-up;
+3. A03 = plano medio.
+
+El texto integrado en cada imagen representa lo que se está diciendo durante su intervalo. No usar burbujas de cómic. El texto debe formar parte de la composición.
+
+**Caption policy:** HIDE. Los Caption Groups se conservan estructuralmente, pero se ocultan visualmente durante el XR.
+
+## TYPO
+
+**Assets raster:** 0.  
+**Duración total:** 6–12 s.  
+**Fondo:** plano/simple/brand/dark.
+
+Tres estados:
+
+1. frase normal;
+2. palabra o frase fuerte de 1–5 palabras en pantalla completa;
+3. frase normal de salida/resolución.
+
+## PHOTOS
+
+**Assets:** 3 fotografías distintas.  
+**Duración total:** 6–12 s.  
+**Orden:**
+
+1. A01 = close-up;
+2. A02 = plano amplio;
+3. A03 = close-up.
+
+Cada foto debe tener prompt, referencia de búsqueda, contexto, detalle, relación con la frase, placement recomendado, duración, Motion y SFX opcional.
+
+## OBJECTS
+
+**Assets:** 3 objetos.  
+**Duración total:** 6–12 s.
+
+Cada objeto debe declarar:
+
+- objeto;
+- `placementRecommendation`: foreground/background;
+- razón del placement;
+- dos emojis fallback;
+- prompt si se genera PNG/objeto;
+- B-roll/search reference;
+- Motion;
+- SFX opcional.
+
+Los emojis pueden sustituir el objeto si no se produce o si funcionan mejor editorialmente.
+
+## PHOTO_OBJECT
+
+**Assets:** 3 en total.  
+**Duración total:** 8–12 s.
+
+- A01 = fotografía de fondo.
+- A02 = objeto frontal.
+- A03 = objeto frontal.
+
+La foto contextualiza; los objetos enfatizan conceptos concretos.
+
+## NO_XR
+
+No significa “sin edición”. Puede tener:
+
+- A-roll;
+- zoom/pan/slow drift;
+- transición;
+- SFX;
+- Music automation;
+- Captions;
+- CINE beat.
+
+================================================================================
+FILE: 05_MOTION_CANON_R6.md
+================================================================================
+# MOTION CANON R6
+
+Motion responde: **¿qué hacemos con el elemento visual durante este intervalo?**
+
+No responde qué imagen crear ni qué sonido elegir.
+
+## Fases
+
+Un asset puede tener:
+
+- `motionIn`
+- `motionBody`
+- `motionOut`
+
+## Presets canónicos
+
+### Body
+- STATIC
+- ZOOM_IN
+- ZOOM_OUT
+- PAN_LEFT
+- PAN_RIGHT
+- PAN_UP
+- PAN_DOWN
+- ZOOM_IN_PAN
+- ZOOM_OUT_PAN
+- SLOW_DRIFT
+
+### Entrada
+- FADE_IN
+- SLIDE_IN_LEFT
+- SLIDE_IN_RIGHT
+- BLUR_IN
+- CUT_IN
+
+### Salida
+- FADE_OUT
+- SLIDE_OUT_LEFT
+- SLIDE_OUT_RIGHT
+- BLUR_OUT
+- CUT_OUT
+
+## Cada Motion debe decir
+
+- targetId;
+- start/end;
+- preset;
+- estado inicial;
+- estado final;
+- easing;
+- instrucciones operativas para CapCut/Canva/Premiere/DaVinci;
+- SFX vinculado opcional.
+
+## A-roll
+
+NO_XR puede seguir teniendo Motion. Ejemplo: push-in lento sobre una frase, reencuadre, fade, punch-in o slow drift.
+
+================================================================================
+FILE: 06_CINE_CANON_R6.md
+================================================================================
+# CINE BEATS CANON R6
+
+CINE es dirección narrativa de montaje. No cuenta como XR y no crea una pista nueva.
+
+Se guarda técnicamente como evento T5 `track=broll`, `type=cine`, con hijos/relaciones en Motion, SFX y Music.
+
+## CINE01_BLACK_HOLD
+
+Función: dejar caer una frase, pérdida, shock o cambio de acto mediante vacío visual/sonoro.
+
+- hold default: 1.0 s;
+- rango recomendado: 0.5–1.5 s;
+- visual: negro #000;
+- entrada: FADE_OUT o CUT según fuerza;
+- salida: FADE_IN o CUT;
+- SFX opcional: LOW_BOOM / EMPHASIS;
+- Music: DUCK → MUTE → RESUME cuando aplique;
+- captions: ocultos durante el hold negro.
+
+## CINE02_FREEZE_HOLD
+
+Función: detener una revelación, confesión, pérdida, dato o beat importante sobre una imagen existente.
+
+- hold default: 1.0 s;
+- rango recomendado: 0.8–1.5 s;
+- visual: último frame congelado;
+- desaturación opcional: 0–25 %;
+- Motion opcional: SLOW_DRIFT muy leve;
+- SFX opcional: LOW_BOOM / EMPHASIS;
+- Music: DUCK;
+- salida habitual: CUT.
+
+## CINE03_PUNCH_CUT
+
+Función: avanzar con impacto en un giro, revelación, contraste, plot twist o afirmación fuerte.
+
+- transición: HARD CUT;
+- target hold: 1.5–4 s;
+- target: nuevo encuadre de A-roll, B-roll, foto, XR o close-up;
+- SFX opcional: IMPACT / CLICK_DEEP / WHOOSH;
+- Music: duck corto opcional.
+
+## SFX
+
+Los tres CINE beats pueden llevar SFX cuando el momento lo justifique. No es obligatorio.
+
+================================================================================
+FILE: 07_SFX_MUSIC_CANON_R6.md
+================================================================================
+# SFX + MUSIC CANON R6
+
+## SFX
+
+Biblioteca pequeña y reutilizable. Repetir CLICK/WHOOSH/EMPHASIS es preferible a inventar diez sonidos diferentes porque existan diez eventos.
+
+Familias iniciales:
+
+- CLICK
+- KEYBOARD
+- WHOOSH
+- CAMERA
+- GOOD
+- WRONG
+- LOW_BOOM
+- EMPHASIS
+- SUSPENSE
+- TENSION
+- RISER
+- IMPACT
+- CLICK_DEEP
+
+Cada evento SFX debe decir:
+
+- libraryId;
+- variante;
+- trigger;
+- propósito;
+- placement temporal;
+- start/end;
+- mix/ducking;
+- status.
+
+El SFX no es obligatorio por XR ni por Motion.
+
+## MUSIC
+
+La IA no inventa una canción concreta. Describe:
+
+- función musical;
+- qué tipo de track buscar;
+- cuándo subir;
+- cuándo bajar;
+- cuándo mutear;
+- cuándo reanudar;
+- por qué.
+
+Automatizaciones:
+
+- BASE
+- SWELL
+- DUCK
+- MUTE
+- RESUME
+- FADE_IN
+- FADE_OUT
+
+================================================================================
+FILE: 08_CAPTIONS_CANON_R6.md
+================================================================================
+# CAPTIONS CANON R6
+
+## Objetivo
+
+El timeline no debe llenarse de palabras individuales. T9 representa **unidades semánticas de información**.
+
+## Caption Group normal
+
+- target: 8–15 palabras;
+- soft range: 6–17 palabras cuando preservar sintaxis/sentido es mejor;
+- no cruzar `partId`;
+- no mezclar Hook con Desarrollo;
+- una palabra a resaltar es opcional;
+- el highlight normalmente debe existir literalmente en `sourceText`.
+
+## HERO_WORD
+
+Una sola palabra puede constituir el group/display cuando su fuerza editorial lo justifica.
+
+Debe guardar:
+
+- sourceContext;
+- reason;
+- highlightWord;
+- `displayMode: hero_word`.
+
+## Display Cues
+
+Un Caption Group puede tener varios `displayCues` internos. Eso permite mostrar una frase en dos pasos o aislar una palabra fuerte sin crear tres cajas T9.
+
+Ejemplo:
+
+```text
+GROUP
+"Yo pensaba que todo esto era absolutamente imposible de lograr"
+
+Cue 1: "Yo pensaba que todo esto"
+Cue 2: "IMPOSIBLE" · hero_word
+Cue 3: "de lograr"
+```
+
+El Timeline sigue mostrando un solo bloque GROUP.
+
+## COMIC_CC
+
+Captions se conservan pero:
+
+```text
+visibility = hidden
+suppressedBy = XR_COMIC_CC_ID
+```
+
+El lector Story superior conserva el discurso continuo.
+
+## COMIC_INFO
+
+Caption policy AUTO porque el texto del cómic suele ser complementario y no necesariamente duplica la voz.
+
+## Compatibilidad Geometra V2
+
+Guardar `captionSchema: "abrxos.caption.v2"` y `captionPolicyVersion: "R6"`. El primer campo evita que Geometra V2 vuelva a microsegmentar un Caption Group ya construido; el segundo identifica que su política semántica es R6.
+
+================================================================================
+FILE: 09_CALENDAR_KANBAN_CANON_R6.md
+================================================================================
+# CALENDAR + KANBAN CANON R6
+
+Toda ficha importable debe poder vivir en Geometra/Lienzo.
+
+## Workflow
+
+- PENDIENTE
+- REVISADO
+- HACIENDO
+- LISTO
+- PROGRAMADO
+- PUBLICADO
+
+## Schedule
+
+```json
+{
+  "date": "",
+  "time": "",
+  "platforms": [],
+  "publishedAt": null
+}
+```
+
+Regla recomendada:
+
+- LISTO + asignar fecha → PROGRAMADO.
+- PROGRAMADO + quitar fecha → LISTO.
+
+## Stage
+
+BETA/ALFA/OMEGA es madurez de ficha, no estado de producción.
+
+================================================================================
+FILE: 10_XR_SELECTION_GUIDE_R6.md
+================================================================================
+# XR SELECTION GUIDE R6
+
+La IA debe decidir por función, no por rotación mecánica.
+
+## COMIC_INFO
+Útil cuando hay:
+- sistema;
+- proceso;
+- comparación;
+- contradicción;
+- varias piezas de información relacionadas;
+- necesidad de recorrer 4 cuadrantes + centro.
+
+## COMIC_CC
+Útil cuando:
+- el texto hablado es el protagonista;
+- tres microescenas pueden convertir la frase literal en imágenes;
+- conviene integrar letras dentro de cada escena.
+
+## TYPO
+Útil cuando:
+- hay una palabra/frase corta con mucha fuerza;
+- el concepto gana potencia quitando distracción visual;
+- funciona normal → hero → normal.
+
+## PHOTOS
+Útil cuando:
+- contexto real/documental ayuda más que un gráfico;
+- se necesitan tres perspectivas de un lugar/persona/proceso.
+
+## OBJECTS
+Útil cuando:
+- hay conceptos concretos/símbolos fáciles de representar como objetos;
+- superponer tres objetos puede enfatizar la explicación.
+
+## PHOTO_OBJECT
+Útil cuando:
+- se necesita contexto ambiental + dos conceptos protagonistas superpuestos.
+
+## NO_XR
+Útil cuando:
+- la expresión del speaker es más fuerte que cualquier recurso;
+- la toma debe respirar;
+- Motion/SFX/CINE bastan.
+
+## Diversidad
+
+Evitar repetir familia consecutivamente. Preferir usar familias diferentes antes de volver a una ya usada, pero nunca elegir una familia peor sólo para “cumplir variedad”.
+
+================================================================================
+FILE: 11_EDITORIAL_PLAN_PARSER_R6.md
+================================================================================
+# PARSER DE PLAN EDITORIAL NATURAL R6
+
+Una IA puede recibir un texto humano como:
+
+```text
+[Pantalla negra. Sin música.]
+AMANDA: "..."
+[La música cae.]
+NARRADOR: "..."
+[Negro antes de completar la frase.]
+```
+
+Debe convertirlo en nodos de plan antes de construir la ficha.
+
+## Tipos de nodo
+
+### SOURCE_SPEECH
+Texto de speaker que debe localizarse en la transcripción/master.
+
+### VO_ADDED
+Narrador/VO añadido por el plan. No fingir que existe en source.
+
+### EDIT_DIRECTION
+Instrucción entre corchetes.
+
+### TITLE_CARD
+Texto gráfico/título.
+
+### OPEN_LOOP
+Instrucción de cortar antes de una respuesta/revelación.
+
+## Traducción de EDIT_DIRECTION
+
+- negro/pantalla negra → CINE01 o black asset.
+- freeze → CINE02.
+- corte seco de impacto → CINE03.
+- música entra/regresa → Music FADE_IN/RESUME.
+- música cae → DUCK/FADE_OUT/MUTE según frase.
+- silencio → Music MUTE + silence marker.
+- zoom/pan/fade/slide → Motion.
+- corte a otro momento → A-roll/B-roll route/edit decision.
+
+## Regla
+
+No convertir toda instrucción en un efecto. Primero determinar la función narrativa y después escoger el recurso mínimo que la cumpla.
+
+================================================================================
+FILE: 12_CAPTION_GROUPING_ALGORITHM_R6.md
+================================================================================
+# ALGORITMO EDITORIAL DE CAPTION GROUPS R6
+
+1. Procesar una sola `partId` a la vez.
+2. Separar por final de oración/cláusula antes de contar palabras.
+3. Formar grupos semánticos de 8–15 palabras.
+4. Permitir 6–17 si preserva mejor sintaxis/sentido.
+5. Elegir `highlightWord` sólo si aporta jerarquía; puede ser null.
+6. Si una palabra merece aislamiento excepcional, crear `displayMode=hero_word` con razón editorial.
+7. Si un group necesita mostrar 2–3 momentos visuales, usar `displayCues` internos y mantener un solo bloque T9.
+8. Si COMIC_CC cubre el intervalo, mantener el group pero `visibility=hidden`, `suppressedBy=XR_ID`.
+9. El lector Story superior siempre conserva el texto continuo.
+
+================================================================================
+FILE: 13_CINE_SELECTION_GUIDE_R6.md
+================================================================================
+# CINE SELECTION GUIDE R6
+
+## BLACK_HOLD
+Elegir cuando el beat necesita vacío: pérdida, shock, frase que debe caer, cambio de acto, open loop fuerte.
+
+## FREEZE_HOLD
+Elegir cuando conviene detenerse sobre una imagen existente: revelación, confesión, dato, gesto o momento significativo.
+
+## PUNCH_CUT
+Elegir cuando el beat debe acelerar/avanzar con impacto: contraste, giro, plot twist, afirmación fuerte o nueva idea.
+
+## Regla
+CINE no se usa sólo para “hacerlo cinematográfico”. Debe justificar un cambio de ritmo, peso o acto.
+
+================================================================================
+FILE: PROMPT_01_PLAN_EDITORIAL_MAS_TRANSCRIPCION_A_ALFA_R6.txt
+================================================================================
+ACTÚA COMO ARQUITECTO DE FICHAS ALFA ABRXOS R6 PARA GEOMETRA.
+
+RECIBIRÁS:
+1. PROJECT_CONFIG_R6.json
+2. BRAND_ADAPTER_R6.json opcional
+3. CANON/LIBRARIES R6
+4. TRANSCRIPCIÓN con timecodes
+5. un PLAN EDITORIAL ya decidido escrito en lenguaje natural, parecido a un guion de montaje con instrucciones entre corchetes
+6. plantilla de ficha Alfa del tipo correspondiente
+
+TU TAREA
+Convertir el PLAN EDITORIAL en una ficha ALFA completa, preservando sus decisiones y alineando cada fragmento hablado con la transcripción.
+
+REGLA PRINCIPAL
+NO rediseñes el contenido ya decidido. El plan del usuario gana. Tu trabajo es estructurarlo y completar las capas de producción.
+
+INTERPRETACIÓN DEL PLAN
+- Texto de AMANDA/JOC/u otro speaker que exista en la transcripción = `kind: source` y debe recibir sourceRange exacto cuando el transcript lo permita.
+- NARRADOR/VO añadido = `kind: vo_added`; no fingir sourceRange del master.
+- Instrucciones entre corchetes = dirección editorial; no son texto pronunciado.
+- “pantalla negra / negro / silencio / freeze / corte seco” puede convertirse en CINE beat cuando corresponda.
+- “entra/cae/crece/regresa la música” se convierte en Music automation.
+- “pausa / corte / zoom / desvanece / entra desde…” se convierte en Motion/CINE/B-roll según función.
+- “corte antes de la respuesta” es una decisión editorial de open loop; no completar lo que el plan decidió ocultar.
+
+SOURCE ALIGNMENT
+Para cada fragmento source:
+1. buscar el texto literal o su match inequívoco en la transcripción;
+2. guardar texto literal de transcript;
+3. resolver `sourceRanges`;
+4. conservar el orden editorial del plan aunque los rangos estén desordenados cronológicamente;
+5. si hay ambigüedad, no inventar: `timingStatus: needs_review` + warning.
+
+TIMELINE
+Construir:
+- story/parts;
+- T1 A-roll;
+- T6 VO añadido;
+- T2 XR cuando el editProfile lo permita;
+- T3 Images/Objects;
+- T4 Motion;
+- T5 B-roll/CINE;
+- T7 SFX;
+- T8 Music;
+- T9 Caption Groups.
+
+XR R6
+Usar sólo cuando aporta función narrativa:
+- COMIC_INFO
+- COMIC_CC
+- TYPO
+- PHOTOS
+- OBJECTS
+- PHOTO_OBJECT
+- NO_XR
+
+Si editProfile = XR_FULL / Cinematic Edit:
+- Intro: exactamente 6 XR.
+- Evitar la misma familia consecutiva.
+- Preferir familias distintas antes de repetir, sin sacrificar función narrativa.
+
+REGLAS DE LAS FAMILIAS
+- COMIC_INFO: 1 imagen, 5 vistas, 12–20 s.
+- COMIC_CC: 3 imágenes, wide → close-up → medium, 2–4 s c/u, texto hablado integrado, captions ocultos.
+- TYPO: 3 estados, 6–12 s, normal → hero 1–5 palabras → normal.
+- PHOTOS: 3 fotos distintas, close-up → wide → close-up, 6–12 s total.
+- OBJECTS: 3 objetos, 6–12 s, placement recomendado + 2 emojis fallback por objeto.
+- PHOTO_OBJECT: 1 foto background + 2 objetos foreground, 8–12 s.
+
+CINE
+Puede usar:
+- CINE01_BLACK_HOLD
+- CINE02_FREEZE_HOLD
+- CINE03_PUNCH_CUT
+No cuentan como XR.
+Los SFX son opcionales y sólo se colocan si el beat los justifica.
+
+IMAGES/OBJECTS
+Cada asset debe contener:
+- descripción;
+- contextAndDetail;
+- whatIsVisible;
+- whyItMatchesSpeech;
+- prompt autónomo;
+- brollReference;
+- googleSearchQuery;
+- placementRecommendation;
+- placementReason;
+- start/end/duration;
+- motionIds;
+- linkedSfxIds;
+- status = pending_creation salvo evidencia de que ya existe.
+
+MOTION
+Usar presets de la librería R6. Motion describe cómo se mueve/presenta un asset existente. In/out/body son independientes.
+
+SFX
+Usar la biblioteca R6; repetir familias reconocibles es mejor que inventar sonidos nuevos.
+
+MUSIC
+No inventar canción. Describir selección y automatización BASE/SWELL/DUCK/MUTE/RESUME/FADE.
+
+CAPTIONS
+- Timeline = Caption Groups, no palabras individuales.
+- 8–15 palabras objetivo; soft 6–17.
+- Nunca cruzar partId.
+- highlightWord opcional.
+- HERO_WORD sólo si una palabra fuerte merece aparecer sola.
+- displayCues internos pueden dividir visualmente el group sin crear más bloques T9.
+- cada Caption Group debe llevar `captionSchema: "abrxos.caption.v2"` y `captionPolicyVersion: "R6"` para que Geometra V2 lo preserve.
+- COMIC_CC: mantener groups pero visibility=hidden y suppressedBy=XR_ID.
+
+GEOMETRA
+La ficha debe incluir:
+- stage=ALFA;
+- workflowStatus=PENDIENTE salvo instrucción contraria;
+- schedule con date/time/platforms;
+- editProfile code + commercialName;
+- QA.
+
+OUTPUT
+Devuelve un único JSON válido:
+{
+  "schemaVersion":"abrxos.content-project.r6",
+  "projectId":"...",
+  "title":"...",
+  "sources":{},
+  "pieces":[...]
+}
+
+Cuando el usuario diga “listo para Geometra”, no escribas explicación fuera del JSON.

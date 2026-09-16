@@ -1,0 +1,3 @@
+BRAND BUILDER MASTER
+
+Use it to package brand context for external AI. It does not run AI. Start a brand from raw text/form/references, compile package, run AI externally, keep Brand Strategy and Brand Adapter separate, then feed approved Brand Adapter to Content Builder.

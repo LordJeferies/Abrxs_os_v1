@@ -1,0 +1,24 @@
+FIRST PUSH TO GITHUB
+
+1. Capture current installed code:
+   zsh tools/CAPTURAR_INSTALACION_ACTUAL.command
+
+2. Verify:
+   zsh tools/VERIFY_ALL.command
+
+3. Generate manifests:
+   zsh tools/GENERAR_MANIFEST.command
+
+4. Prepare Git:
+   zsh tools/PREPARAR_REPO_GITHUB.command
+
+5. Create a PRIVATE repository in GitHub, for example:
+   ABRXOS-ecosystem-r6
+
+With GitHub CLI:
+   gh repo create ABRXOS-ecosystem-r6 --private --source=. --remote=origin --push
+
+Or manual remote:
+   git remote add origin https://github.com/TU-USUARIO/ABRXOS-ecosystem-r6.git
+   git branch -M main
+   git push -u origin main

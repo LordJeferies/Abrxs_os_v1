@@ -1,0 +1,8 @@
+PROJECT: JOC55_AMANDA
+PIECES: 1
+CRITICAL: 0
+WARNINGS: 3
+  ⚠ INTRO_AMANDA_NEW_01: video ALFA sin sourceRanges; no Cutter-ready
+  ⚠ INTRO_AMANDA_NEW_01/P02_CAP_G01: caption group tiene 5 palabras; soft range 6-17
+  ⚠ INTRO_AMANDA_NEW_01/P11_CAP_G01: caption group tiene 3 palabras; soft range 6-17
+RESULT: PASS estructural R6

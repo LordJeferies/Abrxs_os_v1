@@ -1,0 +1,3 @@
+KANBAN
+
+Drag between PENDIENTE, REVISADO, HACIENDO, LISTO, PROGRAMADO, PUBLICADO. This changes workflowStatus only; stage remains Beta/Alfa/Omega.

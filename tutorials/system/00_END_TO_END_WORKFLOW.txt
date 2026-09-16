@@ -1,0 +1,22 @@
+END-TO-END ABRXOS WORKFLOW
+
+1. BRAND BUILDER
+Create/maintain Brand Adapter.
+2. CONTENT BUILDER
+Choose case, attach Brand Adapter/project config/transcript/plan/current ficha.
+3. EXTERNAL AI
+Run package; return JSON/TXT.
+4. GEOMETRA
+Import/update same canonicalId.
+5. VALIDATE
+Alpha / Cutter / Projection readiness.
+6. LIENZO
+Inspect/edit timeline, XR, assets, SFX, captions, Kanban, Calendar.
+7. CUTTER
+Use stable sourceRanges to build media cuts.
+8. PRODUCTION
+Complete assets/checklist.
+9. PROGRAM/PUBLISH
+workflowStatus + schedule.
+10. ITERATE
+For AI updates, copy the latest ficha from Lienzo/Geometra, not an old Beta.

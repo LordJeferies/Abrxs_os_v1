@@ -1,0 +1,13 @@
+OPEN APPS FROM DESKTOP
+
+Finder/Desktop:
+- double click `ABRXOS Geometra V3.app`
+- double click `ABRXOS Content Builder.app`
+- double click `ABRXOS X Brand Builder.app`
+
+Terminal equivalents:
+open "$HOME/Desktop/ABRXOS Geometra V3.app"
+open "$HOME/Desktop/ABRXOS Content Builder.app"
+open "$HOME/Desktop/ABRXOS X Brand Builder.app"
+
+If macOS blocks a locally created app the first time: Control-click/Right-click → Open → Open. Do not reinstall unless the app bundle is actually missing.

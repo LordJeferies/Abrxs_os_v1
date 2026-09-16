@@ -1,0 +1,1056 @@
+ABRXOS R6.1 · CANON CONTEXT
+
+==========================================================================================
+00_START/00_LEEME_PRIMERO_R6_1.txt
+==========================================================================================
+ABRXOS CANON R6.1 · RAMA INTRO / SOURCE ALIGNMENT / LIENZO
+
+PROPÓSITO
+Este paquete NO reemplaza R6. Lo audita, lo conecta con Geometra V3 real y agrega lo que faltaba para que un intro diseñado en lenguaje natural pueda convertirse sin ambigüedad en:
+
+PLAN EDITORIAL
+→ SOURCE ALIGNMENT
+→ FICHA ALFA
+→ GEOMETRA
+→ LIENZO
+→ TIMELINE / INSPECTOR / KANBAN / CALENDAR
+→ CUTTER
+
+TIPO DE CAMBIO
+R6.1 es principalmente ADDITIVE + CLARIFICATION.
+Hay una REPLACEMENT controlada para captions de piezas R6: la política nueva usa Caption Groups 8–15 palabras (soft 6–17), no la microsegmentación 3–5 palabras de la implementación V3 inicial.
+
+ARCHIVOS CLAVE
+01_SYSTEM/01_AUDITORIA_R6_VS_GEOMETRA_V3.txt
+01_SYSTEM/02_PIPELINE_COMPLETO_DEL_PROGRAMA.txt
+01_SYSTEM/03_MODULOS_Y_RESPONSABILIDADES.txt
+02_CANON/01_SOURCE_TRUTH_Y_MICROTRIM_R6_1.txt
+02_CANON/02_VOICEOVER_ADDED_R6_1.txt
+02_CANON/03_FICHA_INTRO_ALFA_R6_1.txt
+02_CANON/04_LIENZO_PROJECTION_CONTRACT_R6_1.txt
+03_INTRO_AMANDA/01_TIMESTAMP_MAP_INTRO_AMANDA_R6_1.txt
+03_INTRO_AMANDA/INTRO_AMANDA_SOURCE_ALIGNMENT_R6_1.json
+03_INTRO_AMANDA/03_BLUEPRINT_XR_SFX_MOTION_R6_1.txt
+04_PATCHES/01_GEOMETRA_V3_1_R6_PATCH_LIST.txt
+
+REGLA #1
+NO convertir parent cue time en word-level exact time por interpolación.
+Cuando una frase empieza o termina dentro de un cue, guardar el parent cue y microtrim anchors; sourceRanges finales se escriben después de resolver ese microtrim.
+
+REGLA #2
+NARRADOR = VO_ADDED. No tiene sourceRange del master. Tiene placement editorial y, hasta grabarse, duración editorial_planned.
+
+REGLA #3
+app-data/documento canónico es la verdad. UI/renderer sólo proyecta.
+
+==========================================================================================
+00_START/01_QUE_USAR_AHORA.txt
+==========================================================================================
+ABRXOS R6.1 · QUÉ USAR AHORA
+
+PARA ESTE INTRO
+1. 03_INTRO_AMANDA/00_USER_INTRO_PLAN_REFERENCE.txt
+2. 03_INTRO_AMANDA/INTRO_AMANDA_SOURCE_ALIGNMENT_R6_1.json
+3. 03_INTRO_AMANDA/01_TIMESTAMP_MAP_INTRO_AMANDA_R6_1.txt
+4. 03_INTRO_AMANDA/03_BLUEPRINT_XR_SFX_MOTION_R6_1.txt
+5. 06_BASELINE_R6/ONE_FILE_CONTEXT_R6.txt
+6. Project Config / Brand Adapter
+
+ANTES DEL CUTTER
+Ejecutar/realizar resolución de microtrims. Luego construir sourceRanges finales.
+
+PARA PREVISUALIZAR ESTRUCTURA EN GEOMETRA
+03_INTRO_AMANDA/INTRO_AMANDA_ALFA_PREBUILD_R6_1.json
+
+IMPORTANTE
+Ese PREBUILD es deliberadamente NO Cutter-ready porque sourceRanges está vacío. Sirve para validar que el Lienzo puede mostrar SOURCE, VO, 6 XR, assets, motions, CINE, SFX, Music y Caption Groups mientras se resuelve source truth fino.
+
+PARA ACTUALIZAR GEOMETRA
+Leer 04_PATCHES/01_GEOMETRA_V3_1_R6_PATCH_LIST.txt.
+
+==========================================================================================
+00_START/02_CHANGELOG_R6_1.txt
+==========================================================================================
+ABRXOS R6.1 · CHANGELOG DE ESTA RAMA
+
+ADDED
+- sourceAlignment previa a sourceRanges.
+- microtrim anchors y policy explícita.
+- VO_ADDED placement contract.
+- route semantics: route = alternativa editorial completa.
+- source correction field/logic.
+- Lienzo projection contract para SOURCE/VO/XR/CINE/SFX/Music/Caption Group.
+- ejemplo Amanda con 25 source nodes localizados.
+- prebuild importable con 6 XR, T1–T9, CINE, Motion, SFX, Music y Caption Groups.
+- production checklist recomendado.
+- Kanban/Geometra patch identificado.
+- shortSourceException para captions de partes completas <6 palabras.
+
+CHANGED / CLARIFIED
+- «me sobresaltaré completamente» se corrige contra transcript a «me sobresaturé completamente».
+- Narrador nunca recibe sourceRange de master.
+- R6 captions tienen precedence por captionPolicyVersion=R6.
+
+UNCHANGED
+- sourceRanges = Cutter/master truth.
+- timeline = edit-relative.
+- T1–T9.
+- CINE no cuenta como XR.
+- stage != workflowStatus.
+- renderer no define dominio.
+
+MIGRATION
+Ninguna destructiva. R5/R6 legacy se conserva.
+
+==========================================================================================
+01_SYSTEM/01_AUDITORIA_R6_VS_GEOMETRA_V3.txt
+==========================================================================================
+ABRXOS · AUDITORÍA R6 VS GEOMETRA V3
+
+CONCLUSIÓN
+R6 SÍ sirve como canon de producción para el sistema, pero Geometra V3 todavía no explota visualmente todas sus capacidades. La compatibilidad de datos es buena porque V3 conserva campos desconocidos y normaliza pieces[]; la compatibilidad de UI es parcial y requiere patch V3.1.
+
+R6 QUE YA ENCAJA SIN CAMBIAR KERNEL
+- stage BETA/ALFA/OMEGA.
+- workflowStatus PENDIENTE/REVISADO/HACIENDO/LISTO/PROGRAMADO/PUBLICADO.
+- schedule.
+- sourceRanges como tiempo master.
+- timeline start/end como tiempo editorial.
+- T1–T9.
+- VO sin sourceRange falso.
+- staticProduction para carruseles.
+- renderer packs.
+- Cutter boundary por ID/type/source/sourceRanges.
+- campos extra en piezas y eventos.
+- custom XR/SFX por datos/extension/fallback.
+
+R6 QUE V3 PUEDE CONSERVAR PERO NO REPRESENTA AÚN DE FORMA ESPECIALIZADA
+1. xrFamily semánticas R6: COMIC_INFO, COMIC_CC, TYPO, PHOTOS, OBJECTS, PHOTO_OBJECT, NO_XR.
+   V3 no debe mapearlas ciegamente a XR00–XR09. Debe reconocerlas como catálogo R6 o fallback custom.
+2. CINE en T5 con type=cine.
+   El runtime actual puede conservarlo, pero necesita inspector CINE específico.
+3. editProfile.
+   Debe mostrar código + nombre comercial.
+4. Visual Asset R6.
+   Debe mostrar contextAndDetail, whatIsVisible, whyItMatchesSpeech, prompt, search, placement y status.
+5. Caption Groups R6.
+   Es el punto de incompatibilidad funcional más importante: V3 inicial segmentó captions cortos; R6 exige groups semánticos 8–15 y displayCues internos.
+6. productionChecklist.
+   Puede persistir hoy, pero todavía no tiene UI completa.
+
+KANBAN
+LIENZO V3: drag/drop ya cambia workflowStatus.
+GEOMETRA V3 app: columnas existen, pero falta drag/drop y POST /api/update_piece. Esto es patch P0 y NO exige schema nuevo.
+
+R6.1 AÑADE
+- sourceAlignment como etapa previa a sourceRanges cuando hay microtrims pendientes;
+- contrato VO_ADDED por placement;
+- source correction explícita;
+- projection contract para que el Lienzo sepa qué inspector abrir;
+- especificación de ghost/unresolved timing para revisión;
+- test case real: nuevo intro Amanda.
+
+==========================================================================================
+01_SYSTEM/02_PIPELINE_COMPLETO_DEL_PROGRAMA.txt
+==========================================================================================
+ABRXOS · PIPELINE COMPLETO DEL PROGRAMA
+
+1. INPUT
+- plan editorial natural;
+- transcript SRT/TXT;
+- ficha Beta/Alfa JSON;
+- HTML Story Editor/Lienzo;
+- Project Config;
+- Brand Adapter;
+- catálogos XR/SFX/Motion/CINE/Captions.
+
+2. PLAN PARSER
+Clasifica cada nodo natural:
+SOURCE_SPEECH
+VO_ADDED
+EDIT_DIRECTION
+TITLE_CARD
+OPEN_LOOP
+
+3. SOURCE ALIGNMENT
+Sólo SOURCE_SPEECH se busca en transcript/master.
+Salida:
+- parent cue range;
+- source literal;
+- cueIds;
+- start/end si el cue entero coincide;
+- microtrim anchors si la frase está dentro del cue;
+- timingStatus;
+- source corrections.
+
+4. SOURCE QA
+No pasar a sourceRanges finales mientras existan microtrims críticos sin resolver.
+Opciones:
+- word timestamps;
+- audio alignment;
+- MLX/ASR local;
+- revisión humana.
+
+5. ALFA BUILDER
+Combina plan + source map + canon + brand:
+- parts;
+- storyScripts/routes;
+- T1 A-roll;
+- T6 VO;
+- 6 XR si profile XR_FULL y la función lo justifica;
+- T3 images/objects;
+- T4 motion;
+- T5 b-roll/CINE;
+- T7 SFX;
+- T8 music automation;
+- T9 Caption Groups;
+- cover/copy;
+- productionChecklist;
+- QA.
+
+6. GEOMETRA IMPORTER
+HTML app-data/seed/editorialData o JSON → normalize_project → abrxos.document.v3.
+R6 puede entrar como abrxos.content-project.r6 porque pieces[] es compatible y V3 conserva campos adicionales.
+
+7. LIBRARY
+projectId + canonicalId = identidad de actualización.
+Mismo canonicalId reemplaza/actualiza la misma ficha, no crea contenido nuevo.
+
+8. COMPILER
+Proyecto + selección de fichas + renderer → Lienzo standalone.
+Se embebe app-data + catalog snapshot + runtime + renderer.
+
+9. LIENZO
+El runtime proyecta el documento:
+video → Story + Inspector + Timeline.
+carousel → Carousel Workspace.
+calendar → schedule.
+kanban → workflowStatus.
+
+10. EDICIÓN
+Click selecciona; drag real mueve después de threshold. Edición modifica state.project, no DOM como verdad.
+
+11. EXPORT / REIMPORT
+Exportar HTML vuelve a escribir app-data actualizado. Puede reimportarse a Geometra por IDs estables.
+
+12. CUTTER
+Consume sourceRanges finales. No debe cortar a partir de XR/CINE/SFX/timeline editorial salvo un futuro Cut Override aprobado.
+
+==========================================================================================
+01_SYSTEM/03_MODULOS_Y_RESPONSABILIDADES.txt
+==========================================================================================
+ABRXOS · MÓDULOS Y RESPONSABILIDADES
+
+M01 SOURCE INGEST
+Lee transcript/master metadata/HTML/JSON.
+No decide creatividad.
+
+M02 EDITORIAL PLAN PARSER
+Convierte lenguaje humano en nodos SOURCE_SPEECH / VO_ADDED / EDIT_DIRECTION / TITLE_CARD / OPEN_LOOP.
+
+M03 SOURCE ALIGNER
+Busca source speech, genera parent cues y microtrim tasks.
+
+M04 CANONICAL NORMALIZER
+Convierte inputs compatibles en documento canónico V3 sin borrar campos R6.
+
+M05 LIBRARY / VERSIONING
+Acumula proyectos y piezas por IDs estables.
+
+M06 CATALOG REGISTRY
+XR / SFX / Motion / CINE / Captions / Music / Edit Profiles.
+
+M07 ALFA COMPLETENESS VALIDATOR
+Comprueba que XR tenga states/assets/prompts, SFX trigger, Motion y tiempos; no sólo nombres.
+
+M08 RENDERER REGISTRY
+JOC Classic / Shadcn Studio / futuros. Cambia UI, no dominio.
+
+M09 LIENZO COMPILER
+Genera HTML standalone con app-data.
+
+M10 LIENZO RUNTIME
+Selección, inspector, timeline, history, calendar, kanban, carousel, export, merge.
+
+M11 PRODUCTION STATE
+workflowStatus + productionChecklist + assetStatus.
+
+M12 CUTTER BRIDGE
+Valida y exporta sourceRanges; nunca reinterpreta decisiones visuales.
+
+M13 QA / REGRESSION
+Tests de import, roundtrip, source truth, timeline, renderer, Cutter, responsive.
+
+M14 FUTURE PLAYER / VIDEOFLOW
+Reproducción/proxy/Virtual Cut. Debe leer el mismo documento, no crear otra lógica editorial.
+
+==========================================================================================
+01_SYSTEM/04_ACTUALIZACION_GENERAL_DEL_SISTEMA_R6_1.txt
+==========================================================================================
+ABRXOS · ACTUALIZACIÓN GENERAL DEL SISTEMA A PARTIR DE R6/R6.1
+
+ANTES
+Una ficha rica podía decir XR/SFX pero la frontera entre plan natural, source alignment y timeline final no estaba completamente formalizada.
+
+AHORA
+1. PLAN EDITORIAL NATURAL es parseable como nodos tipados.
+2. SOURCE SPEECH se alinea antes de crear sourceRanges finales.
+3. VO_ADDED tiene placement y duración propia.
+4. CINE vive en tracks existentes y no cuenta como XR.
+5. XR usa familias semánticas R6 y assets internos explícitos.
+6. Motion/SFX/Music son objetos temporales separados.
+7. Captions pasan a Caption Groups semánticos R6.
+8. productionChecklist y workflowStatus separan avance real de madurez Beta/Alfa/Omega.
+9. Lienzo necesita inspectors especializados por tipo de evento.
+10. Cutter permanece desacoplado: sourceRanges siguen siendo su contrato base.
+
+CÓMO SE ADAPTA SIN ROMPER
+- R6/R6.1 añade campos; V3 preserva campos desconocidos.
+- renderer/runtime se actualiza para proyectarlos.
+- legacy R5 sigue siendo válido.
+- policyVersion permite convivencia de captions legacy/R6.
+- sourceAlignment es previo a sourceRanges, no reemplaza Cutter.
+- custom/fallback evita que un XR nuevo rompa el Lienzo.
+
+RESULTADO
+Geometra deja de ser «un HTML que muestra fichas» y se consolida como compilador/gestor del documento canónico. El Lienzo pasa a ser un editor de decisiones de producción: permite ver, copiar, modificar y calendarizar cada recurso sin convertirse en el motor de media.
+
+==========================================================================================
+02_CANON/01_SOURCE_TRUTH_Y_MICROTRIM_R6_1.txt
+==========================================================================================
+ABRXOS R6.1 · SOURCE TRUTH / MICROTRIM
+
+NUEVA CAPA ADITIVA: sourceAlignment[]
+Se usa ANTES de sourceRanges finales cuando la frase está localizada pero el límite exacto cae dentro de un cue.
+
+sourceAlignment item recomendado:
+id
+speaker
+desiredText
+sourceLiteral
+cueIds[]
+parentStartTc
+parentEndTc
+parentStart
+parentEnd
+timingStatus
+requiresMicrotrim
+startAnchor
+endAnchor
+parentCueText
+notes
+
+TIMING STATUS
+cue_verified = el cue completo coincide con el fragmento solicitado.
+cue_based = el fragmento está dentro de uno o varios cues.
+word_aligned = word timestamps resueltos.
+verified = aprobado contra audio/master.
+editorial_planned = sólo tiempo del montaje.
+unresolved = no localizado.
+
+REGLA
+sourceRanges[] para Cutter se crea sólo con límites finales confiables. Un parent cue que contiene texto extra NO debe fingirse como corte exacto sólo porque tiene start/end válidos.
+
+MICROTRIM TASK
+{
+  alignmentId,
+  parentStart,
+  parentEnd,
+  startAnchor,
+  endAnchor,
+  method: pending_word_alignment,
+  approved: false
+}
+
+SOURCE CORRECTION
+Si el plan dice una frase diferente al transcript, conservar ambos:
+originalPlanText
+correctedText/sourceLiteral
+correctionReason
+
+Nunca corregir silenciosamente.
+
+==========================================================================================
+02_CANON/02_VOICEOVER_ADDED_R6_1.txt
+==========================================================================================
+ABRXOS R6.1 · VO_ADDED
+
+VOICEOVER DEL NARRADOR ES EDITORIAL, NO SOURCE SPEECH.
+
+No debe tener:
+sourceRange del master
+cueId ficticio
+speaker Amanda/JOC
+verified master timestamp inventado
+
+Debe tener:
+id
+kind: VO_ADDED
+speaker: NARRADOR
+text
+placement.after
+placement.before
+durationTargetSeconds
+timingStatus: editorial_planned hasta grabación
+voiceoverAssetId
+recordingStatus
+audioFile
+measuredDuration
+start/end edit-relative
+caption policy
+music ducking
+visual treatment/XR/CINE si aplica
+
+REGLA DE PLACEMENT
+En este intro:
+VO01 va después de P03_MAJORITY_FREE y antes de P04_FATHER_IDOL.
+VO02 va después de P11_OVERSATURATED y antes de P12_DIFFICULTIES.
+
+Cuando se graba:
+1. medir archivo;
+2. sustituir duration planned por duration measured;
+3. recalcular timeline posterior;
+4. captions del VO usan timing del VO, no del master.
+
+==========================================================================================
+02_CANON/03_FICHA_INTRO_ALFA_R6_1.txt
+==========================================================================================
+ABRXOS R6.1 · FICHA INTRO ALFA COMPLETA
+
+ROOT PIECE
+canonicalId
+projectId
+type=intro
+stage=ALFA
+workflowStatus
+source
+schedule
+editProfile
+objective/thesis/title
+sourceAlignment[] mientras haya microtrim pendiente
+sourceRanges[] sólo cuando corte final está resuelto
+parts[]
+storyScripts{}
+timeline[]
+productionChecklist
+copy/cover
+qa
+
+PARTS
+kind puede ser:
+source
+voiceover
+edit_direction
+cine
+open_loop
+title_card
+
+PARA SOURCE PART
+sourceAlignmentId
+sourceRangeId cuando existe
+text/sourceLiteral
+speaker
+role
+editStart/editEnd
+timingStatus
+
+PARA VO PART
+sourceRangeId=null
+voiceoverId
+placement
+editStart/editEnd
+timingStatus editorial_planned/verified_after_recording
+
+TIMELINE R6
+T1 arroll
+T2 xr
+T3 images/objects
+T4 motion
+T5 broll + cine
+T6 vo
+T7 sfx
+T8 music
+T9 caption_group
+
+INTRO XR_FULL
+Objetivo nominal 6 XR. No forzar un XR peor sólo por cuota; si un beat funciona mejor con NO_XR/CINE, documentar excepción en QA.
+
+CINE
+No cuenta como XR.
+
+QA
+alphaReady puede ser true sólo si otra persona puede producir sin adivinar.
+cutterReady sólo cuando sourceRanges están finalizados.
+
+==========================================================================================
+02_CANON/04_LIENZO_PROJECTION_CONTRACT_R6_1.txt
+==========================================================================================
+ABRXOS R6.1 · CONTRATO DE PROYECCIÓN AL LIENZO
+
+EL LIENZO NO REINTERPRETA LA FICHA. PROYECTA DATOS.
+
+SELECCIONAR PIEZA
+→ decide workspace por type.
+
+VIDEO WORKSPACE
+Story / transcript panel:
+- parts en orden editorial;
+- SOURCE vs VO claramente diferenciados;
+- microtrim/source status visible.
+
+Inspector contextual:
+A-roll → source literal, parent cue, sourceRange/sourceAlignment, timing status.
+VO → texto, placement, audio asset, measured duration.
+XR → family, function, states, assets, prompts, placement, status.
+Image/Object → descripción, prompt, search, continuity, status.
+Motion → property/keyframes/easing.
+CINE → cineType, visual, hold, music, silence, caption policy.
+SFX → trigger/purpose/search/mix.
+Music → automation segment.
+Caption Group → sourceText, wordCount, highlight, displayCues, visibility/suppressedBy.
+
+TIMELINE
+Cada evento timeline[] se dibuja en lane por track.
+XR parent en T2; children relacionados en T3/T4/T7.
+CINE root en T5, no T10.
+VO en T6.
+
+GHOST / NEEDS REVIEW
+Eventos editorial_planned o sourceAlignment no resuelto deben verse con estado visual needs_review/dashed. El Lienzo no debe presentarlos como source verified.
+
+MOVIMIENTO
+Click sólo selecciona.
+Drag real cambia edit time.
+No cambia sourceRange automáticamente.
+
+PERSISTENCIA
+Edición → state.project → autosave/export → app-data actualizado.
+
+==========================================================================================
+02_CANON/05_CAPTIONS_R6_1_COMPATIBILITY.txt
+==========================================================================================
+ABRXOS R6.1 · CAPTIONS Y COMPATIBILIDAD
+
+POLÍTICA R6
+T9 muestra Caption Groups, no microcajas por 3–5 palabras.
+Target 8–15 palabras.
+Soft 6–17.
+HERO_WORD excepcional.
+displayCues internos pueden mostrar 2–3 etapas sin multiplicar bloques T9.
+
+CAMPOS
+captionSchema: abrxos.caption.v2
+captionPolicyVersion: R6
+partId
+routes
+start/end
+sourceText
+wordCount
+highlightWord
+displayMode
+visibility
+suppressedBy
+displayCues[]
+
+COMIC_CC
+No borrar captions. visibility=hidden + suppressedBy=XR_ID.
+
+PATCH GEOMETRA
+Si captionPolicyVersion=R6:
+- NO ejecutar normalización legacy 3–5;
+- mantener un block T9 por Caption Group;
+- inspector abre displayCues;
+- hidden se dibuja atenuado.
+
+LEGACY
+Piezas antiguas sin R6 pueden conservar su política anterior. No migrar destructivamente.
+
+R6.1 CLARIFICATION · FUENTE COMPLETA < 6 PALABRAS
+Si TODO el texto de la part tiene menos de 6 palabras, NO rellenar, NO mezclar con otra part y NO inventar texto para llegar al rango.
+Se permite un Caption Group corto con:
+shortSourceException=true
+shortSourceReason="complete source part under soft range"
+
+El validador R6.1 debe aceptar esta excepción sin warning si sourceText coincide con la totalidad de la part.
+
+==========================================================================================
+02_CANON/06_CATALOG_BRANCH_RULES.txt
+==========================================================================================
+ABRXOS · REGLAS DE ESTA RAMA CANÓNICA
+
+OBJETIVO
+Cerrar bibliotecas que una IA pueda aplicar sin improvisar: XR, SFX, Motion, CINE, Captions, Music y sus relaciones.
+
+PARA CADA CAMBIO
+1. Baseline actual.
+2. Problema observado en pieza real.
+3. Tipo de cambio: ADDITIVE / CLARIFICATION / REPLACEMENT / DEPRECATION / BREAKING.
+4. Definición nueva.
+5. JSON/fields afectados.
+6. UI/Lienzo afectado.
+7. Cutter afectado o NO.
+8. Migración legacy.
+9. QA/test.
+10. Ejemplo Amanda.
+
+NO CREAR XR10+ HASTA QUE XR R6 ACTUAL ESTÉ CERRADO.
+
+UN CATÁLOGO DEBE CONTESTAR
+qué resuelve
+cuándo usar
+cuándo NO
+estructura de states
+asset count/policy
+prompts
+motion
+SFX
+caption policy
+continuidad
+fallback
+QA
+
+DEFINITION ≠ INSTANCE
+Catálogo reusable ≠ evento timeline concreto.
+
+==========================================================================================
+02_CANON/07_XR_R6_USO_EN_INTRO_AMANDA.txt
+==========================================================================================
+ABRXOS R6.1 · PROPUESTA DE 6 XR PARA VALIDAR EL CATÁLOGO CON EL INTRO AMANDA
+
+ESTADO: PROPUESTA EDITORIAL DE EJEMPLO. No modifica source truth. Puede ajustarse después de revisar assets reales.
+
+XR01 · TYPO
+Beat: compartir información → «todo lo contrario» → información gratuita.
+Función: fijar la contradicción intelectual del hook sin competir con el rostro.
+Estados: normal phrase → HERO «TODO LO CONTRARIO» → resolución «INFORMACIÓN GRATUITA».
+Motion: reveal/microescala. SFX: emphasis soft opcional.
+
+XR02 · OBJECTS
+Beat: VO01 / «Mi papá… ídolo profesional».
+Función: representar legado/ruta profesional sin generar una identidad falsa del padre.
+Assets sugeridos: diploma/credential, instrumento/estuche odontológico, silla/consultorio vacío. Usar material real/autorizado si existe.
+Continuidad: misma mesa/luz/materiales.
+
+XR03 · COMIC_INFO
+Beat: reválida + información contradictoria + miedo.
+Función: una composición maestra rica que pueda recorrerse: fuente oficial, foro/opinión, mensaje restrictivo, lista de pasos y centro «¿qué sí sé?». No usar UI futurista.
+Motion: lower-left → lower-right → upper-left → upper-right → full composition.
+
+XR04 · COMIC_CC
+Beat: «dificultades → oportunidad/aprendizaje → estancado».
+Función: convertir la frase literal en tres microescenas coherentes con texto integrado, sin burbujas.
+Caption: hidden durante XR; mantener group estructural.
+
+XR05 · OBJECTS
+Beat: lista A/A.1/A.2/A.3 → «¿por qué no lo empiezo a compartir?».
+Función: mostrar transformación de caos a guía compartible.
+Assets: tarjetas/pasos, checklist/guía, acción compartir/publicar. No dashboard mágico.
+
+XR06 · PHOTO_OBJECT
+Beat: 1500 / capital / propósito / preguntas de negocio.
+Función: cerrar el trailer mostrando escala + negocio con propósito sin revelar el modelo.
+Background: frame REAL de Amanda/JOC o fotografía autorizada; no generar identidad.
+Objects: contador/placa «1500» como dato fuente; símbolo/placa «PROPÓSITO» editable. Evitar claims adicionales.
+
+DIVERSIDAD
+TYPO → OBJECTS → COMIC_INFO → COMIC_CC → OBJECTS → PHOTO_OBJECT.
+Hay repetición de OBJECTS no consecutiva y con función distinta; permitida.
+
+==========================================================================================
+02_CANON/08_SFX_MOTION_CINE_MUSIC_INTRO_AMANDA.txt
+==========================================================================================
+ABRXOS R6.1 · AUDIO/MOTION/CINE · INTRO AMANDA
+
+PRINCIPIO
+No llenar de efectos. Todo efecto necesita trigger y función.
+
+CINE
+CINE01 opening: pantalla negra, 0.5–1.0 s, MUSIC MUTE. Sin SFX por defecto.
+CINE01/02 tras «mi papá fallece»: peso emocional. Preferir silencio; LOW_BOOM soft sólo si la mezcla lo necesita.
+CINE03 en «¿cómo llegaste ahora a los 1500?» puede funcionar como punch cut al siguiente bloque.
+CINE03/short hard cut antes «¿cómo funciona el modelo de negocio?» según ritmo.
+CINE01 final después de «cliente es…»: open loop, MUSIC MUTE, captions hidden.
+
+MUSIC
+M00 0→hook: MUTE.
+M01 después de «todo lo contrario»: FADE_IN pulso sobrio.
+M02 father death: DUCK → MUTE/HOLD.
+M03 USA/reválida: RESUME, luego TENSION suave bajo «imposible».
+M04 silencio después sobresaturación: MUTE.
+M05 VO02 + Clip15: RESUME con movimiento.
+M06 oportunidad de mercado: BUILD discreto.
+M07 capital/propósito: BUILD controlado.
+M08 open loop final: HARD MUTE.
+M09 title card: room tone/minimal tail opcional.
+
+SFX CANDIDATES
+S01 P02 «todo lo contrario» → SFX_EMPHASIS soft, opcional.
+S02 father death CINE → SFX_LOW_BOOM soft, opcional; silencio tiene prioridad.
+S03 revalida/contradicción → SFX_TENSION soft bed o ningún SFX si música ya carga tensión.
+S04 «imposible» → SFX_EMPHASIS deep muy bajo, sólo si no compite con voz.
+S05 opportunity/stuck → micro emphasis sobre giro; no sonidos GOOD/WRONG caricaturescos.
+S06 market opportunity → short riser que termina antes de frase, no sobre voz.
+S07 question 1500 punch → SFX_IMPACT/CLICK_DEEP corto, opcional.
+S08 open loop business model → SFX_SUSPENSE short / reverse micro-riser, terminar en negro.
+
+MOTION
+TYPO: mask/reveal, scale 100→104.
+OBJECTS: settle/slide corto por objeto, no flotación constante.
+COMIC_INFO: pan/zoom por vistas de una sola master.
+COMIC_CC: 3 assets con cuts/slow drift; texto integrado.
+PHOTO_OBJECT: push in sutil sobre frame real; objetos aparecen por meaning trigger.
+
+==========================================================================================
+02_CANON/09_KANBAN_CALENDAR_PRODUCTION.txt
+==========================================================================================
+ABRXOS R6.1 · PRODUCCIÓN / KANBAN / CALENDAR
+
+stage = madurez.
+workflowStatus = producción.
+
+Workflow:
+PENDIENTE → REVISADO → HACIENDO → LISTO → PROGRAMADO → PUBLICADO.
+
+Para este intro:
+Import inicial: stage=ALFA, workflowStatus=PENDIENTE, qa.cutterReady=false hasta microtrims.
+Después de revisión de source/XR: REVISADO.
+Al producir assets/edición: HACIENDO.
+Cuando corte/assets/audio/captions/QA listos: LISTO.
+Asignar date: PROGRAMADO.
+Publicar: PUBLICADO + publishedAt.
+
+productionChecklist recomendado:
+sourceAlignment
+microtrim
+voRecording
+cut
+xr
+images
+motion
+cine
+sfx
+music
+captions
+cover
+copy
+qa
+
+Cada nodo: status, notes, owner opcional, updatedAt opcional.
+
+Geometra app necesita patch drag/drop de Kanban. Lienzo ya cambia workflowStatus.
+
+==========================================================================================
+02_CANON/10_LIENZO_TODO_LO_QUE_DEBE_MOSTRAR_INTRO.txt
+==========================================================================================
+ABRXOS R6.1 · QUÉ DEBE MOSTRAR EL LIENZO DE ESTE INTRO
+
+HEADER
+canonicalId, title, stage, workflowStatus, editProfile, QA, duration edit.
+
+STORY
+Secuencia completa del intro mezclando:
+SOURCE (Amanda/JOC)
+VO (Narrador)
+EDIT DIRECTION
+CINE
+OPEN LOOP
+TITLE CARD
+Cada nodo con estado temporal y source status.
+
+SOURCE INSPECTOR
+plan text
+source literal
+cue IDs
+parent range
+microtrim anchors
+final sourceRange cuando exista
+speaker
+timingStatus
+copy/correction notes
+
+VO INSPECTOR
+texto
+placement after/before
+duration target/actual
+audio asset/status
+music duck
+captions
+
+XR INSPECTOR
+family
+function
+anchor
+states
+assets
+prompts
+searches
+placement
+motion IDs
+SFX IDs
+caption policy
+production status
+
+T3 ASSETS
+cada A01…An independiente, seleccionable y editable.
+
+T4 MOTION
+start/end, propiedad, keyframes, easing, CapCut instructions.
+
+T5 CINE/BROLL
+cineType específico y relación con music/silence/captions.
+
+T6 VO
+bloques Narrador diferenciados visualmente de source speech.
+
+T7 SFX
+trigger/purpose/search/mix/status.
+
+T8 MUSIC
+automation: fade/duck/mute/resume/build.
+
+T9 CAPTION GROUPS
+R6 group 8–15 palabras, displayCues internos, visibility/suppressedBy.
+
+KANBAN
+workflowStatus drag/drop.
+
+CALENDAR
+schedule + Sin programar.
+
+QA
+mostrar blockers: microtrim, VO sin grabar, asset missing, prompt incomplete, claim/timing needs review.
+
+==========================================================================================
+02_CANON/11_ROUTE_SEMANTICS_R6_1.txt
+==========================================================================================
+ABRXOS R6.1 · ROUTE SEMANTICS
+
+ROUTE NO SIGNIFICA «TIPO DE AUDIO».
+Una route es una ALTERNATIVA EDITORIAL COMPLETA.
+
+Incorrecto:
+source speech → routes:[source]
+VO → routes:[voA]
+si la intención es que ambos aparezcan juntos en el mismo montaje.
+Eso haría que un renderer que filtra por route muestre uno u otro.
+
+Correcto para este intro:
+route final contiene SOURCE + VO + XR + recursos que forman el montaje aprobado.
+
+Ejemplo:
+P03 Amanda source routes:[final]
+VO01 Narrador routes:[final]
+P04 Amanda source routes:[final]
+
+Si además se desea variante sin VO:
+- crear route source_only con tiempos recalculados;
+- source events pueden pertenecer a [final, source_only] sólo si sus edit times son compatibles;
+- si los tiempos cambian al retirar VO, usar routeTimings separados o eventos derivados, no dejar huecos silenciosos por accidente.
+
+Regla:
+kind/sourceRole describe SOURCE_SPEECH vs VO_ADDED.
+route describe una versión completa del montaje.
+
+==========================================================================================
+04_PATCHES/01_GEOMETRA_V3_1_R6_PATCH_LIST.txt
+==========================================================================================
+ABRXOS · PATCH LIST GEOMETRA V3.1 PARA R6/R6.1
+
+P0
+1. Caption policy switch:
+   captionPolicyVersion=R6 → no microsegmentar 3–5; render Caption Group + displayCues.
+2. CINE inspector:
+   track=broll + type=cine → cineType/function/visual/motion/sfx/music/silence/captionPolicy.
+3. Kanban Geometra drag/drop:
+   POST /api/update_piece workflowStatus.
+4. Source Alignment inspector:
+   parent cue / microtrim / anchors / timing status.
+5. VO inspector:
+   VO_ADDED / placement / audio status / measured duration.
+
+P1
+6. XR family registry R6 especializado.
+7. Asset inspector R6 completo.
+8. editProfile display.
+9. productionChecklist UI.
+10. QA blockers panel.
+
+P2
+11. Microtrim review workspace / source waveform.
+12. Catalog Studio XR/SFX/Motion/CINE.
+13. Calendar Planner Pro.
+14. Cutter Control para resolver cutOverrides/microtrims.
+
+SIN CAMBIO
+Cutter base no necesita comprender XR/SFX/CINE para cortar.
+Renderer no redefine schema.
+sourceRanges sigue protegido.
+15. Caption validator: shortSourceException válido cuando la parte completa tiene <6 palabras; nunca fusionar dos parts sólo para cumplir conteo.
+16. Route semantics: route es alternativa editorial completa; no confundir SOURCE vs VO con route.
+
+==========================================================================================
+04_PATCHES/02_IMPACT_MAP_R6_1.txt
+==========================================================================================
+ABRXOS · IMPACT MAP R6.1
+
+SOURCE ALIGNMENT
+TYPE: ADDITIVE
+Kernel: añadir/aceptar metadata, no breaking.
+Lienzo: inspector/ghost status.
+Cutter: sourceRanges sólo después de resolución.
+Migration: no.
+
+VO PLACEMENT
+TYPE: CLARIFICATION
+Kernel: no sourceRange falso.
+Timeline: T6.
+Cutter: ignora VO para source cut base.
+
+CAPTION GROUPS R6
+TYPE: REPLACEMENT por policyVersion R6, no global destructiva.
+Normalizer: bypass legacy segmentation si R6.
+Renderer: T9 group + displayCues.
+Legacy: conservar anterior.
+
+CINE
+TYPE: ADDITIVE
+Track existente T5; type=cine.
+No T10.
+
+XR FAMILIES R6
+TYPE: ADDITIVE/PARALLEL CATALOG
+No reemplazar R5 por mapping ciego.
+
+KANBAN GEOMETRA
+TYPE: CLARIFICATION/BUGFIX
+No schema change.
+
+ASSET METADATA R6
+TYPE: ADDITIVE
+Renderer/Inspector expansion only.
+
+==========================================================================================
+04_PATCHES/03_REPAIR_UPDATE_PROTOCOL_R6_1.txt
+==========================================================================================
+ABRXOS · CÓMO REPARAR/MEJORAR SIN ROMPER
+
+1. CLASIFICA: UI / runtime / schema / importer / Cutter.
+2. Usa fixture real Amanda + fixture carrusel + ficha incompleta.
+3. Escribe regression test del fallo.
+4. Cambia la capa mínima.
+5. Verifica unknown-field preservation.
+6. Import → normalize → compile JOC/Shadcn → reimport.
+7. Verifica sourceRanges idénticos si el cambio no es Cutter.
+8. Browser: click, drag threshold, inspector, undo.
+9. R6: CINE/XR/Caption Group/VO/sourceAlignment.
+10. Calendar/Kanban.
+11. Desktop/iPhone/iPad si toca UI.
+12. Sólo promover si todos los gates pasan.
+
+NUNCA
+- cambiar IDs para arreglar una vista;
+- transformar sourceAlignment pendiente en sourceRange exacto por cálculo;
+- hacer mapping ciego XR00→familia R6;
+- duplicar timeline/modelo sólo para una UI;
+- borrar campos que el renderer todavía no comprende.
+
+==========================================================================================
+05_PROMPTS/PROMPT_CONSTRUIR_ALFA_FINAL_INTRO_AMANDA_R6_1.txt
+==========================================================================================
+PROMPT · SOURCE MAP + PLAN → FICHA ALFA FINAL R6.1
+
+Usa:
+- Canon R6/R6.1;
+- sourceRanges ya resueltos;
+- sequence del intro;
+- VO01/VO02 como VO_ADDED;
+- blueprint XR provisional;
+- Brand Adapter/Project Config.
+
+Devuelve JSON importable.
+
+OBLIGATORIO
+- mismo canonicalId;
+- stage=ALFA y workflowStatus;
+- sourceRanges sólo verificados;
+- parts y storyScripts;
+- timeline T1–T9;
+- 6 XR desarrollados state/asset por state;
+- prompts autónomos;
+- Motion events independientes;
+- CINE T5;
+- SFX con trigger/purpose/search/mix;
+- Music automation;
+- Caption Groups R6;
+- productionChecklist;
+- QA.
+
+VO
+No asignar master sourceRange. Medir archivo grabado o mantener editorial_planned + missing.
+
+Si falta un microtrim o VO medido, qa.cutterReady=false / alphaReady según corresponda. No ocultar missing.
+
+==========================================================================================
+05_PROMPTS/PROMPT_RAMA_CANONICA_CONTINUAR_R6_1.txt
+==========================================================================================
+INSTRUCCIÓN PARA CONTINUAR ESTA RAMA CANÓNICA ABRXOS
+
+Estamos definiendo el canon R6/R6.1 que alimenta IA → Geometra → Lienzo → Cutter. No construyas UI ni código salvo que se pida explícitamente.
+
+BASELINE
+- R6 actual: familias XR semánticas, SFX/Motion/CINE/Music libraries, Caption Groups, Edit Profiles.
+- R6.1 añade sourceAlignment/microtrim, VO_ADDED placement y projection contract.
+- Geometra V3 conserva campos R6 pero requiere patch V3.1 para UI especializada.
+
+MÉTODO OBLIGATORIO PARA CADA DECISIÓN
+1. mostrar baseline vigente;
+2. citar problema del caso Amanda u otro fixture real;
+3. clasificar cambio;
+4. proponer definición;
+5. definir JSON fields;
+6. definir proyección Lienzo;
+7. definir efecto Cutter;
+8. definir migración legacy;
+9. definir test/QA;
+10. actualizar ejemplo Amanda.
+
+PRIMER OBJETIVO
+Auditar y cerrar, uno por uno:
+XR families R6 → SFX → Motion → CINE → Music → Caption Groups → Asset states → Production checklist.
+
+NO HACER
+- inventar timestamps;
+- mapear XR00–XR09 a R6 sólo por número;
+- crear XR nuevos antes de cerrar los existentes;
+- confundir definición de catálogo con instancia timeline;
+- dar prompts genéricos.
+
+CASO DE PRUEBA
+Usa INTRO_AMANDA_SOURCE_ALIGNMENT_R6_1.json y 03_BLUEPRINT_XR_SFX_MOTION_R6_1.txt como fixture de validación.
+
+==========================================================================================
+05_PROMPTS/PROMPT_RESOLVER_MICROTRIMS_INTRO_AMANDA.txt
+==========================================================================================
+PROMPT · RESOLVER MICROTRIMS DEL INTRO AMANDA
+
+INPUTS
+- INTRO_AMANDA_SOURCE_ALIGNMENT_R6_1.json
+- transcripción SRT/TXT
+- si existe: audio/master o word timestamps
+
+OBJETIVO
+Resolver ÚNICAMENTE los items microtrim=true. No diseñar XR/SFX.
+
+POR ITEM
+- localizar startAnchor y endAnchor;
+- devolver start/end exactos sólo si hay evidencia word-level/audio;
+- guardar método: word_aligned | audio_review | human_confirmed;
+- conservar parent cue;
+- no desplazar para ritmo;
+- si hay ambigüedad, mantener unresolved.
+
+SALIDA
+sourceRanges[] en el orden editorial del intro + reporte de items no resueltos.
+
+PROHIBIDO
+Interpolar timecode por longitud de caracteres/palabras.

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "abrxos.release-lock.v1",
+  "release": "3.1.1-r6.1",
+  "canonFamily": "R6",
+  "canonRevision": "R6.1",
+  "components": {
+    "geometra": "3.1.1",
+    "contentBuilder": "1.0.1",
+    "brandBuilder": "1.0.1"
+  },
+  "requiredFeatures": [
+    "sourceAlignment",
+    "microtrim",
+    "voAdded",
+    "routeSemanticsR61",
+    "captionGroupsR6",
+    "shortSourceException",
+    "projectionReady",
+    "ecosystemContractHandshake"
+  ],
+  "r6LibraryHashes": {
+    "CAPTIONS_R6.json": "sha256:f558d56b58834aea5addd993717cd59de9dee03b0719a43a6373719607e40ca6",
+    "CINE_LIBRARY_R6.json": "sha256:41e525440c596a9631b2fae63244db881fce5eda5874adccbe1da10a0bc0119e",
+    "EDIT_PROFILES_R6.json": "sha256:6cfa350cdc6a6d4d913f853f79fe1c54cdf8e721301377e773e9bc7392cf8653",
+    "MOTION_LIBRARY_R6.json": "sha256:f392526d221a15e900cdf71a54f4c741d89f35826343f6fcfbd33cf67254f8c0",
+    "MUSIC_LIBRARY_R6.json": "sha256:5b926d06c69fd7c2e689cbc5e9ac4807f351bfc7cf1a0b84788004e89c854244",
+    "SFX_LIBRARY_R6.json": "sha256:459257f52a269c4703def796d97e1806c3994380d2b95314102949779bf3424c",
+    "XR_FAMILIES_R6.json": "sha256:684f06b7ab3d2887ac9eb1265a32fe49f88a296b4918f65cb958c150ac0899a3"
+  },
+  "brandAdapter": {
+    "schemaVersion": "abrxos.brand-adapter.r6",
+    "adapterVersion": "R6.1"
+  }
+}

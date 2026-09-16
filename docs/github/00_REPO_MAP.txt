@@ -1,0 +1,29 @@
+REPO MAP
+
+apps/
+  geometra/current       exact installed snapshot after capture
+  content-builder/current
+  brand-builder/current
+
+canon/
+  r6/runtime             shared runtime canon distributed with Content Builder
+  r6_1                   R6.1 supplements and intro-branch canon
+
+patches/
+  geometra-v3.1-r6       baseline patch source/history
+  ecosystem-v3.1.1-r6.1 ecosystem hotfix source/history
+
+releases/
+  installable ZIP archives
+
+docs/
+  system/apps/maintenance/github
+
+tutorials/
+  task-oriented usage guides
+
+tools/
+  capture/verify/manifest/Git helpers
+
+references/
+  legacy R4/R5 rules kept for archaeology/migration, not current runtime canon.

@@ -1,0 +1,40 @@
+ABRXOS PATCH GEOMETRA V3.1 R6 · ARCHITECTURE
+=============================================
+
+EXISTING V3 KERNEL
+  import / normalize / library / compiler
+              |
+              +-- R6 validator hook
+              |
+              +-- R6 libraries
+              |
+              v
+       same canonical project
+          /              \
+ GEOMETRA APP          LIENZO
+ r6_patch.js           r6_patch.js
+ kanban/QA             inspector/checklist
+
+PATCHED FILES BY MARKER
+- geometra/server.py
+- geometra/compiler.py
+- app/index.html
+- VERSION.json
+
+ADDITIVE FILES
+- geometra/r6.py
+- r6/*.json
+- app/r6_patch.js
+- app/r6_patch.css
+- shared/r6_patch.js
+
+NOT PATCHED
+- geometra/core.py
+- geometra/library.py
+- shared/lienzo_core.js
+- renderer packs
+- ~/ABRXOS_GEOMETRA_DATA
+- Desktop .app launcher
+
+WHY
+The patch deliberately leaves V3 source truth, timeline interaction, undo/redo and export behavior in the original runtime. R6 is a compatibility/validation/presentation layer, not a second document store.

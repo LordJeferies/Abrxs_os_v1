@@ -1,0 +1,392 @@
+ABRXOS — FICHA CANÓNICA DE CONTENIDO R4
+
+Esta ficha sirve para contenido pregrabado, contenido que se va a grabar y
+derivaciones como clips, intros, carruseles, notas o newsletters. Cada ficha
+conserva la fuente literal separada de las decisiones editoriales.
+
+1. IDENTIDAD Y CONTROL
+
+contentId:
+projectId:
+brandId:
+client:
+person/speaker:
+session/episode:
+sourceMediaId:
+contentKind: vertical_clip | horizontal_video | intro | carousel | script | note | thread
+contentSubtype:
+stage: BETA | ALFA | OMEGA | PUBLISHED
+status:
+priority:
+batch:
+pillar:
+topic:
+audience:
+platforms:
+owner:
+createdAt:
+updatedAt:
+revision:
+sourceRevision:
+truthStatus: confirmed | needs_audio_review | editorial_inference | hypothetical
+
+2. DIFERENCIA ENTRE ESTADOS
+
+BETA — POTENCIAL EDITORIAL
+La Beta responde si vale la pena producir la pieza. Contiene idea, título,
+objetivo, audiencia, fuente, formato, destino, hook posible, tesis, estructura
+tentativa, referencias de contenido, score y riesgos.
+
+En contenido pregrabado puede incluir rangos candidatos y citas, siempre marcados
+como cue_based o needs_audio_review. En contenido por grabar contiene preguntas,
+respuesta de referencia, coach, lógica y posibles cierres; no inventa que la
+respuesta ya existe.
+
+La Beta no necesita tener:
+- corte final;
+- texto definitivo;
+- prompts finales de cada imagen;
+- todos los assets;
+- subtítulos cerrados;
+- master confirmado;
+- tiempos exactos de cada evento si todavía son estimados.
+
+Criterio para pasar a Alfa: el usuario selecciona esta idea, confirma fuente o
+pregunta, formato, objetivo y dirección general.
+
+ALFA — PLAN DE PRODUCCIÓN EJECUTABLE
+La Alfa contiene todo lo que otra persona necesita para producir. Incluye texto
+literal o guion final, partes elegidas, tiempos verificables, shotlist, estados
+internos de cada X-Roll, prompts de imagen y animación, continuidad bloqueada,
+composición, captions, audio, SFX, recursos, nombres de archivos, instrucciones
+CapCut/Canva y QA.
+
+La Alfa no afirma que un recurso ya exista. Cada recurso queda como assigned,
+missing, generated, approved o rejected.
+
+Criterio para pasar a Omega: corte o diseño producido, texto revisado, audio
+nivelado, assets comprobados, continuidad verificada y aprobación editorial.
+
+OMEGA — PIEZA LISTA
+La Omega representa la versión final producida y revisada. Guarda archivos,
+checksum, versión de exportación, portada, caption, subtítulos finales, guía,
+aprobaciones y fecha prevista/publicada. Los aprendizajes posteriores se
+registran como observaciones; no cambian reglas de marca automáticamente.
+
+3. BRIEF EDITORIAL
+
+title:
+workingTitle:
+coverTitle:
+objective:
+thesis:
+promiseToAudience:
+whyThisMatters:
+hook:
+hookType:
+openLoop:
+payoff:
+cta:
+caption:
+shortDescription:
+longDescription:
+keywords:
+claims:
+claimsEvidence:
+claimsToVerify:
+emotionalArc:
+tone:
+desiredAudienceAction:
+
+4. FUENTE Y PROCEDENCIA
+
+sourceType: recorded_video | transcript | script | idea
+sourceRange:
+sourceCueIds:
+sourceWordIds:
+sourceQuoteLiteral:
+editorialRewrite:
+sourceTextStatus:
+timingStatus: word_aligned | cue_based | user_confirmed | estimated | unresolved
+speaker:
+audioTrack:
+videoTrack:
+sourceNotes:
+No sustituir sourceQuoteLiteral por una reescritura. Toda inferencia debe indicar
+su origen y estado.
+
+5. ESTRUCTURA NARRATIVA
+
+parts:
+  id:
+  order:
+  role: cold_open | hook | context | diagnosis | mechanism | proof | contrast |
+        decision | development | payoff | CTA | open_loop | custom
+  sourceRange:
+  literalText:
+  editorialPurpose:
+  deliveryDirection:
+  recordingCoach:
+  visualFunction:
+  transitionIn:
+  transitionOut:
+  timingStatus:
+
+Para una pauta/pregrabación, recordingCoach explica mirada, gesto, movimiento,
+posición, objeto y pausa. La respuesta de referencia es adaptable, no texto que
+el speaker deba repetir literalmente.
+
+6. DIRECCIÓN DE EDICIÓN
+
+editStrategy:
+cutPolicy:
+pacing:
+cameraCoverage:
+reframePlan:
+brollPlan:
+xrollDensity:
+motionDensity:
+transitionLanguage:
+speedChanges:
+freezeFrames:
+colorTreatment:
+audioTreatment:
+captionStyleId:
+safeAreaRules:
+masterRoles:
+verticalDifference:
+horizontalDifference:
+
+7. FICHA DE CADA X-ROLL
+
+eventId:
+xrollDefinitionId: XR00–XR08
+xrollPurpose:
+sourcePartId:
+sourceQuote:
+viewerShouldUnderstandOrFeel:
+reasonForSelection:
+duration:
+pieceStart:
+pieceEnd:
+sourceStart:
+sourceEnd:
+masterRole:
+layer:
+zOrder:
+placement:
+speakerRelationship: behind_speaker | beside_speaker | foreground |
+                    full_frame | a_roll_reframe | no_speaker
+stateCount:
+states:
+  stateId:
+  order:
+  role:
+  duration:
+  function:
+  exactVisualDescription:
+  focalPoint:
+  foreground:
+  middleGround:
+  background:
+  camera:
+  lens:
+  framing:
+  perspective:
+  light:
+  materials:
+  palette:
+  text:
+  textPlacement:
+  safeAreas:
+  continuityLocks:
+  allowedChanges:
+  forbiddenChanges:
+  sourceAsset:
+  assetStatus:
+  imagePromptId:
+  animationPromptId:
+  transitionToNext:
+  qaStatus:
+
+8. PROMPT DE IMAGEN POR ESTADO
+
+Cada estado debe tener un prompt independiente. El prompt debe incluir:
+
+ROLE:
+OBJECTIVE:
+PROJECT:
+CLIENT:
+CLIENT_VISUAL_DNA:
+FORMAT_AND_CANVAS:
+SOURCE_QUOTE:
+NARRATIVE_FUNCTION:
+STATE_ROLE:
+EXACT_SCENE:
+SUBJECT:
+REQUIRED_ELEMENTS:
+FOREGROUND:
+MIDDLEGROUND:
+BACKGROUND:
+COMPOSITION:
+FOCAL_POINT:
+CAMERA_AND_LENS:
+PERSPECTIVE:
+LIGHTING:
+MATERIALS_AND_TEXTURE:
+PALETTE:
+TEXT_INSIDE_IMAGE:
+TEXT_SAFE_AREAS:
+SPEAKER_COMPOSITING:
+CONTINUITY_LOCKS:
+ALLOWED_VARIATIONS:
+DO_NOT_CHANGE:
+NEGATIVE_CONSTRAINTS:
+OUTPUT:
+LICENSE_OR_SOURCE_REQUIREMENTS:
+
+El prompt no debe decir simplemente “imagen cinematográfica relacionada con la
+frase”. Debe describir qué se ve, dónde está cada elemento y qué se conserva.
+
+9. PROMPT DE ANIMACIÓN SEPARADO
+
+ANIMATION BRIEF:
+SOURCE_ASSET:
+XROLL:
+STATE_OR_BEAT:
+PRIMARY_GOAL:
+ELEMENT_TO_MOVE:
+START_STATE:
+END_STATE:
+KEYFRAMES:
+POSITION:
+SCALE:
+ROTATION:
+OPACITY:
+PARALLAX:
+FOCUS:
+EASING:
+DURATION:
+TRANSITION:
+AUDIO_SYNC:
+SAFE_AREAS:
+DO_NOT_ANIMATE:
+CAPCUT_EXECUTION:
+Si el movimiento no se puede renderizar en Abrxos, queda como guía técnica y no
+como efecto terminado.
+
+10. ASSETS
+
+assetDefinitionId:
+assetInstanceId:
+type: image | video | audio | font | logo | subtitle_template | cover
+description:
+quantity:
+dimensions:
+ratio:
+transparentBackground:
+source:
+license:
+promptId:
+filePath:
+status:
+reusable:
+usages:
+missingReason:
+fallback:
+No crear una ruta local ficticia. Una imagen propuesta no es un asset generado.
+
+11. SUBTÍTULOS
+
+transcriptSource:
+wordTimingSource:
+corrections:
+correctionReason:
+speakerLabels:
+phraseGroups:
+highlightWords:
+primaryWordRule:
+font:
+size:
+weight:
+colors:
+position:
+safeArea:
+animation:
+translation:
+burnIn:
+exportSrt:
+exportWordTranscript:
+No tapar ojos, boca, manos ni elementos críticos. Guardar texto original y texto
+corregido con procedencia.
+
+12. AUDIO
+
+voiceTracks:
+noiseReduction:
+voiceLevel:
+music:
+musicSearchQuery:
+musicLicense:
+ducking:
+sfx:
+sfxAt:
+sfxPurpose:
+mixNotes:
+audioStatus:
+
+13. PORTADA
+
+coverType: frame | generated_image | typography | hybrid
+sourceFrame:
+composition:
+headline:
+supportingText:
+subjectPosition:
+textZone:
+colorTreatment:
+promptId:
+editableLayers:
+capcutOrCanvaInstructions:
+coverStatus:
+
+14. PRODUCCIÓN Y QA
+
+capcutInstructions:
+canvaInstructions:
+cutObjects:
+exportProfile:
+cutJobId:
+folder:
+fileNaming:
+reviewChecklist:
+  sourceVerified:
+  timingVerified:
+  identityContinuity:
+  textVerified:
+  audioVerified:
+  licenseVerified:
+  verticalVerified:
+  horizontalVerified:
+  resourcesComplete:
+  cleanExport:
+reviewer:
+approval:
+notes:
+
+15. PUBLICACIÓN Y APRENDIZAJE
+
+scheduledDate:
+publishedDate:
+platformUrl:
+views:
+retention:
+averageWatchTime:
+saves:
+shares:
+comments:
+feedback:
+learningHypothesis:
+proposedRuleChange:
+ruleChangeApproval:
+

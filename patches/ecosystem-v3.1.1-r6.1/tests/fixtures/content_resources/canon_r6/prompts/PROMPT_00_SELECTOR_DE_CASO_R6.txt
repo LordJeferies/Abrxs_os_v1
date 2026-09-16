@@ -1,0 +1,23 @@
+ABRXOS R6 · SELECTOR RÁPIDO DE PROMPT
+
+USA PROMPT_01 si ya tienes un PLAN EDITORIAL fijo y una transcripción.
+USA PROMPT_02 si sólo tienes transcripción y quieres un INTRO Alfa automático.
+USA PROMPT_03 si sólo tienes transcripción y quieres VERTICAL(es) Alfa.
+USA PROMPT_04 si sólo tienes transcripción y quieres HORIZONTAL(es) Alfa.
+USA PROMPT_05 si quieres un CARRUSEL Alfa.
+USA PROMPT_06 si quieres descubrir Betas antes de invertir en Alfa.
+USA PROMPT_07 para Beta seleccionada → Alfa.
+USA PROMPT_08 para modificar una Alfa existente sin perder IDs.
+USA PROMPT_09 para Dynamic Edit / MOTION_SFX sin X-Rolls.
+USA PROMPT_10 para Clean Edit / SFX_ONLY.
+USA PROMPT_11 para episodio completo / longform con densidad XR.
+USA PROMPT_12 para proyectos con CH/AS/WB u otros sourceGroups múltiples.
+USA PROMPT_13 si el plan existe pero la transcripción no tiene timestamps suficientes.
+USA PROMPT_14 para generar múltiples tipos de contenido en un solo proyecto.
+
+OUTPUT recomendado:
+- archivo JSON importable: <PROJECT>_<CONTENT_ID>_ALFA_R6.json
+- archivo TXT legible: <PROJECT>_<CONTENT_ID>_ALFA_R6.txt
+
+El JSON es lo que actualiza Geometra.
+El TXT es compañero humano y puede ir al Inbox si quieres conservarlo.

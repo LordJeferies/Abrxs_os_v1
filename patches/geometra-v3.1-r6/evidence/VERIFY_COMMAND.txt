@@ -1,0 +1,38 @@
+ABRXOS · VERIFICAR PATCH V3.1 R6
+Target:  /tmp/abrxos_v3_r6_patch_candidate
+Backups: /tmp/abrxos_v3_r6_patch_backups
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    "version=3.1.0",
+    "patch_registry=PASS",
+    "file:geometra/r6.py=PASS",
+    "file:r6/XR_FAMILIES_R6.json=PASS",
+    "file:r6/EDIT_PROFILES_R6.json=PASS",
+    "file:r6/CINE_LIBRARY_R6.json=PASS",
+    "file:r6/SFX_LIBRARY_R6.json=PASS",
+    "file:r6/MOTION_LIBRARY_R6.json=PASS",
+    "file:r6/MUSIC_LIBRARY_R6.json=PASS",
+    "file:r6/CAPTIONS_R6.json=PASS",
+    "file:r6/ABRXOS_CONTENT_PROJECT_R6.schema.json=PASS",
+    "file:shared/r6_patch.js=PASS",
+    "file:app/r6_patch.js=PASS",
+    "file:app/r6_patch.css=PASS",
+    "hook:R6_SERVER_IMPORTS=PASS",
+    "hook:R6_SERVER_STATIC=PASS",
+    "hook:R6_SERVER_VALIDATE_API=PASS",
+    "hook:R6_COMPILER_LOAD=PASS",
+    "hook:R6_COMPILER_INLINE=PASS",
+    "hook:R6_APP_CSS=PASS",
+    "hook:R6_APP_JS=PASS",
+    "py_compile:r6.py=PASS",
+    "py_compile:server.py=PASS",
+    "py_compile:compiler.py=PASS",
+    "node_check:shared/r6_patch.js=PASS",
+    "node_check:app/r6_patch.js=PASS",
+    "r6_validator=PASS"
+  ],
+  "target": "/tmp/abrxos_v3_r6_patch_candidate"
+}

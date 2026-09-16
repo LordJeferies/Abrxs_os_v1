@@ -1,0 +1,12 @@
+INTRO FROM TRANSCRIPT · R6.1
+
+1. Content Builder case 01/02 depending whether editorial plan already exists.
+2. Source alignment first: locate cues, anchors and microtrims.
+3. Do not invent exact sourceRanges inside a cue if unresolved.
+4. VO_ADDED uses placement.after/before and T6; no fake master sourceRange.
+5. Develop XR internally: states + assets + prompts + motions + SFX.
+6. Project resources into T1–T9 so Projection Ready can pass.
+7. Import JSON in Geometra.
+8. Validate Alpha/Cutter/Projection separately.
+9. Use Lienzo to refine edit-time decisions.
+10. Cutter receives final sourceRanges only.

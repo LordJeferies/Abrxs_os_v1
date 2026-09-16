@@ -1,0 +1,37 @@
+ABRXOS TEST GATES
+
+COMPONENT
+- Python compile
+- JSON parse
+- JS syntax
+- app-specific tests
+
+GEOMETRA
+- import fixtures
+- R6/R6.1 validator
+- Alpha/Cutter/Projection readiness
+- compile Lienzo
+- reimport Lienzo
+- sourceRanges unchanged
+- Kanban/Calendar
+- Inspector R6
+
+BUILDERS
+- engine tests
+- server tests
+- resource existence
+- package generation
+- manifest/hash validation
+
+CROSS APP
+- shared R6 libraries same SHA-256
+- Brand Adapter handshake
+- Content package handshake
+- Geometra supports declared features
+
+RELEASE
+- no __pycache__/.pytest_cache/pyc
+- no absolute /Users/... or /mnt/data paths in release logic
+- no credentials
+- manifest validates
+- apply/verify/revert passes in sandbox
