@@ -36,3 +36,4 @@ secrets.json
 # Local repo QA environment
 .venv/
 LAUNCH_*.command
+GITHUB_NEXT_STEPS.txt
