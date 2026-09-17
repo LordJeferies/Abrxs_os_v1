@@ -1,12 +1,12 @@
 {
   "schemaVersion": "abrxos.repo-manifest.v1",
   "release": "3.1.1-r6.1",
-  "generatedAt": "2026-09-16T21:32:54.331617+00:00",
+  "generatedAt": "2026-09-17T16:25:44.934670+00:00",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 603,
-      "sha256": "e42e9da0aa0d6d08f7762bee0b7180a04aa29c277059f8b8dc557c7007503a45"
+      "bytes": 625,
+      "sha256": "9382824aeae20f5c2bd4360f69910a1b26dd8b8aa4752cc663b05b5dc3f40dbd"
     },
     {
       "path": "00_EJECUTA_ESTO_EN_TU_MAC.txt",
@@ -27,6 +27,11 @@
       "path": "CURRENT_RELEASE_LOCK.json",
       "bytes": 1296,
       "sha256": "fd6bf754b3e7c8658acdd3604a07dc5ac320e3c2ca99db6520c0a8578ebc6cc9"
+    },
+    {
+      "path": "GITHUB_NEXT_STEPS.txt",
+      "bytes": 342,
+      "sha256": "394232fba9da146ec64028c2910863afbf580d1e27e65b708cccffaeca270a4d"
     },
     {
       "path": "README.md",
